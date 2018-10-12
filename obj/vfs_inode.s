@@ -11,7 +11,7 @@
 	.globl	inode_init
 	.type	inode_init, @function
 inode_init:
-.LFB16:
+.LFB22:
 	.file 1 "kernel/vfs/vfs_inode.c"
 	.loc 1 16 0
 	.cfi_startproc
@@ -38,7 +38,7 @@ inode_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	inode_init, .-inode_init
 	.section	.text.unlikely.inode_init
 .LCOLDE0:
@@ -51,7 +51,7 @@ inode_init:
 	.globl	inode_alloc
 	.type	inode_alloc, @function
 inode_alloc:
-.LFB17:
+.LFB23:
 	.loc 1 22 0
 	.cfi_startproc
 .LVL0:
@@ -85,7 +85,7 @@ inode_alloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	inode_alloc, .-inode_alloc
 	.section	.text.unlikely.inode_alloc
 .LCOLDE1:
@@ -98,7 +98,7 @@ inode_alloc:
 	.globl	inode_del
 	.type	inode_del, @function
 inode_del:
-.LFB18:
+.LFB24:
 	.loc 1 35 0
 	.cfi_startproc
 .LVL4:
@@ -152,7 +152,7 @@ inode_del:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	inode_del, .-inode_del
 	.section	.text.unlikely.inode_del
 .LCOLDE2:
@@ -165,7 +165,7 @@ inode_del:
 	.globl	inode_open
 	.type	inode_open, @function
 inode_open:
-.LFB19:
+.LFB25:
 	.loc 1 55 0
 	.cfi_startproc
 .LVL8:
@@ -254,7 +254,7 @@ inode_open:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	inode_open, .-inode_open
 	.section	.text.unlikely.inode_open
 .LCOLDE3:
@@ -267,7 +267,7 @@ inode_open:
 	.globl	inode_ptr_get
 	.type	inode_ptr_get, @function
 inode_ptr_get:
-.LFB20:
+.LFB26:
 	.loc 1 82 0
 	.cfi_startproc
 .LVL15:
@@ -296,7 +296,7 @@ inode_ptr_get:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	inode_ptr_get, .-inode_ptr_get
 	.section	.text.unlikely.inode_ptr_get
 .LCOLDE4:
@@ -309,7 +309,7 @@ inode_ptr_get:
 	.globl	inode_ref
 	.type	inode_ref, @function
 inode_ref:
-.LFB21:
+.LFB27:
 	.loc 1 93 0
 	.cfi_startproc
 .LVL16:
@@ -328,7 +328,7 @@ inode_ref:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	inode_ref, .-inode_ref
 	.section	.text.unlikely.inode_ref
 .LCOLDE5:
@@ -341,7 +341,7 @@ inode_ref:
 	.globl	inode_unref
 	.type	inode_unref, @function
 inode_unref:
-.LFB22:
+.LFB28:
 	.loc 1 98 0
 	.cfi_startproc
 .LVL17:
@@ -366,7 +366,7 @@ inode_unref:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	inode_unref, .-inode_unref
 	.section	.text.unlikely.inode_unref
 .LCOLDE6:
@@ -379,7 +379,7 @@ inode_unref:
 	.globl	inode_busy
 	.type	inode_busy, @function
 inode_busy:
-.LFB23:
+.LFB29:
 	.loc 1 105 0
 	.cfi_startproc
 .LVL18:
@@ -401,7 +401,7 @@ inode_busy:
 	.loc 1 107 0
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	inode_busy, .-inode_busy
 	.section	.text.unlikely.inode_busy
 .LCOLDE7:
@@ -414,7 +414,7 @@ inode_busy:
 	.globl	inode_avail_count
 	.type	inode_avail_count, @function
 inode_avail_count:
-.LFB24:
+.LFB30:
 	.loc 1 110 0
 	.cfi_startproc
 .LVL19:
@@ -446,7 +446,7 @@ inode_avail_count:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	inode_avail_count, .-inode_avail_count
 	.section	.text.unlikely.inode_avail_count
 .LCOLDE8:
@@ -459,7 +459,7 @@ inode_avail_count:
 	.globl	inode_reserve
 	.type	inode_reserve, @function
 inode_reserve:
-.LFB26:
+.LFB32:
 	.loc 1 142 0
 	.cfi_startproc
 .LVL23:
@@ -587,7 +587,7 @@ inode_reserve:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	inode_reserve, .-inode_reserve
 	.section	.text.unlikely.inode_reserve
 .LCOLDE9:
@@ -600,7 +600,7 @@ inode_reserve:
 	.globl	inode_release
 	.type	inode_release, @function
 inode_release:
-.LFB27:
+.LFB33:
 	.loc 1 171 0
 	.cfi_startproc
 .LVL36:
@@ -649,7 +649,7 @@ inode_release:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	inode_release, .-inode_release
 	.section	.text.unlikely.inode_release
 .LCOLDE10:
@@ -1655,8 +1655,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0xf
 	.long	0x25
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1b
@@ -1664,8 +1664,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0x15
 	.long	0x25
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x834
@@ -1678,8 +1678,8 @@ g_vfs_dev_nodes:
 	.byte	0
 	.uleb128 0x1d
 	.long	0x7b0
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x86c
@@ -1704,8 +1704,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0x36
 	.long	0x582
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8c2
@@ -1738,8 +1738,8 @@ g_vfs_dev_nodes:
 	.byte	0
 	.uleb128 0x1d
 	.long	0x7cc
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8e6
@@ -1758,8 +1758,8 @@ g_vfs_dev_nodes:
 	.long	.LASF110
 	.byte	0x1
 	.byte	0x5c
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x90a
@@ -1776,8 +1776,8 @@ g_vfs_dev_nodes:
 	.long	.LASF111
 	.byte	0x1
 	.byte	0x61
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x92e
@@ -1795,8 +1795,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0x68
 	.long	0x25
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x956
@@ -1814,8 +1814,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0x6d
 	.long	0x25
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x98c
@@ -1865,8 +1865,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0x8d
 	.long	0x25
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa94
@@ -1945,8 +1945,8 @@ g_vfs_dev_nodes:
 	.byte	0x1
 	.byte	0xaa
 	.long	0x25
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xaec
@@ -2703,7 +2703,7 @@ g_vfs_dev_nodes:
 	.byte	0x30
 	.byte	0x9f
 	.long	.LVL20
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2731,7 +2731,7 @@ g_vfs_dev_nodes:
 	.byte	0x1c
 	.byte	0x9f
 	.long	.LVL22
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x5
 	.byte	0x49
 	.byte	0x72
@@ -2858,28 +2858,28 @@ g_vfs_dev_nodes:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB16
-	.long	.LFE16-.LFB16
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
 	.long	.LFB22
 	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
 	.long	.LFB24
 	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.long	.LFB26
 	.long	.LFE26-.LFB26
 	.long	.LFB27
 	.long	.LFE27-.LFB27
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2890,28 +2890,28 @@ g_vfs_dev_nodes:
 	.long	.LBE17
 	.long	0
 	.long	0
-	.long	.LFB16
-	.long	.LFE16
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
 	.long	.LFB22
 	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
 	.long	.LFB24
 	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
 	.long	.LFB26
 	.long	.LFE26
 	.long	.LFB27
 	.long	.LFE27
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

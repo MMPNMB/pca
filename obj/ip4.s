@@ -11,7 +11,7 @@
 	.globl	ip4_set_default_multicast_netif
 	.type	ip4_set_default_multicast_netif, @function
 ip4_set_default_multicast_netif:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/ipv4/ip4.c"
 	.loc 1 114 0
 	.cfi_startproc
@@ -32,7 +32,7 @@ ip4_set_default_multicast_netif:
 	.loc 1 116 0
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	ip4_set_default_multicast_netif, .-ip4_set_default_multicast_netif
 	.section	.text.unlikely.ip4_set_default_multicast_netif
 .LCOLDE0:
@@ -45,7 +45,7 @@ ip4_set_default_multicast_netif:
 	.globl	ip4_route
 	.type	ip4_route, @function
 ip4_route:
-.LFB18:
+.LFB24:
 	.loc 1 149 0
 	.cfi_startproc
 .LVL1:
@@ -140,7 +140,7 @@ ip4_route:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	ip4_route, .-ip4_route
 	.section	.text.unlikely.ip4_route
 .LCOLDE1:
@@ -153,7 +153,7 @@ ip4_route:
 	.globl	ip4_input
 	.type	ip4_input, @function
 ip4_input:
-.LFB19:
+.LFB25:
 	.loc 1 371 0
 	.cfi_startproc
 .LVL8:
@@ -552,7 +552,7 @@ ip4_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	ip4_input, .-ip4_input
 	.section	.text.unlikely.ip4_input
 .LCOLDE2:
@@ -565,7 +565,7 @@ ip4_input:
 	.globl	ip4_output_if_opt_src
 	.type	ip4_output_if_opt_src, @function
 ip4_output_if_opt_src:
-.LFB23:
+.LFB29:
 	.loc 1 797 0
 	.cfi_startproc
 .LVL50:
@@ -910,7 +910,7 @@ ip4_output_if_opt_src:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	ip4_output_if_opt_src, .-ip4_output_if_opt_src
 	.section	.text.unlikely.ip4_output_if_opt_src
 .LCOLDE3:
@@ -923,7 +923,7 @@ ip4_output_if_opt_src:
 	.globl	ip4_output_if_opt
 	.type	ip4_output_if_opt, @function
 ip4_output_if_opt:
-.LFB21:
+.LFB27:
 	.loc 1 759 0
 	.cfi_startproc
 .LVL94:
@@ -1007,7 +1007,7 @@ ip4_output_if_opt:
 	jmp	ip4_output_if_opt_src
 .LVL106:
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	ip4_output_if_opt, .-ip4_output_if_opt
 	.section	.text.unlikely.ip4_output_if_opt
 .LCOLDE4:
@@ -1020,7 +1020,7 @@ ip4_output_if_opt:
 	.globl	ip4_output_if
 	.type	ip4_output_if, @function
 ip4_output_if:
-.LFB20:
+.LFB26:
 	.loc 1 744 0
 	.cfi_startproc
 .LVL107:
@@ -1051,7 +1051,7 @@ ip4_output_if:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	ip4_output_if, .-ip4_output_if
 	.section	.text.unlikely.ip4_output_if
 .LCOLDE5:
@@ -1064,7 +1064,7 @@ ip4_output_if:
 	.globl	ip4_output_if_src
 	.type	ip4_output_if_src, @function
 ip4_output_if_src:
-.LFB22:
+.LFB28:
 	.loc 1 784 0
 	.cfi_startproc
 .LVL109:
@@ -1095,7 +1095,7 @@ ip4_output_if_src:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	ip4_output_if_src, .-ip4_output_if_src
 	.section	.text.unlikely.ip4_output_if_src
 .LCOLDE6:
@@ -1108,7 +1108,7 @@ ip4_output_if_src:
 	.globl	ip4_output
 	.type	ip4_output, @function
 ip4_output:
-.LFB24:
+.LFB30:
 	.loc 1 970 0
 	.cfi_startproc
 .LVL111:
@@ -1171,7 +1171,7 @@ ip4_output:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	ip4_output, .-ip4_output
 	.section	.text.unlikely.ip4_output
 .LCOLDE7:
@@ -2003,8 +2003,8 @@ ip_id:
 	.long	.LASF168
 	.byte	0x1
 	.byte	0x71
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x679
@@ -2019,8 +2019,8 @@ ip_id:
 	.byte	0
 	.uleb128 0x1b
 	.long	0x62e
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6b8
@@ -2049,8 +2049,8 @@ ip_id:
 	.byte	0x1
 	.value	0x172
 	.long	0xd2
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x82e
@@ -2192,8 +2192,8 @@ ip_id:
 	.byte	0x1
 	.value	0x31a
 	.long	0xd2
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x985
@@ -2340,8 +2340,8 @@ ip_id:
 	.byte	0x1
 	.value	0x2f4
 	.long	0xd2
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa47
@@ -2414,8 +2414,8 @@ ip_id:
 	.byte	0x1
 	.value	0x2e5
 	.long	0xd2
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xad2
@@ -2484,8 +2484,8 @@ ip_id:
 	.byte	0x1
 	.value	0x30d
 	.long	0xd2
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb5d
@@ -2554,8 +2554,8 @@ ip_id:
 	.byte	0x1
 	.value	0x3c8
 	.long	0xd2
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbf2
@@ -4016,22 +4016,22 @@ ip_id:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
 	.long	.LFB23
 	.long	.LFE23-.LFB23
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB24
 	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -4062,22 +4062,22 @@ ip_id:
 	.long	.LBE14
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
 	.long	.LFB23
 	.long	.LFE23
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB24
 	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB30
+	.long	.LFE30
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

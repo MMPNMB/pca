@@ -10,7 +10,7 @@
 	.section	.text.netifapi_do_netif_add
 	.type	netifapi_do_netif_add, @function
 netifapi_do_netif_add:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/api/netifapi.c"
 	.loc 1 59 0
 	.cfi_startproc
@@ -47,7 +47,7 @@ netifapi_do_netif_add:
 	.loc 1 77 0
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	netifapi_do_netif_add, .-netifapi_do_netif_add
 	.section	.text.unlikely.netifapi_do_netif_add
 .LCOLDE0:
@@ -59,7 +59,7 @@ netifapi_do_netif_add:
 .LHOTB1:
 	.type	netifapi_do_netif_set_addr, @function
 netifapi_do_netif_set_addr:
-.LFB18:
+.LFB24:
 	.loc 1 85 0
 	.cfi_startproc
 .LVL3:
@@ -86,7 +86,7 @@ netifapi_do_netif_set_addr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	netifapi_do_netif_set_addr, .-netifapi_do_netif_set_addr
 	.section	.text.unlikely.netifapi_do_netif_set_addr
 .LCOLDE1:
@@ -98,7 +98,7 @@ netifapi_do_netif_set_addr:
 .LHOTB2:
 	.type	netifapi_do_netif_common, @function
 netifapi_do_netif_common:
-.LFB19:
+.LFB25:
 	.loc 1 104 0
 	.cfi_startproc
 .LVL6:
@@ -147,7 +147,7 @@ netifapi_do_netif_common:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	netifapi_do_netif_common, .-netifapi_do_netif_common
 	.section	.text.unlikely.netifapi_do_netif_common
 .LCOLDE2:
@@ -160,7 +160,7 @@ netifapi_do_netif_common:
 	.globl	netifapi_netif_add
 	.type	netifapi_netif_add, @function
 netifapi_netif_add:
-.LFB20:
+.LFB26:
 	.loc 1 130 0
 	.cfi_startproc
 .LVL12:
@@ -234,7 +234,7 @@ netifapi_netif_add:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	netifapi_netif_add, .-netifapi_netif_add
 	.section	.text.unlikely.netifapi_netif_add
 .LCOLDE3:
@@ -247,7 +247,7 @@ netifapi_netif_add:
 	.globl	netifapi_netif_set_addr
 	.type	netifapi_netif_set_addr, @function
 netifapi_netif_set_addr:
-.LFB21:
+.LFB27:
 	.loc 1 174 0
 	.cfi_startproc
 .LVL19:
@@ -312,7 +312,7 @@ netifapi_netif_set_addr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	netifapi_netif_set_addr, .-netifapi_netif_set_addr
 	.section	.text.unlikely.netifapi_netif_set_addr
 .LCOLDE4:
@@ -325,7 +325,7 @@ netifapi_netif_set_addr:
 	.globl	netifapi_netif_common
 	.type	netifapi_netif_common, @function
 netifapi_netif_common:
-.LFB22:
+.LFB28:
 	.loc 1 208 0
 	.cfi_startproc
 .LVL26:
@@ -366,7 +366,7 @@ netifapi_netif_common:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	netifapi_netif_common, .-netifapi_netif_common
 	.section	.text.unlikely.netifapi_netif_common
 .LCOLDE5:
@@ -1060,8 +1060,8 @@ netifapi_netif_common:
 	.byte	0x1
 	.byte	0x3a
 	.long	0xc7
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x5a2
@@ -1088,8 +1088,8 @@ netifapi_netif_common:
 	.byte	0x1
 	.byte	0x54
 	.long	0xc7
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x5e0
@@ -1113,8 +1113,8 @@ netifapi_netif_common:
 	.byte	0
 	.uleb128 0x21
 	.long	0x539
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x628
@@ -1143,8 +1143,8 @@ netifapi_netif_common:
 	.byte	0x1
 	.byte	0x7d
 	.long	0xc7
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6d5
@@ -1224,8 +1224,8 @@ netifapi_netif_common:
 	.byte	0x1
 	.byte	0xaa
 	.long	0xc7
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x758
@@ -1281,8 +1281,8 @@ netifapi_netif_common:
 	.byte	0x1
 	.byte	0xce
 	.long	0xc7
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7cb
@@ -1996,7 +1996,7 @@ netifapi_netif_common:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL2-1
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2008,7 +2008,7 @@ netifapi_netif_common:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL5-1
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2021,7 +2021,7 @@ netifapi_netif_common:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL10
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2042,7 +2042,7 @@ netifapi_netif_common:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL11-1
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2107,7 +2107,7 @@ netifapi_netif_common:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL18
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2159,7 +2159,7 @@ netifapi_netif_common:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL25
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2170,7 +2170,7 @@ netifapi_netif_common:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL28
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2183,34 +2183,34 @@ netifapi_netif_common:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB28
+	.long	.LFE28
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

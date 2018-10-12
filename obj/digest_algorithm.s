@@ -1884,7 +1884,7 @@ SHA512_Final:
 .LHOTB11:
 	.type	SHA256_Update.part.0, @function
 SHA256_Update.part.0:
-.LFB56:
+.LFB62:
 	.loc 1 404 0
 	.cfi_startproc
 .LVL195:
@@ -2039,7 +2039,7 @@ SHA256_Update.part.0:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE56:
+.LFE62:
 	.size	SHA256_Update.part.0, .-SHA256_Update.part.0
 	.section	.text.unlikely.SHA256_Update.part.0
 .LCOLDE11:
@@ -2305,7 +2305,7 @@ os_htole32:
 	.globl	os_be32toh
 	.type	os_be32toh, @function
 os_be32toh:
-.LFB61:
+.LFB67:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2318,7 +2318,7 @@ os_be32toh:
 	.cfi_def_cfa 4, 4
 	jmp	reverse_32bit
 	.cfi_endproc
-.LFE61:
+.LFE67:
 	.size	os_be32toh, .-os_be32toh
 	.section	.text.unlikely.os_be32toh
 .LCOLDE14:
@@ -2364,7 +2364,7 @@ os_htobe32:
 	.globl	os_htobe64
 	.type	os_htobe64, @function
 os_htobe64:
-.LFB59:
+.LFB65:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2378,7 +2378,7 @@ os_htobe64:
 	.cfi_def_cfa 4, 4
 	jmp	reverse_64bit
 	.cfi_endproc
-.LFE59:
+.LFE65:
 	.size	os_htobe64, .-os_htobe64
 	.section	.text.unlikely.os_htobe64
 .LCOLDE16:
@@ -2434,7 +2434,7 @@ os_be64toh:
 	.globl	digest_md5_init
 	.type	digest_md5_init, @function
 digest_md5_init:
-.LFB38:
+.LFB44:
 	.file 2 "utility/digest_algorithm/digest_algorithm.c"
 	.loc 2 14 0
 	.cfi_startproc
@@ -2469,7 +2469,7 @@ digest_md5_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	digest_md5_init, .-digest_md5_init
 	.section	.text.unlikely.digest_md5_init
 .LCOLDE18:
@@ -2482,7 +2482,7 @@ digest_md5_init:
 	.globl	digest_md5_update
 	.type	digest_md5_update, @function
 digest_md5_update:
-.LFB39:
+.LFB45:
 	.loc 2 25 0
 	.cfi_startproc
 .LVL262:
@@ -2505,7 +2505,7 @@ digest_md5_update:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	digest_md5_update, .-digest_md5_update
 	.section	.text.unlikely.digest_md5_update
 .LCOLDE19:
@@ -2518,7 +2518,7 @@ digest_md5_update:
 	.globl	digest_md5_final
 	.type	digest_md5_final, @function
 digest_md5_final:
-.LFB40:
+.LFB46:
 	.loc 2 31 0
 	.cfi_startproc
 .LVL264:
@@ -2550,7 +2550,7 @@ digest_md5_final:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE40:
+.LFE46:
 	.size	digest_md5_final, .-digest_md5_final
 	.section	.text.unlikely.digest_md5_final
 .LCOLDE20:
@@ -2563,7 +2563,7 @@ digest_md5_final:
 	.globl	digest_md5
 	.type	digest_md5, @function
 digest_md5:
-.LFB41:
+.LFB47:
 	.loc 2 38 0
 	.cfi_startproc
 .LVL267:
@@ -2623,7 +2623,7 @@ digest_md5:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE41:
+.LFE47:
 	.size	digest_md5, .-digest_md5
 	.section	.text.unlikely.digest_md5
 .LCOLDE21:
@@ -2639,7 +2639,7 @@ digest_md5:
 	.globl	digest_md5_file
 	.type	digest_md5_file, @function
 digest_md5_file:
-.LFB42:
+.LFB48:
 	.loc 2 52 0
 	.cfi_startproc
 .LVL276:
@@ -2807,7 +2807,7 @@ digest_md5_file:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	digest_md5_file, .-digest_md5_file
 	.section	.text.unlikely.digest_md5_file
 .LCOLDE23:
@@ -2820,7 +2820,7 @@ digest_md5_file:
 	.globl	digest_sha256_init
 	.type	digest_sha256_init, @function
 digest_sha256_init:
-.LFB43:
+.LFB49:
 	.loc 2 90 0
 	.cfi_startproc
 	pushl	%ebp
@@ -2857,7 +2857,7 @@ digest_sha256_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	digest_sha256_init, .-digest_sha256_init
 	.section	.text.unlikely.digest_sha256_init
 .LCOLDE24:
@@ -2870,7 +2870,7 @@ digest_sha256_init:
 	.globl	digest_sha256_update
 	.type	digest_sha256_update, @function
 digest_sha256_update:
-.LFB44:
+.LFB50:
 	.loc 2 102 0
 	.cfi_startproc
 .LVL302:
@@ -2907,7 +2907,7 @@ digest_sha256_update:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	digest_sha256_update, .-digest_sha256_update
 	.section	.text.unlikely.digest_sha256_update
 .LCOLDE25:
@@ -2920,7 +2920,7 @@ digest_sha256_update:
 	.globl	digest_sha256_final
 	.type	digest_sha256_final, @function
 digest_sha256_final:
-.LFB45:
+.LFB51:
 	.loc 2 108 0
 	.cfi_startproc
 .LVL306:
@@ -2953,7 +2953,7 @@ digest_sha256_final:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	digest_sha256_final, .-digest_sha256_final
 	.section	.text.unlikely.digest_sha256_final
 .LCOLDE26:
@@ -2966,7 +2966,7 @@ digest_sha256_final:
 	.globl	digest_sha256
 	.type	digest_sha256, @function
 digest_sha256:
-.LFB46:
+.LFB52:
 	.loc 2 115 0
 	.cfi_startproc
 .LVL309:
@@ -3049,7 +3049,7 @@ digest_sha256:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE46:
+.LFE52:
 	.size	digest_sha256, .-digest_sha256
 	.section	.text.unlikely.digest_sha256
 .LCOLDE27:
@@ -3062,7 +3062,7 @@ digest_sha256:
 	.globl	digest_sha384_init
 	.type	digest_sha384_init, @function
 digest_sha384_init:
-.LFB47:
+.LFB53:
 	.loc 2 132 0
 	.cfi_startproc
 	pushl	%ebp
@@ -3099,7 +3099,7 @@ digest_sha384_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE47:
+.LFE53:
 	.size	digest_sha384_init, .-digest_sha384_init
 	.section	.text.unlikely.digest_sha384_init
 .LCOLDE28:
@@ -3112,7 +3112,7 @@ digest_sha384_init:
 	.globl	digest_sha384_update
 	.type	digest_sha384_update, @function
 digest_sha384_update:
-.LFB63:
+.LFB69:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -3129,7 +3129,7 @@ digest_sha384_update:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE63:
+.LFE69:
 	.size	digest_sha384_update, .-digest_sha384_update
 	.section	.text.unlikely.digest_sha384_update
 .LCOLDE29:
@@ -3142,7 +3142,7 @@ digest_sha384_update:
 	.globl	digest_sha384_final
 	.type	digest_sha384_final, @function
 digest_sha384_final:
-.LFB49:
+.LFB55:
 	.loc 2 150 0
 	.cfi_startproc
 .LVL322:
@@ -3176,7 +3176,7 @@ digest_sha384_final:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE49:
+.LFE55:
 	.size	digest_sha384_final, .-digest_sha384_final
 	.section	.text.unlikely.digest_sha384_final
 .LCOLDE30:
@@ -3189,7 +3189,7 @@ digest_sha384_final:
 	.globl	digest_sha384
 	.type	digest_sha384, @function
 digest_sha384:
-.LFB50:
+.LFB56:
 	.loc 2 157 0
 	.cfi_startproc
 .LVL325:
@@ -3250,7 +3250,7 @@ digest_sha384:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE50:
+.LFE56:
 	.size	digest_sha384, .-digest_sha384
 	.section	.text.unlikely.digest_sha384
 .LCOLDE31:
@@ -3263,7 +3263,7 @@ digest_sha384:
 	.globl	digest_sha512_init
 	.type	digest_sha512_init, @function
 digest_sha512_init:
-.LFB51:
+.LFB57:
 	.loc 2 172 0
 	.cfi_startproc
 	pushl	%ebp
@@ -3300,7 +3300,7 @@ digest_sha512_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE51:
+.LFE57:
 	.size	digest_sha512_init, .-digest_sha512_init
 	.section	.text.unlikely.digest_sha512_init
 .LCOLDE32:
@@ -3313,7 +3313,7 @@ digest_sha512_init:
 	.globl	digest_sha512_update
 	.type	digest_sha512_update, @function
 digest_sha512_update:
-.LFB52:
+.LFB58:
 	.loc 2 184 0
 	.cfi_startproc
 .LVL338:
@@ -3335,7 +3335,7 @@ digest_sha512_update:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE52:
+.LFE58:
 	.size	digest_sha512_update, .-digest_sha512_update
 	.section	.text.unlikely.digest_sha512_update
 .LCOLDE33:
@@ -3348,7 +3348,7 @@ digest_sha512_update:
 	.globl	digest_sha512_final
 	.type	digest_sha512_final, @function
 digest_sha512_final:
-.LFB53:
+.LFB59:
 	.loc 2 190 0
 	.cfi_startproc
 .LVL340:
@@ -3381,7 +3381,7 @@ digest_sha512_final:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE53:
+.LFE59:
 	.size	digest_sha512_final, .-digest_sha512_final
 	.section	.text.unlikely.digest_sha512_final
 .LCOLDE34:
@@ -3394,7 +3394,7 @@ digest_sha512_final:
 	.globl	digest_sha512
 	.type	digest_sha512, @function
 digest_sha512:
-.LFB54:
+.LFB60:
 	.loc 2 197 0
 	.cfi_startproc
 .LVL343:
@@ -3451,7 +3451,7 @@ digest_sha512:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE54:
+.LFE60:
 	.size	digest_sha512, .-digest_sha512
 	.section	.text.unlikely.digest_sha512
 .LCOLDE35:
@@ -3464,7 +3464,7 @@ digest_sha512:
 	.globl	digest_hmac
 	.type	digest_hmac, @function
 digest_hmac:
-.LFB55:
+.LFB61:
 	.loc 2 214 0
 	.cfi_startproc
 .LVL352:
@@ -3690,7 +3690,7 @@ digest_hmac:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE55:
+.LFE61:
 	.size	digest_hmac, .-digest_hmac
 	.section	.text.unlikely.digest_hmac
 .LCOLDE36:
@@ -5172,8 +5172,8 @@ K256:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x292
-	.long	.LFB56
-	.long	.LFE56-.LFB56
+	.long	.LFB62
+	.long	.LFE62-.LFB62
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xadd
@@ -5378,8 +5378,8 @@ K256:
 	.byte	0x2
 	.byte	0xd
 	.long	0xa1
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc4a
@@ -5401,8 +5401,8 @@ K256:
 	.long	0x162
 	.uleb128 0x2b
 	.long	0x397
-	.long	.LFB39
-	.long	.LFE39-.LFB39
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc85
@@ -5430,8 +5430,8 @@ K256:
 	.byte	0x2
 	.byte	0x1e
 	.long	0x7e
-	.long	.LFB40
-	.long	.LFE40-.LFB40
+	.long	.LFB46
+	.long	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xccd
@@ -5463,8 +5463,8 @@ K256:
 	.byte	0x2
 	.byte	0x25
 	.long	0x7e
-	.long	.LFB41
-	.long	.LFE41-.LFB41
+	.long	.LFB47
+	.long	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd4d
@@ -5519,8 +5519,8 @@ K256:
 	.byte	0x2
 	.byte	0x33
 	.long	0x7e
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe3d
@@ -5633,8 +5633,8 @@ K256:
 	.byte	0x2
 	.byte	0x59
 	.long	0xa1
-	.long	.LFB43
-	.long	.LFE43-.LFB43
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xea0
@@ -5663,8 +5663,8 @@ K256:
 	.byte	0x2
 	.byte	0x65
 	.long	0x7e
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB50
+	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf42
@@ -5747,8 +5747,8 @@ K256:
 	.byte	0x2
 	.byte	0x6b
 	.long	0x7e
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf9c
@@ -5795,8 +5795,8 @@ K256:
 	.byte	0x2
 	.byte	0x72
 	.long	0x7e
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1090
@@ -5919,8 +5919,8 @@ K256:
 	.byte	0x2
 	.byte	0x83
 	.long	0xa1
-	.long	.LFB47
-	.long	.LFE47-.LFB47
+	.long	.LFB53
+	.long	.LFE53-.LFB53
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10d2
@@ -5949,8 +5949,8 @@ K256:
 	.byte	0x2
 	.byte	0x95
 	.long	0x7e
-	.long	.LFB49
-	.long	.LFE49-.LFB49
+	.long	.LFB55
+	.long	.LFE55-.LFB55
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x112c
@@ -5997,8 +5997,8 @@ K256:
 	.byte	0x2
 	.byte	0x9c
 	.long	0x7e
-	.long	.LFB50
-	.long	.LFE50-.LFB50
+	.long	.LFB56
+	.long	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x120d
@@ -6114,8 +6114,8 @@ K256:
 	.byte	0x2
 	.byte	0xab
 	.long	0xa1
-	.long	.LFB51
-	.long	.LFE51-.LFB51
+	.long	.LFB57
+	.long	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x124f
@@ -6164,8 +6164,8 @@ K256:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x124f
-	.long	.LFB52
-	.long	.LFE52-.LFB52
+	.long	.LFB58
+	.long	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x12cc
@@ -6215,8 +6215,8 @@ K256:
 	.byte	0x2
 	.byte	0xbd
 	.long	0x7e
-	.long	.LFB53
-	.long	.LFE53-.LFB53
+	.long	.LFB59
+	.long	.LFE59-.LFB59
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1326
@@ -6263,8 +6263,8 @@ K256:
 	.byte	0x2
 	.byte	0xc4
 	.long	0x7e
-	.long	.LFB54
-	.long	.LFE54-.LFB54
+	.long	.LFB60
+	.long	.LFE60-.LFB60
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x13dc
@@ -6441,8 +6441,8 @@ K256:
 	.byte	0x2
 	.byte	0xd3
 	.long	0x7e
-	.long	.LFB55
-	.long	.LFE55-.LFB55
+	.long	.LFB61
+	.long	.LFE61-.LFB61
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x16d4
@@ -9752,7 +9752,7 @@ K256:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL222
-	.long	.LFE56
+	.long	.LFE62
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -10349,7 +10349,7 @@ K256:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL301
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -10421,7 +10421,7 @@ K256:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL321
-	.long	.LFE47
+	.long	.LFE53
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -10470,7 +10470,7 @@ K256:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL337
-	.long	.LFE51
+	.long	.LFE57
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -10738,8 +10738,8 @@ K256:
 	.long	.LFE20-.LFB20
 	.long	.LFB17
 	.long	.LFE17-.LFB17
-	.long	.LFB56
-	.long	.LFE56-.LFB56
+	.long	.LFB62
+	.long	.LFE62-.LFB62
 	.long	.LFB15
 	.long	.LFE15-.LFB15
 	.long	.LFB3
@@ -10748,18 +10748,6 @@ K256:
 	.long	.LFE6-.LFB6
 	.long	.LFB8
 	.long	.LFE8-.LFB8
-	.long	.LFB38
-	.long	.LFE38-.LFB38
-	.long	.LFB39
-	.long	.LFE39-.LFB39
-	.long	.LFB40
-	.long	.LFE40-.LFB40
-	.long	.LFB41
-	.long	.LFE41-.LFB41
-	.long	.LFB42
-	.long	.LFE42-.LFB42
-	.long	.LFB43
-	.long	.LFE43-.LFB43
 	.long	.LFB44
 	.long	.LFE44-.LFB44
 	.long	.LFB45
@@ -10768,6 +10756,8 @@ K256:
 	.long	.LFE46-.LFB46
 	.long	.LFB47
 	.long	.LFE47-.LFB47
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.long	.LFB49
 	.long	.LFE49-.LFB49
 	.long	.LFB50
@@ -10778,10 +10768,20 @@ K256:
 	.long	.LFE52-.LFB52
 	.long	.LFB53
 	.long	.LFE53-.LFB53
-	.long	.LFB54
-	.long	.LFE54-.LFB54
 	.long	.LFB55
 	.long	.LFE55-.LFB55
+	.long	.LFB56
+	.long	.LFE56-.LFB56
+	.long	.LFB57
+	.long	.LFE57-.LFB57
+	.long	.LFB58
+	.long	.LFE58-.LFB58
+	.long	.LFB59
+	.long	.LFE59-.LFB59
+	.long	.LFB60
+	.long	.LFE60-.LFB60
+	.long	.LFB61
+	.long	.LFE61-.LFB61
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -10856,8 +10856,8 @@ K256:
 	.long	.LFE20
 	.long	.LFB17
 	.long	.LFE17
-	.long	.LFB56
-	.long	.LFE56
+	.long	.LFB62
+	.long	.LFE62
 	.long	.LFB15
 	.long	.LFE15
 	.long	.LFB3
@@ -10866,18 +10866,6 @@ K256:
 	.long	.LFE6
 	.long	.LFB8
 	.long	.LFE8
-	.long	.LFB38
-	.long	.LFE38
-	.long	.LFB39
-	.long	.LFE39
-	.long	.LFB40
-	.long	.LFE40
-	.long	.LFB41
-	.long	.LFE41
-	.long	.LFB42
-	.long	.LFE42
-	.long	.LFB43
-	.long	.LFE43
 	.long	.LFB44
 	.long	.LFE44
 	.long	.LFB45
@@ -10886,6 +10874,8 @@ K256:
 	.long	.LFE46
 	.long	.LFB47
 	.long	.LFE47
+	.long	.LFB48
+	.long	.LFE48
 	.long	.LFB49
 	.long	.LFE49
 	.long	.LFB50
@@ -10896,10 +10886,20 @@ K256:
 	.long	.LFE52
 	.long	.LFB53
 	.long	.LFE53
-	.long	.LFB54
-	.long	.LFE54
 	.long	.LFB55
 	.long	.LFE55
+	.long	.LFB56
+	.long	.LFE56
+	.long	.LFB57
+	.long	.LFE57
+	.long	.LFB58
+	.long	.LFE58
+	.long	.LFB59
+	.long	.LFE59
+	.long	.LFB60
+	.long	.LFE60
+	.long	.LFB61
+	.long	.LFE61
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

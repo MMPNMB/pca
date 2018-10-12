@@ -3,7 +3,7 @@
 .Ltext0:
 	.section	.rodata.str1.1,"aMS",@progbits,1
 .LC0:
-	.string	"trace config close!!!\r"
+	.string	"trace should have cli to control!!!\r"
 	.section	.text.unlikely.trace_start,"ax",@progbits
 .LCOLDB1:
 	.section	.text.trace_start,"ax",@progbits
@@ -14,9 +14,9 @@
 	.globl	trace_start
 	.type	trace_start, @function
 trace_start:
-.LFB29:
+.LFB35:
 	.file 1 "platform/mcu/moc108/aos/trace_impl.c"
-	.loc 1 221 0
+	.loc 1 227 0
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -24,18 +24,18 @@ trace_start:
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	subl	$20, %esp
-	.loc 1 222 0
+	.loc 1 228 0
 	pushl	$.LC0
 	call	puts
 .LVL0:
-	.loc 1 223 0
+	.loc 1 229 0
 	addl	$16, %esp
 	leave
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	trace_start, .-trace_start
 	.section	.text.unlikely.trace_start
 .LCOLDE1:
@@ -128,9 +128,9 @@ trace_start:
 	.uleb128 0x4
 	.long	.LASF18
 	.byte	0x1
-	.byte	0xdc
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.byte	0xe2
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb4
@@ -272,14 +272,14 @@ trace_start:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB29
-	.long	.LFE29
+	.long	.LFB35
+	.long	.LFE35
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

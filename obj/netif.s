@@ -10,7 +10,7 @@
 	.section	.text.netif_loopif_init
 	.type	netif_loopif_init, @function
 netif_loopif_init:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/netif.c"
 	.loc 1 141 0
 	.cfi_startproc
@@ -35,7 +35,7 @@ netif_loopif_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	netif_loopif_init, .-netif_loopif_init
 	.section	.text.unlikely.netif_loopif_init
 .LCOLDE0:
@@ -48,7 +48,7 @@ netif_loopif_init:
 	.globl	netif_poll
 	.type	netif_poll, @function
 netif_poll:
-.LFB36:
+.LFB42:
 	.loc 1 906 0
 	.cfi_startproc
 .LVL1:
@@ -156,7 +156,7 @@ netif_poll:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	netif_poll, .-netif_poll
 	.section	.text.unlikely.netif_poll
 .LCOLDE1:
@@ -168,7 +168,7 @@ netif_poll:
 .LHOTB2:
 	.type	netif_issue_reports.part.0, @function
 netif_issue_reports.part.0:
-.LFB37:
+.LFB43:
 	.loc 1 642 0
 	.cfi_startproc
 .LVL13:
@@ -216,7 +216,7 @@ netif_issue_reports.part.0:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	netif_issue_reports.part.0, .-netif_issue_reports.part.0
 	.section	.text.unlikely.netif_issue_reports.part.0
 .LCOLDE2:
@@ -229,7 +229,7 @@ netif_issue_reports.part.0:
 	.globl	netif_input
 	.type	netif_input, @function
 netif_input:
-.LFB19:
+.LFB25:
 	.loc 1 204 0
 	.cfi_startproc
 .LVL18:
@@ -265,7 +265,7 @@ netif_input:
 	jmp	ip4_input
 .LVL20:
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	netif_input, .-netif_input
 	.section	.text.unlikely.netif_input
 .LCOLDE3:
@@ -278,7 +278,7 @@ netif_input:
 	.globl	netif_find
 	.type	netif_find, @function
 netif_find:
-.LFB23:
+.LFB29:
 	.loc 1 473 0
 	.cfi_startproc
 .LVL21:
@@ -335,7 +335,7 @@ netif_find:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	netif_find, .-netif_find
 	.section	.text.unlikely.netif_find
 .LCOLDE4:
@@ -348,7 +348,7 @@ netif_find:
 	.globl	netif_set_ipaddr
 	.type	netif_set_ipaddr, @function
 netif_set_ipaddr:
-.LFB24:
+.LFB30:
 	.loc 1 508 0
 	.cfi_startproc
 .LVL27:
@@ -466,7 +466,7 @@ netif_set_ipaddr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	netif_set_ipaddr, .-netif_set_ipaddr
 	.section	.text.unlikely.netif_set_ipaddr
 .LCOLDE5:
@@ -479,7 +479,7 @@ netif_set_ipaddr:
 	.globl	netif_set_addr
 	.type	netif_set_addr, @function
 netif_set_addr:
-.LFB21:
+.LFB27:
 	.loc 1 354 0
 	.cfi_startproc
 .LVL35:
@@ -615,7 +615,7 @@ netif_set_addr:
 .LBE52:
 .LBE53:
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	netif_set_addr, .-netif_set_addr
 	.section	.text.unlikely.netif_set_addr
 .LCOLDE6:
@@ -628,7 +628,7 @@ netif_set_addr:
 	.globl	netif_add
 	.type	netif_add, @function
 netif_add:
-.LFB20:
+.LFB26:
 	.loc 1 246 0
 	.cfi_startproc
 .LVL49:
@@ -738,7 +738,7 @@ netif_add:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	netif_add, .-netif_add
 	.section	.text.unlikely.netif_add
 .LCOLDE7:
@@ -751,7 +751,7 @@ netif_add:
 	.globl	netif_set_gw
 	.type	netif_set_gw, @function
 netif_set_gw:
-.LFB25:
+.LFB31:
 	.loc 1 558 0
 	.cfi_startproc
 .LVL53:
@@ -778,7 +778,7 @@ netif_set_gw:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	netif_set_gw, .-netif_set_gw
 	.section	.text.unlikely.netif_set_gw
 .LCOLDE8:
@@ -791,7 +791,7 @@ netif_set_gw:
 	.globl	netif_set_netmask
 	.type	netif_set_netmask, @function
 netif_set_netmask:
-.LFB26:
+.LFB32:
 	.loc 1 581 0
 	.cfi_startproc
 .LVL54:
@@ -818,7 +818,7 @@ netif_set_netmask:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	netif_set_netmask, .-netif_set_netmask
 	.section	.text.unlikely.netif_set_netmask
 .LCOLDE9:
@@ -831,7 +831,7 @@ netif_set_netmask:
 	.globl	netif_set_default
 	.type	netif_set_default, @function
 netif_set_default:
-.LFB27:
+.LFB33:
 	.loc 1 605 0
 	.cfi_startproc
 .LVL55:
@@ -851,7 +851,7 @@ netif_set_default:
 	.loc 1 616 0
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	netif_set_default, .-netif_set_default
 	.section	.text.unlikely.netif_set_default
 .LCOLDE10:
@@ -864,7 +864,7 @@ netif_set_default:
 	.globl	netif_set_up
 	.type	netif_set_up, @function
 netif_set_up:
-.LFB28:
+.LFB34:
 	.loc 1 625 0
 	.cfi_startproc
 .LVL56:
@@ -940,7 +940,7 @@ netif_set_up:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	netif_set_up, .-netif_set_up
 	.section	.text.unlikely.netif_set_up
 .LCOLDE11:
@@ -953,7 +953,7 @@ netif_set_up:
 	.globl	netif_set_down
 	.type	netif_set_down, @function
 netif_set_down:
-.LFB30:
+.LFB36:
 	.loc 1 683 0
 	.cfi_startproc
 .LVL62:
@@ -1022,7 +1022,7 @@ netif_set_down:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	netif_set_down, .-netif_set_down
 	.section	.text.unlikely.netif_set_down
 .LCOLDE12:
@@ -1035,7 +1035,7 @@ netif_set_down:
 	.globl	netif_remove
 	.type	netif_remove, @function
 netif_remove:
-.LFB22:
+.LFB28:
 	.loc 1 378 0
 	.cfi_startproc
 .LVL67:
@@ -1150,7 +1150,7 @@ netif_remove:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	netif_remove, .-netif_remove
 	.section	.text.unlikely.netif_remove
 .LCOLDE13:
@@ -1163,7 +1163,7 @@ netif_remove:
 	.globl	netif_set_status_callback
 	.type	netif_set_status_callback, @function
 netif_set_status_callback:
-.LFB31:
+.LFB37:
 	.loc 1 709 0
 	.cfi_startproc
 .LVL78:
@@ -1187,7 +1187,7 @@ netif_set_status_callback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	netif_set_status_callback, .-netif_set_status_callback
 	.section	.text.unlikely.netif_set_status_callback
 .LCOLDE14:
@@ -1200,7 +1200,7 @@ netif_set_status_callback:
 	.globl	netif_set_link_up
 	.type	netif_set_link_up, @function
 netif_set_link_up:
-.LFB32:
+.LFB38:
 	.loc 1 736 0
 	.cfi_startproc
 .LVL79:
@@ -1263,7 +1263,7 @@ netif_set_link_up:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	netif_set_link_up, .-netif_set_link_up
 	.section	.text.unlikely.netif_set_link_up
 .LCOLDE15:
@@ -1276,7 +1276,7 @@ netif_set_link_up:
 	.globl	netif_init
 	.type	netif_init, @function
 netif_init:
-.LFB18:
+.LFB24:
 	.loc 1 164 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1332,7 +1332,7 @@ netif_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	netif_init, .-netif_init
 	.section	.text.unlikely.netif_init
 .LCOLDE16:
@@ -1345,7 +1345,7 @@ netif_init:
 	.globl	netif_set_link_down
 	.type	netif_set_link_down, @function
 netif_set_link_down:
-.LFB33:
+.LFB39:
 	.loc 1 761 0
 	.cfi_startproc
 .LVL88:
@@ -1370,7 +1370,7 @@ netif_set_link_down:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	netif_set_link_down, .-netif_set_link_down
 	.section	.text.unlikely.netif_set_link_down
 .LCOLDE17:
@@ -1383,7 +1383,7 @@ netif_set_link_down:
 	.globl	netif_loop_output
 	.type	netif_loop_output, @function
 netif_loop_output:
-.LFB34:
+.LFB40:
 	.loc 1 799 0
 	.cfi_startproc
 .LVL89:
@@ -1531,7 +1531,7 @@ netif_loop_output:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	netif_loop_output, .-netif_loop_output
 	.section	.text.unlikely.netif_loop_output
 .LCOLDE18:
@@ -1543,7 +1543,7 @@ netif_loop_output:
 .LHOTB19:
 	.type	netif_loop_output_ipv4, @function
 netif_loop_output_ipv4:
-.LFB35:
+.LFB41:
 	.loc 1 881 0
 	.cfi_startproc
 .LVL107:
@@ -1560,7 +1560,7 @@ netif_loop_output_ipv4:
 	jmp	netif_loop_output
 .LVL108:
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	netif_loop_output_ipv4, .-netif_loop_output_ipv4
 	.section	.text.unlikely.netif_loop_output_ipv4
 .LCOLDE19:
@@ -2388,8 +2388,8 @@ netif_list:
 	.byte	0x1
 	.byte	0x8c
 	.long	0x119
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x673
@@ -2406,8 +2406,8 @@ netif_list:
 	.long	.LASF117
 	.byte	0x1
 	.value	0x389
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x70a
@@ -2463,8 +2463,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x22
 	.long	0x54f
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x745
@@ -2489,8 +2489,8 @@ netif_list:
 	.byte	0x1
 	.byte	0xcb
 	.long	0x119
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7a2
@@ -2536,8 +2536,8 @@ netif_list:
 	.byte	0x1
 	.value	0x1d8
 	.long	0x315
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7ed
@@ -2564,8 +2564,8 @@ netif_list:
 	.long	.LASF118
 	.byte	0x1
 	.value	0x1fb
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x893
@@ -2636,8 +2636,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x22
 	.long	0x5c0
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9a5
@@ -2741,8 +2741,8 @@ netif_list:
 	.byte	0x1
 	.byte	0xf1
 	.long	0x315
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa32
@@ -2811,8 +2811,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x22
 	.long	0x575
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa56
@@ -2829,8 +2829,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x22
 	.long	0x59a
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa7a
@@ -2847,8 +2847,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x22
 	.long	0x631
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa96
@@ -2860,8 +2860,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x35
 	.long	0x5fd
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xafc
@@ -2907,8 +2907,8 @@ netif_list:
 	.byte	0
 	.uleb128 0x39
 	.long	0x617
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb34
@@ -2932,8 +2932,8 @@ netif_list:
 	.long	.LASF122
 	.byte	0x1
 	.value	0x179
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbc3
@@ -2987,8 +2987,8 @@ netif_list:
 	.long	.LASF124
 	.byte	0x1
 	.value	0x2c4
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbf8
@@ -3013,8 +3013,8 @@ netif_list:
 	.long	.LASF125
 	.byte	0x1
 	.value	0x2df
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc66
@@ -3063,8 +3063,8 @@ netif_list:
 	.long	.LASF126
 	.byte	0x1
 	.byte	0xa3
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcca
@@ -3109,8 +3109,8 @@ netif_list:
 	.long	.LASF130
 	.byte	0x1
 	.value	0x2f8
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcf0
@@ -3128,8 +3128,8 @@ netif_list:
 	.byte	0x1
 	.value	0x31e
 	.long	0x119
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdbd
@@ -3209,8 +3209,8 @@ netif_list:
 	.byte	0x1
 	.value	0x370
 	.long	0x119
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe1d
@@ -4415,7 +4415,7 @@ netif_list:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL17
-	.long	.LFE37
+	.long	.LFE43
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4454,7 +4454,7 @@ netif_list:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL24
-	.long	.LFE23
+	.long	.LFE29
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -4548,7 +4548,7 @@ netif_list:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL46
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x2
 	.byte	0x91
 	.sleb128 12
@@ -4560,7 +4560,7 @@ netif_list:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL47
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
@@ -4769,46 +4769,46 @@ netif_list:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB36
-	.long	.LFE36-.LFB36
-	.long	.LFB37
-	.long	.LFE37-.LFB37
-	.long	.LFB19
-	.long	.LFE19-.LFB19
 	.long	.LFB23
 	.long	.LFE23-.LFB23
-	.long	.LFB24
-	.long	.LFE24-.LFB24
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB42
+	.long	.LFE42-.LFB42
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.long	.LFB25
 	.long	.LFE25-.LFB25
-	.long	.LFB26
-	.long	.LFE26-.LFB26
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.long	.LFB30
 	.long	.LFE30-.LFB30
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.long	.LFB31
 	.long	.LFE31-.LFB31
 	.long	.LFB32
 	.long	.LFE32-.LFB32
-	.long	.LFB18
-	.long	.LFE18-.LFB18
 	.long	.LFB33
 	.long	.LFE33-.LFB33
 	.long	.LFB34
 	.long	.LFE34-.LFB34
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB36
+	.long	.LFE36-.LFB36
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB37
+	.long	.LFE37-.LFB37
+	.long	.LFB38
+	.long	.LFE38-.LFB38
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB39
+	.long	.LFE39-.LFB39
+	.long	.LFB40
+	.long	.LFE40-.LFB40
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -4849,46 +4849,46 @@ netif_list:
 	.long	.LBE80
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB36
-	.long	.LFE36
-	.long	.LFB37
-	.long	.LFE37
-	.long	.LFB19
-	.long	.LFE19
 	.long	.LFB23
 	.long	.LFE23
-	.long	.LFB24
-	.long	.LFE24
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB20
-	.long	.LFE20
+	.long	.LFB42
+	.long	.LFE42
+	.long	.LFB43
+	.long	.LFE43
 	.long	.LFB25
 	.long	.LFE25
-	.long	.LFB26
-	.long	.LFE26
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB28
-	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
 	.long	.LFB30
 	.long	.LFE30
-	.long	.LFB22
-	.long	.LFE22
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB26
+	.long	.LFE26
 	.long	.LFB31
 	.long	.LFE31
 	.long	.LFB32
 	.long	.LFE32
-	.long	.LFB18
-	.long	.LFE18
 	.long	.LFB33
 	.long	.LFE33
 	.long	.LFB34
 	.long	.LFE34
-	.long	.LFB35
-	.long	.LFE35
+	.long	.LFB36
+	.long	.LFE36
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB37
+	.long	.LFE37
+	.long	.LFB38
+	.long	.LFE38
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB39
+	.long	.LFE39
+	.long	.LFB40
+	.long	.LFE40
+	.long	.LFB41
+	.long	.LFE41
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

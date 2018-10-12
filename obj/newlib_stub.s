@@ -11,7 +11,7 @@
 	.globl	_execve_r
 	.type	_execve_r, @function
 _execve_r:
-.LFB44:
+.LFB50:
 	.file 1 "utility/libc/newlib_stub.c"
 	.loc 1 14 0
 	.cfi_startproc
@@ -31,7 +31,7 @@ _execve_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	_execve_r, .-_execve_r
 	.section	.text.unlikely._execve_r
 .LCOLDE0:
@@ -44,7 +44,7 @@ _execve_r:
 	.globl	_fcntl_r
 	.type	_fcntl_r, @function
 _fcntl_r:
-.LFB45:
+.LFB51:
 	.loc 1 20 0
 	.cfi_startproc
 .LVL1:
@@ -63,7 +63,7 @@ _fcntl_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	_fcntl_r, .-_fcntl_r
 	.section	.text.unlikely._fcntl_r
 .LCOLDE1:
@@ -76,7 +76,7 @@ _fcntl_r:
 	.globl	_fork_r
 	.type	_fork_r, @function
 _fork_r:
-.LFB46:
+.LFB52:
 	.loc 1 26 0
 	.cfi_startproc
 .LVL2:
@@ -95,7 +95,7 @@ _fork_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE46:
+.LFE52:
 	.size	_fork_r, .-_fork_r
 	.section	.text.unlikely._fork_r
 .LCOLDE2:
@@ -108,7 +108,7 @@ _fork_r:
 	.globl	_getpid_r
 	.type	_getpid_r, @function
 _getpid_r:
-.LFB47:
+.LFB53:
 	.loc 1 32 0
 	.cfi_startproc
 .LVL3:
@@ -127,7 +127,7 @@ _getpid_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE47:
+.LFE53:
 	.size	_getpid_r, .-_getpid_r
 	.section	.text.unlikely._getpid_r
 .LCOLDE3:
@@ -140,7 +140,7 @@ _getpid_r:
 	.globl	_isatty_r
 	.type	_isatty_r, @function
 _isatty_r:
-.LFB48:
+.LFB54:
 	.loc 1 38 0
 	.cfi_startproc
 .LVL4:
@@ -165,7 +165,7 @@ _isatty_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE48:
+.LFE54:
 	.size	_isatty_r, .-_isatty_r
 	.section	.text.unlikely._isatty_r
 .LCOLDE4:
@@ -178,7 +178,7 @@ _isatty_r:
 	.globl	_kill_r
 	.type	_kill_r, @function
 _kill_r:
-.LFB49:
+.LFB55:
 	.loc 1 48 0
 	.cfi_startproc
 .LVL5:
@@ -197,7 +197,7 @@ _kill_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE49:
+.LFE55:
 	.size	_kill_r, .-_kill_r
 	.section	.text.unlikely._kill_r
 .LCOLDE5:
@@ -210,7 +210,7 @@ _kill_r:
 	.globl	_link_r
 	.type	_link_r, @function
 _link_r:
-.LFB50:
+.LFB56:
 	.loc 1 54 0
 	.cfi_startproc
 .LVL6:
@@ -229,7 +229,7 @@ _link_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE50:
+.LFE56:
 	.size	_link_r, .-_link_r
 	.section	.text.unlikely._link_r
 .LCOLDE6:
@@ -242,7 +242,7 @@ _link_r:
 	.globl	_lseek_r
 	.type	_lseek_r, @function
 _lseek_r:
-.LFB51:
+.LFB57:
 	.loc 1 60 0
 	.cfi_startproc
 .LVL7:
@@ -261,7 +261,7 @@ _lseek_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE51:
+.LFE57:
 	.size	_lseek_r, .-_lseek_r
 	.section	.text.unlikely._lseek_r
 .LCOLDE7:
@@ -274,7 +274,7 @@ _lseek_r:
 	.globl	_mkdir_r
 	.type	_mkdir_r, @function
 _mkdir_r:
-.LFB52:
+.LFB58:
 	.loc 1 66 0
 	.cfi_startproc
 .LVL8:
@@ -293,7 +293,7 @@ _mkdir_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE52:
+.LFE58:
 	.size	_mkdir_r, .-_mkdir_r
 	.section	.text.unlikely._mkdir_r
 .LCOLDE8:
@@ -306,7 +306,7 @@ _mkdir_r:
 	.globl	_open_r
 	.type	_open_r, @function
 _open_r:
-.LFB53:
+.LFB59:
 	.loc 1 72 0
 	.cfi_startproc
 .LVL9:
@@ -325,7 +325,7 @@ _open_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE53:
+.LFE59:
 	.size	_open_r, .-_open_r
 	.section	.text.unlikely._open_r
 .LCOLDE9:
@@ -338,7 +338,7 @@ _open_r:
 	.globl	_close_r
 	.type	_close_r, @function
 _close_r:
-.LFB54:
+.LFB60:
 	.loc 1 78 0
 	.cfi_startproc
 .LVL10:
@@ -357,7 +357,7 @@ _close_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE54:
+.LFE60:
 	.size	_close_r, .-_close_r
 	.section	.text.unlikely._close_r
 .LCOLDE10:
@@ -370,7 +370,7 @@ _close_r:
 	.globl	_read_r
 	.type	_read_r, @function
 _read_r:
-.LFB55:
+.LFB61:
 	.loc 1 84 0
 	.cfi_startproc
 .LVL11:
@@ -389,7 +389,7 @@ _read_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE55:
+.LFE61:
 	.size	_read_r, .-_read_r
 	.section	.text.unlikely._read_r
 .LCOLDE11:
@@ -405,7 +405,7 @@ _read_r:
 	.globl	_write_r
 	.type	_write_r, @function
 _write_r:
-.LFB56:
+.LFB62:
 	.loc 1 93 0
 	.cfi_startproc
 .LVL12:
@@ -510,7 +510,7 @@ _write_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE56:
+.LFE62:
 	.size	_write_r, .-_write_r
 	.section	.text.unlikely._write_r
 .LCOLDE13:
@@ -523,7 +523,7 @@ _write_r:
 	.globl	_fstat_r
 	.type	_fstat_r, @function
 _fstat_r:
-.LFB57:
+.LFB63:
 	.loc 1 124 0
 	.cfi_startproc
 .LVL23:
@@ -542,7 +542,7 @@ _fstat_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE57:
+.LFE63:
 	.size	_fstat_r, .-_fstat_r
 	.section	.text.unlikely._fstat_r
 .LCOLDE14:
@@ -555,7 +555,7 @@ _fstat_r:
 	.globl	_rename_r
 	.type	_rename_r, @function
 _rename_r:
-.LFB73:
+.LFB79:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -570,7 +570,7 @@ _rename_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE73:
+.LFE79:
 	.size	_rename_r, .-_rename_r
 	.section	.text.unlikely._rename_r
 .LCOLDE15:
@@ -583,7 +583,7 @@ _rename_r:
 	.globl	_sbrk_r
 	.type	_sbrk_r, @function
 _sbrk_r:
-.LFB59:
+.LFB65:
 	.loc 1 136 0
 	.cfi_startproc
 .LVL24:
@@ -603,7 +603,7 @@ _sbrk_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE59:
+.LFE65:
 	.size	_sbrk_r, .-_sbrk_r
 	.section	.text.unlikely._sbrk_r
 .LCOLDE16:
@@ -616,7 +616,7 @@ _sbrk_r:
 	.globl	_stat_r
 	.type	_stat_r, @function
 _stat_r:
-.LFB60:
+.LFB66:
 	.loc 1 142 0
 	.cfi_startproc
 .LVL25:
@@ -635,7 +635,7 @@ _stat_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE60:
+.LFE66:
 	.size	_stat_r, .-_stat_r
 	.section	.text.unlikely._stat_r
 .LCOLDE17:
@@ -648,7 +648,7 @@ _stat_r:
 	.globl	_times_r
 	.type	_times_r, @function
 _times_r:
-.LFB61:
+.LFB67:
 	.loc 1 148 0
 	.cfi_startproc
 .LVL26:
@@ -667,7 +667,7 @@ _times_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE61:
+.LFE67:
 	.size	_times_r, .-_times_r
 	.section	.text.unlikely._times_r
 .LCOLDE18:
@@ -680,7 +680,7 @@ _times_r:
 	.globl	_unlink_r
 	.type	_unlink_r, @function
 _unlink_r:
-.LFB62:
+.LFB68:
 	.loc 1 154 0
 	.cfi_startproc
 .LVL27:
@@ -699,7 +699,7 @@ _unlink_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE62:
+.LFE68:
 	.size	_unlink_r, .-_unlink_r
 	.section	.text.unlikely._unlink_r
 .LCOLDE19:
@@ -712,7 +712,7 @@ _unlink_r:
 	.globl	_wait_r
 	.type	_wait_r, @function
 _wait_r:
-.LFB63:
+.LFB69:
 	.loc 1 160 0
 	.cfi_startproc
 .LVL28:
@@ -731,7 +731,7 @@ _wait_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE63:
+.LFE69:
 	.size	_wait_r, .-_wait_r
 	.section	.text.unlikely._wait_r
 .LCOLDE20:
@@ -746,7 +746,7 @@ _wait_r:
 	.globl	_gettimeofday_r
 	.type	_gettimeofday_r, @function
 _gettimeofday_r:
-.LFB64:
+.LFB70:
 	.loc 1 166 0
 	.cfi_startproc
 .LVL29:
@@ -808,7 +808,7 @@ _gettimeofday_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE64:
+.LFE70:
 	.size	_gettimeofday_r, .-_gettimeofday_r
 	.section	.text.unlikely._gettimeofday_r
 .LCOLDE21:
@@ -821,7 +821,7 @@ _gettimeofday_r:
 	.globl	_malloc_r
 	.type	_malloc_r, @function
 _malloc_r:
-.LFB65:
+.LFB71:
 	.loc 1 174 0
 	.cfi_startproc
 .LVL35:
@@ -852,7 +852,7 @@ _malloc_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE65:
+.LFE71:
 	.size	_malloc_r, .-_malloc_r
 	.section	.text.unlikely._malloc_r
 .LCOLDE22:
@@ -865,7 +865,7 @@ _malloc_r:
 	.globl	_realloc_r
 	.type	_realloc_r, @function
 _realloc_r:
-.LFB66:
+.LFB72:
 	.loc 1 188 0
 	.cfi_startproc
 .LVL38:
@@ -897,7 +897,7 @@ _realloc_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE66:
+.LFE72:
 	.size	_realloc_r, .-_realloc_r
 	.section	.text.unlikely._realloc_r
 .LCOLDE23:
@@ -910,7 +910,7 @@ _realloc_r:
 	.globl	_calloc_r
 	.type	_calloc_r, @function
 _calloc_r:
-.LFB67:
+.LFB73:
 	.loc 1 202 0
 	.cfi_startproc
 .LVL41:
@@ -970,7 +970,7 @@ _calloc_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE67:
+.LFE73:
 	.size	_calloc_r, .-_calloc_r
 	.section	.text.unlikely._calloc_r
 .LCOLDE24:
@@ -983,7 +983,7 @@ _calloc_r:
 	.globl	_free_r
 	.type	_free_r, @function
 _free_r:
-.LFB68:
+.LFB74:
 	.loc 1 220 0
 	.cfi_startproc
 .LVL46:
@@ -1004,7 +1004,7 @@ _free_r:
 	jmp	aos_free
 .LVL48:
 	.cfi_endproc
-.LFE68:
+.LFE74:
 	.size	_free_r, .-_free_r
 	.section	.text.unlikely._free_r
 .LCOLDE25:
@@ -1017,7 +1017,7 @@ _free_r:
 	.globl	_exit
 	.type	_exit, @function
 _exit:
-.LFB69:
+.LFB75:
 	.loc 1 225 0
 	.cfi_startproc
 .LVL49:
@@ -1029,7 +1029,7 @@ _exit:
 .L67:
 	jmp	.L67
 	.cfi_endproc
-.LFE69:
+.LFE75:
 	.size	_exit, .-_exit
 	.section	.text.unlikely._exit
 .LCOLDE26:
@@ -1042,7 +1042,7 @@ _exit:
 	.globl	_system
 	.type	_system, @function
 _system:
-.LFB70:
+.LFB76:
 	.loc 1 230 0
 	.cfi_startproc
 .LVL50:
@@ -1058,7 +1058,7 @@ _system:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE70:
+.LFE76:
 	.size	_system, .-_system
 	.section	.text.unlikely._system
 .LCOLDE27:
@@ -1071,7 +1071,7 @@ _system:
 	.globl	abort
 	.type	abort, @function
 abort:
-.LFB71:
+.LFB77:
 	.loc 1 235 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1082,7 +1082,7 @@ abort:
 .L72:
 	jmp	.L72
 	.cfi_endproc
-.LFE71:
+.LFE77:
 	.size	abort, .-abort
 	.section	.text.unlikely.abort
 .LCOLDE28:
@@ -2628,8 +2628,8 @@ abort:
 	.byte	0xc
 	.byte	0x8c
 	.long	0x30
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB50
+	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xca4
@@ -2676,8 +2676,8 @@ abort:
 	.byte	0xc
 	.byte	0x8d
 	.long	0x30
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd00
@@ -2719,8 +2719,8 @@ abort:
 	.byte	0xc
 	.byte	0x8e
 	.long	0x30
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd28
@@ -2738,8 +2738,8 @@ abort:
 	.byte	0xc
 	.byte	0x90
 	.long	0x30
-	.long	.LFB47
-	.long	.LFE47-.LFB47
+	.long	.LFB53
+	.long	.LFE53-.LFB53
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd50
@@ -2757,8 +2757,8 @@ abort:
 	.byte	0xc
 	.byte	0x91
 	.long	0x30
-	.long	.LFB48
-	.long	.LFE48-.LFB48
+	.long	.LFB54
+	.long	.LFE54-.LFB54
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd85
@@ -2784,8 +2784,8 @@ abort:
 	.byte	0xc
 	.byte	0x92
 	.long	0x30
-	.long	.LFB49
-	.long	.LFE49-.LFB49
+	.long	.LFB55
+	.long	.LFE55-.LFB55
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdc9
@@ -2819,8 +2819,8 @@ abort:
 	.byte	0xc
 	.byte	0x93
 	.long	0x30
-	.long	.LFB50
-	.long	.LFE50-.LFB50
+	.long	.LFB56
+	.long	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe0d
@@ -2854,8 +2854,8 @@ abort:
 	.byte	0xc
 	.byte	0x94
 	.long	0xca
-	.long	.LFB51
-	.long	.LFE51-.LFB51
+	.long	.LFB57
+	.long	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe5e
@@ -2897,8 +2897,8 @@ abort:
 	.byte	0xc
 	.byte	0x95
 	.long	0x30
-	.long	.LFB52
-	.long	.LFE52-.LFB52
+	.long	.LFB58
+	.long	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xea2
@@ -2932,8 +2932,8 @@ abort:
 	.byte	0xc
 	.byte	0x96
 	.long	0x30
-	.long	.LFB53
-	.long	.LFE53-.LFB53
+	.long	.LFB59
+	.long	.LFE59-.LFB59
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xef4
@@ -2975,8 +2975,8 @@ abort:
 	.byte	0xc
 	.byte	0x8b
 	.long	0x30
-	.long	.LFB54
-	.long	.LFE54-.LFB54
+	.long	.LFB60
+	.long	.LFE60-.LFB60
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf29
@@ -3002,8 +3002,8 @@ abort:
 	.byte	0xc
 	.byte	0x97
 	.long	0x122
-	.long	.LFB55
-	.long	.LFE55-.LFB55
+	.long	.LFB61
+	.long	.LFE61-.LFB61
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf7a
@@ -3045,8 +3045,8 @@ abort:
 	.byte	0xc
 	.byte	0x9e
 	.long	0x122
-	.long	.LFB56
-	.long	.LFE56-.LFB56
+	.long	.LFB62
+	.long	.LFE62-.LFB62
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x101a
@@ -3120,8 +3120,8 @@ abort:
 	.byte	0xc
 	.byte	0x8f
 	.long	0x30
-	.long	.LFB57
-	.long	.LFE57-.LFB57
+	.long	.LFB63
+	.long	.LFE63-.LFB63
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x105d
@@ -3158,8 +3158,8 @@ abort:
 	.byte	0xc
 	.byte	0x99
 	.long	0x1a6
-	.long	.LFB59
-	.long	.LFE59-.LFB59
+	.long	.LFB65
+	.long	.LFE65-.LFB65
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1099
@@ -3205,8 +3205,8 @@ abort:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x1099
-	.long	.LFB60
-	.long	.LFE60-.LFB60
+	.long	.LFB66
+	.long	.LFE66-.LFB66
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10f7
@@ -3231,8 +3231,8 @@ abort:
 	.byte	0xc
 	.byte	0x9b
 	.long	0x90
-	.long	.LFB61
-	.long	.LFE61-.LFB61
+	.long	.LFB67
+	.long	.LFE67-.LFB67
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x112d
@@ -3263,8 +3263,8 @@ abort:
 	.byte	0xc
 	.byte	0x9c
 	.long	0x30
-	.long	.LFB62
-	.long	.LFE62-.LFB62
+	.long	.LFB68
+	.long	.LFE68-.LFB68
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x116e
@@ -3290,8 +3290,8 @@ abort:
 	.byte	0xc
 	.byte	0x9d
 	.long	0x30
-	.long	.LFB63
-	.long	.LFE63-.LFB63
+	.long	.LFB69
+	.long	.LFE69-.LFB69
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x11a4
@@ -3320,8 +3320,8 @@ abort:
 	.byte	0xc
 	.byte	0xa1
 	.long	0x30
-	.long	.LFB64
-	.long	.LFE64-.LFB64
+	.long	.LFB70
+	.long	.LFE70-.LFB70
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1203
@@ -3367,8 +3367,8 @@ abort:
 	.byte	0x1
 	.byte	0xad
 	.long	0x1a6
-	.long	.LFB65
-	.long	.LFE65-.LFB65
+	.long	.LFB71
+	.long	.LFE71-.LFB71
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1260
@@ -3406,8 +3406,8 @@ abort:
 	.byte	0x1
 	.byte	0xbb
 	.long	0x1a6
-	.long	.LFB66
-	.long	.LFE66-.LFB66
+	.long	.LFB72
+	.long	.LFE72-.LFB72
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x12c5
@@ -3453,8 +3453,8 @@ abort:
 	.byte	0x1
 	.byte	0xc9
 	.long	0x1a6
-	.long	.LFB67
-	.long	.LFE67-.LFB67
+	.long	.LFB73
+	.long	.LFE73-.LFB73
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x132a
@@ -3499,8 +3499,8 @@ abort:
 	.long	.LASF243
 	.byte	0x1
 	.byte	0xdb
-	.long	.LFB68
-	.long	.LFE68-.LFB68
+	.long	.LFB74
+	.long	.LFE74-.LFB74
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x136f
@@ -3535,8 +3535,8 @@ abort:
 	.long	.LASF242
 	.byte	0xd
 	.byte	0x12
-	.long	.LFB69
-	.long	.LFE69-.LFB69
+	.long	.LFB75
+	.long	.LFE75-.LFB75
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1393
@@ -3553,8 +3553,8 @@ abort:
 	.long	.LASF244
 	.byte	0x1
 	.byte	0xe5
-	.long	.LFB70
-	.long	.LFE70-.LFB70
+	.long	.LFB76
+	.long	.LFE76-.LFB76
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x13b5
@@ -3571,8 +3571,8 @@ abort:
 	.long	.LASF256
 	.byte	0x1
 	.byte	0xea
-	.long	.LFB71
-	.long	.LFE71-.LFB71
+	.long	.LFB77
+	.long	.LFE77-.LFB77
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x35
@@ -4446,7 +4446,7 @@ abort:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL37-1
-	.long	.LFE65
+	.long	.LFE71
 	.value	0x2
 	.byte	0x91
 	.sleb128 -20
@@ -4458,7 +4458,7 @@ abort:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL40-1
-	.long	.LFE66
+	.long	.LFE72
 	.value	0x2
 	.byte	0x91
 	.sleb128 -20
@@ -4474,7 +4474,7 @@ abort:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL45
-	.long	.LFE67
+	.long	.LFE73
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -4495,18 +4495,6 @@ abort:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB44
-	.long	.LFE44-.LFB44
-	.long	.LFB45
-	.long	.LFE45-.LFB45
-	.long	.LFB46
-	.long	.LFE46-.LFB46
-	.long	.LFB47
-	.long	.LFE47-.LFB47
-	.long	.LFB48
-	.long	.LFE48-.LFB48
-	.long	.LFB49
-	.long	.LFE49-.LFB49
 	.long	.LFB50
 	.long	.LFE50-.LFB50
 	.long	.LFB51
@@ -4523,6 +4511,8 @@ abort:
 	.long	.LFE56-.LFB56
 	.long	.LFB57
 	.long	.LFE57-.LFB57
+	.long	.LFB58
+	.long	.LFE58-.LFB58
 	.long	.LFB59
 	.long	.LFE59-.LFB59
 	.long	.LFB60
@@ -4533,8 +4523,6 @@ abort:
 	.long	.LFE62-.LFB62
 	.long	.LFB63
 	.long	.LFE63-.LFB63
-	.long	.LFB64
-	.long	.LFE64-.LFB64
 	.long	.LFB65
 	.long	.LFE65-.LFB65
 	.long	.LFB66
@@ -4549,22 +4537,22 @@ abort:
 	.long	.LFE70-.LFB70
 	.long	.LFB71
 	.long	.LFE71-.LFB71
+	.long	.LFB72
+	.long	.LFE72-.LFB72
+	.long	.LFB73
+	.long	.LFE73-.LFB73
+	.long	.LFB74
+	.long	.LFE74-.LFB74
+	.long	.LFB75
+	.long	.LFE75-.LFB75
+	.long	.LFB76
+	.long	.LFE76-.LFB76
+	.long	.LFB77
+	.long	.LFE77-.LFB77
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB44
-	.long	.LFE44
-	.long	.LFB45
-	.long	.LFE45
-	.long	.LFB46
-	.long	.LFE46
-	.long	.LFB47
-	.long	.LFE47
-	.long	.LFB48
-	.long	.LFE48
-	.long	.LFB49
-	.long	.LFE49
 	.long	.LFB50
 	.long	.LFE50
 	.long	.LFB51
@@ -4581,6 +4569,8 @@ abort:
 	.long	.LFE56
 	.long	.LFB57
 	.long	.LFE57
+	.long	.LFB58
+	.long	.LFE58
 	.long	.LFB59
 	.long	.LFE59
 	.long	.LFB60
@@ -4591,8 +4581,6 @@ abort:
 	.long	.LFE62
 	.long	.LFB63
 	.long	.LFE63
-	.long	.LFB64
-	.long	.LFE64
 	.long	.LFB65
 	.long	.LFE65
 	.long	.LFB66
@@ -4607,6 +4595,18 @@ abort:
 	.long	.LFE70
 	.long	.LFB71
 	.long	.LFE71
+	.long	.LFB72
+	.long	.LFE72
+	.long	.LFB73
+	.long	.LFE73
+	.long	.LFB74
+	.long	.LFE74
+	.long	.LFB75
+	.long	.LFE75
+	.long	.LFB76
+	.long	.LFE76
+	.long	.LFB77
+	.long	.LFE77
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

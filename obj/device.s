@@ -10,7 +10,7 @@
 	.section	.text.event_poll
 	.type	event_poll, @function
 event_poll:
-.LFB22:
+.LFB28:
 	.file 1 "kernel/vfs/device.c"
 	.loc 1 159 0
 	.cfi_startproc
@@ -97,7 +97,7 @@ event_poll:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	event_poll, .-event_poll
 	.section	.text.unlikely.event_poll
 .LCOLDE0:
@@ -109,7 +109,7 @@ event_poll:
 .LHOTB1:
 	.type	_event_write, @function
 _event_write:
-.LFB18:
+.LFB24:
 	.loc 1 68 0
 	.cfi_startproc
 .LVL4:
@@ -313,7 +313,7 @@ _event_write:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	_event_write, .-_event_write
 	.section	.text.unlikely._event_write
 .LCOLDE1:
@@ -325,7 +325,7 @@ _event_write:
 .LHOTB2:
 	.type	event_ioctl, @function
 event_ioctl:
-.LFB20:
+.LFB26:
 	.loc 1 113 0
 	.cfi_startproc
 .LVL28:
@@ -382,7 +382,7 @@ event_ioctl:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	event_ioctl, .-event_ioctl
 	.section	.text.unlikely.event_ioctl
 .LCOLDE2:
@@ -394,7 +394,7 @@ event_ioctl:
 .LHOTB3:
 	.type	event_write, @function
 event_write:
-.LFB19:
+.LFB25:
 	.loc 1 108 0
 	.cfi_startproc
 .LVL33:
@@ -418,7 +418,7 @@ event_write:
 	jmp	_event_write
 .LVL35:
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	event_write, .-event_write
 	.section	.text.unlikely.event_write
 .LCOLDE3:
@@ -430,7 +430,7 @@ event_write:
 .LHOTB4:
 	.type	event_open, @function
 event_open:
-.LFB16:
+.LFB22:
 	.loc 1 35 0
 	.cfi_startproc
 .LVL36:
@@ -498,7 +498,7 @@ event_open:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	event_open, .-event_open
 	.section	.text.unlikely.event_open
 .LCOLDE4:
@@ -510,7 +510,7 @@ event_open:
 .LHOTB5:
 	.type	event_close, @function
 event_close:
-.LFB17:
+.LFB23:
 	.loc 1 46 0
 	.cfi_startproc
 .LVL46:
@@ -646,7 +646,7 @@ event_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	event_close, .-event_close
 	.section	.text.unlikely.event_close
 .LCOLDE5:
@@ -658,7 +658,7 @@ event_close:
 .LHOTB6:
 	.type	event_read, @function
 event_read:
-.LFB21:
+.LFB27:
 	.loc 1 128 0
 	.cfi_startproc
 .LVL66:
@@ -802,7 +802,7 @@ event_read:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	event_read, .-event_read
 	.section	.text.unlikely.event_read
 .LCOLDE6:
@@ -818,7 +818,7 @@ event_read:
 	.globl	vfs_device_init
 	.type	vfs_device_init, @function
 vfs_device_init:
-.LFB23:
+.LFB29:
 	.loc 1 193 0
 	.cfi_startproc
 	.loc 1 197 0
@@ -854,7 +854,7 @@ vfs_device_init:
 .L50:
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	vfs_device_init, .-vfs_device_init
 	.section	.text.unlikely.vfs_device_init
 .LCOLDE8:
@@ -2022,8 +2022,8 @@ inited:
 	.byte	0x1
 	.byte	0x9d
 	.long	0x37
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9b3
@@ -2120,8 +2120,8 @@ inited:
 	.byte	0x1
 	.byte	0x43
 	.long	0x197
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb64
@@ -2272,8 +2272,8 @@ inited:
 	.byte	0x1
 	.byte	0x70
 	.long	0x37
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbd6
@@ -2316,8 +2316,8 @@ inited:
 	.byte	0x1
 	.byte	0x6b
 	.long	0x197
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc37
@@ -2373,8 +2373,8 @@ inited:
 	.byte	0x1
 	.byte	0x22
 	.long	0x37
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcc8
@@ -2434,8 +2434,8 @@ inited:
 	.byte	0x1
 	.byte	0x2d
 	.long	0x37
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdfd
@@ -2555,8 +2555,8 @@ inited:
 	.byte	0x1
 	.byte	0x7f
 	.long	0x197
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf0d
@@ -2667,8 +2667,8 @@ inited:
 	.byte	0x1
 	.byte	0xc0
 	.long	0x37
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf3f
@@ -3397,7 +3397,7 @@ inited:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL6-1
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3411,7 +3411,7 @@ inited:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL6-1
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x2
 	.byte	0x91
 	.sleb128 -40
@@ -3428,7 +3428,7 @@ inited:
 	.byte	0x91
 	.sleb128 -36
 	.long	.LVL25
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3449,7 +3449,7 @@ inited:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL13-1
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x2
 	.byte	0x91
 	.sleb128 -36
@@ -3584,7 +3584,7 @@ inited:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL32
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3605,7 +3605,7 @@ inited:
 	.byte	0x91
 	.sleb128 8
 	.long	.LVL31
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -3625,7 +3625,7 @@ inited:
 	.byte	0x26
 	.byte	0x9f
 	.long	.LVL31
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -3637,7 +3637,7 @@ inited:
 	.byte	0x91
 	.sleb128 8
 	.long	.LVL31
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -3664,7 +3664,7 @@ inited:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL45
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x5
 	.byte	0x91
 	.sleb128 4
@@ -3888,22 +3888,22 @@ inited:
 	.byte	0
 	.value	0
 	.value	0
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.long	.LFB22
 	.long	.LFE22-.LFB22
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB16
-	.long	.LFE16-.LFB16
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB21
-	.long	.LFE21-.LFB21
 	.long	.LFB23
 	.long	.LFE23-.LFB23
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -3950,22 +3950,22 @@ inited:
 	.long	.LBE97
 	.long	0
 	.long	0
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB25
+	.long	.LFE25
 	.long	.LFB22
 	.long	.LFE22
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB16
-	.long	.LFE16
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB21
-	.long	.LFE21
 	.long	.LFB23
 	.long	.LFE23
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB29
+	.long	.LFE29
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

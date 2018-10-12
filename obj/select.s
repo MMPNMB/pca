@@ -10,7 +10,7 @@
 	.section	.text.vfs_poll_notify
 	.type	vfs_poll_notify, @function
 vfs_poll_notify:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/vfs/select.c"
 	.loc 1 155 0
 	.cfi_startproc
@@ -51,7 +51,7 @@ vfs_poll_notify:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	vfs_poll_notify, .-vfs_poll_notify
 	.section	.text.unlikely.vfs_poll_notify
 .LCOLDE0:
@@ -64,7 +64,7 @@ vfs_poll_notify:
 	.globl	aos_poll
 	.type	aos_poll, @function
 aos_poll:
-.LFB25:
+.LFB31:
 	.loc 1 268 0
 	.cfi_startproc
 .LVL4:
@@ -426,7 +426,7 @@ aos_poll:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	aos_poll, .-aos_poll
 	.section	.text.unlikely.aos_poll
 .LCOLDE1:
@@ -439,7 +439,7 @@ aos_poll:
 	.globl	aos_fcntl
 	.type	aos_fcntl, @function
 aos_fcntl:
-.LFB26:
+.LFB32:
 	.loc 1 312 0
 	.cfi_startproc
 .LVL54:
@@ -466,7 +466,7 @@ aos_fcntl:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	aos_fcntl, .-aos_fcntl
 	.section	.text.unlikely.aos_fcntl
 .LCOLDE2:
@@ -479,7 +479,7 @@ aos_fcntl:
 	.globl	aos_ioctl_in_loop
 	.type	aos_ioctl_in_loop, @function
 aos_ioctl_in_loop:
-.LFB27:
+.LFB33:
 	.loc 1 329 0
 	.cfi_startproc
 .LVL55:
@@ -589,7 +589,7 @@ aos_ioctl_in_loop:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	aos_ioctl_in_loop, .-aos_ioctl_in_loop
 	.section	.text.unlikely.aos_ioctl_in_loop
 .LCOLDE3:
@@ -1651,8 +1651,8 @@ aos_ioctl_in_loop:
 	.long	.LASF144
 	.byte	0x1
 	.byte	0x9a
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8cf
@@ -1867,8 +1867,8 @@ aos_ioctl_in_loop:
 	.byte	0x1
 	.value	0x10b
 	.long	0x7e
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcb3
@@ -2122,8 +2122,8 @@ aos_ioctl_in_loop:
 	.byte	0x1
 	.value	0x137
 	.long	0x7e
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcfa
@@ -2157,8 +2157,8 @@ aos_ioctl_in_loop:
 	.byte	0x1
 	.value	0x148
 	.long	0x7e
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd9a
@@ -3427,14 +3427,14 @@ aos_ioctl_in_loop:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB25
-	.long	.LFE25-.LFB25
-	.long	.LFB26
-	.long	.LFE26-.LFB26
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB31
+	.long	.LFE31-.LFB31
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -3477,14 +3477,14 @@ aos_ioctl_in_loop:
 	.long	.LBE52
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB25
-	.long	.LFE25
-	.long	.LFB26
-	.long	.LFE26
-	.long	.LFB27
-	.long	.LFE27
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB31
+	.long	.LFE31
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

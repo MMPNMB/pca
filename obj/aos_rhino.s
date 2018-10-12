@@ -11,7 +11,7 @@
 	.globl	aos_reboot
 	.type	aos_reboot, @function
 aos_reboot:
-.LFB28:
+.LFB34:
 	.file 1 "kernel/vcall/aos/aos_rhino.c"
 	.loc 1 20 0
 	.cfi_startproc
@@ -28,7 +28,7 @@ aos_reboot:
 	jmp	hal_reboot
 .LVL0:
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	aos_reboot, .-aos_reboot
 	.section	.text.unlikely.aos_reboot
 .LCOLDE0:
@@ -41,7 +41,7 @@ aos_reboot:
 	.globl	aos_get_hz
 	.type	aos_get_hz, @function
 aos_get_hz:
-.LFB29:
+.LFB35:
 	.loc 1 25 0
 	.cfi_startproc
 	pushl	%ebp
@@ -58,7 +58,7 @@ aos_get_hz:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	aos_get_hz, .-aos_get_hz
 	.section	.text.unlikely.aos_get_hz
 .LCOLDE1:
@@ -74,7 +74,7 @@ aos_get_hz:
 	.globl	aos_version_get
 	.type	aos_version_get, @function
 aos_version_get:
-.LFB30:
+.LFB36:
 	.loc 1 30 0
 	.cfi_startproc
 	pushl	%ebp
@@ -91,7 +91,7 @@ aos_version_get:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	aos_version_get, .-aos_version_get
 	.section	.text.unlikely.aos_version_get
 .LCOLDE3:
@@ -104,7 +104,7 @@ aos_version_get:
 	.globl	aos_task_new
 	.type	aos_task_new, @function
 aos_task_new:
-.LFB31:
+.LFB37:
 	.loc 1 37 0
 	.cfi_startproc
 .LVL1:
@@ -247,7 +247,7 @@ aos_task_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	aos_task_new, .-aos_task_new
 	.section	.text.unlikely.aos_task_new
 .LCOLDE4:
@@ -260,7 +260,7 @@ aos_task_new:
 	.globl	aos_task_new_ext
 	.type	aos_task_new_ext, @function
 aos_task_new_ext:
-.LFB32:
+.LFB38:
 	.loc 1 53 0
 	.cfi_startproc
 .LVL6:
@@ -390,7 +390,7 @@ aos_task_new_ext:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	aos_task_new_ext, .-aos_task_new_ext
 	.section	.text.unlikely.aos_task_new_ext
 .LCOLDE5:
@@ -403,7 +403,7 @@ aos_task_new_ext:
 	.globl	aos_task_exit
 	.type	aos_task_exit, @function
 aos_task_exit:
-.LFB33:
+.LFB39:
 	.loc 1 65 0
 	.cfi_startproc
 .LVL10:
@@ -423,7 +423,7 @@ aos_task_exit:
 	jmp	krhino_task_dyn_del
 .LVL12:
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	aos_task_exit, .-aos_task_exit
 	.section	.text.unlikely.aos_task_exit
 .LCOLDE6:
@@ -436,7 +436,7 @@ aos_task_exit:
 	.globl	aos_task_name
 	.type	aos_task_name, @function
 aos_task_name:
-.LFB34:
+.LFB40:
 	.loc 1 73 0
 	.cfi_startproc
 	pushl	%ebp
@@ -455,7 +455,7 @@ aos_task_name:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	aos_task_name, .-aos_task_name
 	.section	.text.unlikely.aos_task_name
 .LCOLDE7:
@@ -468,7 +468,7 @@ aos_task_name:
 	.globl	aos_task_key_create
 	.type	aos_task_key_create, @function
 aos_task_key_create:
-.LFB35:
+.LFB41:
 	.loc 1 78 0
 	.cfi_startproc
 .LVL14:
@@ -516,7 +516,7 @@ aos_task_key_create:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	aos_task_key_create, .-aos_task_key_create
 	.section	.text.unlikely.aos_task_key_create
 .LCOLDE8:
@@ -529,7 +529,7 @@ aos_task_key_create:
 	.globl	aos_task_key_delete
 	.type	aos_task_key_delete, @function
 aos_task_key_delete:
-.LFB36:
+.LFB42:
 	.loc 1 94 0
 	.cfi_startproc
 .LVL18:
@@ -554,7 +554,7 @@ aos_task_key_delete:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	aos_task_key_delete, .-aos_task_key_delete
 	.section	.text.unlikely.aos_task_key_delete
 .LCOLDE9:
@@ -567,7 +567,7 @@ aos_task_key_delete:
 	.globl	aos_task_setspecific
 	.type	aos_task_setspecific, @function
 aos_task_setspecific:
-.LFB37:
+.LFB43:
 	.loc 1 104 0
 	.cfi_startproc
 .LVL19:
@@ -691,7 +691,7 @@ aos_task_setspecific:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	aos_task_setspecific, .-aos_task_setspecific
 	.section	.text.unlikely.aos_task_setspecific
 .LCOLDE10:
@@ -704,7 +704,7 @@ aos_task_setspecific:
 	.globl	aos_task_getspecific
 	.type	aos_task_getspecific, @function
 aos_task_getspecific:
-.LFB38:
+.LFB44:
 	.loc 1 115 0
 	.cfi_startproc
 .LVL24:
@@ -743,7 +743,7 @@ aos_task_getspecific:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	aos_task_getspecific, .-aos_task_getspecific
 	.section	.text.unlikely.aos_task_getspecific
 .LCOLDE11:
@@ -756,7 +756,7 @@ aos_task_getspecific:
 	.globl	aos_mutex_lock
 	.type	aos_mutex_lock, @function
 aos_mutex_lock:
-.LFB41:
+.LFB47:
 	.loc 1 164 0
 	.cfi_startproc
 .LVL28:
@@ -910,7 +910,7 @@ aos_mutex_lock:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE41:
+.LFE47:
 	.size	aos_mutex_lock, .-aos_mutex_lock
 	.section	.text.unlikely.aos_mutex_lock
 .LCOLDE12:
@@ -923,7 +923,7 @@ aos_mutex_lock:
 	.globl	aos_mutex_unlock
 	.type	aos_mutex_unlock, @function
 aos_mutex_unlock:
-.LFB42:
+.LFB48:
 	.loc 1 190 0
 	.cfi_startproc
 .LVL32:
@@ -1066,7 +1066,7 @@ aos_mutex_unlock:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	aos_mutex_unlock, .-aos_mutex_unlock
 	.section	.text.unlikely.aos_mutex_unlock
 .LCOLDE13:
@@ -1079,7 +1079,7 @@ aos_mutex_unlock:
 	.globl	aos_sem_wait
 	.type	aos_sem_wait, @function
 aos_sem_wait:
-.LFB46:
+.LFB52:
 	.loc 1 268 0
 	.cfi_startproc
 .LVL46:
@@ -1229,7 +1229,7 @@ aos_sem_wait:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE46:
+.LFE52:
 	.size	aos_sem_wait, .-aos_sem_wait
 	.section	.text.unlikely.aos_sem_wait
 .LCOLDE14:
@@ -1242,7 +1242,7 @@ aos_sem_wait:
 	.globl	aos_sem_signal
 	.type	aos_sem_signal, @function
 aos_sem_signal:
-.LFB47:
+.LFB53:
 	.loc 1 289 0
 	.cfi_startproc
 .LVL50:
@@ -1276,7 +1276,7 @@ aos_sem_signal:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE47:
+.LFE53:
 	.size	aos_sem_signal, .-aos_sem_signal
 	.section	.text.unlikely.aos_sem_signal
 .LCOLDE15:
@@ -1289,7 +1289,7 @@ aos_sem_signal:
 	.globl	aos_sem_signal_all
 	.type	aos_sem_signal_all, @function
 aos_sem_signal_all:
-.LFB49:
+.LFB55:
 	.loc 1 315 0
 	.cfi_startproc
 .LVL53:
@@ -1323,7 +1323,7 @@ aos_sem_signal_all:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE49:
+.LFE55:
 	.size	aos_sem_signal_all, .-aos_sem_signal_all
 	.section	.text.unlikely.aos_sem_signal_all
 .LCOLDE16:
@@ -1339,7 +1339,7 @@ aos_sem_signal_all:
 	.globl	aos_event_new
 	.type	aos_event_new, @function
 aos_event_new:
-.LFB50:
+.LFB56:
 	.loc 1 328 0
 	.cfi_startproc
 .LVL56:
@@ -1460,7 +1460,7 @@ aos_event_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE50:
+.LFE56:
 	.size	aos_event_new, .-aos_event_new
 	.section	.text.unlikely.aos_event_new
 .LCOLDE18:
@@ -1473,7 +1473,7 @@ aos_event_new:
 	.globl	aos_event_free
 	.type	aos_event_free, @function
 aos_event_free:
-.LFB51:
+.LFB57:
 	.loc 1 339 0
 	.cfi_startproc
 .LVL60:
@@ -1507,7 +1507,7 @@ aos_event_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE51:
+.LFE57:
 	.size	aos_event_free, .-aos_event_free
 	.section	.text.unlikely.aos_event_free
 .LCOLDE19:
@@ -1520,7 +1520,7 @@ aos_event_free:
 	.globl	aos_event_get
 	.type	aos_event_get, @function
 aos_event_get:
-.LFB52:
+.LFB58:
 	.loc 1 357 0
 	.cfi_startproc
 .LVL62:
@@ -1687,7 +1687,7 @@ aos_event_get:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE52:
+.LFE58:
 	.size	aos_event_get, .-aos_event_get
 	.section	.text.unlikely.aos_event_get
 .LCOLDE20:
@@ -1700,7 +1700,7 @@ aos_event_get:
 	.globl	aos_event_set
 	.type	aos_event_set, @function
 aos_event_set:
-.LFB53:
+.LFB59:
 	.loc 1 378 0
 	.cfi_startproc
 .LVL66:
@@ -1833,7 +1833,7 @@ aos_event_set:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE53:
+.LFE59:
 	.size	aos_event_set, .-aos_event_set
 	.section	.text.unlikely.aos_event_set
 .LCOLDE21:
@@ -1846,7 +1846,7 @@ aos_event_set:
 	.globl	aos_queue_send
 	.type	aos_queue_send, @function
 aos_queue_send:
-.LFB56:
+.LFB62:
 	.loc 1 436 0
 	.cfi_startproc
 .LVL71:
@@ -1980,7 +1980,7 @@ aos_queue_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE56:
+.LFE62:
 	.size	aos_queue_send, .-aos_queue_send
 	.section	.text.unlikely.aos_queue_send
 .LCOLDE22:
@@ -1993,7 +1993,7 @@ aos_queue_send:
 	.globl	aos_queue_recv
 	.type	aos_queue_recv, @function
 aos_queue_recv:
-.LFB57:
+.LFB63:
 	.loc 1 453 0
 	.cfi_startproc
 .LVL78:
@@ -2138,7 +2138,7 @@ aos_queue_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE57:
+.LFE63:
 	.size	aos_queue_recv, .-aos_queue_recv
 	.section	.text.unlikely.aos_queue_recv
 .LCOLDE23:
@@ -2151,7 +2151,7 @@ aos_queue_recv:
 	.globl	aos_queue_is_valid
 	.type	aos_queue_is_valid, @function
 aos_queue_is_valid:
-.LFB58:
+.LFB64:
 	.loc 1 469 0
 	.cfi_startproc
 .LVL84:
@@ -2179,7 +2179,7 @@ aos_queue_is_valid:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE58:
+.LFE64:
 	.size	aos_queue_is_valid, .-aos_queue_is_valid
 	.section	.text.unlikely.aos_queue_is_valid
 .LCOLDE24:
@@ -2192,7 +2192,7 @@ aos_queue_is_valid:
 	.globl	aos_sem_is_valid
 	.type	aos_sem_is_valid, @function
 aos_sem_is_valid:
-.LFB84:
+.LFB90:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2204,7 +2204,7 @@ aos_sem_is_valid:
 	.cfi_def_cfa 4, 4
 	jmp	aos_queue_is_valid
 	.cfi_endproc
-.LFE84:
+.LFE90:
 	.size	aos_sem_is_valid, .-aos_sem_is_valid
 	.section	.text.unlikely.aos_sem_is_valid
 .LCOLDE25:
@@ -2217,7 +2217,7 @@ aos_sem_is_valid:
 	.globl	aos_mutex_is_valid
 	.type	aos_mutex_is_valid, @function
 aos_mutex_is_valid:
-.LFB86:
+.LFB92:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2229,7 +2229,7 @@ aos_mutex_is_valid:
 	.cfi_def_cfa 4, 4
 	jmp	aos_queue_is_valid
 	.cfi_endproc
-.LFE86:
+.LFE92:
 	.size	aos_mutex_is_valid, .-aos_mutex_is_valid
 	.section	.text.unlikely.aos_mutex_is_valid
 .LCOLDE26:
@@ -2242,7 +2242,7 @@ aos_mutex_is_valid:
 	.globl	aos_queue_buf_ptr
 	.type	aos_queue_buf_ptr, @function
 aos_queue_buf_ptr:
-.LFB59:
+.LFB65:
 	.loc 1 486 0
 	.cfi_startproc
 .LVL87:
@@ -2273,7 +2273,7 @@ aos_queue_buf_ptr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE59:
+.LFE65:
 	.size	aos_queue_buf_ptr, .-aos_queue_buf_ptr
 	.section	.text.unlikely.aos_queue_buf_ptr
 .LCOLDE27:
@@ -2286,7 +2286,7 @@ aos_queue_buf_ptr:
 	.globl	aos_timer_new
 	.type	aos_timer_new, @function
 aos_timer_new:
-.LFB60:
+.LFB66:
 	.loc 1 498 0
 	.cfi_startproc
 .LVL89:
@@ -2468,7 +2468,7 @@ aos_timer_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE60:
+.LFE66:
 	.size	aos_timer_new, .-aos_timer_new
 	.section	.text.unlikely.aos_timer_new
 .LCOLDE28:
@@ -2481,7 +2481,7 @@ aos_timer_new:
 	.globl	aos_timer_new_ext
 	.type	aos_timer_new_ext, @function
 aos_timer_new_ext:
-.LFB61:
+.LFB67:
 	.loc 1 521 0
 	.cfi_startproc
 .LVL95:
@@ -2665,7 +2665,7 @@ aos_timer_new_ext:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE61:
+.LFE67:
 	.size	aos_timer_new_ext, .-aos_timer_new_ext
 	.section	.text.unlikely.aos_timer_new_ext
 .LCOLDE29:
@@ -2678,7 +2678,7 @@ aos_timer_new_ext:
 	.globl	aos_timer_free
 	.type	aos_timer_free, @function
 aos_timer_free:
-.LFB62:
+.LFB68:
 	.loc 1 543 0
 	.cfi_startproc
 .LVL101:
@@ -2712,7 +2712,7 @@ aos_timer_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE62:
+.LFE68:
 	.size	aos_timer_free, .-aos_timer_free
 	.section	.text.unlikely.aos_timer_free
 .LCOLDE30:
@@ -2725,7 +2725,7 @@ aos_timer_free:
 	.globl	aos_timer_start
 	.type	aos_timer_start, @function
 aos_timer_start:
-.LFB63:
+.LFB69:
 	.loc 1 553 0
 	.cfi_startproc
 .LVL103:
@@ -2854,7 +2854,7 @@ aos_timer_start:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE63:
+.LFE69:
 	.size	aos_timer_start, .-aos_timer_start
 	.section	.text.unlikely.aos_timer_start
 .LCOLDE31:
@@ -2867,7 +2867,7 @@ aos_timer_start:
 	.globl	aos_timer_stop
 	.type	aos_timer_stop, @function
 aos_timer_stop:
-.LFB64:
+.LFB70:
 	.loc 1 569 0
 	.cfi_startproc
 .LVL108:
@@ -2996,7 +2996,7 @@ aos_timer_stop:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE64:
+.LFE70:
 	.size	aos_timer_stop, .-aos_timer_stop
 	.section	.text.unlikely.aos_timer_stop
 .LCOLDE32:
@@ -3009,7 +3009,7 @@ aos_timer_stop:
 	.globl	aos_timer_change
 	.type	aos_timer_change, @function
 aos_timer_change:
-.LFB65:
+.LFB71:
 	.loc 1 585 0
 	.cfi_startproc
 .LVL113:
@@ -3172,7 +3172,7 @@ aos_timer_change:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE65:
+.LFE71:
 	.size	aos_timer_change, .-aos_timer_change
 	.section	.text.unlikely.aos_timer_change
 .LCOLDE33:
@@ -3185,7 +3185,7 @@ aos_timer_change:
 	.globl	aos_work_run
 	.type	aos_work_run, @function
 aos_work_run:
-.LFB69:
+.LFB75:
 	.loc 1 687 0
 	.cfi_startproc
 .LVL120:
@@ -3319,7 +3319,7 @@ aos_work_run:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE69:
+.LFE75:
 	.size	aos_work_run, .-aos_work_run
 	.section	.text.unlikely.aos_work_run
 .LCOLDE34:
@@ -3332,7 +3332,7 @@ aos_work_run:
 	.globl	aos_work_sched
 	.type	aos_work_sched, @function
 aos_work_sched:
-.LFB70:
+.LFB76:
 	.loc 1 703 0
 	.cfi_startproc
 .LVL127:
@@ -3461,7 +3461,7 @@ aos_work_sched:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE70:
+.LFE76:
 	.size	aos_work_sched, .-aos_work_sched
 	.section	.text.unlikely.aos_work_sched
 .LCOLDE35:
@@ -3474,7 +3474,7 @@ aos_work_sched:
 	.globl	aos_work_cancel
 	.type	aos_work_cancel, @function
 aos_work_cancel:
-.LFB71:
+.LFB77:
 	.loc 1 719 0
 	.cfi_startproc
 .LVL132:
@@ -3510,7 +3510,7 @@ aos_work_cancel:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE71:
+.LFE77:
 	.size	aos_work_cancel, .-aos_work_cancel
 	.section	.text.unlikely.aos_work_cancel
 .LCOLDE36:
@@ -3523,7 +3523,7 @@ aos_work_cancel:
 	.globl	aos_zalloc
 	.type	aos_zalloc, @function
 aos_zalloc:
-.LFB72:
+.LFB78:
 	.loc 1 737 0
 	.cfi_startproc
 .LVL135:
@@ -3603,7 +3603,7 @@ aos_zalloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE72:
+.LFE78:
 	.size	aos_zalloc, .-aos_zalloc
 	.section	.text.unlikely.aos_zalloc
 .LCOLDE37:
@@ -3616,7 +3616,7 @@ aos_zalloc:
 	.globl	aos_malloc
 	.type	aos_malloc, @function
 aos_malloc:
-.LFB73:
+.LFB79:
 	.loc 1 770 0
 	.cfi_startproc
 .LVL143:
@@ -3688,7 +3688,7 @@ aos_malloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE73:
+.LFE79:
 	.size	aos_malloc, .-aos_malloc
 	.section	.text.unlikely.aos_malloc
 .LCOLDE38:
@@ -3701,7 +3701,7 @@ aos_malloc:
 	.globl	aos_realloc
 	.type	aos_realloc, @function
 aos_realloc:
-.LFB74:
+.LFB80:
 	.loc 1 800 0
 	.cfi_startproc
 .LVL151:
@@ -3752,7 +3752,7 @@ aos_realloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE74:
+.LFE80:
 	.size	aos_realloc, .-aos_realloc
 	.section	.text.unlikely.aos_realloc
 .LCOLDE39:
@@ -3765,7 +3765,7 @@ aos_realloc:
 	.globl	aos_alloc_trace
 	.type	aos_alloc_trace, @function
 aos_alloc_trace:
-.LFB75:
+.LFB81:
 	.loc 1 826 0
 	.cfi_startproc
 .LVL156:
@@ -3788,7 +3788,7 @@ aos_alloc_trace:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE75:
+.LFE81:
 	.size	aos_alloc_trace, .-aos_alloc_trace
 	.section	.text.unlikely.aos_alloc_trace
 .LCOLDE40:
@@ -3801,7 +3801,7 @@ aos_alloc_trace:
 	.globl	aos_free
 	.type	aos_free, @function
 aos_free:
-.LFB76:
+.LFB82:
 	.loc 1 833 0
 	.cfi_startproc
 .LVL158:
@@ -3831,7 +3831,7 @@ aos_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE76:
+.LFE82:
 	.size	aos_free, .-aos_free
 	.section	.text.unlikely.aos_free
 .LCOLDE41:
@@ -3844,7 +3844,7 @@ aos_free:
 	.globl	aos_mutex_new
 	.type	aos_mutex_new, @function
 aos_mutex_new:
-.LFB39:
+.LFB45:
 	.loc 1 126 0
 	.cfi_startproc
 .LVL160:
@@ -4015,7 +4015,7 @@ aos_mutex_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	aos_mutex_new, .-aos_mutex_new
 	.section	.text.unlikely.aos_mutex_new
 .LCOLDE42:
@@ -4028,7 +4028,7 @@ aos_mutex_new:
 	.globl	aos_mutex_free
 	.type	aos_mutex_free, @function
 aos_mutex_free:
-.LFB40:
+.LFB46:
 	.loc 1 151 0
 	.cfi_startproc
 .LVL170:
@@ -4067,7 +4067,7 @@ aos_mutex_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE40:
+.LFE46:
 	.size	aos_mutex_free, .-aos_mutex_free
 	.section	.text.unlikely.aos_mutex_free
 .LCOLDE43:
@@ -4080,7 +4080,7 @@ aos_mutex_free:
 	.globl	aos_sem_new
 	.type	aos_sem_new, @function
 aos_sem_new:
-.LFB44:
+.LFB50:
 	.loc 1 230 0
 	.cfi_startproc
 .LVL173:
@@ -4251,7 +4251,7 @@ aos_sem_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	aos_sem_new, .-aos_sem_new
 	.section	.text.unlikely.aos_sem_new
 .LCOLDE44:
@@ -4264,7 +4264,7 @@ aos_sem_new:
 	.globl	aos_sem_free
 	.type	aos_sem_free, @function
 aos_sem_free:
-.LFB45:
+.LFB51:
 	.loc 1 255 0
 	.cfi_startproc
 .LVL183:
@@ -4303,7 +4303,7 @@ aos_sem_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	aos_sem_free, .-aos_sem_free
 	.section	.text.unlikely.aos_sem_free
 .LCOLDE45:
@@ -4316,7 +4316,7 @@ aos_sem_free:
 	.globl	aos_queue_new
 	.type	aos_queue_new, @function
 aos_queue_new:
-.LFB54:
+.LFB60:
 	.loc 1 398 0
 	.cfi_startproc
 .LVL186:
@@ -4492,7 +4492,7 @@ aos_queue_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE54:
+.LFE60:
 	.size	aos_queue_new, .-aos_queue_new
 	.section	.text.unlikely.aos_queue_new
 .LCOLDE46:
@@ -4505,7 +4505,7 @@ aos_queue_new:
 	.globl	aos_queue_free
 	.type	aos_queue_free, @function
 aos_queue_free:
-.LFB55:
+.LFB61:
 	.loc 1 423 0
 	.cfi_startproc
 .LVL198:
@@ -4544,7 +4544,7 @@ aos_queue_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE55:
+.LFE61:
 	.size	aos_queue_free, .-aos_queue_free
 	.section	.text.unlikely.aos_queue_free
 .LCOLDE47:
@@ -4557,7 +4557,7 @@ aos_queue_free:
 	.globl	aos_workqueue_create
 	.type	aos_workqueue_create, @function
 aos_workqueue_create:
-.LFB66:
+.LFB72:
 	.loc 1 603 0
 	.cfi_startproc
 .LVL201:
@@ -4769,7 +4769,7 @@ aos_workqueue_create:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE66:
+.LFE72:
 	.size	aos_workqueue_create, .-aos_workqueue_create
 	.section	.text.unlikely.aos_workqueue_create
 .LCOLDE48:
@@ -4782,7 +4782,7 @@ aos_workqueue_create:
 	.globl	aos_work_init
 	.type	aos_work_init, @function
 aos_work_init:
-.LFB67:
+.LFB73:
 	.loc 1 643 0
 	.cfi_startproc
 .LVL217:
@@ -4962,7 +4962,7 @@ aos_work_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE67:
+.LFE73:
 	.size	aos_work_init, .-aos_work_init
 	.section	.text.unlikely.aos_work_init
 .LCOLDE49:
@@ -4975,7 +4975,7 @@ aos_work_init:
 	.globl	aos_work_destroy
 	.type	aos_work_destroy, @function
 aos_work_destroy:
-.LFB68:
+.LFB74:
 	.loc 1 668 0
 	.cfi_startproc
 .LVL228:
@@ -5033,7 +5033,7 @@ aos_work_destroy:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE68:
+.LFE74:
 	.size	aos_work_destroy, .-aos_work_destroy
 	.section	.text.unlikely.aos_work_destroy
 .LCOLDE50:
@@ -5046,7 +5046,7 @@ aos_work_destroy:
 	.globl	aos_now
 	.type	aos_now, @function
 aos_now:
-.LFB77:
+.LFB83:
 	.loc 1 843 0
 	.cfi_startproc
 	pushl	%ebp
@@ -5076,7 +5076,7 @@ aos_now:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE77:
+.LFE83:
 	.size	aos_now, .-aos_now
 	.section	.text.unlikely.aos_now
 .LCOLDE51:
@@ -5089,7 +5089,7 @@ aos_now:
 	.globl	aos_now_ms
 	.type	aos_now_ms, @function
 aos_now_ms:
-.LFB78:
+.LFB84:
 	.loc 1 848 0
 	.cfi_startproc
 	pushl	%ebp
@@ -5105,7 +5105,7 @@ aos_now_ms:
 	jmp	krhino_sys_time_get
 .LVL235:
 	.cfi_endproc
-.LFE78:
+.LFE84:
 	.size	aos_now_ms, .-aos_now_ms
 	.section	.text.unlikely.aos_now_ms
 .LCOLDE52:
@@ -5118,7 +5118,7 @@ aos_now_ms:
 	.globl	aos_msleep
 	.type	aos_msleep, @function
 aos_msleep:
-.LFB79:
+.LFB85:
 	.loc 1 853 0
 	.cfi_startproc
 .LVL236:
@@ -5148,7 +5148,7 @@ aos_msleep:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE79:
+.LFE85:
 	.size	aos_msleep, .-aos_msleep
 	.section	.text.unlikely.aos_msleep
 .LCOLDE53:
@@ -5161,7 +5161,7 @@ aos_msleep:
 	.globl	aos_init
 	.type	aos_init, @function
 aos_init:
-.LFB80:
+.LFB86:
 	.loc 1 858 0
 	.cfi_startproc
 	pushl	%ebp
@@ -5177,7 +5177,7 @@ aos_init:
 	jmp	krhino_init
 .LVL239:
 	.cfi_endproc
-.LFE80:
+.LFE86:
 	.size	aos_init, .-aos_init
 	.section	.text.unlikely.aos_init
 .LCOLDE54:
@@ -5190,7 +5190,7 @@ aos_init:
 	.globl	aos_start
 	.type	aos_start, @function
 aos_start:
-.LFB81:
+.LFB87:
 	.loc 1 863 0
 	.cfi_startproc
 	pushl	%ebp
@@ -5206,7 +5206,7 @@ aos_start:
 	jmp	krhino_start
 .LVL240:
 	.cfi_endproc
-.LFE81:
+.LFE87:
 	.size	aos_start, .-aos_start
 	.section	.text.unlikely.aos_start
 .LCOLDE55:
@@ -6780,8 +6780,8 @@ used_bitmap:
 	.long	.LASF243
 	.byte	0x1
 	.byte	0x13
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc45
@@ -6794,8 +6794,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x18
 	.long	0x25
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1a
@@ -6803,8 +6803,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x1d
 	.long	0xcf
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x1b
@@ -6812,8 +6812,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x23
 	.long	0x25
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcef
@@ -6875,8 +6875,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x33
 	.long	0x25
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd74
@@ -6945,8 +6945,8 @@ used_bitmap:
 	.long	.LASF244
 	.byte	0x1
 	.byte	0x40
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdaf
@@ -6972,8 +6972,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x48
 	.long	0xcf
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdd2
@@ -6986,8 +6986,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x4d
 	.long	0x25
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe07
@@ -7013,8 +7013,8 @@ used_bitmap:
 	.long	.LASF248
 	.byte	0x1
 	.byte	0x5d
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe31
@@ -7032,8 +7032,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x67
 	.long	0x25
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe87
@@ -7071,8 +7071,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x72
 	.long	0xc6
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xed7
@@ -7107,8 +7107,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0xa3
 	.long	0x25
-	.long	.LFB41
-	.long	.LFE41-.LFB41
+	.long	.LFB47
+	.long	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf2e
@@ -7149,8 +7149,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0xbd
 	.long	0x25
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf74
@@ -7177,8 +7177,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x10b
 	.long	0x25
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfcf
@@ -7218,8 +7218,8 @@ used_bitmap:
 	.long	.LASF256
 	.byte	0x1
 	.value	0x120
-	.long	.LFB47
-	.long	.LFE47-.LFB47
+	.long	.LFB53
+	.long	.LFE53-.LFB53
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1005
@@ -7237,8 +7237,8 @@ used_bitmap:
 	.long	.LASF257
 	.byte	0x1
 	.value	0x13a
-	.long	.LFB49
-	.long	.LFE49-.LFB49
+	.long	.LFB55
+	.long	.LFE55-.LFB55
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1035
@@ -7257,8 +7257,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x147
 	.long	0x25
-	.long	.LFB50
-	.long	.LFE50-.LFB50
+	.long	.LFB56
+	.long	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1087
@@ -7295,8 +7295,8 @@ used_bitmap:
 	.long	.LASF260
 	.byte	0x1
 	.value	0x152
-	.long	.LFB51
-	.long	.LFE51-.LFB51
+	.long	.LFB57
+	.long	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10bc
@@ -7317,8 +7317,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x15d
 	.long	0x25
-	.long	.LFB52
-	.long	.LFE52-.LFB52
+	.long	.LFB58
+	.long	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1144
@@ -7383,8 +7383,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x179
 	.long	0x25
-	.long	.LFB53
-	.long	.LFE53-.LFB53
+	.long	.LFB59
+	.long	.LFE59-.LFB59
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x11ab
@@ -7427,8 +7427,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x1b3
 	.long	0x25
-	.long	.LFB56
-	.long	.LFE56-.LFB56
+	.long	.LFB62
+	.long	.LFE62-.LFB62
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x120c
@@ -7474,8 +7474,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x1c3
 	.long	0x25
-	.long	.LFB57
-	.long	.LFE57-.LFB57
+	.long	.LFB63
+	.long	.LFE63-.LFB63
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x128a
@@ -7529,8 +7529,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x1d4
 	.long	0x25
-	.long	.LFB58
-	.long	.LFE58-.LFB58
+	.long	.LFB64
+	.long	.LFE64-.LFB64
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x12c4
@@ -7557,8 +7557,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x1e5
 	.long	0xc6
-	.long	.LFB59
-	.long	.LFE59-.LFB59
+	.long	.LFB65
+	.long	.LFE65-.LFB65
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x12fd
@@ -7579,8 +7579,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x1f0
 	.long	0x25
-	.long	.LFB60
-	.long	.LFE60-.LFB60
+	.long	.LFB66
+	.long	.LFE66-.LFB66
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1395
@@ -7651,8 +7651,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x207
 	.long	0x25
-	.long	.LFB61
-	.long	.LFE61-.LFB61
+	.long	.LFB67
+	.long	.LFE67-.LFB67
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1442
@@ -7727,8 +7727,8 @@ used_bitmap:
 	.long	.LASF275
 	.byte	0x1
 	.value	0x21e
-	.long	.LFB62
-	.long	.LFE62-.LFB62
+	.long	.LFB68
+	.long	.LFE68-.LFB68
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1471
@@ -7749,8 +7749,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x228
 	.long	0x25
-	.long	.LFB63
-	.long	.LFE63-.LFB63
+	.long	.LFB69
+	.long	.LFE69-.LFB69
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x14b4
@@ -7777,8 +7777,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x238
 	.long	0x25
-	.long	.LFB64
-	.long	.LFE64-.LFB64
+	.long	.LFB70
+	.long	.LFE70-.LFB70
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x14f7
@@ -7805,8 +7805,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x248
 	.long	0x25
-	.long	.LFB65
-	.long	.LFE65-.LFB65
+	.long	.LFB71
+	.long	.LFE71-.LFB71
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x155a
@@ -7847,8 +7847,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x2ae
 	.long	0x25
-	.long	.LFB69
-	.long	.LFE69-.LFB69
+	.long	.LFB75
+	.long	.LFE75-.LFB75
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x15ac
@@ -7889,8 +7889,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x2be
 	.long	0x25
-	.long	.LFB70
-	.long	.LFE70-.LFB70
+	.long	.LFB76
+	.long	.LFE76-.LFB76
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x15fb
@@ -7917,8 +7917,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x2ce
 	.long	0x25
-	.long	.LFB71
-	.long	.LFE71-.LFB71
+	.long	.LFB77
+	.long	.LFE77-.LFB77
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x163e
@@ -7945,8 +7945,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x2e0
 	.long	0xc6
-	.long	.LFB72
-	.long	.LFE72-.LFB72
+	.long	.LFB78
+	.long	.LFE78-.LFB78
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1693
@@ -7976,8 +7976,8 @@ used_bitmap:
 	.byte	0
 	.uleb128 0x2c
 	.long	0xbfc
-	.long	.LFB73
-	.long	.LFE73-.LFB73
+	.long	.LFB79
+	.long	.LFE79-.LFB79
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x16fb
@@ -8017,8 +8017,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x31f
 	.long	0xc6
-	.long	.LFB74
-	.long	.LFE74-.LFB74
+	.long	.LFB80
+	.long	.LFE80-.LFB80
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x175f
@@ -8058,8 +8058,8 @@ used_bitmap:
 	.long	.LASF286
 	.byte	0x1
 	.value	0x339
-	.long	.LFB75
-	.long	.LFE75-.LFB75
+	.long	.LFB81
+	.long	.LFE81-.LFB81
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x179d
@@ -8087,8 +8087,8 @@ used_bitmap:
 	.long	.LASF289
 	.byte	0x1
 	.value	0x340
-	.long	.LFB76
-	.long	.LFE76-.LFB76
+	.long	.LFB82
+	.long	.LFE82-.LFB82
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x17d6
@@ -8116,8 +8116,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0x7d
 	.long	0x25
-	.long	.LFB39
-	.long	.LFE39-.LFB39
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1835
@@ -8158,8 +8158,8 @@ used_bitmap:
 	.long	.LASF291
 	.byte	0x1
 	.byte	0x96
-	.long	.LFB40
-	.long	.LFE40-.LFB40
+	.long	.LFB46
+	.long	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1871
@@ -8183,8 +8183,8 @@ used_bitmap:
 	.byte	0x1
 	.byte	0xe5
 	.long	0x25
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB50
+	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x18de
@@ -8233,8 +8233,8 @@ used_bitmap:
 	.long	.LASF293
 	.byte	0x1
 	.byte	0xfe
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x191a
@@ -8258,8 +8258,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x18d
 	.long	0x25
-	.long	.LFB54
-	.long	.LFE54-.LFB54
+	.long	.LFB60
+	.long	.LFE60-.LFB60
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x19aa
@@ -8321,8 +8321,8 @@ used_bitmap:
 	.long	.LASF296
 	.byte	0x1
 	.value	0x1a6
-	.long	.LFB55
-	.long	.LFE55-.LFB55
+	.long	.LFB61
+	.long	.LFE61-.LFB61
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x19e2
@@ -8346,8 +8346,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x25a
 	.long	0x25
-	.long	.LFB66
-	.long	.LFE66-.LFB66
+	.long	.LFB72
+	.long	.LFE72-.LFB72
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1a8f
@@ -8420,8 +8420,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x282
 	.long	0x25
-	.long	.LFB67
-	.long	.LFE67-.LFB67
+	.long	.LFB73
+	.long	.LFE73-.LFB73
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1b2d
@@ -8486,8 +8486,8 @@ used_bitmap:
 	.long	.LASF299
 	.byte	0x1
 	.value	0x29b
-	.long	.LFB68
-	.long	.LFE68-.LFB68
+	.long	.LFB74
+	.long	.LFE74-.LFB74
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1b7c
@@ -8520,8 +8520,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x34a
 	.long	0x3e
-	.long	.LFB77
-	.long	.LFE77-.LFB77
+	.long	.LFB83
+	.long	.LFE83-.LFB83
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1ba0
@@ -8534,8 +8534,8 @@ used_bitmap:
 	.byte	0x1
 	.value	0x34f
 	.long	0x3e
-	.long	.LFB78
-	.long	.LFE78-.LFB78
+	.long	.LFB84
+	.long	.LFE84-.LFB84
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1bc4
@@ -8547,8 +8547,8 @@ used_bitmap:
 	.long	.LASF302
 	.byte	0x1
 	.value	0x354
-	.long	.LFB79
-	.long	.LFE79-.LFB79
+	.long	.LFB85
+	.long	.LFE85-.LFB85
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1bfb
@@ -8571,8 +8571,8 @@ used_bitmap:
 	.long	.LASF303
 	.byte	0x1
 	.value	0x359
-	.long	.LFB80
-	.long	.LFE80-.LFB80
+	.long	.LFB86
+	.long	.LFE86-.LFB86
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1c1b
@@ -8584,8 +8584,8 @@ used_bitmap:
 	.long	.LASF304
 	.byte	0x1
 	.value	0x35e
-	.long	.LFB81
-	.long	.LFE81-.LFB81
+	.long	.LFB87
+	.long	.LFE87-.LFB87
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1c3b
@@ -9580,7 +9580,7 @@ used_bitmap:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL5
-	.long	.LFE31
+	.long	.LFE37
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -9591,7 +9591,7 @@ used_bitmap:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL9
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -9628,7 +9628,7 @@ used_bitmap:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL23
-	.long	.LFE37
+	.long	.LFE43
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -9701,7 +9701,7 @@ used_bitmap:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL52
-	.long	.LFE47
+	.long	.LFE53
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -9713,7 +9713,7 @@ used_bitmap:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL55
-	.long	.LFE49
+	.long	.LFE55
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -9724,7 +9724,7 @@ used_bitmap:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL59
-	.long	.LFE50
+	.long	.LFE56
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -9894,7 +9894,7 @@ used_bitmap:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL150
-	.long	.LFE73
+	.long	.LFE79
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -9939,7 +9939,7 @@ used_bitmap:
 	.byte	0x91
 	.sleb128 -20
 	.long	.LVL155
-	.long	.LFE74
+	.long	.LFE80
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -9951,7 +9951,7 @@ used_bitmap:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL159
-	.long	.LFE76
+	.long	.LFE82
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -10149,18 +10149,6 @@ used_bitmap:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB28
-	.long	.LFE28-.LFB28
-	.long	.LFB29
-	.long	.LFE29-.LFB29
-	.long	.LFB30
-	.long	.LFE30-.LFB30
-	.long	.LFB31
-	.long	.LFE31-.LFB31
-	.long	.LFB32
-	.long	.LFE32-.LFB32
-	.long	.LFB33
-	.long	.LFE33-.LFB33
 	.long	.LFB34
 	.long	.LFE34-.LFB34
 	.long	.LFB35
@@ -10171,24 +10159,28 @@ used_bitmap:
 	.long	.LFE37-.LFB37
 	.long	.LFB38
 	.long	.LFE38-.LFB38
+	.long	.LFB39
+	.long	.LFE39-.LFB39
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.long	.LFB41
 	.long	.LFE41-.LFB41
 	.long	.LFB42
 	.long	.LFE42-.LFB42
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB43
+	.long	.LFE43-.LFB43
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.long	.LFB47
 	.long	.LFE47-.LFB47
-	.long	.LFB49
-	.long	.LFE49-.LFB49
-	.long	.LFB50
-	.long	.LFE50-.LFB50
-	.long	.LFB51
-	.long	.LFE51-.LFB51
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.long	.LFB52
 	.long	.LFE52-.LFB52
 	.long	.LFB53
 	.long	.LFE53-.LFB53
+	.long	.LFB55
+	.long	.LFE55-.LFB55
 	.long	.LFB56
 	.long	.LFE56-.LFB56
 	.long	.LFB57
@@ -10197,10 +10189,6 @@ used_bitmap:
 	.long	.LFE58-.LFB58
 	.long	.LFB59
 	.long	.LFE59-.LFB59
-	.long	.LFB60
-	.long	.LFE60-.LFB60
-	.long	.LFB61
-	.long	.LFE61-.LFB61
 	.long	.LFB62
 	.long	.LFE62-.LFB62
 	.long	.LFB63
@@ -10209,40 +10197,22 @@ used_bitmap:
 	.long	.LFE64-.LFB64
 	.long	.LFB65
 	.long	.LFE65-.LFB65
-	.long	.LFB69
-	.long	.LFE69-.LFB69
-	.long	.LFB70
-	.long	.LFE70-.LFB70
-	.long	.LFB71
-	.long	.LFE71-.LFB71
-	.long	.LFB72
-	.long	.LFE72-.LFB72
-	.long	.LFB73
-	.long	.LFE73-.LFB73
-	.long	.LFB74
-	.long	.LFE74-.LFB74
-	.long	.LFB75
-	.long	.LFE75-.LFB75
-	.long	.LFB76
-	.long	.LFE76-.LFB76
-	.long	.LFB39
-	.long	.LFE39-.LFB39
-	.long	.LFB40
-	.long	.LFE40-.LFB40
-	.long	.LFB44
-	.long	.LFE44-.LFB44
-	.long	.LFB45
-	.long	.LFE45-.LFB45
-	.long	.LFB54
-	.long	.LFE54-.LFB54
-	.long	.LFB55
-	.long	.LFE55-.LFB55
 	.long	.LFB66
 	.long	.LFE66-.LFB66
 	.long	.LFB67
 	.long	.LFE67-.LFB67
 	.long	.LFB68
 	.long	.LFE68-.LFB68
+	.long	.LFB69
+	.long	.LFE69-.LFB69
+	.long	.LFB70
+	.long	.LFE70-.LFB70
+	.long	.LFB71
+	.long	.LFE71-.LFB71
+	.long	.LFB75
+	.long	.LFE75-.LFB75
+	.long	.LFB76
+	.long	.LFE76-.LFB76
 	.long	.LFB77
 	.long	.LFE77-.LFB77
 	.long	.LFB78
@@ -10253,22 +10223,40 @@ used_bitmap:
 	.long	.LFE80-.LFB80
 	.long	.LFB81
 	.long	.LFE81-.LFB81
+	.long	.LFB82
+	.long	.LFE82-.LFB82
+	.long	.LFB45
+	.long	.LFE45-.LFB45
+	.long	.LFB46
+	.long	.LFE46-.LFB46
+	.long	.LFB50
+	.long	.LFE50-.LFB50
+	.long	.LFB51
+	.long	.LFE51-.LFB51
+	.long	.LFB60
+	.long	.LFE60-.LFB60
+	.long	.LFB61
+	.long	.LFE61-.LFB61
+	.long	.LFB72
+	.long	.LFE72-.LFB72
+	.long	.LFB73
+	.long	.LFE73-.LFB73
+	.long	.LFB74
+	.long	.LFE74-.LFB74
+	.long	.LFB83
+	.long	.LFE83-.LFB83
+	.long	.LFB84
+	.long	.LFE84-.LFB84
+	.long	.LFB85
+	.long	.LFE85-.LFB85
+	.long	.LFB86
+	.long	.LFE86-.LFB86
+	.long	.LFB87
+	.long	.LFE87-.LFB87
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB28
-	.long	.LFE28
-	.long	.LFB29
-	.long	.LFE29
-	.long	.LFB30
-	.long	.LFE30
-	.long	.LFB31
-	.long	.LFE31
-	.long	.LFB32
-	.long	.LFE32
-	.long	.LFB33
-	.long	.LFE33
 	.long	.LFB34
 	.long	.LFE34
 	.long	.LFB35
@@ -10279,24 +10267,28 @@ used_bitmap:
 	.long	.LFE37
 	.long	.LFB38
 	.long	.LFE38
+	.long	.LFB39
+	.long	.LFE39
+	.long	.LFB40
+	.long	.LFE40
 	.long	.LFB41
 	.long	.LFE41
 	.long	.LFB42
 	.long	.LFE42
-	.long	.LFB46
-	.long	.LFE46
+	.long	.LFB43
+	.long	.LFE43
+	.long	.LFB44
+	.long	.LFE44
 	.long	.LFB47
 	.long	.LFE47
-	.long	.LFB49
-	.long	.LFE49
-	.long	.LFB50
-	.long	.LFE50
-	.long	.LFB51
-	.long	.LFE51
+	.long	.LFB48
+	.long	.LFE48
 	.long	.LFB52
 	.long	.LFE52
 	.long	.LFB53
 	.long	.LFE53
+	.long	.LFB55
+	.long	.LFE55
 	.long	.LFB56
 	.long	.LFE56
 	.long	.LFB57
@@ -10305,10 +10297,6 @@ used_bitmap:
 	.long	.LFE58
 	.long	.LFB59
 	.long	.LFE59
-	.long	.LFB60
-	.long	.LFE60
-	.long	.LFB61
-	.long	.LFE61
 	.long	.LFB62
 	.long	.LFE62
 	.long	.LFB63
@@ -10317,40 +10305,22 @@ used_bitmap:
 	.long	.LFE64
 	.long	.LFB65
 	.long	.LFE65
-	.long	.LFB69
-	.long	.LFE69
-	.long	.LFB70
-	.long	.LFE70
-	.long	.LFB71
-	.long	.LFE71
-	.long	.LFB72
-	.long	.LFE72
-	.long	.LFB73
-	.long	.LFE73
-	.long	.LFB74
-	.long	.LFE74
-	.long	.LFB75
-	.long	.LFE75
-	.long	.LFB76
-	.long	.LFE76
-	.long	.LFB39
-	.long	.LFE39
-	.long	.LFB40
-	.long	.LFE40
-	.long	.LFB44
-	.long	.LFE44
-	.long	.LFB45
-	.long	.LFE45
-	.long	.LFB54
-	.long	.LFE54
-	.long	.LFB55
-	.long	.LFE55
 	.long	.LFB66
 	.long	.LFE66
 	.long	.LFB67
 	.long	.LFE67
 	.long	.LFB68
 	.long	.LFE68
+	.long	.LFB69
+	.long	.LFE69
+	.long	.LFB70
+	.long	.LFE70
+	.long	.LFB71
+	.long	.LFE71
+	.long	.LFB75
+	.long	.LFE75
+	.long	.LFB76
+	.long	.LFE76
 	.long	.LFB77
 	.long	.LFE77
 	.long	.LFB78
@@ -10361,6 +10331,36 @@ used_bitmap:
 	.long	.LFE80
 	.long	.LFB81
 	.long	.LFE81
+	.long	.LFB82
+	.long	.LFE82
+	.long	.LFB45
+	.long	.LFE45
+	.long	.LFB46
+	.long	.LFE46
+	.long	.LFB50
+	.long	.LFE50
+	.long	.LFB51
+	.long	.LFE51
+	.long	.LFB60
+	.long	.LFE60
+	.long	.LFB61
+	.long	.LFE61
+	.long	.LFB72
+	.long	.LFE72
+	.long	.LFB73
+	.long	.LFE73
+	.long	.LFB74
+	.long	.LFE74
+	.long	.LFB83
+	.long	.LFE83
+	.long	.LFB84
+	.long	.LFE84
+	.long	.LFB85
+	.long	.LFE85
+	.long	.LFB86
+	.long	.LFE86
+	.long	.LFB87
+	.long	.LFE87
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

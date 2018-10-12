@@ -10,7 +10,7 @@
 	.section	.text.do_memp_malloc_pool.isra.0
 	.type	do_memp_malloc_pool.isra.0, @function
 do_memp_malloc_pool.isra.0:
-.LFB25:
+.LFB31:
 	.file 1 "kernel/protocols/net/core/memp.c"
 	.loc 1 289 0
 	.cfi_startproc
@@ -71,7 +71,7 @@ do_memp_malloc_pool.isra.0:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	do_memp_malloc_pool.isra.0, .-do_memp_malloc_pool.isra.0
 	.section	.text.unlikely.do_memp_malloc_pool.isra.0
 .LCOLDE0:
@@ -84,7 +84,7 @@ do_memp_malloc_pool.isra.0:
 	.globl	memp_init_pool
 	.type	memp_init_pool, @function
 memp_init_pool:
-.LFB17:
+.LFB23:
 	.loc 1 228 0
 	.cfi_startproc
 .LVL8:
@@ -99,7 +99,7 @@ memp_init_pool:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	memp_init_pool, .-memp_init_pool
 	.section	.text.unlikely.memp_init_pool
 .LCOLDE1:
@@ -112,7 +112,7 @@ memp_init_pool:
 	.globl	memp_init
 	.type	memp_init, @function
 memp_init:
-.LFB18:
+.LFB24:
 	.loc 1 269 0
 	.cfi_startproc
 .LVL9:
@@ -127,7 +127,7 @@ memp_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	memp_init, .-memp_init
 	.section	.text.unlikely.memp_init
 .LCOLDE2:
@@ -140,7 +140,7 @@ memp_init:
 	.globl	memp_malloc_pool
 	.type	memp_malloc_pool, @function
 memp_malloc_pool:
-.LFB20:
+.LFB26:
 	.loc 1 360 0
 	.cfi_startproc
 .LVL10:
@@ -173,7 +173,7 @@ memp_malloc_pool:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	memp_malloc_pool, .-memp_malloc_pool
 	.section	.text.unlikely.memp_malloc_pool
 .LCOLDE3:
@@ -189,7 +189,7 @@ memp_malloc_pool:
 	.globl	memp_malloc
 	.type	memp_malloc, @function
 memp_malloc:
-.LFB21:
+.LFB27:
 	.loc 1 386 0
 	.cfi_startproc
 .LVL13:
@@ -231,7 +231,7 @@ memp_malloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	memp_malloc, .-memp_malloc
 	.section	.text.unlikely.memp_malloc
 .LCOLDE5:
@@ -244,7 +244,7 @@ memp_malloc:
 	.globl	memp_free_pool
 	.type	memp_free_pool, @function
 memp_free_pool:
-.LFB23:
+.LFB29:
 	.loc 1 450 0
 	.cfi_startproc
 .LVL16:
@@ -306,7 +306,7 @@ memp_free_pool:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	memp_free_pool, .-memp_free_pool
 	.section	.text.unlikely.memp_free_pool
 .LCOLDE6:
@@ -322,7 +322,7 @@ memp_free_pool:
 	.globl	memp_free
 	.type	memp_free, @function
 memp_free:
-.LFB24:
+.LFB30:
 	.loc 1 467 0
 	.cfi_startproc
 .LVL23:
@@ -386,7 +386,7 @@ memp_free:
 .LBE14:
 .LBE15:
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	memp_free, .-memp_free
 	.section	.text.unlikely.memp_free
 .LCOLDE8:
@@ -876,8 +876,8 @@ memp_RAW_PCB:
 	.byte	0
 	.uleb128 0x15
 	.long	0x193
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x296
@@ -908,8 +908,8 @@ memp_RAW_PCB:
 	.byte	0
 	.uleb128 0x15
 	.long	0x228
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2b2
@@ -923,8 +923,8 @@ memp_RAW_PCB:
 	.long	.LASF46
 	.byte	0x1
 	.value	0x10c
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2d4
@@ -940,8 +940,8 @@ memp_RAW_PCB:
 	.byte	0x1
 	.value	0x164
 	.long	0x79
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x312
@@ -967,8 +967,8 @@ memp_RAW_PCB:
 	.byte	0x1
 	.value	0x17e
 	.long	0x79
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x371
@@ -1010,8 +1010,8 @@ memp_RAW_PCB:
 	.long	.LASF47
 	.byte	0x1
 	.value	0x1c1
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3fc
@@ -1067,8 +1067,8 @@ memp_RAW_PCB:
 	.long	.LASF48
 	.byte	0x1
 	.value	0x1d2
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x495
@@ -1920,7 +1920,7 @@ memp_RAW_PCB:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL12
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -1965,7 +1965,7 @@ memp_RAW_PCB:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL25
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -1996,7 +1996,7 @@ memp_RAW_PCB:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL30-1
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -2017,20 +2017,20 @@ memp_RAW_PCB:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB25
-	.long	.LFE25-.LFB25
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.long	.LFB23
 	.long	.LFE23-.LFB23
 	.long	.LFB24
 	.long	.LFE24-.LFB24
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2047,20 +2047,20 @@ memp_RAW_PCB:
 	.long	.LBE15
 	.long	0
 	.long	0
-	.long	.LFB25
-	.long	.LFE25
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
+	.long	.LFB31
+	.long	.LFE31
 	.long	.LFB23
 	.long	.LFE23
 	.long	.LFB24
 	.long	.LFE24
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

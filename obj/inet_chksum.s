@@ -11,7 +11,7 @@
 	.globl	lwip_standard_chksum
 	.type	lwip_standard_chksum, @function
 lwip_standard_chksum:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/inet_chksum.c"
 	.loc 1 135 0
 	.cfi_startproc
@@ -134,7 +134,7 @@ lwip_standard_chksum:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	lwip_standard_chksum, .-lwip_standard_chksum
 	.section	.text.unlikely.lwip_standard_chksum
 .LCOLDE0:
@@ -147,7 +147,7 @@ lwip_standard_chksum:
 	.globl	inet_chksum_pseudo
 	.type	inet_chksum_pseudo, @function
 inet_chksum_pseudo:
-.LFB19:
+.LFB25:
 	.loc 1 313 0
 	.cfi_startproc
 .LVL25:
@@ -339,7 +339,7 @@ inet_chksum_pseudo:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	inet_chksum_pseudo, .-inet_chksum_pseudo
 	.section	.text.unlikely.inet_chksum_pseudo
 .LCOLDE1:
@@ -352,7 +352,7 @@ inet_chksum_pseudo:
 	.globl	ip_chksum_pseudo
 	.type	ip_chksum_pseudo, @function
 ip_chksum_pseudo:
-.LFB20:
+.LFB26:
 	.loc 1 382 0
 	.cfi_startproc
 .LVL64:
@@ -377,7 +377,7 @@ ip_chksum_pseudo:
 	jmp	inet_chksum_pseudo
 .LVL68:
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	ip_chksum_pseudo, .-ip_chksum_pseudo
 	.section	.text.unlikely.ip_chksum_pseudo
 .LCOLDE2:
@@ -390,7 +390,7 @@ ip_chksum_pseudo:
 	.globl	inet_chksum_pseudo_partial
 	.type	inet_chksum_pseudo_partial, @function
 inet_chksum_pseudo_partial:
-.LFB22:
+.LFB28:
 	.loc 1 459 0
 	.cfi_startproc
 .LVL69:
@@ -599,7 +599,7 @@ inet_chksum_pseudo_partial:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	inet_chksum_pseudo_partial, .-inet_chksum_pseudo_partial
 	.section	.text.unlikely.inet_chksum_pseudo_partial
 .LCOLDE3:
@@ -612,7 +612,7 @@ inet_chksum_pseudo_partial:
 	.globl	ip_chksum_pseudo_partial
 	.type	ip_chksum_pseudo_partial, @function
 ip_chksum_pseudo_partial:
-.LFB23:
+.LFB29:
 	.loc 1 529 0
 	.cfi_startproc
 .LVL104:
@@ -641,7 +641,7 @@ ip_chksum_pseudo_partial:
 	jmp	inet_chksum_pseudo_partial
 .LVL110:
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	ip_chksum_pseudo_partial, .-ip_chksum_pseudo_partial
 	.section	.text.unlikely.ip_chksum_pseudo_partial
 .LCOLDE4:
@@ -654,7 +654,7 @@ ip_chksum_pseudo_partial:
 	.globl	inet_chksum
 	.type	inet_chksum, @function
 inet_chksum:
-.LFB24:
+.LFB30:
 	.loc 1 557 0
 	.cfi_startproc
 .LVL111:
@@ -679,7 +679,7 @@ inet_chksum:
 	.loc 1 559 0
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	inet_chksum, .-inet_chksum
 	.section	.text.unlikely.inet_chksum
 .LCOLDE5:
@@ -692,7 +692,7 @@ inet_chksum:
 	.globl	inet_chksum_pbuf
 	.type	inet_chksum_pbuf, @function
 inet_chksum_pbuf:
-.LFB25:
+.LFB31:
 	.loc 1 570 0
 	.cfi_startproc
 .LVL113:
@@ -802,7 +802,7 @@ inet_chksum_pbuf:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	inet_chksum_pbuf, .-inet_chksum_pbuf
 	.section	.text.unlikely.inet_chksum_pbuf
 .LCOLDE6:
@@ -1020,8 +1020,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.byte	0x86
 	.long	0xb1
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x207
@@ -1128,8 +1128,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.value	0x137
 	.long	0xb1
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x35f
@@ -1233,8 +1233,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.value	0x17c
 	.long	0xb1
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3f2
@@ -1361,8 +1361,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.value	0x1c9
 	.long	0xb1
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x578
@@ -1475,8 +1475,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.value	0x20f
 	.long	0xb1
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x610
@@ -1556,8 +1556,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.value	0x22c
 	.long	0xb1
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x652
@@ -1586,8 +1586,8 @@ inet_chksum_pbuf:
 	.byte	0x1
 	.value	0x239
 	.long	0xb1
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6b1
@@ -2224,7 +2224,7 @@ inet_chksum_pbuf:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL23
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2244,7 +2244,7 @@ inet_chksum_pbuf:
 	.byte	0x1a
 	.byte	0x9f
 	.long	.LVL23
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -2780,20 +2780,20 @@ inet_chksum_pbuf:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
-	.long	.LFB24
-	.long	.LFE24-.LFB24
 	.long	.LFB25
 	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2812,20 +2812,20 @@ inet_chksum_pbuf:
 	.long	.LBE15
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
-	.long	.LFB24
-	.long	.LFE24
 	.long	.LFB25
 	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB31
+	.long	.LFE31
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

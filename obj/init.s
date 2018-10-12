@@ -11,7 +11,7 @@
 	.globl	lwip_init
 	.type	lwip_init, @function
 lwip_init:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/init.c"
 	.loc 1 348 0
 	.cfi_startproc
@@ -53,7 +53,7 @@ lwip_init:
 	jmp	sys_timeouts_init
 .LVL8:
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	lwip_init, .-lwip_init
 	.section	.text.unlikely.lwip_init
 .LCOLDE0:
@@ -155,8 +155,8 @@ lwip_init:
 	.long	.LASF27
 	.byte	0x1
 	.value	0x15b
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfd
@@ -387,14 +387,14 @@ lwip_init:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
+	.long	.LFB23
+	.long	.LFE23
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

@@ -10,7 +10,7 @@
 	.section	.text.key_proc_work
 	.type	key_proc_work, @function
 key_proc_work:
-.LFB17:
+.LFB23:
 	.file 1 "board/mk3060/board.c"
 	.loc 1 115 0
 	.cfi_startproc
@@ -33,7 +33,7 @@ key_proc_work:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	key_proc_work, .-key_proc_work
 	.section	.text.unlikely.key_proc_work
 .LCOLDE0:
@@ -45,7 +45,7 @@ key_proc_work:
 .LHOTB1:
 	.type	handle_elink_key, @function
 handle_elink_key:
-.LFB18:
+.LFB24:
 	.loc 1 120 0
 	.cfi_startproc
 .LVL2:
@@ -109,7 +109,7 @@ handle_elink_key:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	handle_elink_key, .-handle_elink_key
 	.section	.text.unlikely.handle_elink_key
 .LCOLDE1:
@@ -121,7 +121,7 @@ handle_elink_key:
 .LHOTB2:
 	.type	key_poll_func, @function
 key_poll_func:
-.LFB16:
+.LFB22:
 	.loc 1 89 0
 	.cfi_startproc
 .LVL9:
@@ -231,7 +231,7 @@ key_poll_func:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	key_poll_func, .-key_poll_func
 	.section	.text.unlikely.key_poll_func
 .LCOLDE2:
@@ -247,7 +247,7 @@ key_poll_func:
 	.globl	board_init
 	.type	board_init, @function
 board_init:
-.LFB20:
+.LFB26:
 	.loc 1 160 0
 	.cfi_startproc
 	pushl	%ebp
@@ -354,7 +354,7 @@ board_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	board_init, .-board_init
 	.section	.text.unlikely.board_init
 .LCOLDE4:
@@ -814,8 +814,8 @@ hal_partitions:
 	.long	.LASF88
 	.byte	0x1
 	.byte	0x72
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2ed
@@ -833,8 +833,8 @@ hal_partitions:
 	.byte	0
 	.uleb128 0x13
 	.long	0x26f
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x35b
@@ -877,8 +877,8 @@ hal_partitions:
 	.byte	0
 	.uleb128 0x13
 	.long	0x292
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3e0
@@ -952,8 +952,8 @@ hal_partitions:
 	.long	.LASF90
 	.byte	0x1
 	.byte	0x9f
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x490
@@ -1664,14 +1664,14 @@ hal_partitions:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB16
-	.long	.LFE16-.LFB16
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB22
+	.long	.LFE22-.LFB22
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -1682,14 +1682,14 @@ hal_partitions:
 	.long	.LBE15
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB16
-	.long	.LFE16
-	.long	.LFB20
-	.long	.LFE20
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB22
+	.long	.LFE22
+	.long	.LFB26
+	.long	.LFE26
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

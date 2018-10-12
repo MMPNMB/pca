@@ -11,7 +11,7 @@
 	.globl	vfs_init
 	.type	vfs_init, @function
 vfs_init:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/vfs/vfs.c"
 	.loc 1 28 0
 	.cfi_startproc
@@ -55,7 +55,7 @@ vfs_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	vfs_init, .-vfs_init
 	.section	.text.unlikely.vfs_init
 .LCOLDE0:
@@ -68,7 +68,7 @@ vfs_init:
 	.globl	aos_open
 	.type	aos_open, @function
 aos_open:
-.LFB18:
+.LFB24:
 	.loc 1 47 0
 	.cfi_startproc
 .LVL4:
@@ -252,7 +252,7 @@ aos_open:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	aos_open, .-aos_open
 	.section	.text.unlikely.aos_open
 .LCOLDE1:
@@ -265,7 +265,7 @@ aos_open:
 	.globl	aos_close
 	.type	aos_close, @function
 aos_close:
-.LFB19:
+.LFB25:
 	.loc 1 107 0
 	.cfi_startproc
 .LVL25:
@@ -344,7 +344,7 @@ aos_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	aos_close, .-aos_close
 	.section	.text.unlikely.aos_close
 .LCOLDE2:
@@ -357,7 +357,7 @@ aos_close:
 	.globl	aos_read
 	.type	aos_read, @function
 aos_read:
-.LFB20:
+.LFB26:
 	.loc 1 148 0
 	.cfi_startproc
 .LVL35:
@@ -433,7 +433,7 @@ aos_read:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	aos_read, .-aos_read
 	.section	.text.unlikely.aos_read
 .LCOLDE3:
@@ -446,7 +446,7 @@ aos_read:
 	.globl	aos_write
 	.type	aos_write, @function
 aos_write:
-.LFB21:
+.LFB27:
 	.loc 1 179 0
 	.cfi_startproc
 .LVL44:
@@ -522,7 +522,7 @@ aos_write:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	aos_write, .-aos_write
 	.section	.text.unlikely.aos_write
 .LCOLDE4:
@@ -535,7 +535,7 @@ aos_write:
 	.globl	aos_ioctl
 	.type	aos_ioctl, @function
 aos_ioctl:
-.LFB22:
+.LFB28:
 	.loc 1 210 0
 	.cfi_startproc
 .LVL53:
@@ -630,7 +630,7 @@ aos_ioctl:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	aos_ioctl, .-aos_ioctl
 	.section	.text.unlikely.aos_ioctl
 .LCOLDE5:
@@ -643,7 +643,7 @@ aos_ioctl:
 	.globl	aos_lseek
 	.type	aos_lseek, @function
 aos_lseek:
-.LFB23:
+.LFB29:
 	.loc 1 241 0
 	.cfi_startproc
 .LVL64:
@@ -721,7 +721,7 @@ aos_lseek:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	aos_lseek, .-aos_lseek
 	.section	.text.unlikely.aos_lseek
 .LCOLDE6:
@@ -734,7 +734,7 @@ aos_lseek:
 	.globl	aos_sync
 	.type	aos_sync, @function
 aos_sync:
-.LFB24:
+.LFB30:
 	.loc 1 264 0
 	.cfi_startproc
 .LVL73:
@@ -793,7 +793,7 @@ aos_sync:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	aos_sync, .-aos_sync
 	.section	.text.unlikely.aos_sync
 .LCOLDE7:
@@ -806,7 +806,7 @@ aos_sync:
 	.globl	aos_stat
 	.type	aos_stat, @function
 aos_stat:
-.LFB25:
+.LFB31:
 	.loc 1 287 0
 	.cfi_startproc
 .LVL82:
@@ -939,7 +939,7 @@ aos_stat:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	aos_stat, .-aos_stat
 	.section	.text.unlikely.aos_stat
 .LCOLDE8:
@@ -952,7 +952,7 @@ aos_stat:
 	.globl	aos_unlink
 	.type	aos_unlink, @function
 aos_unlink:
-.LFB26:
+.LFB32:
 	.loc 1 332 0
 	.cfi_startproc
 .LVL96:
@@ -1085,7 +1085,7 @@ aos_unlink:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	aos_unlink, .-aos_unlink
 	.section	.text.unlikely.aos_unlink
 .LCOLDE9:
@@ -1098,7 +1098,7 @@ aos_unlink:
 	.globl	aos_rename
 	.type	aos_rename, @function
 aos_rename:
-.LFB27:
+.LFB33:
 	.loc 1 377 0
 	.cfi_startproc
 .LVL110:
@@ -1235,7 +1235,7 @@ aos_rename:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	aos_rename, .-aos_rename
 	.section	.text.unlikely.aos_rename
 .LCOLDE10:
@@ -1248,7 +1248,7 @@ aos_rename:
 	.globl	aos_opendir
 	.type	aos_opendir, @function
 aos_opendir:
-.LFB28:
+.LFB34:
 	.loc 1 422 0
 	.cfi_startproc
 .LVL125:
@@ -1392,7 +1392,7 @@ aos_opendir:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	aos_opendir, .-aos_opendir
 	.section	.text.unlikely.aos_opendir
 .LCOLDE11:
@@ -1405,7 +1405,7 @@ aos_opendir:
 	.globl	aos_closedir
 	.type	aos_closedir, @function
 aos_closedir:
-.LFB29:
+.LFB35:
 	.loc 1 472 0
 	.cfi_startproc
 .LVL141:
@@ -1507,7 +1507,7 @@ aos_closedir:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	aos_closedir, .-aos_closedir
 	.section	.text.unlikely.aos_closedir
 .LCOLDE12:
@@ -1520,7 +1520,7 @@ aos_closedir:
 	.globl	aos_readdir
 	.type	aos_readdir, @function
 aos_readdir:
-.LFB30:
+.LFB36:
 	.loc 1 507 0
 	.cfi_startproc
 .LVL154:
@@ -1583,7 +1583,7 @@ aos_readdir:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	aos_readdir, .-aos_readdir
 	.section	.text.unlikely.aos_readdir
 .LCOLDE13:
@@ -1596,7 +1596,7 @@ aos_readdir:
 	.globl	aos_mkdir
 	.type	aos_mkdir, @function
 aos_mkdir:
-.LFB31:
+.LFB37:
 	.loc 1 537 0
 	.cfi_startproc
 .LVL161:
@@ -1729,7 +1729,7 @@ aos_mkdir:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	aos_mkdir, .-aos_mkdir
 	.section	.text.unlikely.aos_mkdir
 .LCOLDE14:
@@ -2758,8 +2758,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0x1b
 	.long	0x73
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x84d
@@ -2781,8 +2781,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0x2e
 	.long	0x73
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8ff
@@ -2851,8 +2851,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0x6a
 	.long	0x73
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x975
@@ -2900,8 +2900,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0x93
 	.long	0x185
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9e9
@@ -2956,8 +2956,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0xb2
 	.long	0x185
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa5d
@@ -3012,8 +3012,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0xd1
 	.long	0x73
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xad5
@@ -3062,8 +3062,8 @@ g_vfs_init:
 	.byte	0x1
 	.byte	0xf0
 	.long	0x159
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb4a
@@ -3118,8 +3118,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x107
 	.long	0x73
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xba8
@@ -3158,8 +3158,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x11e
 	.long	0x73
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc68
@@ -3233,8 +3233,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x14b
 	.long	0x73
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd18
@@ -3300,8 +3300,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x178
 	.long	0x73
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdd7
@@ -3375,8 +3375,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x1a5
 	.long	0x76a
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe78
@@ -3436,8 +3436,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x1d7
 	.long	0x73
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf04
@@ -3491,8 +3491,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x1fa
 	.long	0x78a
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf65
@@ -3531,8 +3531,8 @@ g_vfs_init:
 	.byte	0x1
 	.value	0x218
 	.long	0x73
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1017
@@ -4554,7 +4554,7 @@ g_vfs_init:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL59
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -4571,7 +4571,7 @@ g_vfs_init:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL60
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -4588,7 +4588,7 @@ g_vfs_init:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL60
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
@@ -5029,18 +5029,6 @@ g_vfs_init:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
 	.long	.LFB24
@@ -5059,22 +5047,22 @@ g_vfs_init:
 	.long	.LFE30-.LFB30
 	.long	.LFB31
 	.long	.LFE31-.LFB31
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB34
+	.long	.LFE34-.LFB34
+	.long	.LFB35
+	.long	.LFE35-.LFB35
+	.long	.LFB36
+	.long	.LFE36-.LFB36
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
 	.long	.LFB24
@@ -5093,6 +5081,18 @@ g_vfs_init:
 	.long	.LFE30
 	.long	.LFB31
 	.long	.LFE31
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB34
+	.long	.LFE34
+	.long	.LFB35
+	.long	.LFE35
+	.long	.LFB36
+	.long	.LFE36
+	.long	.LFB37
+	.long	.LFE37
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

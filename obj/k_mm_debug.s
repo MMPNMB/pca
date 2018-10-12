@@ -17,7 +17,7 @@ krhino_mm_leak_region_init:
 	.cfi_startproc
 .LVL0:
 	.loc 1 43 0
-	movl	i.4101, %eax
+	movl	i.3578, %eax
 	.loc 1 40 0
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -42,7 +42,7 @@ krhino_mm_leak_region_init:
 	movl	%edx, g_mm_scan_region+4(,%eax,8)
 	.loc 1 54 0
 	incl	%eax
-	movl	%eax, i.4101
+	movl	%eax, i.3578
 .LVL1:
 .L2:
 	.loc 1 56 0
@@ -651,7 +651,7 @@ dump_mmleak:
 	pushl	4(%ebx)
 	pushl	%edi
 	pushl	$.LC5
-	call	aos_cli_printf
+	call	printf
 .LVL70:
 	addl	$32, %esp
 .L84:
@@ -700,33 +700,29 @@ dump_mmleak:
 .LC7:
 	.string	"%p "
 .LC8:
-	.string	"!"
-.LC9:
-	.string	" "
-.LC10:
 	.string	"free "
-.LC11:
+.LC9:
 	.string	"used "
-.LC12:
+.LC10:
 	.string	" %6lu "
-.LC13:
+.LC11:
 	.string	" sentinel "
-.LC14:
+.LC12:
 	.string	" %8x "
-.LC15:
+.LC13:
 	.string	" 0x%-8x "
-.LC16:
+.LC14:
 	.string	"pre-free [%8p];"
-.LC17:
+.LC15:
 	.string	"pre-used;"
-.LC18:
+.LC16:
 	.string	" free[%8p,%8p] "
-.LC19:
-	.string	"\r\n"
+.LC17:
+	.string	"\r"
 	.section	.text.unlikely.print_block,"ax",@progbits
-.LCOLDB20:
+.LCOLDB18:
 	.section	.text.print_block,"ax",@progbits
-.LHOTB20:
+.LHOTB18:
 	.globl	print_block
 	.type	print_block, @function
 print_block:
@@ -752,7 +748,7 @@ print_block:
 	pushl	%eax
 	pushl	%ebx
 	pushl	$.LC7
-	call	aos_cli_printf
+	call	printf
 .LVL78:
 	.loc 1 288 0
 	addl	$16, %esp
@@ -763,19 +759,19 @@ print_block:
 	je	.L103
 	.loc 1 292 0
 	subl	$12, %esp
-	pushl	$.LC8
+	pushl	$33
 	jmp	.L117
 .L103:
 	.loc 1 294 0
 	subl	$12, %esp
-	pushl	$.LC9
+	pushl	$32
 .L117:
-	call	aos_cli_printf
+	call	putchar
 .LVL79:
 	addl	$16, %esp
 	.loc 1 297 0
 	subl	$12, %esp
-	pushl	$.LC10
+	pushl	$.LC8
 	jmp	.L119
 .L102:
 	.loc 1 300 0
@@ -783,21 +779,21 @@ print_block:
 	je	.L106
 	.loc 1 301 0
 	subl	$12, %esp
-	pushl	$.LC8
+	pushl	$33
 	jmp	.L118
 .L106:
 	.loc 1 303 0
 	subl	$12, %esp
-	pushl	$.LC9
+	pushl	$32
 .L118:
-	call	aos_cli_printf
+	call	putchar
 .LVL80:
 	addl	$16, %esp
 	.loc 1 306 0
 	subl	$12, %esp
-	pushl	$.LC11
+	pushl	$.LC9
 .L119:
-	call	aos_cli_printf
+	call	printf
 .LVL81:
 	.loc 1 308 0
 	movl	12(%ebx), %eax
@@ -810,29 +806,29 @@ print_block:
 	pushl	%ecx
 	pushl	%ecx
 	pushl	%eax
-	pushl	$.LC12
+	pushl	$.LC10
 	jmp	.L120
 .L108:
 	.loc 1 311 0
 	subl	$12, %esp
-	pushl	$.LC13
+	pushl	$.LC11
 .L120:
-	call	aos_cli_printf
+	call	printf
 .LVL82:
 	addl	$16, %esp
 	.loc 1 315 0
 	pushl	%ecx
 	pushl	%ecx
 	pushl	(%ebx)
-	pushl	$.LC14
-	call	aos_cli_printf
+	pushl	$.LC12
+	call	printf
 .LVL83:
 	.loc 1 316 0
 	popl	%eax
 	popl	%edx
 	pushl	4(%ebx)
-	pushl	$.LC15
-	call	aos_cli_printf
+	pushl	$.LC13
+	call	printf
 .LVL84:
 	.loc 1 319 0
 	addl	$16, %esp
@@ -842,14 +838,14 @@ print_block:
 	pushl	%edx
 	pushl	%edx
 	pushl	8(%ebx)
-	pushl	$.LC16
+	pushl	$.LC14
 	jmp	.L121
 .L110:
 	.loc 1 322 0
 	subl	$12, %esp
-	pushl	$.LC17
+	pushl	$.LC15
 .L121:
-	call	aos_cli_printf
+	call	printf
 .LVL85:
 	addl	$16, %esp
 	.loc 1 325 0
@@ -859,13 +855,13 @@ print_block:
 	pushl	%eax
 	pushl	20(%ebx)
 	pushl	16(%ebx)
-	pushl	$.LC18
-	call	aos_cli_printf
+	pushl	$.LC16
+	call	printf
 .LVL86:
 	addl	$16, %esp
 .L112:
 	.loc 1 328 0
-	movl	$.LC19, 8(%ebp)
+	movl	$.LC17, 8(%ebp)
 	.loc 1 330 0
 	movl	-4(%ebp), %ebx
 	leave
@@ -874,7 +870,7 @@ print_block:
 	.cfi_restore 3
 	.cfi_def_cfa 4, 4
 	.loc 1 328 0
-	jmp	aos_cli_printf
+	jmp	puts
 .LVL87:
 .L100:
 	.cfi_restore_state
@@ -889,18 +885,18 @@ print_block:
 .LFE22:
 	.size	print_block, .-print_block
 	.section	.text.unlikely.print_block
-.LCOLDE20:
+.LCOLDE18:
 	.section	.text.print_block
-.LHOTE20:
+.LHOTE18:
 	.section	.rodata.str1.1
-.LC21:
+.LC19:
 	.string	"freelist bitmap: 0x%x\r\n"
-.LC22:
-	.string	"address,  stat   size     dye     caller   pre-stat    point\r\n"
+.LC20:
+	.string	"address,  stat   size     dye     caller   pre-stat    point\r"
 	.section	.text.unlikely.dump_kmm_free_map,"ax",@progbits
-.LCOLDB23:
+.LCOLDB21:
 	.section	.text.dump_kmm_free_map,"ax",@progbits
-.LHOTB23:
+.LHOTB21:
 	.globl	dump_kmm_free_map
 	.type	dump_kmm_free_map, @function
 dump_kmm_free_map:
@@ -936,12 +932,12 @@ dump_kmm_free_map:
 .LBE32:
 	.loc 1 341 0
 	pushl	84(%edi)
-	pushl	$.LC21
-	call	aos_cli_printf
+	pushl	$.LC19
+	call	printf
 .LVL89:
 	.loc 1 342 0
-	movl	$.LC22, (%esp)
-	call	aos_cli_printf
+	movl	$.LC20, (%esp)
+	call	puts
 .LVL90:
 	addl	$16, %esp
 .LVL91:
@@ -992,16 +988,16 @@ dump_kmm_free_map:
 .LFE23:
 	.size	dump_kmm_free_map, .-dump_kmm_free_map
 	.section	.text.unlikely.dump_kmm_free_map
-.LCOLDE23:
+.LCOLDE21:
 	.section	.text.dump_kmm_free_map
-.LHOTE23:
+.LHOTE21:
 	.section	.rodata.str1.1
-.LC24:
-	.string	"ALL BLOCKS\r\n"
+.LC22:
+	.string	"ALL BLOCKS\r"
 	.section	.text.unlikely.dump_kmm_map,"ax",@progbits
-.LCOLDB25:
+.LCOLDB23:
 	.section	.text.dump_kmm_map,"ax",@progbits
-.LHOTB25:
+.LHOTB23:
 	.globl	dump_kmm_map
 	.type	dump_kmm_map, @function
 dump_kmm_map:
@@ -1025,12 +1021,12 @@ dump_kmm_map:
 	je	.L131
 	.loc 1 363 0
 	subl	$12, %esp
-	pushl	$.LC24
-	call	aos_cli_printf
+	pushl	$.LC22
+	call	puts
 .LVL99:
 	.loc 1 364 0
-	movl	$.LC22, (%esp)
-	call	aos_cli_printf
+	movl	$.LC20, (%esp)
+	call	puts
 .LVL100:
 	.loc 1 365 0
 	movl	4(%ebx), %esi
@@ -1083,26 +1079,26 @@ dump_kmm_map:
 .LFE24:
 	.size	dump_kmm_map, .-dump_kmm_map
 	.section	.text.unlikely.dump_kmm_map
-.LCOLDE25:
+.LCOLDE23:
 	.section	.text.dump_kmm_map
-.LHOTE25:
+.LHOTE23:
 	.section	.rodata.str1.1
-.LC26:
-	.string	"     free     |     used     |     maxused\r\n"
-.LC27:
+.LC24:
+	.string	"     free     |     used     |     maxused\r"
+.LC25:
 	.string	"  %10d  |  %10d  |  %10d\r\n"
-.LC28:
-	.string	"-----------------number of alloc times:-----------------\r\n"
-.LC29:
+.LC26:
+	.string	"-----------------number of alloc times:-----------------\r"
+.LC27:
 	.string	"[2^%02d] bytes: %5d   |"
-.LC30:
-	.string	"-----------------fix pool information:-----------------\r\n"
-.LC31:
-	.string	"     free     |     used     |     total\r\n"
+.LC28:
+	.string	"-----------------fix pool information:-----------------\r"
+.LC29:
+	.string	"     free     |     used     |     total\r"
 	.section	.text.unlikely.dump_kmm_statistic_info,"ax",@progbits
-.LCOLDB32:
+.LCOLDB30:
 	.section	.text.dump_kmm_statistic_info,"ax",@progbits
-.LHOTB32:
+.LHOTB30:
 	.globl	dump_kmm_statistic_info
 	.type	dump_kmm_statistic_info, @function
 dump_kmm_statistic_info:
@@ -1133,24 +1129,24 @@ dump_kmm_statistic_info:
 .LBE39:
 .LBE38:
 	.loc 1 395 0
-	pushl	$.LC26
-	call	aos_cli_printf
+	pushl	$.LC24
+	call	puts
 .LVL109:
 	.loc 1 396 0
 	pushl	16(%esi)
 	pushl	12(%esi)
 	pushl	20(%esi)
-	pushl	$.LC27
-	call	aos_cli_printf
+	pushl	$.LC25
+	call	printf
 .LVL110:
 	.loc 1 398 0
 	addl	$20, %esp
-	pushl	$.LC19
-	call	aos_cli_printf
+	pushl	$.LC17
+	call	puts
 .LVL111:
 	.loc 1 399 0
-	movl	$.LC28, (%esp)
-	call	aos_cli_printf
+	movl	$.LC26, (%esp)
+	call	puts
 .LVL112:
 	addl	$16, %esp
 .LVL113:
@@ -1164,8 +1160,8 @@ dump_kmm_statistic_info:
 	je	.L145
 	.loc 1 402 0
 	subl	$12, %esp
-	pushl	$.LC19
-	call	aos_cli_printf
+	pushl	$.LC17
+	call	puts
 .LVL114:
 	addl	$16, %esp
 .L145:
@@ -1178,8 +1174,8 @@ dump_kmm_statistic_info:
 .LVL115:
 	.loc 1 404 0
 	pushl	%eax
-	pushl	$.LC29
-	call	aos_cli_printf
+	pushl	$.LC27
+	call	printf
 .LVL116:
 	.loc 1 400 0
 	addl	$16, %esp
@@ -1187,8 +1183,8 @@ dump_kmm_statistic_info:
 	jne	.L146
 	.loc 1 406 0
 	subl	$12, %esp
-	pushl	$.LC19
-	call	aos_cli_printf
+	pushl	$.LC17
+	call	puts
 .LVL117:
 	.loc 1 409 0
 	movl	8(%esi), %ebx
@@ -1199,12 +1195,12 @@ dump_kmm_statistic_info:
 	je	.L142
 	.loc 1 412 0
 	subl	$12, %esp
-	pushl	$.LC30
-	call	aos_cli_printf
+	pushl	$.LC28
+	call	puts
 .LVL119:
 	.loc 1 413 0
-	movl	$.LC31, (%esp)
-	call	aos_cli_printf
+	movl	$.LC29, (%esp)
+	call	puts
 .LVL120:
 	.loc 1 417 0
 	movl	20(%ebx), %eax
@@ -1219,8 +1215,8 @@ dump_kmm_statistic_info:
 	pushl	%ecx
 	pushl	%eax
 	pushl	%edx
-	pushl	$.LC27
-	call	aos_cli_printf
+	pushl	$.LC25
+	call	printf
 .LVL121:
 	addl	$32, %esp
 .LVL122:
@@ -1241,22 +1237,22 @@ dump_kmm_statistic_info:
 .LFE25:
 	.size	dump_kmm_statistic_info, .-dump_kmm_statistic_info
 	.section	.text.unlikely.dump_kmm_statistic_info
-.LCOLDE32:
+.LCOLDE30:
 	.section	.text.dump_kmm_statistic_info
-.LHOTE32:
+.LHOTE30:
 	.section	.rodata.str1.1
-.LC33:
-	.string	"------------------------------- all memory blocks --------------------------------- \r\n"
-.LC34:
+.LC31:
+	.string	"------------------------------- all memory blocks --------------------------------- \r"
+.LC32:
 	.string	"g_kmm_head = %8x\r\n"
-.LC35:
-	.string	"----------------------------- all free memory blocks ------------------------------- \r\n"
-.LC36:
-	.string	"------------------------- memory allocation statistic ------------------------------ \r\n"
+.LC33:
+	.string	"----------------------------- all free memory blocks ------------------------------- \r"
+.LC34:
+	.string	"------------------------- memory allocation statistic ------------------------------ \r"
 	.section	.text.unlikely.dumpsys_mm_info_func,"ax",@progbits
-.LCOLDB37:
+.LCOLDB35:
 	.section	.text.dumpsys_mm_info_func,"ax",@progbits
-.LHOTB37:
+.LHOTB35:
 	.globl	dumpsys_mm_info_func
 	.type	dumpsys_mm_info_func, @function
 dumpsys_mm_info_func:
@@ -1286,19 +1282,19 @@ dumpsys_mm_info_func:
 	movl	%eax, (%ebx)
 .LBE43:
 	.loc 1 426 0
-	pushl	$.LC19
-	call	aos_cli_printf
+	pushl	$.LC17
+	call	puts
 .LVL126:
 	.loc 1 427 0
-	movl	$.LC33, (%esp)
-	call	aos_cli_printf
+	movl	$.LC31, (%esp)
+	call	puts
 .LVL127:
 	.loc 1 428 0
 	popl	%edx
 	popl	%ecx
 	pushl	g_kmm_head
-	pushl	$.LC34
-	call	aos_cli_printf
+	pushl	$.LC32
+	call	printf
 .LVL128:
 	.loc 1 430 0
 	popl	%ebx
@@ -1307,12 +1303,12 @@ dumpsys_mm_info_func:
 	call	dump_kmm_map
 .LVL130:
 	.loc 1 431 0
-	movl	$.LC19, (%esp)
-	call	aos_cli_printf
+	movl	$.LC17, (%esp)
+	call	puts
 .LVL131:
 	.loc 1 432 0
-	movl	$.LC35, (%esp)
-	call	aos_cli_printf
+	movl	$.LC33, (%esp)
+	call	puts
 .LVL132:
 	.loc 1 433 0
 	popl	%eax
@@ -1320,12 +1316,12 @@ dumpsys_mm_info_func:
 	call	dump_kmm_free_map
 .LVL133:
 	.loc 1 434 0
-	movl	$.LC19, (%esp)
-	call	aos_cli_printf
+	movl	$.LC17, (%esp)
+	call	puts
 .LVL134:
 	.loc 1 435 0
-	movl	$.LC36, (%esp)
-	call	aos_cli_printf
+	movl	$.LC34, (%esp)
+	call	puts
 .LVL135:
 	.loc 1 436 0
 	popl	%eax
@@ -1352,14 +1348,14 @@ dumpsys_mm_info_func:
 .LFE26:
 	.size	dumpsys_mm_info_func, .-dumpsys_mm_info_func
 	.section	.text.unlikely.dumpsys_mm_info_func
-.LCOLDE37:
+.LCOLDE35:
 	.section	.text.dumpsys_mm_info_func
-.LHOTE37:
-	.section	.bss.i.4101,"aw",@nobits
+.LHOTE35:
+	.section	.bss.i.3578,"aw",@nobits
 	.align 4
-	.type	i.4101, @object
-	.size	i.4101, 4
-i.4101:
+	.type	i.3578, @object
+	.size	i.3578, 4
+i.3578:
 	.zero	4
 	.section	.bss.g_recheck_flag,"aw",@nobits
 	.align 4
@@ -1400,18 +1396,19 @@ g_mm_scan_region:
 	.file 16 "./kernel/rhino/core/include/k_mm_blk.h"
 	.file 17 "./kernel/rhino/core/include/k_internal.h"
 	.file 18 "././platform/arch/arm/armv5/./gcc/port.h"
-	.file 19 "./include/aos/cli.h"
+	.file 19 "/home/stone/Documents/Ali_IOT/build/compiler/gcc-arm-none-eabi/Linux64/arm-none-eabi/include/stdio.h"
+	.file 20 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x11e4
+	.long	0x1202
 	.value	0x4
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF239
+	.long	.LASF243
 	.byte	0xc
-	.long	.LASF240
-	.long	.LASF241
+	.long	.LASF244
+	.long	.LASF245
 	.long	.Ldebug_ranges0+0x98
 	.long	0
 	.long	.Ldebug_line0
@@ -2662,7 +2659,7 @@ g_mm_scan_region:
 	.long	0xb9
 	.uleb128 0x5
 	.byte	0x3
-	.long	i.4101
+	.long	i.3578
 	.byte	0
 	.uleb128 0x17
 	.long	.LASF210
@@ -3141,10 +3138,10 @@ g_mm_scan_region:
 	.long	0x11dc
 	.uleb128 0x2c
 	.long	.LVL79
-	.long	0x11dc
+	.long	0x11e7
 	.uleb128 0x2c
 	.long	.LVL80
-	.long	0x11dc
+	.long	0x11e7
 	.uleb128 0x2c
 	.long	.LVL81
 	.long	0x11dc
@@ -3165,7 +3162,7 @@ g_mm_scan_region:
 	.long	0x11dc
 	.uleb128 0x33
 	.long	.LVL87
-	.long	0x11dc
+	.long	0x11f6
 	.byte	0
 	.uleb128 0x34
 	.long	0x958
@@ -3213,7 +3210,7 @@ g_mm_scan_region:
 	.long	0x11dc
 	.uleb128 0x2c
 	.long	.LVL90
-	.long	0x11dc
+	.long	0x11f6
 	.byte	0
 	.uleb128 0x31
 	.long	.LASF226
@@ -3258,10 +3255,10 @@ g_mm_scan_region:
 	.long	.LLST39
 	.uleb128 0x2c
 	.long	.LVL99
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL100
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL103
 	.long	0xe51
@@ -3299,19 +3296,19 @@ g_mm_scan_region:
 	.long	.LLST43
 	.uleb128 0x2c
 	.long	.LVL114
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL116
 	.long	0x11dc
 	.uleb128 0x2c
 	.long	.LVL117
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL119
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL120
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL121
 	.long	0x11dc
@@ -3319,16 +3316,16 @@ g_mm_scan_region:
 	.byte	0
 	.uleb128 0x2c
 	.long	.LVL109
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL110
 	.long	0x11dc
 	.uleb128 0x2c
 	.long	.LVL111
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL112
-	.long	0x11dc
+	.long	0x11f6
 	.byte	0
 	.uleb128 0x3a
 	.long	.LASF227
@@ -3376,10 +3373,10 @@ g_mm_scan_region:
 	.byte	0
 	.uleb128 0x2c
 	.long	.LVL126
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL127
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL128
 	.long	0x11dc
@@ -3388,19 +3385,19 @@ g_mm_scan_region:
 	.long	0xf4d
 	.uleb128 0x2c
 	.long	.LVL131
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL132
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL133
 	.long	0x958
 	.uleb128 0x2c
 	.long	.LVL134
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL135
-	.long	0x11dc
+	.long	0x11f6
 	.uleb128 0x2c
 	.long	.LVL136
 	.long	0x99a
@@ -3462,8 +3459,8 @@ g_mm_scan_region:
 	.byte	0xb
 	.byte	0xcc
 	.uleb128 0x3d
-	.long	.LASF242
-	.long	.LASF242
+	.long	.LASF246
+	.long	.LASF246
 	.uleb128 0x3c
 	.long	.LASF236
 	.long	.LASF236
@@ -3478,7 +3475,19 @@ g_mm_scan_region:
 	.long	.LASF238
 	.long	.LASF238
 	.byte	0x13
-	.byte	0x6c
+	.byte	0xc8
+	.uleb128 0x3e
+	.long	.LASF239
+	.long	.LASF241
+	.byte	0x14
+	.byte	0
+	.long	.LASF239
+	.uleb128 0x3e
+	.long	.LASF240
+	.long	.LASF242
+	.byte	0x14
+	.byte	0
+	.long	.LASF240
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -4308,6 +4317,25 @@ g_mm_scan_region:
 	.uleb128 0x6e
 	.uleb128 0xe
 	.uleb128 0x3
+	.uleb128 0xe
+	.byte	0
+	.byte	0
+	.uleb128 0x3e
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3c
+	.uleb128 0x19
+	.uleb128 0x6e
+	.uleb128 0xe
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x6e
 	.uleb128 0xe
 	.byte	0
 	.byte	0
@@ -5147,13 +5175,15 @@ g_mm_scan_region:
 	.string	"reginfo"
 .LASF61:
 	.string	"RHINO_BLK_ABORT"
-.LASF241:
+.LASF245:
 	.string	"/home/stone/Documents/pca"
 .LASF177:
 	.string	"owner"
 .LASF209:
 	.string	"krhino_mm_leak_region_init"
 .LASF240:
+	.string	"puts"
+.LASF244:
 	.string	"src/k_mm_debug.c"
 .LASF12:
 	.string	"size_t"
@@ -5207,8 +5237,8 @@ g_mm_scan_region:
 	.string	"scan_region"
 .LASF170:
 	.string	"peak_count"
-.LASF238:
-	.string	"aos_cli_printf"
+.LASF239:
+	.string	"putchar"
 .LASF174:
 	.string	"mm_scan_region_t"
 .LASF68:
@@ -5219,6 +5249,8 @@ g_mm_scan_region:
 	.string	"k_mm_list_struct"
 .LASF16:
 	.string	"uint8_t"
+.LASF242:
+	.string	"__builtin_puts"
 .LASF137:
 	.string	"task_stack"
 .LASF233:
@@ -5237,6 +5269,8 @@ g_mm_scan_region:
 	.string	"owner_nested"
 .LASF8:
 	.string	"long long int"
+.LASF238:
+	.string	"printf"
 .LASF62:
 	.string	"RHINO_BLK_TIMEOUT"
 .LASF138:
@@ -5273,6 +5307,8 @@ g_mm_scan_region:
 	.string	"task_list"
 .LASF76:
 	.string	"RHINO_MUTEX_NOT_RELEASED_BY_OWNER"
+.LASF241:
+	.string	"__builtin_putchar"
 .LASF114:
 	.string	"blk_obj"
 .LASF113:
@@ -5407,7 +5443,7 @@ g_mm_scan_region:
 	.string	"unsigned char"
 .LASF6:
 	.string	"__uint32_t"
-.LASF239:
+.LASF243:
 	.string	"GNU C11 5.4.0 20160609 -m32 -mtune=generic -march=i686 -ggdb -Os -std=gnu11 -fsigned-char -ffunction-sections -fdata-sections -fno-common -fstack-protector-strong"
 .LASF120:
 	.string	"task_head"
@@ -5479,7 +5515,7 @@ g_mm_scan_region:
 	.string	"g_kmm_head"
 .LASF82:
 	.string	"RHINO_WORKQUEUE_NOT_EXIST"
-.LASF242:
+.LASF246:
 	.string	"__stack_chk_fail"
 .LASF150:
 	.string	"bq_msg_size"

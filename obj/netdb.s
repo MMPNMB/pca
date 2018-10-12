@@ -11,7 +11,7 @@
 	.globl	lwip_gethostbyname
 	.type	lwip_gethostbyname, @function
 lwip_gethostbyname:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/api/netdb.c"
 	.loc 1 88 0
 	.cfi_startproc
@@ -51,36 +51,36 @@ lwip_gethostbyname:
 	movl	-16(%ebp), %eax
 .LVL4:
 	.loc 1 109 0
-	movl	$s_hostent_addr.4800, s_phostent_addr.4801
+	movl	$s_hostent_addr.4811, s_phostent_addr.4812
 	.loc 1 110 0
-	movl	$0, s_phostent_addr.4801+4
+	movl	$0, s_phostent_addr.4812+4
 	.loc 1 108 0
-	movl	%eax, s_hostent_addr.4800
+	movl	%eax, s_hostent_addr.4811
 	.loc 1 111 0
 	pushl	%eax
 	pushl	$256
 	pushl	%ebx
-	pushl	$s_hostname.4802
+	pushl	$s_hostname.4813
 	call	strncpy
 .LVL5:
 	.loc 1 112 0
-	movb	$0, s_hostname.4802+256
+	movb	$0, s_hostname.4813+256
 	.loc 1 113 0
-	movl	$s_hostname.4802, s_hostent.4798
+	movl	$s_hostname.4813, s_hostent.4809
 	.loc 1 141 0
 	addl	$16, %esp
 	.loc 1 114 0
-	movl	$0, s_aliases.4799
+	movl	$0, s_aliases.4810
 	.loc 1 115 0
-	movl	$s_aliases.4799, s_hostent.4798+4
+	movl	$s_aliases.4810, s_hostent.4809+4
 	.loc 1 141 0
-	movl	$s_hostent.4798, %eax
+	movl	$s_hostent.4809, %eax
 	.loc 1 116 0
-	movl	$2, s_hostent.4798+8
+	movl	$2, s_hostent.4809+8
 	.loc 1 117 0
-	movl	$4, s_hostent.4798+12
+	movl	$4, s_hostent.4809+12
 	.loc 1 118 0
-	movl	$s_phostent_addr.4801, s_hostent.4798+16
+	movl	$s_phostent_addr.4812, s_hostent.4809+16
 .L3:
 	.loc 1 143 0
 	movl	-12(%ebp), %edx
@@ -96,7 +96,7 @@ lwip_gethostbyname:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	lwip_gethostbyname, .-lwip_gethostbyname
 	.section	.text.unlikely.lwip_gethostbyname
 .LCOLDE0:
@@ -109,7 +109,7 @@ lwip_gethostbyname:
 	.globl	lwip_gethostbyname_r
 	.type	lwip_gethostbyname_r, @function
 lwip_gethostbyname_r:
-.LFB18:
+.LFB24:
 	.loc 1 164 0
 	.cfi_startproc
 .LVL7:
@@ -273,7 +273,7 @@ lwip_gethostbyname_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	lwip_gethostbyname_r, .-lwip_gethostbyname_r
 	.section	.text.unlikely.lwip_gethostbyname_r
 .LCOLDE1:
@@ -286,7 +286,7 @@ lwip_gethostbyname_r:
 	.globl	lwip_freeaddrinfo
 	.type	lwip_freeaddrinfo, @function
 lwip_freeaddrinfo:
-.LFB19:
+.LFB25:
 	.loc 1 237 0
 	.cfi_startproc
 .LVL20:
@@ -328,7 +328,7 @@ lwip_freeaddrinfo:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	lwip_freeaddrinfo, .-lwip_freeaddrinfo
 	.section	.text.unlikely.lwip_freeaddrinfo
 .LCOLDE2:
@@ -341,7 +341,7 @@ lwip_freeaddrinfo:
 	.globl	lwip_getaddrinfo
 	.type	lwip_getaddrinfo, @function
 lwip_getaddrinfo:
-.LFB20:
+.LFB26:
 	.loc 1 271 0
 	.cfi_startproc
 .LVL25:
@@ -631,41 +631,41 @@ lwip_getaddrinfo:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	lwip_getaddrinfo, .-lwip_getaddrinfo
 	.section	.text.unlikely.lwip_getaddrinfo
 .LCOLDE3:
 	.section	.text.lwip_getaddrinfo
 .LHOTE3:
-	.section	.bss.s_aliases.4799,"aw",@nobits
+	.section	.bss.s_aliases.4810,"aw",@nobits
 	.align 4
-	.type	s_aliases.4799, @object
-	.size	s_aliases.4799, 4
-s_aliases.4799:
+	.type	s_aliases.4810, @object
+	.size	s_aliases.4810, 4
+s_aliases.4810:
 	.zero	4
-	.section	.bss.s_hostent.4798,"aw",@nobits
+	.section	.bss.s_hostent.4809,"aw",@nobits
 	.align 4
-	.type	s_hostent.4798, @object
-	.size	s_hostent.4798, 20
-s_hostent.4798:
+	.type	s_hostent.4809, @object
+	.size	s_hostent.4809, 20
+s_hostent.4809:
 	.zero	20
-	.section	.bss.s_hostname.4802,"aw",@nobits
+	.section	.bss.s_hostname.4813,"aw",@nobits
 	.align 32
-	.type	s_hostname.4802, @object
-	.size	s_hostname.4802, 257
-s_hostname.4802:
+	.type	s_hostname.4813, @object
+	.size	s_hostname.4813, 257
+s_hostname.4813:
 	.zero	257
-	.section	.bss.s_phostent_addr.4801,"aw",@nobits
+	.section	.bss.s_phostent_addr.4812,"aw",@nobits
 	.align 4
-	.type	s_phostent_addr.4801, @object
-	.size	s_phostent_addr.4801, 8
-s_phostent_addr.4801:
+	.type	s_phostent_addr.4812, @object
+	.size	s_phostent_addr.4812, 8
+s_phostent_addr.4812:
 	.zero	8
-	.section	.bss.s_hostent_addr.4800,"aw",@nobits
+	.section	.bss.s_hostent_addr.4811,"aw",@nobits
 	.align 4
-	.type	s_hostent_addr.4800, @object
-	.size	s_hostent_addr.4800, 4
-s_hostent_addr.4800:
+	.type	s_hostent_addr.4811, @object
+	.size	s_hostent_addr.4811, 4
+s_hostent_addr.4811:
 	.zero	4
 	.globl	h_errno
 	.section	.bss.h_errno,"aw",@nobits
@@ -1270,8 +1270,8 @@ h_errno:
 	.byte	0x1
 	.byte	0x57
 	.long	0x533
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x533
@@ -1304,7 +1304,7 @@ h_errno:
 	.long	0x30e
 	.uleb128 0x5
 	.byte	0x3
-	.long	s_hostent.4798
+	.long	s_hostent.4809
 	.uleb128 0x11
 	.long	.LASF103
 	.byte	0x1
@@ -1312,7 +1312,7 @@ h_errno:
 	.long	0xa5
 	.uleb128 0x5
 	.byte	0x3
-	.long	s_aliases.4799
+	.long	s_aliases.4810
 	.uleb128 0x11
 	.long	.LASF104
 	.byte	0x1
@@ -1320,7 +1320,7 @@ h_errno:
 	.long	0x16f
 	.uleb128 0x5
 	.byte	0x3
-	.long	s_hostent_addr.4800
+	.long	s_hostent_addr.4811
 	.uleb128 0x11
 	.long	.LASF105
 	.byte	0x1
@@ -1328,7 +1328,7 @@ h_errno:
 	.long	0x468
 	.uleb128 0x5
 	.byte	0x3
-	.long	s_phostent_addr.4801
+	.long	s_phostent_addr.4812
 	.uleb128 0x11
 	.long	.LASF106
 	.byte	0x1
@@ -1336,7 +1336,7 @@ h_errno:
 	.long	0x539
 	.uleb128 0x5
 	.byte	0x3
-	.long	s_hostname.4802
+	.long	s_hostname.4813
 	.uleb128 0x12
 	.long	.LVL1
 	.long	0x7c0
@@ -1362,8 +1362,8 @@ h_errno:
 	.byte	0x1
 	.byte	0xa2
 	.long	0x25
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x614
@@ -1463,8 +1463,8 @@ h_errno:
 	.long	.LASF135
 	.byte	0x1
 	.byte	0xec
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x662
@@ -1489,8 +1489,8 @@ h_errno:
 	.byte	0x1
 	.value	0x10d
 	.long	0x25
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x787
@@ -2237,7 +2237,7 @@ h_errno:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL16
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x10
 	.byte	0x91
 	.sleb128 20
@@ -2318,7 +2318,7 @@ h_errno:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL24
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2523,14 +2523,14 @@ h_errno:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2545,14 +2545,14 @@ h_errno:
 	.long	.LBE5
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

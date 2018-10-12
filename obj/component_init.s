@@ -11,8 +11,8 @@
 	.globl	aos_components_init
 	.type	aos_components_init, @function
 aos_components_init:
-.LFB16:
-	.file 1 "out/mqttapp@mk3060/auto_component/component_init.c"
+.LFB22:
+	.file 1 "out/tls@mk3060/auto_component/component_init.c"
 	.loc 1 7 0
 	.cfi_startproc
 	pushl	%ebp
@@ -26,7 +26,7 @@ aos_components_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	aos_components_init, .-aos_components_init
 	.section	.text.unlikely.aos_components_init
 .LCOLDE0:
@@ -111,8 +111,8 @@ aos_components_init:
 	.long	.LASF16
 	.byte	0x1
 	.byte	0x7
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x5
@@ -213,14 +213,14 @@ aos_components_init:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB16
-	.long	.LFE16
+	.long	.LFB22
+	.long	.LFE22
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

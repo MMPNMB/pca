@@ -10,7 +10,7 @@
 	.section	.text.tcp_oos_insert_segment
 	.type	tcp_oos_insert_segment, @function
 tcp_oos_insert_segment:
-.LFB21:
+.LFB27:
 	.file 1 "kernel/protocols/net/core/tcp_in.c"
 	.loc 1 947 0
 	.cfi_startproc
@@ -150,7 +150,7 @@ tcp_oos_insert_segment:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	tcp_oos_insert_segment, .-tcp_oos_insert_segment
 	.section	.text.unlikely.tcp_oos_insert_segment
 .LCOLDE0:
@@ -162,7 +162,7 @@ tcp_oos_insert_segment:
 .LHOTB1:
 	.type	tcp_receive, @function
 tcp_receive:
-.LFB22:
+.LFB28:
 	.loc 1 993 0
 	.cfi_startproc
 .LVL17:
@@ -1391,7 +1391,7 @@ tcp_receive:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	tcp_receive, .-tcp_receive
 	.section	.text.unlikely.tcp_receive
 .LCOLDE1:
@@ -1403,7 +1403,7 @@ tcp_receive:
 .LHOTB2:
 	.type	tcp_getoptbyte, @function
 tcp_getoptbyte:
-.LFB23:
+.LFB29:
 	.loc 1 1686 0
 	.cfi_startproc
 	.loc 1 1687 0
@@ -1455,7 +1455,7 @@ tcp_getoptbyte:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	tcp_getoptbyte, .-tcp_getoptbyte
 	.section	.text.unlikely.tcp_getoptbyte
 .LCOLDE2:
@@ -1467,7 +1467,7 @@ tcp_getoptbyte:
 .LHOTB3:
 	.type	tcp_parseopt.isra.1, @function
 tcp_parseopt.isra.1:
-.LFB27:
+.LFB33:
 	.loc 1 1705 0
 	.cfi_startproc
 .LVL123:
@@ -1568,7 +1568,7 @@ tcp_parseopt.isra.1:
 .L200:
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	tcp_parseopt.isra.1, .-tcp_parseopt.isra.1
 	.section	.text.unlikely.tcp_parseopt.isra.1
 .LCOLDE3:
@@ -1581,7 +1581,7 @@ tcp_parseopt.isra.1:
 	.globl	tcp_input
 	.type	tcp_input, @function
 tcp_input:
-.LFB17:
+.LFB23:
 	.loc 1 105 0
 	.cfi_startproc
 .LVL134:
@@ -3058,7 +3058,7 @@ tcp_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	tcp_input, .-tcp_input
 	.section	.text.unlikely.tcp_input
 .LCOLDE4:
@@ -3071,7 +3071,7 @@ tcp_input:
 	.globl	tcp_trigger_input_pcb_close
 	.type	tcp_trigger_input_pcb_close, @function
 tcp_trigger_input_pcb_close:
-.LFB25:
+.LFB31:
 	.loc 1 1809 0
 	.cfi_startproc
 	pushl	%ebp
@@ -3088,7 +3088,7 @@ tcp_trigger_input_pcb_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	tcp_trigger_input_pcb_close, .-tcp_trigger_input_pcb_close
 	.section	.text.unlikely.tcp_trigger_input_pcb_close
 .LCOLDE5:
@@ -4675,8 +4675,8 @@ inseg:
 	.long	.LASF198
 	.byte	0x1
 	.value	0x3b2
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc6f
@@ -4721,8 +4721,8 @@ inseg:
 	.long	.LASF199
 	.byte	0x1
 	.value	0x3e0
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf40
@@ -4972,8 +4972,8 @@ inseg:
 	.byte	0
 	.uleb128 0x27
 	.long	0xb7a
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf7a
@@ -4994,8 +4994,8 @@ inseg:
 	.byte	0
 	.uleb128 0x27
 	.long	0xbb2
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1007
@@ -5142,8 +5142,8 @@ inseg:
 	.long	.LASF276
 	.byte	0x1
 	.byte	0x68
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x14e9
@@ -5559,8 +5559,8 @@ inseg:
 	.long	.LASF277
 	.byte	0x1
 	.value	0x710
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x3b
@@ -6709,7 +6709,7 @@ inseg:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL16
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6761,7 +6761,7 @@ inseg:
 	.byte	0x76
 	.sleb128 0
 	.long	.LVL16
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x3
 	.byte	0xf3
 	.uleb128 0x1
@@ -6801,7 +6801,7 @@ inseg:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL120
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -7234,7 +7234,7 @@ inseg:
 	.byte	0x30
 	.byte	0x9f
 	.long	.LVL263
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -7486,18 +7486,18 @@ inseg:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB23
-	.long	.LFE23-.LFB23
 	.long	.LFB27
 	.long	.LFE27-.LFB27
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -7530,18 +7530,18 @@ inseg:
 	.long	.LBE58
 	.long	0
 	.long	0
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB23
-	.long	.LFE23
 	.long	.LFB27
 	.long	.LFE27
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB25
-	.long	.LFE25
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB31
+	.long	.LFE31
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

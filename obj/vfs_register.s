@@ -11,7 +11,7 @@
 	.globl	aos_register_driver
 	.type	aos_register_driver, @function
 aos_register_driver:
-.LFB16:
+.LFB22:
 	.file 1 "kernel/vfs/vfs_register.c"
 	.loc 1 15 0
 	.cfi_startproc
@@ -144,7 +144,7 @@ aos_register_driver:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	aos_register_driver, .-aos_register_driver
 	.section	.text.unlikely.aos_register_driver
 .LCOLDE0:
@@ -157,7 +157,7 @@ aos_register_driver:
 	.globl	aos_register_fs
 	.type	aos_register_fs, @function
 aos_register_fs:
-.LFB18:
+.LFB24:
 	.loc 1 70 0
 	.cfi_startproc
 .LVL17:
@@ -277,7 +277,7 @@ aos_register_fs:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	aos_register_fs, .-aos_register_fs
 	.section	.text.unlikely.aos_register_fs
 .LCOLDE1:
@@ -290,7 +290,7 @@ aos_register_fs:
 	.globl	aos_unregister_fs
 	.type	aos_unregister_fs, @function
 aos_unregister_fs:
-.LFB19:
+.LFB25:
 	.loc 1 101 0
 	.cfi_startproc
 .LVL32:
@@ -339,7 +339,7 @@ aos_unregister_fs:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	aos_unregister_fs, .-aos_unregister_fs
 	.section	.text.unlikely.aos_unregister_fs
 .LCOLDE2:
@@ -352,7 +352,7 @@ aos_unregister_fs:
 	.globl	aos_unregister_driver
 	.type	aos_unregister_driver, @function
 aos_unregister_driver:
-.LFB21:
+.LFB27:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -364,7 +364,7 @@ aos_unregister_driver:
 	.cfi_def_cfa 4, 4
 	jmp	aos_unregister_fs
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	aos_unregister_driver, .-aos_unregister_driver
 	.section	.text.unlikely.aos_unregister_driver
 .LCOLDE3:
@@ -1329,8 +1329,8 @@ aos_unregister_driver:
 	.byte	0x1
 	.byte	0xe
 	.long	0x25
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x856
@@ -1402,8 +1402,8 @@ aos_unregister_driver:
 	.byte	0x1
 	.byte	0x45
 	.long	0x25
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8f3
@@ -1472,8 +1472,8 @@ aos_unregister_driver:
 	.byte	0x1
 	.byte	0x64
 	.long	0x25
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x954
@@ -2066,22 +2066,22 @@ aos_unregister_driver:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB16
-	.long	.LFE16-.LFB16
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB22
+	.long	.LFE22-.LFB22
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB16
-	.long	.LFE16
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
+	.long	.LFB22
+	.long	.LFE22
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

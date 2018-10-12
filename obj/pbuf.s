@@ -10,7 +10,7 @@
 	.section	.text.pbuf_skip_const
 	.type	pbuf_skip_const, @function
 pbuf_skip_const:
-.LFB33:
+.LFB39:
 	.file 1 "kernel/protocols/net/core/pbuf.c"
 	.loc 1 1198 0
 	.cfi_startproc
@@ -53,7 +53,7 @@ pbuf_skip_const:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	pbuf_skip_const, .-pbuf_skip_const
 	.section	.text.unlikely.pbuf_skip_const
 .LCOLDE0:
@@ -65,7 +65,7 @@ pbuf_skip_const:
 .LHOTB1:
 	.type	pbuf_free_ooseq_callback, @function
 pbuf_free_ooseq_callback:
-.LFB18:
+.LFB24:
 	.loc 1 195 0
 	.cfi_startproc
 .LVL4:
@@ -127,7 +127,7 @@ pbuf_free_ooseq_callback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	pbuf_free_ooseq_callback, .-pbuf_free_ooseq_callback
 	.section	.text.unlikely.pbuf_free_ooseq_callback
 .LCOLDE1:
@@ -139,7 +139,7 @@ pbuf_free_ooseq_callback:
 .LHOTB2:
 	.type	pbuf_pool_is_empty, @function
 pbuf_pool_is_empty:
-.LFB19:
+.LFB25:
 	.loc 1 204 0
 	.cfi_startproc
 	pushl	%ebp
@@ -201,7 +201,7 @@ pbuf_pool_is_empty:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	pbuf_pool_is_empty, .-pbuf_pool_is_empty
 	.section	.text.unlikely.pbuf_pool_is_empty
 .LCOLDE2:
@@ -216,7 +216,7 @@ pbuf_pool_is_empty:
 .LHOTB4:
 	.type	pbuf_header_impl.part.1, @function
 pbuf_header_impl.part.1:
-.LFB45:
+.LFB51:
 	.loc 1 662 0
 	.cfi_startproc
 .LVL18:
@@ -337,7 +337,7 @@ pbuf_header_impl.part.1:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	pbuf_header_impl.part.1, .-pbuf_header_impl.part.1
 	.section	.text.unlikely.pbuf_header_impl.part.1
 .LCOLDE4:
@@ -350,7 +350,7 @@ pbuf_header_impl.part.1:
 	.globl	pbuf_header
 	.type	pbuf_header, @function
 pbuf_header:
-.LFB23:
+.LFB29:
 	.loc 1 759 0
 	.cfi_startproc
 .LVL34:
@@ -394,7 +394,7 @@ pbuf_header:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	pbuf_header, .-pbuf_header
 	.section	.text.unlikely.pbuf_header
 .LCOLDE5:
@@ -407,7 +407,7 @@ pbuf_header:
 	.globl	pbuf_header_force
 	.type	pbuf_header_force, @function
 pbuf_header_force:
-.LFB24:
+.LFB30:
 	.loc 1 769 0
 	.cfi_startproc
 .LVL38:
@@ -451,7 +451,7 @@ pbuf_header_force:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	pbuf_header_force, .-pbuf_header_force
 	.section	.text.unlikely.pbuf_header_force
 .LCOLDE6:
@@ -464,7 +464,7 @@ pbuf_header_force:
 	.globl	pbuf_free
 	.type	pbuf_free, @function
 pbuf_free:
-.LFB25:
+.LFB31:
 	.loc 1 809 0
 	.cfi_startproc
 .LVL42:
@@ -580,7 +580,7 @@ pbuf_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	pbuf_free, .-pbuf_free
 	.section	.text.unlikely.pbuf_free
 .LCOLDE7:
@@ -593,7 +593,7 @@ pbuf_free:
 	.globl	pbuf_alloc
 	.type	pbuf_alloc, @function
 pbuf_alloc:
-.LFB20:
+.LFB26:
 	.loc 1 262 0
 	.cfi_startproc
 .LVL57:
@@ -860,7 +860,7 @@ pbuf_alloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	pbuf_alloc, .-pbuf_alloc
 	.section	.text.unlikely.pbuf_alloc
 .LCOLDE8:
@@ -873,7 +873,7 @@ pbuf_alloc:
 	.globl	pbuf_realloc
 	.type	pbuf_realloc, @function
 pbuf_realloc:
-.LFB21:
+.LFB27:
 	.loc 1 561 0
 	.cfi_startproc
 .LVL86:
@@ -964,7 +964,7 @@ pbuf_realloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	pbuf_realloc, .-pbuf_realloc
 	.section	.text.unlikely.pbuf_realloc
 .LCOLDE9:
@@ -977,7 +977,7 @@ pbuf_realloc:
 	.globl	pbuf_clen
 	.type	pbuf_clen, @function
 pbuf_clen:
-.LFB26:
+.LFB32:
 	.loc 1 898 0
 	.cfi_startproc
 .LVL94:
@@ -1010,7 +1010,7 @@ pbuf_clen:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	pbuf_clen, .-pbuf_clen
 	.section	.text.unlikely.pbuf_clen
 .LCOLDE10:
@@ -1023,7 +1023,7 @@ pbuf_clen:
 	.globl	pbuf_ref
 	.type	pbuf_ref, @function
 pbuf_ref:
-.LFB27:
+.LFB33:
 	.loc 1 918 0
 	.cfi_startproc
 .LVL98:
@@ -1071,7 +1071,7 @@ pbuf_ref:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	pbuf_ref, .-pbuf_ref
 	.section	.text.unlikely.pbuf_ref
 .LCOLDE11:
@@ -1087,7 +1087,7 @@ pbuf_ref:
 	.globl	pbuf_cat
 	.type	pbuf_cat, @function
 pbuf_cat:
-.LFB28:
+.LFB34:
 	.loc 1 937 0
 	.cfi_startproc
 .LVL101:
@@ -1146,7 +1146,7 @@ pbuf_cat:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	pbuf_cat, .-pbuf_cat
 	.section	.text.unlikely.pbuf_cat
 .LCOLDE13:
@@ -1159,7 +1159,7 @@ pbuf_cat:
 	.globl	pbuf_chain
 	.type	pbuf_chain, @function
 pbuf_chain:
-.LFB29:
+.LFB35:
 	.loc 1 979 0
 	.cfi_startproc
 .LVL106:
@@ -1191,7 +1191,7 @@ pbuf_chain:
 	jmp	pbuf_ref
 .LVL108:
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	pbuf_chain, .-pbuf_chain
 	.section	.text.unlikely.pbuf_chain
 .LCOLDE14:
@@ -1204,7 +1204,7 @@ pbuf_chain:
 	.globl	pbuf_dechain
 	.type	pbuf_dechain, @function
 pbuf_dechain:
-.LFB30:
+.LFB36:
 	.loc 1 996 0
 	.cfi_startproc
 .LVL109:
@@ -1263,7 +1263,7 @@ pbuf_dechain:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	pbuf_dechain, .-pbuf_dechain
 	.section	.text.unlikely.pbuf_dechain
 .LCOLDE15:
@@ -1283,7 +1283,7 @@ pbuf_dechain:
 	.globl	pbuf_copy
 	.type	pbuf_copy, @function
 pbuf_copy:
-.LFB31:
+.LFB37:
 	.loc 1 1045 0
 	.cfi_startproc
 .LVL116:
@@ -1479,7 +1479,7 @@ pbuf_copy:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	pbuf_copy, .-pbuf_copy
 	.section	.text.unlikely.pbuf_copy
 .LCOLDE19:
@@ -1497,7 +1497,7 @@ pbuf_copy:
 	.globl	pbuf_copy_partial
 	.type	pbuf_copy_partial, @function
 pbuf_copy_partial:
-.LFB32:
+.LFB38:
 	.loc 1 1112 0
 	.cfi_startproc
 .LVL142:
@@ -1612,7 +1612,7 @@ pbuf_copy_partial:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	pbuf_copy_partial, .-pbuf_copy_partial
 	.section	.text.unlikely.pbuf_copy_partial
 .LCOLDE22:
@@ -1625,7 +1625,7 @@ pbuf_copy_partial:
 	.globl	pbuf_skip
 	.type	pbuf_skip, @function
 pbuf_skip:
-.LFB34:
+.LFB40:
 	.loc 1 1224 0
 	.cfi_startproc
 .LVL155:
@@ -1646,7 +1646,7 @@ pbuf_skip:
 	jmp	pbuf_skip_const
 .LVL156:
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	pbuf_skip, .-pbuf_skip
 	.section	.text.unlikely.pbuf_skip
 .LCOLDE23:
@@ -1666,7 +1666,7 @@ pbuf_skip:
 	.globl	pbuf_take
 	.type	pbuf_take, @function
 pbuf_take:
-.LFB35:
+.LFB41:
 	.loc 1 1241 0
 	.cfi_startproc
 .LVL157:
@@ -1771,7 +1771,7 @@ pbuf_take:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	pbuf_take, .-pbuf_take
 	.section	.text.unlikely.pbuf_take
 .LCOLDE27:
@@ -1784,7 +1784,7 @@ pbuf_take:
 	.globl	pbuf_take_at
 	.type	pbuf_take_at, @function
 pbuf_take_at:
-.LFB36:
+.LFB42:
 	.loc 1 1285 0
 	.cfi_startproc
 .LVL170:
@@ -1904,7 +1904,7 @@ pbuf_take_at:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	pbuf_take_at, .-pbuf_take_at
 	.section	.text.unlikely.pbuf_take_at
 .LCOLDE28:
@@ -1917,7 +1917,7 @@ pbuf_take_at:
 	.globl	pbuf_coalesce
 	.type	pbuf_coalesce, @function
 pbuf_coalesce:
-.LFB37:
+.LFB43:
 	.loc 1 1321 0
 	.cfi_startproc
 .LVL183:
@@ -1985,7 +1985,7 @@ pbuf_coalesce:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	pbuf_coalesce, .-pbuf_coalesce
 	.section	.text.unlikely.pbuf_coalesce
 .LCOLDE29:
@@ -1998,7 +1998,7 @@ pbuf_coalesce:
 	.globl	pbuf_try_get_at
 	.type	pbuf_try_get_at, @function
 pbuf_try_get_at:
-.LFB39:
+.LFB45:
 	.loc 1 1408 0
 	.cfi_startproc
 .LVL191:
@@ -2046,7 +2046,7 @@ pbuf_try_get_at:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	pbuf_try_get_at, .-pbuf_try_get_at
 	.section	.text.unlikely.pbuf_try_get_at
 .LCOLDE30:
@@ -2059,7 +2059,7 @@ pbuf_try_get_at:
 	.globl	pbuf_get_at
 	.type	pbuf_get_at, @function
 pbuf_get_at:
-.LFB38:
+.LFB44:
 	.loc 1 1390 0
 	.cfi_startproc
 .LVL195:
@@ -2088,7 +2088,7 @@ pbuf_get_at:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	pbuf_get_at, .-pbuf_get_at
 	.section	.text.unlikely.pbuf_get_at
 .LCOLDE31:
@@ -2101,7 +2101,7 @@ pbuf_get_at:
 	.globl	pbuf_put_at
 	.type	pbuf_put_at, @function
 pbuf_put_at:
-.LFB40:
+.LFB46:
 	.loc 1 1430 0
 	.cfi_startproc
 .LVL198:
@@ -2166,7 +2166,7 @@ pbuf_put_at:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE40:
+.LFE46:
 	.size	pbuf_put_at, .-pbuf_put_at
 	.section	.text.unlikely.pbuf_put_at
 .LCOLDE32:
@@ -2179,7 +2179,7 @@ pbuf_put_at:
 	.globl	pbuf_memcmp
 	.type	pbuf_memcmp, @function
 pbuf_memcmp:
-.LFB41:
+.LFB47:
 	.loc 1 1453 0
 	.cfi_startproc
 .LVL202:
@@ -2293,7 +2293,7 @@ pbuf_memcmp:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE41:
+.LFE47:
 	.size	pbuf_memcmp, .-pbuf_memcmp
 	.section	.text.unlikely.pbuf_memcmp
 .LCOLDE33:
@@ -2306,7 +2306,7 @@ pbuf_memcmp:
 	.globl	pbuf_memfind
 	.type	pbuf_memfind, @function
 pbuf_memfind:
-.LFB42:
+.LFB48:
 	.loc 1 1495 0
 	.cfi_startproc
 .LVL215:
@@ -2396,7 +2396,7 @@ pbuf_memfind:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	pbuf_memfind, .-pbuf_memfind
 	.section	.text.unlikely.pbuf_memfind
 .LCOLDE34:
@@ -2409,7 +2409,7 @@ pbuf_memfind:
 	.globl	pbuf_strstr
 	.type	pbuf_strstr, @function
 pbuf_strstr:
-.LFB43:
+.LFB49:
 	.loc 1 1522 0
 	.cfi_startproc
 .LVL225:
@@ -2473,7 +2473,7 @@ pbuf_strstr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	pbuf_strstr, .-pbuf_strstr
 	.section	.text.unlikely.pbuf_strstr
 .LCOLDE35:
@@ -3744,8 +3744,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x4ad
 	.long	0x9e1
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa4e
@@ -3806,8 +3806,8 @@ pbuf_free_ooseq_pending:
 	.long	.LASF246
 	.byte	0x1
 	.byte	0xc2
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xaec
@@ -3853,8 +3853,8 @@ pbuf_free_ooseq_pending:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x8b8
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb5b
@@ -3892,8 +3892,8 @@ pbuf_free_ooseq_pending:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x8db
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbae
@@ -3924,8 +3924,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x2f6
 	.long	0xbc
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc49
@@ -4002,8 +4002,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x300
 	.long	0xbc
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xce4
@@ -4080,8 +4080,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x328
 	.long	0xbc
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd85
@@ -4142,8 +4142,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x104
 	.long	0x2b5
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe56
@@ -4227,8 +4227,8 @@ pbuf_free_ooseq_pending:
 	.long	.LASF192
 	.byte	0x1
 	.value	0x230
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xec5
@@ -4277,8 +4277,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x381
 	.long	0xd2
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xefe
@@ -4299,8 +4299,8 @@ pbuf_free_ooseq_pending:
 	.long	.LASF193
 	.byte	0x1
 	.value	0x395
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf4a
@@ -4332,8 +4332,8 @@ pbuf_free_ooseq_pending:
 	.long	.LASF194
 	.byte	0x1
 	.value	0x3a8
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf9f
@@ -4371,8 +4371,8 @@ pbuf_free_ooseq_pending:
 	.long	.LASF195
 	.byte	0x1
 	.value	0x3d2
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfe2
@@ -4404,8 +4404,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x3e3
 	.long	0x2b5
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1031
@@ -4438,8 +4438,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x414
 	.long	0x170
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10ae
@@ -4485,8 +4485,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x457
 	.long	0xd2
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x114e
@@ -4548,8 +4548,8 @@ pbuf_free_ooseq_pending:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x933
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x119e
@@ -4603,8 +4603,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x4d8
 	.long	0x170
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1236
@@ -4668,8 +4668,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x504
 	.long	0x170
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1349
@@ -4803,8 +4803,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x528
 	.long	0x2b5
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x13c1
@@ -4848,8 +4848,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x57f
 	.long	0x25
-	.long	.LFB39
-	.long	.LFE39-.LFB39
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1445
@@ -4921,8 +4921,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x56d
 	.long	0xbc
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1495
@@ -4956,8 +4956,8 @@ pbuf_free_ooseq_pending:
 	.long	.LASF219
 	.byte	0x1
 	.value	0x595
-	.long	.LFB40
-	.long	.LFE40-.LFB40
+	.long	.LFB46
+	.long	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x154c
@@ -5049,8 +5049,8 @@ pbuf_free_ooseq_pending:
 	.byte	0
 	.uleb128 0x2b
 	.long	0x96e
-	.long	.LFB41
-	.long	.LFE41-.LFB41
+	.long	.LFB47
+	.long	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x15f7
@@ -5124,8 +5124,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x5d6
 	.long	0xd2
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1689
@@ -5191,8 +5191,8 @@ pbuf_free_ooseq_pending:
 	.byte	0x1
 	.value	0x5f1
 	.long	0xd2
-	.long	.LFB43
-	.long	.LFE43-.LFB43
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x16da
@@ -6196,7 +6196,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL1
-	.long	.LFE33
+	.long	.LFE39
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6210,7 +6210,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL1
-	.long	.LFE33
+	.long	.LFE39
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6271,7 +6271,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL32
-	.long	.LFE45
+	.long	.LFE51
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6296,7 +6296,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL31
-	.long	.LFE45
+	.long	.LFE51
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6332,7 +6332,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL29
-	.long	.LFE45
+	.long	.LFE51
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6412,7 +6412,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL37
-	.long	.LFE23
+	.long	.LFE29
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -6457,7 +6457,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL41
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -6674,7 +6674,7 @@ pbuf_free_ooseq_pending:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL95
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -6686,7 +6686,7 @@ pbuf_free_ooseq_pending:
 	.byte	0x30
 	.byte	0x9f
 	.long	.LVL95
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -6709,7 +6709,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL103
-	.long	.LFE28
+	.long	.LFE34
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -6722,7 +6722,7 @@ pbuf_free_ooseq_pending:
 	.byte	0x91
 	.sleb128 4
 	.long	.LVL103
-	.long	.LFE28
+	.long	.LFE34
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -6737,7 +6737,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL105
-	.long	.LFE28
+	.long	.LFE34
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -7254,7 +7254,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL190
-	.long	.LFE37
+	.long	.LFE43
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -7324,7 +7324,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL205
-	.long	.LFE41
+	.long	.LFE47
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -7336,7 +7336,7 @@ pbuf_free_ooseq_pending:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL205
-	.long	.LFE41
+	.long	.LFE47
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -7476,38 +7476,28 @@ pbuf_free_ooseq_pending:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB33
-	.long	.LFE33-.LFB33
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB45
-	.long	.LFE45-.LFB45
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.long	.LFB24
 	.long	.LFE24-.LFB24
 	.long	.LFB25
 	.long	.LFE25-.LFB25
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB26
-	.long	.LFE26-.LFB26
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.long	.LFB29
 	.long	.LFE29-.LFB29
 	.long	.LFB30
 	.long	.LFE30-.LFB30
 	.long	.LFB31
 	.long	.LFE31-.LFB31
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	.LFB32
 	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.long	.LFB34
 	.long	.LFE34-.LFB34
 	.long	.LFB35
@@ -7516,8 +7506,6 @@ pbuf_free_ooseq_pending:
 	.long	.LFE36-.LFB36
 	.long	.LFB37
 	.long	.LFE37-.LFB37
-	.long	.LFB39
-	.long	.LFE39-.LFB39
 	.long	.LFB38
 	.long	.LFE38-.LFB38
 	.long	.LFB40
@@ -7528,6 +7516,18 @@ pbuf_free_ooseq_pending:
 	.long	.LFE42-.LFB42
 	.long	.LFB43
 	.long	.LFE43-.LFB43
+	.long	.LFB45
+	.long	.LFE45-.LFB45
+	.long	.LFB44
+	.long	.LFE44-.LFB44
+	.long	.LFB46
+	.long	.LFE46-.LFB46
+	.long	.LFB47
+	.long	.LFE47-.LFB47
+	.long	.LFB48
+	.long	.LFE48-.LFB48
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -7584,38 +7584,28 @@ pbuf_free_ooseq_pending:
 	.long	.LBE56
 	.long	0
 	.long	0
-	.long	.LFB33
-	.long	.LFE33
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB45
-	.long	.LFE45
-	.long	.LFB23
-	.long	.LFE23
+	.long	.LFB39
+	.long	.LFE39
 	.long	.LFB24
 	.long	.LFE24
 	.long	.LFB25
 	.long	.LFE25
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB26
-	.long	.LFE26
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB28
-	.long	.LFE28
+	.long	.LFB51
+	.long	.LFE51
 	.long	.LFB29
 	.long	.LFE29
 	.long	.LFB30
 	.long	.LFE30
 	.long	.LFB31
 	.long	.LFE31
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
 	.long	.LFB32
 	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
 	.long	.LFB34
 	.long	.LFE34
 	.long	.LFB35
@@ -7624,8 +7614,6 @@ pbuf_free_ooseq_pending:
 	.long	.LFE36
 	.long	.LFB37
 	.long	.LFE37
-	.long	.LFB39
-	.long	.LFE39
 	.long	.LFB38
 	.long	.LFE38
 	.long	.LFB40
@@ -7636,6 +7624,18 @@ pbuf_free_ooseq_pending:
 	.long	.LFE42
 	.long	.LFB43
 	.long	.LFE43
+	.long	.LFB45
+	.long	.LFE45
+	.long	.LFB44
+	.long	.LFE44
+	.long	.LFB46
+	.long	.LFE46
+	.long	.LFB47
+	.long	.LFE47
+	.long	.LFB48
+	.long	.LFE48
+	.long	.LFB49
+	.long	.LFE49
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

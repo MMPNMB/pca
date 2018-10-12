@@ -11,7 +11,7 @@
 	.globl	lwip_htons
 	.type	lwip_htons, @function
 lwip_htons:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/def.c"
 	.loc 1 75 0
 	.cfi_startproc
@@ -32,7 +32,7 @@ lwip_htons:
 	.loc 1 77 0
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	lwip_htons, .-lwip_htons
 	.section	.text.unlikely.lwip_htons
 .LCOLDE0:
@@ -45,7 +45,7 @@ lwip_htons:
 	.globl	lwip_htonl
 	.type	lwip_htonl, @function
 lwip_htonl:
-.LFB18:
+.LFB24:
 	.loc 1 90 0
 	.cfi_startproc
 .LVL1:
@@ -62,7 +62,7 @@ lwip_htonl:
 	bswap	%eax
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	lwip_htonl, .-lwip_htonl
 	.section	.text.unlikely.lwip_htonl
 .LCOLDE1:
@@ -75,7 +75,7 @@ lwip_htonl:
 	.globl	lwip_strnstr
 	.type	lwip_strnstr, @function
 lwip_strnstr:
-.LFB19:
+.LFB25:
 	.loc 1 106 0
 	.cfi_startproc
 .LVL2:
@@ -166,7 +166,7 @@ lwip_strnstr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	lwip_strnstr, .-lwip_strnstr
 	.section	.text.unlikely.lwip_strnstr
 .LCOLDE2:
@@ -179,7 +179,7 @@ lwip_strnstr:
 	.globl	lwip_stricmp
 	.type	lwip_stricmp, @function
 lwip_stricmp:
-.LFB20:
+.LFB26:
 	.loc 1 129 0
 	.cfi_startproc
 .LVL11:
@@ -261,7 +261,7 @@ lwip_stricmp:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	lwip_stricmp, .-lwip_stricmp
 	.section	.text.unlikely.lwip_stricmp
 .LCOLDE3:
@@ -274,7 +274,7 @@ lwip_stricmp:
 	.globl	lwip_strnicmp
 	.type	lwip_strnicmp, @function
 lwip_strnicmp:
-.LFB21:
+.LFB27:
 	.loc 1 164 0
 	.cfi_startproc
 .LVL22:
@@ -360,7 +360,7 @@ lwip_strnicmp:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	lwip_strnicmp, .-lwip_strnicmp
 	.section	.text.unlikely.lwip_strnicmp
 .LCOLDE4:
@@ -376,7 +376,7 @@ lwip_strnicmp:
 	.globl	lwip_itoa
 	.type	lwip_itoa, @function
 lwip_itoa:
-.LFB22:
+.LFB28:
 	.loc 1 199 0
 	.cfi_startproc
 .LVL35:
@@ -473,7 +473,7 @@ lwip_itoa:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	lwip_itoa, .-lwip_itoa
 	.section	.text.unlikely.lwip_itoa
 .LCOLDE6:
@@ -593,8 +593,8 @@ lwip_itoa:
 	.byte	0x1
 	.byte	0x4a
 	.long	0xaa
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xed
@@ -612,8 +612,8 @@ lwip_itoa:
 	.byte	0x1
 	.byte	0x59
 	.long	0xb5
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x113
@@ -631,8 +631,8 @@ lwip_itoa:
 	.byte	0x1
 	.byte	0x69
 	.long	0x84
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x17b
@@ -679,8 +679,8 @@ lwip_itoa:
 	.byte	0x1
 	.byte	0x80
 	.long	0x25
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1fb
@@ -734,8 +734,8 @@ lwip_itoa:
 	.byte	0x1
 	.byte	0xa3
 	.long	0x25
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x28c
@@ -793,8 +793,8 @@ lwip_itoa:
 	.long	.LASF40
 	.byte	0x1
 	.byte	0xc6
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x313
@@ -1557,7 +1557,7 @@ lwip_itoa:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL39
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 -24
@@ -1608,18 +1608,18 @@ lwip_itoa:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -1636,18 +1636,18 @@ lwip_itoa:
 	.long	.LBE7
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB28
+	.long	.LFE28
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

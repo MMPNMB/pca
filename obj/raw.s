@@ -11,7 +11,7 @@
 	.globl	raw_input
 	.type	raw_input, @function
 raw_input:
-.LFB18:
+.LFB24:
 	.file 1 "kernel/protocols/net/core/raw.c"
 	.loc 1 129 0
 	.cfi_startproc
@@ -151,7 +151,7 @@ raw_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	raw_input, .-raw_input
 	.section	.text.unlikely.raw_input
 .LCOLDE0:
@@ -164,7 +164,7 @@ raw_input:
 	.globl	raw_bind
 	.type	raw_bind, @function
 raw_bind:
-.LFB19:
+.LFB25:
 	.loc 1 211 0
 	.cfi_startproc
 .LVL17:
@@ -200,7 +200,7 @@ raw_bind:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	raw_bind, .-raw_bind
 	.section	.text.unlikely.raw_bind
 .LCOLDE1:
@@ -213,7 +213,7 @@ raw_bind:
 	.globl	raw_connect
 	.type	raw_connect, @function
 raw_connect:
-.LFB20:
+.LFB26:
 	.loc 1 235 0
 	.cfi_startproc
 .LVL20:
@@ -249,7 +249,7 @@ raw_connect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	raw_connect, .-raw_connect
 	.section	.text.unlikely.raw_connect
 .LCOLDE2:
@@ -262,7 +262,7 @@ raw_connect:
 	.globl	raw_recv
 	.type	raw_recv, @function
 raw_recv:
-.LFB21:
+.LFB27:
 	.loc 1 256 0
 	.cfi_startproc
 .LVL23:
@@ -285,7 +285,7 @@ raw_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	raw_recv, .-raw_recv
 	.section	.text.unlikely.raw_recv
 .LCOLDE3:
@@ -298,7 +298,7 @@ raw_recv:
 	.globl	raw_sendto
 	.type	raw_sendto, @function
 raw_sendto:
-.LFB22:
+.LFB28:
 	.loc 1 277 0
 	.cfi_startproc
 .LVL24:
@@ -474,7 +474,7 @@ raw_sendto:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	raw_sendto, .-raw_sendto
 	.section	.text.unlikely.raw_sendto
 .LCOLDE4:
@@ -487,7 +487,7 @@ raw_sendto:
 	.globl	raw_send
 	.type	raw_send, @function
 raw_send:
-.LFB23:
+.LFB29:
 	.loc 1 398 0
 	.cfi_startproc
 .LVL53:
@@ -512,7 +512,7 @@ raw_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	raw_send, .-raw_send
 	.section	.text.unlikely.raw_send
 .LCOLDE5:
@@ -525,7 +525,7 @@ raw_send:
 	.globl	raw_remove
 	.type	raw_remove, @function
 raw_remove:
-.LFB24:
+.LFB30:
 	.loc 1 413 0
 	.cfi_startproc
 .LVL55:
@@ -584,7 +584,7 @@ raw_remove:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	raw_remove, .-raw_remove
 	.section	.text.unlikely.raw_remove
 .LCOLDE6:
@@ -597,7 +597,7 @@ raw_remove:
 	.globl	raw_new
 	.type	raw_new, @function
 raw_new:
-.LFB25:
+.LFB31:
 	.loc 1 446 0
 	.cfi_startproc
 .LVL60:
@@ -654,7 +654,7 @@ raw_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	raw_new, .-raw_new
 	.section	.text.unlikely.raw_new
 .LCOLDE7:
@@ -667,7 +667,7 @@ raw_new:
 	.globl	raw_new_ip_type
 	.type	raw_new_ip_type, @function
 raw_new_ip_type:
-.LFB26:
+.LFB32:
 	.loc 1 481 0
 	.cfi_startproc
 .LVL64:
@@ -688,7 +688,7 @@ raw_new_ip_type:
 	jmp	raw_new
 .LVL66:
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	raw_new_ip_type, .-raw_new_ip_type
 	.section	.text.unlikely.raw_new_ip_type
 .LCOLDE8:
@@ -701,7 +701,7 @@ raw_new_ip_type:
 	.globl	raw_netif_ip_addr_changed
 	.type	raw_netif_ip_addr_changed, @function
 raw_netif_ip_addr_changed:
-.LFB27:
+.LFB33:
 	.loc 1 501 0
 	.cfi_startproc
 .LVL67:
@@ -757,7 +757,7 @@ raw_netif_ip_addr_changed:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	raw_netif_ip_addr_changed, .-raw_netif_ip_addr_changed
 	.section	.text.unlikely.raw_netif_ip_addr_changed
 .LCOLDE9:
@@ -1649,8 +1649,8 @@ raw_pcbs:
 	.byte	0x1
 	.byte	0x80
 	.long	0x9b
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x796
@@ -1721,8 +1721,8 @@ raw_pcbs:
 	.byte	0x1
 	.byte	0xd2
 	.long	0x193
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7ce
@@ -1744,8 +1744,8 @@ raw_pcbs:
 	.byte	0x1
 	.byte	0xea
 	.long	0x193
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x806
@@ -1766,8 +1766,8 @@ raw_pcbs:
 	.long	.LASF141
 	.byte	0x1
 	.byte	0xff
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x846
@@ -1801,8 +1801,8 @@ raw_pcbs:
 	.byte	0x1
 	.value	0x114
 	.long	0x193
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x931
@@ -1898,8 +1898,8 @@ raw_pcbs:
 	.byte	0x1
 	.value	0x18d
 	.long	0x193
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x971
@@ -1927,8 +1927,8 @@ raw_pcbs:
 	.long	.LASF142
 	.byte	0x1
 	.value	0x19c
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9b0
@@ -1955,8 +1955,8 @@ raw_pcbs:
 	.byte	0x1
 	.value	0x1bd
 	.long	0x636
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9f3
@@ -1983,8 +1983,8 @@ raw_pcbs:
 	.byte	0x1
 	.value	0x1e0
 	.long	0x636
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa4f
@@ -2028,8 +2028,8 @@ raw_pcbs:
 	.long	.LASF146
 	.byte	0x1
 	.value	0x1f4
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa96
@@ -2947,7 +2947,7 @@ raw_pcbs:
 	.byte	0x31
 	.byte	0x9f
 	.long	.LVL13
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2988,7 +2988,7 @@ raw_pcbs:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL19
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3005,7 +3005,7 @@ raw_pcbs:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL19
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -3022,7 +3022,7 @@ raw_pcbs:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL22
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3039,7 +3039,7 @@ raw_pcbs:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL22
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -3153,7 +3153,7 @@ raw_pcbs:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL63
-	.long	.LFE25
+	.long	.LFE31
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -3173,7 +3173,7 @@ raw_pcbs:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL71
-	.long	.LFE27
+	.long	.LFE33
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -3185,7 +3185,7 @@ raw_pcbs:
 	.byte	0x91
 	.sleb128 4
 	.long	.LVL69
-	.long	.LFE27
+	.long	.LFE33
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -3205,18 +3205,6 @@ raw_pcbs:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB23
-	.long	.LFE23-.LFB23
 	.long	.LFB24
 	.long	.LFE24-.LFB24
 	.long	.LFB25
@@ -3225,22 +3213,22 @@ raw_pcbs:
 	.long	.LFE26-.LFB26
 	.long	.LFB27
 	.long	.LFE27-.LFB27
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB31
+	.long	.LFE31-.LFB31
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB23
-	.long	.LFE23
 	.long	.LFB24
 	.long	.LFE24
 	.long	.LFB25
@@ -3249,6 +3237,18 @@ raw_pcbs:
 	.long	.LFE26
 	.long	.LFB27
 	.long	.LFE27
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB31
+	.long	.LFE31
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

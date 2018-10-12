@@ -10,7 +10,7 @@
 	.section	.text.tryget_event
 	.type	tryget_event, @function
 tryget_event:
-.LFB20:
+.LFB26:
 	.file 1 "kernel/protocols/net/api/sockets.c"
 	.loc 1 388 0
 	.cfi_startproc
@@ -51,7 +51,7 @@ tryget_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	tryget_event, .-tryget_event
 	.section	.text.unlikely.tryget_event
 .LCOLDE0:
@@ -63,7 +63,7 @@ tryget_event:
 .LHOTB1:
 	.type	tryget_socket, @function
 tryget_socket:
-.LFB21:
+.LFB27:
 	.loc 1 407 0
 	.cfi_startproc
 .LVL5:
@@ -100,7 +100,7 @@ tryget_socket:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	tryget_socket, .-tryget_socket
 	.section	.text.unlikely.tryget_socket
 .LCOLDE1:
@@ -112,7 +112,7 @@ tryget_socket:
 .LHOTB2:
 	.type	alloc_socket, @function
 alloc_socket:
-.LFB22:
+.LFB28:
 	.loc 1 428 0
 	.cfi_startproc
 .LVL9:
@@ -221,7 +221,7 @@ alloc_socket:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	alloc_socket, .-alloc_socket
 	.section	.text.unlikely.alloc_socket
 .LCOLDE2:
@@ -233,7 +233,7 @@ alloc_socket:
 .LHOTB3:
 	.type	lwip_selscan, @function
 lwip_selscan:
-.LFB38:
+.LFB44:
 	.loc 1 1337 0
 	.cfi_startproc
 .LVL19:
@@ -592,7 +592,7 @@ lwip_selscan:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	lwip_selscan, .-lwip_selscan
 	.section	.text.unlikely.lwip_selscan
 .LCOLDE3:
@@ -604,7 +604,7 @@ lwip_selscan:
 .LHOTB4:
 	.type	get_socket, @function
 get_socket:
-.LFB19:
+.LFB25:
 	.loc 1 364 0
 	.cfi_startproc
 .LVL63:
@@ -647,7 +647,7 @@ get_socket:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	get_socket, .-get_socket
 	.section	.text.unlikely.get_socket
 .LCOLDE4:
@@ -659,7 +659,7 @@ get_socket:
 .LHOTB5:
 	.type	lwip_getaddrname, @function
 lwip_getaddrname:
-.LFB43:
+.LFB49:
 	.loc 1 1798 0
 	.cfi_startproc
 .LVL69:
@@ -796,7 +796,7 @@ lwip_getaddrname:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	lwip_getaddrname, .-lwip_getaddrname
 	.section	.text.unlikely.lwip_getaddrname
 .LCOLDE5:
@@ -808,7 +808,7 @@ lwip_getaddrname:
 .LHOTB6:
 	.type	event_callback, @function
 event_callback:
-.LFB41:
+.LFB47:
 	.loc 1 1636 0
 	.cfi_startproc
 .LVL85:
@@ -1070,7 +1070,7 @@ event_callback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE41:
+.LFE47:
 	.size	event_callback, .-event_callback
 	.section	.text.unlikely.event_callback
 .LCOLDE6:
@@ -1083,7 +1083,7 @@ event_callback:
 	.globl	lwip_socket_thread_init
 	.type	lwip_socket_thread_init, @function
 lwip_socket_thread_init:
-.LFB57:
+.LFB63:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1095,7 +1095,7 @@ lwip_socket_thread_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE57:
+.LFE63:
 	.size	lwip_socket_thread_init, .-lwip_socket_thread_init
 	.section	.text.unlikely.lwip_socket_thread_init
 .LCOLDE7:
@@ -1108,7 +1108,7 @@ lwip_socket_thread_init:
 	.globl	lwip_socket_thread_cleanup
 	.type	lwip_socket_thread_cleanup, @function
 lwip_socket_thread_cleanup:
-.LFB18:
+.LFB24:
 	.loc 1 352 0
 	.cfi_startproc
 	.loc 1 352 0
@@ -1123,7 +1123,7 @@ lwip_socket_thread_cleanup:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	lwip_socket_thread_cleanup, .-lwip_socket_thread_cleanup
 	.section	.text.unlikely.lwip_socket_thread_cleanup
 .LCOLDE8:
@@ -1136,7 +1136,7 @@ lwip_socket_thread_cleanup:
 	.globl	lwip_accept
 	.type	lwip_accept, @function
 lwip_accept:
-.LFB24:
+.LFB30:
 	.loc 1 494 0
 	.cfi_startproc
 .LVL113:
@@ -1459,7 +1459,7 @@ lwip_accept:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	lwip_accept, .-lwip_accept
 	.section	.text.unlikely.lwip_accept
 .LCOLDE9:
@@ -1475,7 +1475,7 @@ lwip_accept:
 	.globl	lwip_bind
 	.type	lwip_bind, @function
 lwip_bind:
-.LFB25:
+.LFB31:
 	.loc 1 585 0
 	.cfi_startproc
 .LVL155:
@@ -1601,7 +1601,7 @@ lwip_bind:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	lwip_bind, .-lwip_bind
 	.section	.text.unlikely.lwip_bind
 .LCOLDE11:
@@ -1614,7 +1614,7 @@ lwip_bind:
 	.globl	lwip_close
 	.type	lwip_close, @function
 lwip_close:
-.LFB26:
+.LFB32:
 	.loc 1 628 0
 	.cfi_startproc
 .LVL173:
@@ -1861,7 +1861,7 @@ lwip_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	lwip_close, .-lwip_close
 	.section	.text.unlikely.lwip_close
 .LCOLDE12:
@@ -1877,7 +1877,7 @@ lwip_close:
 	.globl	lwip_connect
 	.type	lwip_connect, @function
 lwip_connect:
-.LFB27:
+.LFB33:
 	.loc 1 671 0
 	.cfi_startproc
 .LVL201:
@@ -2017,7 +2017,7 @@ lwip_connect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	lwip_connect, .-lwip_connect
 	.section	.text.unlikely.lwip_connect
 .LCOLDE14:
@@ -2030,7 +2030,7 @@ lwip_connect:
 	.globl	lwip_listen
 	.type	lwip_listen, @function
 lwip_listen:
-.LFB28:
+.LFB34:
 	.loc 1 728 0
 	.cfi_startproc
 .LVL220:
@@ -2140,7 +2140,7 @@ lwip_listen:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	lwip_listen, .-lwip_listen
 	.section	.text.unlikely.lwip_listen
 .LCOLDE15:
@@ -2153,7 +2153,7 @@ lwip_listen:
 	.globl	lwip_recvfrom
 	.type	lwip_recvfrom, @function
 lwip_recvfrom:
-.LFB29:
+.LFB35:
 	.loc 1 761 0
 	.cfi_startproc
 .LVL234:
@@ -2561,7 +2561,7 @@ lwip_recvfrom:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	lwip_recvfrom, .-lwip_recvfrom
 	.section	.text.unlikely.lwip_recvfrom
 .LCOLDE16:
@@ -2574,7 +2574,7 @@ lwip_recvfrom:
 	.globl	lwip_read
 	.type	lwip_read, @function
 lwip_read:
-.LFB30:
+.LFB36:
 	.loc 1 927 0
 	.cfi_startproc
 .LVL284:
@@ -2599,7 +2599,7 @@ lwip_read:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	lwip_read, .-lwip_read
 	.section	.text.unlikely.lwip_read
 .LCOLDE17:
@@ -2612,7 +2612,7 @@ lwip_read:
 	.globl	lwip_recv
 	.type	lwip_recv, @function
 lwip_recv:
-.LFB31:
+.LFB37:
 	.loc 1 933 0
 	.cfi_startproc
 .LVL286:
@@ -2637,7 +2637,7 @@ lwip_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	lwip_recv, .-lwip_recv
 	.section	.text.unlikely.lwip_recv
 .LCOLDE18:
@@ -2657,7 +2657,7 @@ lwip_recv:
 	.globl	lwip_sendmsg
 	.type	lwip_sendmsg, @function
 lwip_sendmsg:
-.LFB33:
+.LFB39:
 	.loc 1 979 0
 	.cfi_startproc
 .LVL288:
@@ -3037,7 +3037,7 @@ lwip_sendmsg:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	lwip_sendmsg, .-lwip_sendmsg
 	.section	.text.unlikely.lwip_sendmsg
 .LCOLDE22:
@@ -3053,7 +3053,7 @@ lwip_sendmsg:
 	.globl	lwip_sendto
 	.type	lwip_sendto, @function
 lwip_sendto:
-.LFB34:
+.LFB40:
 	.loc 1 1129 0
 	.cfi_startproc
 .LVL335:
@@ -3269,7 +3269,7 @@ lwip_sendto:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	lwip_sendto, .-lwip_sendto
 	.section	.text.unlikely.lwip_sendto
 .LCOLDE24:
@@ -3282,7 +3282,7 @@ lwip_sendto:
 	.globl	lwip_send
 	.type	lwip_send, @function
 lwip_send:
-.LFB32:
+.LFB38:
 	.loc 1 939 0
 	.cfi_startproc
 .LVL363:
@@ -3430,7 +3430,7 @@ lwip_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	lwip_send, .-lwip_send
 	.section	.text.unlikely.lwip_send
 .LCOLDE25:
@@ -3443,7 +3443,7 @@ lwip_send:
 	.globl	lwip_socket
 	.type	lwip_socket, @function
 lwip_socket:
-.LFB35:
+.LFB41:
 	.loc 1 1225 0
 	.cfi_startproc
 .LVL380:
@@ -3559,7 +3559,7 @@ lwip_socket:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	lwip_socket, .-lwip_socket
 	.section	.text.unlikely.lwip_socket
 .LCOLDE26:
@@ -3572,7 +3572,7 @@ lwip_socket:
 	.globl	lwip_write
 	.type	lwip_write, @function
 lwip_write:
-.LFB36:
+.LFB42:
 	.loc 1 1281 0
 	.cfi_startproc
 .LVL396:
@@ -3676,7 +3676,7 @@ lwip_write:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	lwip_write, .-lwip_write
 	.section	.text.unlikely.lwip_write
 .LCOLDE27:
@@ -3689,7 +3689,7 @@ lwip_write:
 	.globl	lwip_writev
 	.type	lwip_writev, @function
 lwip_writev:
-.LFB37:
+.LFB43:
 	.loc 1 1305 0
 	.cfi_startproc
 .LVL406:
@@ -3741,7 +3741,7 @@ lwip_writev:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	lwip_writev, .-lwip_writev
 	.section	.text.unlikely.lwip_writev
 .LCOLDE28:
@@ -3754,7 +3754,7 @@ lwip_writev:
 	.globl	lwip_eventfd
 	.type	lwip_eventfd, @function
 lwip_eventfd:
-.LFB39:
+.LFB45:
 	.loc 1 1400 0
 	.cfi_startproc
 .LVL409:
@@ -3832,7 +3832,7 @@ lwip_eventfd:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	lwip_eventfd, .-lwip_eventfd
 	.section	.text.unlikely.lwip_eventfd
 .LCOLDE29:
@@ -3845,7 +3845,7 @@ lwip_eventfd:
 	.globl	lwip_select
 	.type	lwip_select, @function
 lwip_select:
-.LFB40:
+.LFB46:
 	.loc 1 1426 0
 	.cfi_startproc
 .LVL417:
@@ -4419,7 +4419,7 @@ lwip_select:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE40:
+.LFE46:
 	.size	lwip_select, .-lwip_select
 	.section	.text.unlikely.lwip_select
 .LCOLDE30:
@@ -4432,7 +4432,7 @@ lwip_select:
 	.globl	lwip_shutdown
 	.type	lwip_shutdown, @function
 lwip_shutdown:
-.LFB42:
+.LFB48:
 	.loc 1 1757 0
 	.cfi_startproc
 .LVL488:
@@ -4589,7 +4589,7 @@ lwip_shutdown:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	lwip_shutdown, .-lwip_shutdown
 	.section	.text.unlikely.lwip_shutdown
 .LCOLDE31:
@@ -4602,7 +4602,7 @@ lwip_shutdown:
 	.globl	lwip_getpeername
 	.type	lwip_getpeername, @function
 lwip_getpeername:
-.LFB44:
+.LFB50:
 	.loc 1 1834 0
 	.cfi_startproc
 .LVL509:
@@ -4626,7 +4626,7 @@ lwip_getpeername:
 	jmp	lwip_getaddrname
 .LVL511:
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	lwip_getpeername, .-lwip_getpeername
 	.section	.text.unlikely.lwip_getpeername
 .LCOLDE32:
@@ -4639,7 +4639,7 @@ lwip_getpeername:
 	.globl	lwip_getsockname
 	.type	lwip_getsockname, @function
 lwip_getsockname:
-.LFB45:
+.LFB51:
 	.loc 1 1840 0
 	.cfi_startproc
 .LVL512:
@@ -4663,7 +4663,7 @@ lwip_getsockname:
 	jmp	lwip_getaddrname
 .LVL514:
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	lwip_getsockname, .-lwip_getsockname
 	.section	.text.unlikely.lwip_getsockname
 .LCOLDE33:
@@ -4676,7 +4676,7 @@ lwip_getsockname:
 	.globl	lwip_getsockopt
 	.type	lwip_getsockopt, @function
 lwip_getsockopt:
-.LFB46:
+.LFB52:
 	.loc 1 1846 0
 	.cfi_startproc
 .LVL515:
@@ -5274,7 +5274,7 @@ lwip_getsockopt:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE46:
+.LFE52:
 	.size	lwip_getsockopt, .-lwip_getsockopt
 	.section	.text.unlikely.lwip_getsockopt
 .LCOLDE34:
@@ -5287,7 +5287,7 @@ lwip_getsockopt:
 	.globl	lwip_setsockopt
 	.type	lwip_setsockopt, @function
 lwip_setsockopt:
-.LFB48:
+.LFB54:
 	.loc 1 2253 0
 	.cfi_startproc
 .LVL577:
@@ -5951,7 +5951,7 @@ lwip_setsockopt:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE48:
+.LFE54:
 	.size	lwip_setsockopt, .-lwip_setsockopt
 	.section	.text.unlikely.lwip_setsockopt
 .LCOLDE35:
@@ -5964,7 +5964,7 @@ lwip_setsockopt:
 	.globl	lwip_ioctl
 	.type	lwip_ioctl, @function
 lwip_ioctl:
-.LFB50:
+.LFB56:
 	.loc 1 2665 0
 	.cfi_startproc
 .LVL655:
@@ -6044,7 +6044,7 @@ lwip_ioctl:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE50:
+.LFE56:
 	.size	lwip_ioctl, .-lwip_ioctl
 	.section	.text.unlikely.lwip_ioctl
 .LCOLDE36:
@@ -6057,7 +6057,7 @@ lwip_ioctl:
 	.globl	lwip_fcntl
 	.type	lwip_fcntl, @function
 lwip_fcntl:
-.LFB51:
+.LFB57:
 	.loc 1 2762 0
 	.cfi_startproc
 .LVL666:
@@ -6146,7 +6146,7 @@ lwip_fcntl:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE51:
+.LFE57:
 	.size	lwip_fcntl, .-lwip_fcntl
 	.section	.text.unlikely.lwip_fcntl
 .LCOLDE37:
@@ -8247,8 +8247,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x183
 	.long	0x105f
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x105f
@@ -8267,8 +8267,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x196
 	.long	0xfb9
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x108e
@@ -8284,8 +8284,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x1ab
 	.long	0x25
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1102
@@ -8328,8 +8328,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x537
 	.long	0x25
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1312
@@ -8556,8 +8556,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0
 	.uleb128 0x2c
 	.long	0x100e
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1363
@@ -8589,8 +8589,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x705
 	.long	0x25
-	.long	.LFB43
-	.long	.LFE43-.LFB43
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1486
@@ -8718,8 +8718,8 @@ socket_ipv4_multicast_memberships:
 	.long	.LASF419
 	.byte	0x1
 	.value	0x663
-	.long	.LFB41
-	.long	.LFE41-.LFB41
+	.long	.LFB47
+	.long	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x159e
@@ -8831,8 +8831,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.uleb128 0x37
 	.long	0x159e
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x38
@@ -8869,8 +8869,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x1ed
 	.long	0x25
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x18b4
@@ -9150,8 +9150,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x248
 	.long	0x25
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x19dc
@@ -9314,8 +9314,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x273
 	.long	0x25
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1bd7
@@ -9488,8 +9488,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x29e
 	.long	0x25
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1d16
@@ -9621,8 +9621,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x2d7
 	.long	0x25
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1e01
@@ -9715,8 +9715,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x2f7
 	.long	0x25
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2014
@@ -9940,8 +9940,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x39e
 	.long	0x25
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2069
@@ -9978,8 +9978,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x3a4
 	.long	0x25
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x20c7
@@ -10024,8 +10024,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x3d2
 	.long	0x25
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x22cc
@@ -10238,8 +10238,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x467
 	.long	0x25
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2452
@@ -10396,8 +10396,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x3aa
 	.long	0x25
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2542
@@ -10502,8 +10502,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x4c8
 	.long	0x25
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x25e9
@@ -10572,8 +10572,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x500
 	.long	0x25
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2695
@@ -10647,8 +10647,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x518
 	.long	0x25
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x26fc
@@ -10701,8 +10701,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x577
 	.long	0x25
-	.long	.LFB39
-	.long	.LFE39-.LFB39
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2779
@@ -10749,8 +10749,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x590
 	.long	0x25
-	.long	.LFB40
-	.long	.LFE40-.LFB40
+	.long	.LFB46
+	.long	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2a26
@@ -11078,8 +11078,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x6dc
 	.long	0x25
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2b66
@@ -11203,8 +11203,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x729
 	.long	0x25
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB50
+	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2bcb
@@ -11260,8 +11260,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x72f
 	.long	0x25
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2c30
@@ -11383,8 +11383,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x735
 	.long	0x25
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2e80
@@ -11707,8 +11707,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0x8cc
 	.long	0x25
-	.long	.LFB48
-	.long	.LFE48-.LFB48
+	.long	.LFB54
+	.long	.LFE54-.LFB54
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3237
@@ -11970,8 +11970,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0xa68
 	.long	0x25
-	.long	.LFB50
-	.long	.LFE50-.LFB50
+	.long	.LFB56
+	.long	.LFE56-.LFB56
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x32f3
@@ -12053,8 +12053,8 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1
 	.value	0xac9
 	.long	0x25
-	.long	.LFB51
-	.long	.LFE51-.LFB51
+	.long	.LFB57
+	.long	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x33c9
@@ -13390,7 +13390,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL4
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x7
 	.byte	0xf3
 	.uleb128 0x1
@@ -13418,7 +13418,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL8
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13436,7 +13436,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL17
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13454,7 +13454,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL18
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13501,7 +13501,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL20
-	.long	.LFE38
+	.long	.LFE44
 	.value	0x3
 	.byte	0x91
 	.sleb128 -88
@@ -13528,7 +13528,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL61
-	.long	.LFE38
+	.long	.LFE44
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13557,7 +13557,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL61
-	.long	.LFE38
+	.long	.LFE44
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13600,7 +13600,7 @@ socket_ipv4_multicast_memberships:
 	.byte	0x91
 	.sleb128 -68
 	.long	.LVL51
-	.long	.LFE38
+	.long	.LFE44
 	.value	0x3
 	.byte	0x91
 	.sleb128 -68
@@ -13699,7 +13699,7 @@ socket_ipv4_multicast_memberships:
 	.byte	0x37
 	.byte	0x9f
 	.long	.LVL28
-	.long	.LFE38
+	.long	.LFE44
 	.value	0x2
 	.byte	0x38
 	.byte	0x9f
@@ -13743,7 +13743,7 @@ socket_ipv4_multicast_memberships:
 	.sleb128 -37
 	.byte	0x9f
 	.long	.LVL27
-	.long	.LFE38
+	.long	.LFE44
 	.value	0x3
 	.byte	0x91
 	.sleb128 -36
@@ -13814,7 +13814,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL65
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13854,7 +13854,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL71-1
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -13868,7 +13868,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL70
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x3
 	.byte	0x91
 	.sleb128 -68
@@ -13895,7 +13895,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL81
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -14545,7 +14545,7 @@ socket_ipv4_multicast_memberships:
 	.byte	0x1c
 	.byte	0x9f
 	.long	.LVL267
-	.long	.LFE29
+	.long	.LFE35
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
@@ -14947,7 +14947,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL338
-	.long	.LFE34
+	.long	.LFE40
 	.value	0x3
 	.byte	0x91
 	.sleb128 -68
@@ -16004,7 +16004,7 @@ socket_ipv4_multicast_memberships:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL581
-	.long	.LFE48
+	.long	.LFE54
 	.value	0x2
 	.byte	0x91
 	.sleb128 -52
@@ -16579,44 +16579,32 @@ socket_ipv4_multicast_memberships:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB38
-	.long	.LFE38-.LFB38
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB43
-	.long	.LFE43-.LFB43
-	.long	.LFB41
-	.long	.LFE41-.LFB41
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB24
-	.long	.LFE24-.LFB24
-	.long	.LFB25
-	.long	.LFE25-.LFB25
 	.long	.LFB26
 	.long	.LFE26-.LFB26
 	.long	.LFB27
 	.long	.LFE27-.LFB27
 	.long	.LFB28
 	.long	.LFE28-.LFB28
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB44
+	.long	.LFE44-.LFB44
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB49
+	.long	.LFE49-.LFB49
+	.long	.LFB47
+	.long	.LFE47-.LFB47
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.long	.LFB30
 	.long	.LFE30-.LFB30
 	.long	.LFB31
 	.long	.LFE31-.LFB31
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.long	.LFB33
 	.long	.LFE33-.LFB33
 	.long	.LFB34
 	.long	.LFE34-.LFB34
-	.long	.LFB32
-	.long	.LFE32-.LFB32
 	.long	.LFB35
 	.long	.LFE35-.LFB35
 	.long	.LFB36
@@ -16627,10 +16615,14 @@ socket_ipv4_multicast_memberships:
 	.long	.LFE39-.LFB39
 	.long	.LFB40
 	.long	.LFE40-.LFB40
+	.long	.LFB38
+	.long	.LFE38-.LFB38
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.long	.LFB42
 	.long	.LFE42-.LFB42
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.long	.LFB45
 	.long	.LFE45-.LFB45
 	.long	.LFB46
@@ -16641,6 +16633,14 @@ socket_ipv4_multicast_memberships:
 	.long	.LFE50-.LFB50
 	.long	.LFB51
 	.long	.LFE51-.LFB51
+	.long	.LFB52
+	.long	.LFE52-.LFB52
+	.long	.LFB54
+	.long	.LFE54-.LFB54
+	.long	.LFB56
+	.long	.LFE56-.LFB56
+	.long	.LFB57
+	.long	.LFE57-.LFB57
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -16761,44 +16761,32 @@ socket_ipv4_multicast_memberships:
 	.long	.LBE145
 	.long	0
 	.long	0
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB38
-	.long	.LFE38
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB43
-	.long	.LFE43
-	.long	.LFB41
-	.long	.LFE41
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB24
-	.long	.LFE24
-	.long	.LFB25
-	.long	.LFE25
 	.long	.LFB26
 	.long	.LFE26
 	.long	.LFB27
 	.long	.LFE27
 	.long	.LFB28
 	.long	.LFE28
-	.long	.LFB29
-	.long	.LFE29
+	.long	.LFB44
+	.long	.LFE44
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB49
+	.long	.LFE49
+	.long	.LFB47
+	.long	.LFE47
+	.long	.LFB24
+	.long	.LFE24
 	.long	.LFB30
 	.long	.LFE30
 	.long	.LFB31
 	.long	.LFE31
+	.long	.LFB32
+	.long	.LFE32
 	.long	.LFB33
 	.long	.LFE33
 	.long	.LFB34
 	.long	.LFE34
-	.long	.LFB32
-	.long	.LFE32
 	.long	.LFB35
 	.long	.LFE35
 	.long	.LFB36
@@ -16809,10 +16797,14 @@ socket_ipv4_multicast_memberships:
 	.long	.LFE39
 	.long	.LFB40
 	.long	.LFE40
+	.long	.LFB38
+	.long	.LFE38
+	.long	.LFB41
+	.long	.LFE41
 	.long	.LFB42
 	.long	.LFE42
-	.long	.LFB44
-	.long	.LFE44
+	.long	.LFB43
+	.long	.LFE43
 	.long	.LFB45
 	.long	.LFE45
 	.long	.LFB46
@@ -16823,6 +16815,14 @@ socket_ipv4_multicast_memberships:
 	.long	.LFE50
 	.long	.LFB51
 	.long	.LFE51
+	.long	.LFB52
+	.long	.LFE52
+	.long	.LFB54
+	.long	.LFE54
+	.long	.LFB56
+	.long	.LFE56
+	.long	.LFB57
+	.long	.LFE57
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

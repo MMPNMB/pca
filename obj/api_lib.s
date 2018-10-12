@@ -10,7 +10,7 @@
 	.section	.text.netconn_apimsg
 	.type	netconn_apimsg, @function
 netconn_apimsg:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/api/api_lib.c"
 	.loc 1 93 0
 	.cfi_startproc
@@ -53,7 +53,7 @@ netconn_apimsg:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	netconn_apimsg, .-netconn_apimsg
 	.section	.text.unlikely.netconn_apimsg
 .LCOLDE0:
@@ -68,7 +68,7 @@ netconn_apimsg:
 .LHOTB2:
 	.type	netconn_close_shutdown, @function
 netconn_close_shutdown:
-.LFB32:
+.LFB38:
 	.loc 1 793 0
 	.cfi_startproc
 .LVL5:
@@ -123,7 +123,7 @@ netconn_close_shutdown:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	netconn_close_shutdown, .-netconn_close_shutdown
 	.section	.text.unlikely.netconn_close_shutdown
 .LCOLDE2:
@@ -142,7 +142,7 @@ netconn_close_shutdown:
 .LHOTB6:
 	.type	netconn_recv_data, @function
 netconn_recv_data:
-.LFB26:
+.LFB32:
 	.loc 1 467 0
 	.cfi_startproc
 .LVL11:
@@ -369,7 +369,7 @@ netconn_recv_data:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	netconn_recv_data, .-netconn_recv_data
 	.section	.text.unlikely.netconn_recv_data
 .LCOLDE6:
@@ -382,7 +382,7 @@ netconn_recv_data:
 	.globl	netconn_new_with_proto_and_callback
 	.type	netconn_new_with_proto_and_callback, @function
 netconn_new_with_proto_and_callback:
-.LFB18:
+.LFB24:
 	.loc 1 124 0
 	.cfi_startproc
 .LVL32:
@@ -482,7 +482,7 @@ netconn_new_with_proto_and_callback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	netconn_new_with_proto_and_callback, .-netconn_new_with_proto_and_callback
 	.section	.text.unlikely.netconn_new_with_proto_and_callback
 .LCOLDE7:
@@ -495,7 +495,7 @@ netconn_new_with_proto_and_callback:
 	.globl	netconn_delete
 	.type	netconn_delete, @function
 netconn_delete:
-.LFB19:
+.LFB25:
 	.loc 1 167 0
 	.cfi_startproc
 .LVL42:
@@ -556,7 +556,7 @@ netconn_delete:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	netconn_delete, .-netconn_delete
 	.section	.text.unlikely.netconn_delete
 .LCOLDE8:
@@ -576,7 +576,7 @@ netconn_delete:
 	.globl	netconn_getaddr
 	.type	netconn_getaddr, @function
 netconn_getaddr:
-.LFB20:
+.LFB26:
 	.loc 1 215 0
 	.cfi_startproc
 .LVL48:
@@ -660,7 +660,7 @@ netconn_getaddr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	netconn_getaddr, .-netconn_getaddr
 	.section	.text.unlikely.netconn_getaddr
 .LCOLDE12:
@@ -676,7 +676,7 @@ netconn_getaddr:
 	.globl	netconn_bind
 	.type	netconn_bind, @function
 netconn_bind:
-.LFB21:
+.LFB27:
 	.loc 1 253 0
 	.cfi_startproc
 .LVL52:
@@ -741,7 +741,7 @@ netconn_bind:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	netconn_bind, .-netconn_bind
 	.section	.text.unlikely.netconn_bind
 .LCOLDE14:
@@ -757,7 +757,7 @@ netconn_bind:
 	.globl	netconn_connect
 	.type	netconn_connect, @function
 netconn_connect:
-.LFB22:
+.LFB28:
 	.loc 1 285 0
 	.cfi_startproc
 .LVL58:
@@ -822,7 +822,7 @@ netconn_connect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	netconn_connect, .-netconn_connect
 	.section	.text.unlikely.netconn_connect
 .LCOLDE16:
@@ -838,7 +838,7 @@ netconn_connect:
 	.globl	netconn_disconnect
 	.type	netconn_disconnect, @function
 netconn_disconnect:
-.LFB23:
+.LFB29:
 	.loc 1 315 0
 	.cfi_startproc
 .LVL64:
@@ -886,7 +886,7 @@ netconn_disconnect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	netconn_disconnect, .-netconn_disconnect
 	.section	.text.unlikely.netconn_disconnect
 .LCOLDE18:
@@ -902,7 +902,7 @@ netconn_disconnect:
 	.globl	netconn_listen_with_backlog
 	.type	netconn_listen_with_backlog, @function
 netconn_listen_with_backlog:
-.LFB24:
+.LFB30:
 	.loc 1 340 0
 	.cfi_startproc
 .LVL68:
@@ -953,7 +953,7 @@ netconn_listen_with_backlog:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	netconn_listen_with_backlog, .-netconn_listen_with_backlog
 	.section	.text.unlikely.netconn_listen_with_backlog
 .LCOLDE20:
@@ -971,7 +971,7 @@ netconn_listen_with_backlog:
 	.globl	netconn_accept
 	.type	netconn_accept, @function
 netconn_accept:
-.LFB25:
+.LFB31:
 	.loc 1 377 0
 	.cfi_startproc
 .LVL72:
@@ -1129,7 +1129,7 @@ netconn_accept:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	netconn_accept, .-netconn_accept
 	.section	.text.unlikely.netconn_accept
 .LCOLDE23:
@@ -1142,7 +1142,7 @@ netconn_accept:
 	.globl	netconn_recv_tcp_pbuf
 	.type	netconn_recv_tcp_pbuf, @function
 netconn_recv_tcp_pbuf:
-.LFB27:
+.LFB33:
 	.loc 1 596 0
 	.cfi_startproc
 .LVL84:
@@ -1186,7 +1186,7 @@ netconn_recv_tcp_pbuf:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	netconn_recv_tcp_pbuf, .-netconn_recv_tcp_pbuf
 	.section	.text.unlikely.netconn_recv_tcp_pbuf
 .LCOLDE24:
@@ -1199,7 +1199,7 @@ netconn_recv_tcp_pbuf:
 	.globl	netconn_recv
 	.type	netconn_recv, @function
 netconn_recv:
-.LFB28:
+.LFB34:
 	.loc 1 614 0
 	.cfi_startproc
 .LVL87:
@@ -1339,7 +1339,7 @@ netconn_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	netconn_recv, .-netconn_recv
 	.section	.text.unlikely.netconn_recv
 .LCOLDE25:
@@ -1355,7 +1355,7 @@ netconn_recv:
 	.globl	netconn_send
 	.type	netconn_send, @function
 netconn_send:
-.LFB30:
+.LFB36:
 	.loc 1 695 0 is_stmt 1
 	.cfi_startproc
 .LVL101:
@@ -1406,7 +1406,7 @@ netconn_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	netconn_send, .-netconn_send
 	.section	.text.unlikely.netconn_send
 .LCOLDE27:
@@ -1419,7 +1419,7 @@ netconn_send:
 	.globl	netconn_sendto
 	.type	netconn_sendto, @function
 netconn_sendto:
-.LFB29:
+.LFB35:
 	.loc 1 676 0
 	.cfi_startproc
 .LVL105:
@@ -1484,7 +1484,7 @@ netconn_sendto:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	netconn_sendto, .-netconn_sendto
 	.section	.text.unlikely.netconn_sendto
 .LCOLDE28:
@@ -1502,7 +1502,7 @@ netconn_sendto:
 	.globl	netconn_write_partly
 	.type	netconn_write_partly, @function
 netconn_write_partly:
-.LFB31:
+.LFB37:
 	.loc 1 728 0
 	.cfi_startproc
 .LVL112:
@@ -1650,7 +1650,7 @@ netconn_write_partly:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	netconn_write_partly, .-netconn_write_partly
 	.section	.text.unlikely.netconn_write_partly
 .LCOLDE31:
@@ -1663,7 +1663,7 @@ netconn_write_partly:
 	.globl	netconn_close
 	.type	netconn_close, @function
 netconn_close:
-.LFB33:
+.LFB39:
 	.loc 1 829 0
 	.cfi_startproc
 .LVL123:
@@ -1685,7 +1685,7 @@ netconn_close:
 	jmp	netconn_close_shutdown
 .LVL124:
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	netconn_close, .-netconn_close
 	.section	.text.unlikely.netconn_close
 .LCOLDE32:
@@ -1698,7 +1698,7 @@ netconn_close:
 	.globl	netconn_shutdown
 	.type	netconn_shutdown, @function
 netconn_shutdown:
-.LFB34:
+.LFB40:
 	.loc 1 845 0
 	.cfi_startproc
 .LVL125:
@@ -1725,7 +1725,7 @@ netconn_shutdown:
 	jmp	netconn_close_shutdown
 .LVL126:
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	netconn_shutdown, .-netconn_shutdown
 	.section	.text.unlikely.netconn_shutdown
 .LCOLDE33:
@@ -1741,7 +1741,7 @@ netconn_shutdown:
 	.globl	netconn_join_leave_group
 	.type	netconn_join_leave_group, @function
 netconn_join_leave_group:
-.LFB35:
+.LFB41:
 	.loc 1 866 0
 	.cfi_startproc
 .LVL127:
@@ -1814,7 +1814,7 @@ netconn_join_leave_group:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	netconn_join_leave_group, .-netconn_join_leave_group
 	.section	.text.unlikely.netconn_join_leave_group
 .LCOLDE35:
@@ -1832,7 +1832,7 @@ netconn_join_leave_group:
 	.globl	netconn_gethostbyname
 	.type	netconn_gethostbyname, @function
 netconn_gethostbyname:
-.LFB36:
+.LFB42:
 	.loc 1 913 0
 	.cfi_startproc
 .LVL135:
@@ -1945,7 +1945,7 @@ netconn_gethostbyname:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	netconn_gethostbyname, .-netconn_gethostbyname
 	.section	.text.unlikely.netconn_gethostbyname
 .LCOLDE38:
@@ -3806,8 +3806,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.byte	0x5c
 	.long	0xe8
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xeb5
@@ -3838,8 +3838,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x318
 	.long	0xe8
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf3a
@@ -3894,8 +3894,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x1d2
 	.long	0xe8
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x101f
@@ -3996,8 +3996,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.byte	0x7b
 	.long	0x383
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10de
@@ -4081,8 +4081,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.byte	0xa6
 	.long	0xe8
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1152
@@ -4134,8 +4134,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.byte	0xd6
 	.long	0xe8
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x11e3
@@ -4207,8 +4207,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.byte	0xfc
 	.long	0xe8
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1267
@@ -4270,8 +4270,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x11c
 	.long	0xe8
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x12f1
@@ -4333,8 +4333,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x13a
 	.long	0xe8
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x135c
@@ -4382,8 +4382,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x153
 	.long	0xe8
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x13d6
@@ -4439,8 +4439,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x178
 	.long	0xe8
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x14b5
@@ -4537,8 +4537,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x253
 	.long	0xe8
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1519
@@ -4589,8 +4589,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x265
 	.long	0xe8
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x15eb
@@ -4690,8 +4690,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x2b6
 	.long	0xe8
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x166b
@@ -4747,8 +4747,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x2a3
 	.long	0xe8
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x16ce
@@ -4787,8 +4787,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x2d6
 	.long	0xe8
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x179b
@@ -4884,8 +4884,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x33c
 	.long	0xe8
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x17e1
@@ -4919,8 +4919,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x34c
 	.long	0xe8
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x183a
@@ -4965,8 +4965,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x35e
 	.long	0xe8
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x18d4
@@ -5034,8 +5034,8 @@ netconn_gethostbyname:
 	.byte	0x1
 	.value	0x38f
 	.long	0xe8
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1970
@@ -6038,7 +6038,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL2-1
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6056,7 +6056,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL4
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6088,7 +6088,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL8-1
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6113,7 +6113,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL8-1
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6141,7 +6141,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL30
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6181,7 +6181,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL30
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6381,7 +6381,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL110
-	.long	.LFE29
+	.long	.LFE35
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -6402,7 +6402,7 @@ netconn_gethostbyname:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL111
-	.long	.LFE29
+	.long	.LFE35
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -6415,7 +6415,7 @@ netconn_gethostbyname:
 	.byte	0x91
 	.sleb128 8
 	.long	.LVL109
-	.long	.LFE29
+	.long	.LFE35
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -6516,46 +6516,46 @@ netconn_gethostbyname:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB32
-	.long	.LFE32-.LFB32
-	.long	.LFB26
-	.long	.LFE26-.LFB26
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
+	.long	.LFB38
+	.long	.LFE38-.LFB38
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.long	.LFB24
 	.long	.LFE24-.LFB24
 	.long	.LFB25
 	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.long	.LFB27
 	.long	.LFE27-.LFB27
 	.long	.LFB28
 	.long	.LFE28-.LFB28
-	.long	.LFB30
-	.long	.LFE30-.LFB30
 	.long	.LFB29
 	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.long	.LFB31
 	.long	.LFE31-.LFB31
 	.long	.LFB33
 	.long	.LFE33-.LFB33
 	.long	.LFB34
 	.long	.LFE34-.LFB34
-	.long	.LFB35
-	.long	.LFE35-.LFB35
 	.long	.LFB36
 	.long	.LFE36-.LFB36
+	.long	.LFB35
+	.long	.LFE35-.LFB35
+	.long	.LFB37
+	.long	.LFE37-.LFB37
+	.long	.LFB39
+	.long	.LFE39-.LFB39
+	.long	.LFB40
+	.long	.LFE40-.LFB40
+	.long	.LFB41
+	.long	.LFE41-.LFB41
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -6566,46 +6566,46 @@ netconn_gethostbyname:
 	.long	.LBE3
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB32
-	.long	.LFE32
-	.long	.LFB26
-	.long	.LFE26
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
+	.long	.LFB38
+	.long	.LFE38
+	.long	.LFB32
+	.long	.LFE32
 	.long	.LFB24
 	.long	.LFE24
 	.long	.LFB25
 	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
 	.long	.LFB27
 	.long	.LFE27
 	.long	.LFB28
 	.long	.LFE28
-	.long	.LFB30
-	.long	.LFE30
 	.long	.LFB29
 	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
 	.long	.LFB31
 	.long	.LFE31
 	.long	.LFB33
 	.long	.LFE33
 	.long	.LFB34
 	.long	.LFE34
-	.long	.LFB35
-	.long	.LFE35
 	.long	.LFB36
 	.long	.LFE36
+	.long	.LFB35
+	.long	.LFE35
+	.long	.LFB37
+	.long	.LFE37
+	.long	.LFB39
+	.long	.LFE39
+	.long	.LFB40
+	.long	.LFE40
+	.long	.LFB41
+	.long	.LFE41
+	.long	.LFB42
+	.long	.LFE42
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

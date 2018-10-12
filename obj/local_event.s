@@ -10,7 +10,7 @@
 	.section	.text.event_read_cb
 	.type	event_read_cb, @function
 event_read_cb:
-.LFB18:
+.LFB24:
 	.file 1 "kernel/yloop/local_event.c"
 	.loc 1 73 0
 	.cfi_startproc
@@ -110,7 +110,7 @@ event_read_cb:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	event_read_cb, .-event_read_cb
 	.section	.text.unlikely.event_read_cb
 .LCOLDE0:
@@ -122,7 +122,7 @@ event_read_cb:
 .LHOTB1:
 	.type	_schedule_call, @function
 _schedule_call:
-.LFB24:
+.LFB30:
 	.loc 1 160 0
 	.cfi_startproc
 .LVL10:
@@ -246,7 +246,7 @@ _schedule_call:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	_schedule_call, .-_schedule_call
 	.section	.text.unlikely._schedule_call
 .LCOLDE1:
@@ -262,7 +262,7 @@ _schedule_call:
 	.globl	aos_event_service_init
 	.type	aos_event_service_init, @function
 aos_event_service_init:
-.LFB19:
+.LFB25:
 	.loc 1 82 0
 	.cfi_startproc
 	pushl	%ebp
@@ -311,7 +311,7 @@ aos_event_service_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	aos_event_service_init, .-aos_event_service_init
 	.section	.text.unlikely.aos_event_service_init
 .LCOLDE3:
@@ -324,7 +324,7 @@ aos_event_service_init:
 	.globl	aos_event_service_deinit
 	.type	aos_event_service_deinit, @function
 aos_event_service_deinit:
-.LFB20:
+.LFB26:
 	.loc 1 95 0
 	.cfi_startproc
 .LVL32:
@@ -357,7 +357,7 @@ aos_event_service_deinit:
 	jmp	aos_close
 .LVL34:
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	aos_event_service_deinit, .-aos_event_service_deinit
 	.section	.text.unlikely.aos_event_service_deinit
 .LCOLDE4:
@@ -370,7 +370,7 @@ aos_event_service_deinit:
 	.globl	aos_post_event
 	.type	aos_post_event, @function
 aos_post_event:
-.LFB21:
+.LFB27:
 	.loc 1 101 0
 	.cfi_startproc
 .LVL35:
@@ -443,7 +443,7 @@ aos_post_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	aos_post_event, .-aos_post_event
 	.section	.text.unlikely.aos_post_event
 .LCOLDE5:
@@ -456,7 +456,7 @@ aos_post_event:
 	.globl	aos_register_event_filter
 	.type	aos_register_event_filter, @function
 aos_register_event_filter:
-.LFB22:
+.LFB28:
 	.loc 1 112 0
 	.cfi_startproc
 .LVL43:
@@ -554,7 +554,7 @@ aos_register_event_filter:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	aos_register_event_filter, .-aos_register_event_filter
 	.section	.text.unlikely.aos_register_event_filter
 .LCOLDE6:
@@ -567,7 +567,7 @@ aos_register_event_filter:
 	.globl	aos_unregister_event_filter
 	.type	aos_unregister_event_filter, @function
 aos_unregister_event_filter:
-.LFB23:
+.LFB29:
 	.loc 1 132 0
 	.cfi_startproc
 .LVL51:
@@ -648,7 +648,7 @@ aos_unregister_event_filter:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	aos_unregister_event_filter, .-aos_unregister_event_filter
 	.section	.text.unlikely.aos_unregister_event_filter
 .LCOLDE7:
@@ -661,7 +661,7 @@ aos_unregister_event_filter:
 	.globl	aos_loop_schedule_urgent_call
 	.type	aos_loop_schedule_urgent_call, @function
 aos_loop_schedule_urgent_call:
-.LFB25:
+.LFB31:
 	.loc 1 183 0
 	.cfi_startproc
 .LVL61:
@@ -685,7 +685,7 @@ aos_loop_schedule_urgent_call:
 	jmp	_schedule_call
 .LVL63:
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	aos_loop_schedule_urgent_call, .-aos_loop_schedule_urgent_call
 	.section	.text.unlikely.aos_loop_schedule_urgent_call
 .LCOLDE8:
@@ -698,7 +698,7 @@ aos_loop_schedule_urgent_call:
 	.globl	aos_loop_schedule_call
 	.type	aos_loop_schedule_call, @function
 aos_loop_schedule_call:
-.LFB26:
+.LFB32:
 	.loc 1 188 0
 	.cfi_startproc
 .LVL64:
@@ -722,7 +722,7 @@ aos_loop_schedule_call:
 	jmp	_schedule_call
 .LVL66:
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	aos_loop_schedule_call, .-aos_loop_schedule_call
 	.section	.text.unlikely.aos_loop_schedule_call
 .LCOLDE9:
@@ -734,7 +734,7 @@ aos_loop_schedule_call:
 .LHOTB10:
 	.type	run_my_work, @function
 run_my_work:
-.LFB29:
+.LFB35:
 	.loc 1 215 0
 	.cfi_startproc
 .LVL67:
@@ -800,7 +800,7 @@ run_my_work:
 .LBE44:
 .LBE45:
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	run_my_work, .-run_my_work
 	.section	.text.unlikely.run_my_work
 .LCOLDE10:
@@ -813,7 +813,7 @@ run_my_work:
 	.globl	aos_schedule_call
 	.type	aos_schedule_call, @function
 aos_schedule_call:
-.LFB27:
+.LFB33:
 	.loc 1 193 0
 	.cfi_startproc
 .LVL76:
@@ -839,7 +839,7 @@ aos_schedule_call:
 	jmp	_schedule_call
 .LVL78:
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	aos_schedule_call, .-aos_schedule_call
 	.section	.text.unlikely.aos_schedule_call
 .LCOLDE11:
@@ -852,7 +852,7 @@ aos_schedule_call:
 	.globl	aos_cancel_work
 	.type	aos_cancel_work, @function
 aos_cancel_work:
-.LFB30:
+.LFB36:
 	.loc 1 228 0
 	.cfi_startproc
 .LVL79:
@@ -931,7 +931,7 @@ aos_cancel_work:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	aos_cancel_work, .-aos_cancel_work
 	.section	.text.unlikely.aos_cancel_work
 .LCOLDE12:
@@ -944,7 +944,7 @@ aos_cancel_work:
 	.globl	aos_loop_schedule_work
 	.type	aos_loop_schedule_work, @function
 aos_loop_schedule_work:
-.LFB31:
+.LFB37:
 	.loc 1 253 0
 	.cfi_startproc
 .LVL88:
@@ -1061,7 +1061,7 @@ aos_loop_schedule_work:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	aos_loop_schedule_work, .-aos_loop_schedule_work
 	.section	.text.unlikely.aos_loop_schedule_work
 .LCOLDE13:
@@ -1643,8 +1643,8 @@ local_event:
 	.long	.LASF82
 	.byte	0x1
 	.byte	0x48
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4ea
@@ -1746,8 +1746,8 @@ local_event:
 	.byte	0x1
 	.byte	0x9e
 	.long	0x37
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x5f4
@@ -1833,8 +1833,8 @@ local_event:
 	.byte	0x1
 	.byte	0x51
 	.long	0x37
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x63d
@@ -1858,8 +1858,8 @@ local_event:
 	.long	.LASF85
 	.byte	0x1
 	.byte	0x5e
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x672
@@ -1883,8 +1883,8 @@ local_event:
 	.byte	0x1
 	.byte	0x64
 	.long	0x37
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x718
@@ -1956,8 +1956,8 @@ local_event:
 	.byte	0x1
 	.byte	0x6f
 	.long	0x37
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7c4
@@ -2052,8 +2052,8 @@ local_event:
 	.byte	0x1
 	.byte	0x83
 	.long	0x37
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x882
@@ -2116,8 +2116,8 @@ local_event:
 	.byte	0x1
 	.byte	0xb6
 	.long	0x37
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8e5
@@ -2173,8 +2173,8 @@ local_event:
 	.byte	0x1
 	.byte	0xbb
 	.long	0x37
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x948
@@ -2244,8 +2244,8 @@ local_event:
 	.long	.LASF83
 	.byte	0x1
 	.byte	0xd6
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9da
@@ -2292,8 +2292,8 @@ local_event:
 	.byte	0x1
 	.byte	0xc0
 	.long	0x37
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa2d
@@ -2338,8 +2338,8 @@ local_event:
 	.long	.LASF86
 	.byte	0x1
 	.byte	0xe3
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xaca
@@ -2408,8 +2408,8 @@ local_event:
 	.byte	0x1
 	.byte	0xfb
 	.long	0xa5
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xba3
@@ -3315,7 +3315,7 @@ local_event:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL25
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3329,7 +3329,7 @@ local_event:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL13-1
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3347,7 +3347,7 @@ local_event:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL23
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -3505,7 +3505,7 @@ local_event:
 	.byte	0x2e
 	.byte	0x9f
 	.long	.LVL38
-	.long	.LFE21
+	.long	.LFE27
 	.value	0xd
 	.byte	0x91
 	.sleb128 0
@@ -3719,7 +3719,7 @@ local_event:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL87
-	.long	.LFE30
+	.long	.LFE36
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3793,32 +3793,32 @@ local_event:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB18
-	.long	.LFE18-.LFB18
 	.long	.LFB24
 	.long	.LFE24-.LFB24
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.long	.LFB25
 	.long	.LFE25-.LFB25
 	.long	.LFB26
 	.long	.LFE26-.LFB26
-	.long	.LFB29
-	.long	.LFE29-.LFB29
 	.long	.LFB27
 	.long	.LFE27-.LFB27
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.long	.LFB31
 	.long	.LFE31-.LFB31
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB35
+	.long	.LFE35-.LFB35
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB36
+	.long	.LFE36-.LFB36
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -3857,32 +3857,32 @@ local_event:
 	.long	.LBE51
 	.long	0
 	.long	0
-	.long	.LFB18
-	.long	.LFE18
 	.long	.LFB24
 	.long	.LFE24
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB23
-	.long	.LFE23
+	.long	.LFB30
+	.long	.LFE30
 	.long	.LFB25
 	.long	.LFE25
 	.long	.LFB26
 	.long	.LFE26
-	.long	.LFB29
-	.long	.LFE29
 	.long	.LFB27
 	.long	.LFE27
-	.long	.LFB30
-	.long	.LFE30
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
 	.long	.LFB31
 	.long	.LFE31
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB35
+	.long	.LFE35
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB36
+	.long	.LFE36
+	.long	.LFB37
+	.long	.LFE37
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

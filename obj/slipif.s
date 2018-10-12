@@ -10,7 +10,7 @@
 	.section	.text.slipif_rxbyte_input
 	.type	slipif_rxbyte_input, @function
 slipif_rxbyte_input:
-.LFB20:
+.LFB26:
 	.file 1 "kernel/protocols/net/netif/slipif.c"
 	.loc 1 311 0
 	.cfi_startproc
@@ -221,7 +221,7 @@ slipif_rxbyte_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	slipif_rxbyte_input, .-slipif_rxbyte_input
 	.section	.text.unlikely.slipif_rxbyte_input
 .LCOLDE0:
@@ -233,7 +233,7 @@ slipif_rxbyte_input:
 .LHOTB1:
 	.type	slipif_loop_thread, @function
 slipif_loop_thread:
-.LFB21:
+.LFB27:
 	.loc 1 331 0
 	.cfi_startproc
 .LVL18:
@@ -279,7 +279,7 @@ slipif_loop_thread:
 .LVL22:
 	jmp	.L36
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	slipif_loop_thread, .-slipif_loop_thread
 	.section	.text.unlikely.slipif_loop_thread
 .LCOLDE1:
@@ -291,7 +291,7 @@ slipif_loop_thread:
 .LHOTB2:
 	.type	slipif_output_v4, @function
 slipif_output_v4:
-.LFB18:
+.LFB24:
 	.loc 1 173 0
 	.cfi_startproc
 .LVL23:
@@ -417,7 +417,7 @@ slipif_output_v4:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	slipif_output_v4, .-slipif_output_v4
 	.section	.text.unlikely.slipif_output_v4
 .LCOLDE2:
@@ -433,7 +433,7 @@ slipif_output_v4:
 	.globl	slipif_init
 	.type	slipif_init, @function
 slipif_init:
-.LFB22:
+.LFB28:
 	.loc 1 362 0
 	.cfi_startproc
 .LVL40:
@@ -546,7 +546,7 @@ slipif_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	slipif_init, .-slipif_init
 	.section	.text.unlikely.slipif_init
 .LCOLDE4:
@@ -559,7 +559,7 @@ slipif_init:
 	.globl	slipif_poll
 	.type	slipif_poll, @function
 slipif_poll:
-.LFB23:
+.LFB29:
 	.loc 1 428 0
 	.cfi_startproc
 .LVL51:
@@ -624,7 +624,7 @@ slipif_poll:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	slipif_poll, .-slipif_poll
 	.section	.text.unlikely.slipif_poll
 .LCOLDE5:
@@ -1331,8 +1331,8 @@ slipif_poll:
 	.long	.LASF110
 	.byte	0x1
 	.value	0x136
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x61b
@@ -1393,8 +1393,8 @@ slipif_poll:
 	.long	.LASF92
 	.byte	0x1
 	.value	0x14a
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x682
@@ -1447,8 +1447,8 @@ slipif_poll:
 	.byte	0x1
 	.byte	0xac
 	.long	0xd2
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x740
@@ -1528,8 +1528,8 @@ slipif_poll:
 	.byte	0x1
 	.value	0x169
 	.long	0xd2
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7ae
@@ -1570,8 +1570,8 @@ slipif_poll:
 	.long	.LASF112
 	.byte	0x1
 	.value	0x1ab
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x817
@@ -2488,7 +2488,7 @@ slipif_poll:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL17
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2517,7 +2517,7 @@ slipif_poll:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL11-1
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2691,16 +2691,16 @@ slipif_poll:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2713,16 +2713,16 @@ slipif_poll:
 	.long	.LBE9
 	.long	0
 	.long	0
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB23
-	.long	.LFE23
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

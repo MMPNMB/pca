@@ -11,7 +11,7 @@
 	.globl	vfs_i2c_open
 	.type	vfs_i2c_open, @function
 vfs_i2c_open:
-.LFB16:
+.LFB22:
 	.file 1 "kernel/vfs/device/vfs_i2c.c"
 	.loc 1 19 0
 	.cfi_startproc
@@ -60,7 +60,7 @@ vfs_i2c_open:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	vfs_i2c_open, .-vfs_i2c_open
 	.section	.text.unlikely.vfs_i2c_open
 .LCOLDE0:
@@ -73,7 +73,7 @@ vfs_i2c_open:
 	.globl	vfs_i2c_close
 	.type	vfs_i2c_close, @function
 vfs_i2c_close:
-.LFB17:
+.LFB23:
 	.loc 1 45 0
 	.cfi_startproc
 .LVL5:
@@ -160,7 +160,7 @@ vfs_i2c_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	vfs_i2c_close, .-vfs_i2c_close
 	.section	.text.unlikely.vfs_i2c_close
 .LCOLDE1:
@@ -173,7 +173,7 @@ vfs_i2c_close:
 	.globl	vfs_i2c_read
 	.type	vfs_i2c_read, @function
 vfs_i2c_read:
-.LFB18:
+.LFB24:
 	.loc 1 79 0
 	.cfi_startproc
 .LVL15:
@@ -274,7 +274,7 @@ vfs_i2c_read:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	vfs_i2c_read, .-vfs_i2c_read
 	.section	.text.unlikely.vfs_i2c_read
 .LCOLDE2:
@@ -287,7 +287,7 @@ vfs_i2c_read:
 	.globl	vfs_i2c_write
 	.type	vfs_i2c_write, @function
 vfs_i2c_write:
-.LFB19:
+.LFB25:
 	.loc 1 117 0
 	.cfi_startproc
 .LVL29:
@@ -388,7 +388,7 @@ vfs_i2c_write:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	vfs_i2c_write, .-vfs_i2c_write
 	.section	.text.unlikely.vfs_i2c_write
 .LCOLDE3:
@@ -1362,8 +1362,8 @@ i2c_ops:
 	.byte	0x1
 	.byte	0x12
 	.long	0x7e
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x801
@@ -1403,8 +1403,8 @@ i2c_ops:
 	.byte	0x1
 	.byte	0x2c
 	.long	0x7e
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x867
@@ -1443,8 +1443,8 @@ i2c_ops:
 	.byte	0x1
 	.byte	0x4e
 	.long	0x1b1
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8f2
@@ -1505,8 +1505,8 @@ i2c_ops:
 	.byte	0x1
 	.byte	0x74
 	.long	0x1b1
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x97d
@@ -2017,7 +2017,7 @@ i2c_ops:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL3
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2034,7 +2034,7 @@ i2c_ops:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL4
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -2048,7 +2048,7 @@ i2c_ops:
 	.byte	0xff
 	.byte	0x9f
 	.long	.LVL4
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2069,7 +2069,7 @@ i2c_ops:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL3
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -2099,7 +2099,7 @@ i2c_ops:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL14
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2140,7 +2140,7 @@ i2c_ops:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL28
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2206,7 +2206,7 @@ i2c_ops:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL42
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2256,26 +2256,26 @@ i2c_ops:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB16
-	.long	.LFE16-.LFB16
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB22
+	.long	.LFE22-.LFB22
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB16
-	.long	.LFE16
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
+	.long	.LFB22
+	.long	.LFE22
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

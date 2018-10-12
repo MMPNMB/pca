@@ -10,7 +10,7 @@
 	.section	.text.tftp_fclose
 	.type	tftp_fclose, @function
 tftp_fclose:
-.LFB18:
+.LFB24:
 	.file 1 "kernel/protocols/net/apps/tftp/tftp_ota.c"
 	.loc 1 29 0
 	.cfi_startproc
@@ -26,7 +26,7 @@ tftp_fclose:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	tftp_fclose, .-tftp_fclose
 	.section	.text.unlikely.tftp_fclose
 .LCOLDE0:
@@ -38,7 +38,7 @@ tftp_fclose:
 .LHOTB1:
 	.type	tftp_fread, @function
 tftp_fread:
-.LFB19:
+.LFB25:
 	.loc 1 33 0
 	.cfi_startproc
 .LVL1:
@@ -56,7 +56,7 @@ tftp_fread:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	tftp_fread, .-tftp_fread
 	.section	.text.unlikely.tftp_fread
 .LCOLDE1:
@@ -68,7 +68,7 @@ tftp_fread:
 .LHOTB2:
 	.type	tftp_fwrite, @function
 tftp_fwrite:
-.LFB20:
+.LFB26:
 	.loc 1 38 0
 	.cfi_startproc
 .LVL2:
@@ -138,7 +138,7 @@ tftp_fwrite:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	tftp_fwrite, .-tftp_fwrite
 	.section	.text.unlikely.tftp_fwrite
 .LCOLDE2:
@@ -155,7 +155,7 @@ tftp_fwrite:
 .LHOTB5:
 	.type	tftp_fopen, @function
 tftp_fopen:
-.LFB17:
+.LFB23:
 	.loc 1 14 0
 	.cfi_startproc
 .LVL9:
@@ -234,7 +234,7 @@ tftp_fopen:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	tftp_fopen, .-tftp_fopen
 	.section	.text.unlikely.tftp_fopen
 .LCOLDE5:
@@ -252,7 +252,7 @@ tftp_fopen:
 	.globl	ota_get_done
 	.type	ota_get_done, @function
 ota_get_done:
-.LFB21:
+.LFB27:
 	.loc 1 48 0
 	.cfi_startproc
 .LVL16:
@@ -314,7 +314,7 @@ ota_get_done:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	ota_get_done, .-ota_get_done
 	.section	.text.unlikely.ota_get_done
 .LCOLDE8:
@@ -745,8 +745,8 @@ ota_ctx:
 	.long	.LASF87
 	.byte	0x1
 	.byte	0x1c
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x348
@@ -764,8 +764,8 @@ ota_ctx:
 	.byte	0x1
 	.byte	0x20
 	.long	0x25
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x38c
@@ -799,8 +799,8 @@ ota_ctx:
 	.byte	0x1
 	.byte	0x25
 	.long	0x25
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x402
@@ -859,8 +859,8 @@ ota_ctx:
 	.byte	0x1
 	.byte	0xd
 	.long	0x8f
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4a5
@@ -924,8 +924,8 @@ ota_ctx:
 	.long	.LASF88
 	.byte	0x1
 	.byte	0x2f
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x520
@@ -1498,7 +1498,7 @@ ota_ctx:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL8
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -1524,30 +1524,30 @@ ota_ctx:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB21
-	.long	.LFE21
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB27
+	.long	.LFE27
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

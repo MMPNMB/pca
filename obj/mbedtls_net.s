@@ -10,7 +10,7 @@
 	.section	.text.net_would_block
 	.type	net_would_block, @function
 net_would_block:
-.LFB26:
+.LFB32:
 	.file 1 "security/mbedtls/src/mbedtls_net.c"
 	.loc 1 197 0
 	.cfi_startproc
@@ -50,7 +50,7 @@ net_would_block:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	net_would_block, .-net_would_block
 	.section	.text.unlikely.net_would_block
 .LCOLDE0:
@@ -63,7 +63,7 @@ net_would_block:
 	.globl	mbedtls_net_init
 	.type	mbedtls_net_init, @function
 mbedtls_net_init:
-.LFB27:
+.LFB33:
 	.loc 1 219 0
 	.cfi_startproc
 .LVL5:
@@ -81,7 +81,7 @@ mbedtls_net_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	mbedtls_net_init, .-mbedtls_net_init
 	.section	.text.unlikely.mbedtls_net_init
 .LCOLDE1:
@@ -97,7 +97,7 @@ mbedtls_net_init:
 	.globl	mbedtls_net_connect
 	.type	mbedtls_net_connect, @function
 mbedtls_net_connect:
-.LFB28:
+.LFB34:
 	.loc 1 224 0
 	.cfi_startproc
 .LVL6:
@@ -164,7 +164,7 @@ mbedtls_net_connect:
 	.loc 1 234 0
 	pushl	(%eax)
 	pushl	$234
-	pushl	$__FUNCTION__.5924
+	pushl	$__FUNCTION__.5935
 	pushl	$.LC2
 	call	printf
 .LVL10:
@@ -271,7 +271,7 @@ mbedtls_net_connect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	mbedtls_net_connect, .-mbedtls_net_connect
 	.section	.text.unlikely.mbedtls_net_connect
 .LCOLDE3:
@@ -284,7 +284,7 @@ mbedtls_net_connect:
 	.globl	mbedtls_net_set_block
 	.type	mbedtls_net_set_block, @function
 mbedtls_net_set_block:
-.LFB29:
+.LFB35:
 	.loc 1 272 0
 	.cfi_startproc
 .LVL26:
@@ -321,7 +321,7 @@ mbedtls_net_set_block:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	mbedtls_net_set_block, .-mbedtls_net_set_block
 	.section	.text.unlikely.mbedtls_net_set_block
 .LCOLDE4:
@@ -334,7 +334,7 @@ mbedtls_net_set_block:
 	.globl	mbedtls_net_set_nonblock
 	.type	mbedtls_net_set_nonblock, @function
 mbedtls_net_set_nonblock:
-.LFB30:
+.LFB36:
 	.loc 1 282 0
 	.cfi_startproc
 .LVL30:
@@ -371,7 +371,7 @@ mbedtls_net_set_nonblock:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	mbedtls_net_set_nonblock, .-mbedtls_net_set_nonblock
 	.section	.text.unlikely.mbedtls_net_set_nonblock
 .LCOLDE5:
@@ -391,7 +391,7 @@ mbedtls_net_set_nonblock:
 	.globl	mbedtls_net_recv
 	.type	mbedtls_net_recv, @function
 mbedtls_net_recv:
-.LFB31:
+.LFB37:
 	.loc 1 292 0
 	.cfi_startproc
 .LVL34:
@@ -414,7 +414,7 @@ mbedtls_net_recv:
 	.loc 1 297 0
 	pushl	%ecx
 	pushl	$297
-	pushl	$__FUNCTION__.5948
+	pushl	$__FUNCTION__.5959
 	pushl	$.LC6
 	call	printf
 .LVL36:
@@ -463,7 +463,7 @@ mbedtls_net_recv:
 	.loc 1 308 0
 	pushl	(%eax)
 	pushl	$308
-	pushl	$__FUNCTION__.5948
+	pushl	$__FUNCTION__.5959
 	pushl	$.LC7
 	call	printf
 .LVL44:
@@ -490,7 +490,7 @@ mbedtls_net_recv:
 	.loc 1 315 0
 	pushl	(%eax)
 	pushl	$315
-	pushl	$__FUNCTION__.5948
+	pushl	$__FUNCTION__.5959
 	pushl	$.LC8
 	call	printf
 .LVL48:
@@ -509,7 +509,7 @@ mbedtls_net_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	mbedtls_net_recv, .-mbedtls_net_recv
 	.section	.text.unlikely.mbedtls_net_recv
 .LCOLDE9:
@@ -525,7 +525,7 @@ mbedtls_net_recv:
 	.globl	mbedtls_net_send
 	.type	mbedtls_net_send, @function
 mbedtls_net_send:
-.LFB32:
+.LFB38:
 	.loc 1 323 0
 	.cfi_startproc
 .LVL50:
@@ -584,7 +584,7 @@ mbedtls_net_send:
 	.loc 1 337 0
 	pushl	(%eax)
 	pushl	$337
-	pushl	$__FUNCTION__.5956
+	pushl	$__FUNCTION__.5967
 	pushl	$.LC7
 	call	printf
 .LVL57:
@@ -611,7 +611,7 @@ mbedtls_net_send:
 	.loc 1 344 0
 	pushl	(%eax)
 	pushl	$344
-	pushl	$__FUNCTION__.5956
+	pushl	$__FUNCTION__.5967
 	pushl	$.LC10
 	call	printf
 .LVL61:
@@ -627,7 +627,7 @@ mbedtls_net_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	mbedtls_net_send, .-mbedtls_net_send
 	.section	.text.unlikely.mbedtls_net_send
 .LCOLDE11:
@@ -640,7 +640,7 @@ mbedtls_net_send:
 	.globl	mbedtls_net_recv_timeout
 	.type	mbedtls_net_recv_timeout, @function
 mbedtls_net_recv_timeout:
-.LFB33:
+.LFB39:
 	.loc 1 353 0
 	.cfi_startproc
 .LVL62:
@@ -787,7 +787,7 @@ mbedtls_net_recv_timeout:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	mbedtls_net_recv_timeout, .-mbedtls_net_recv_timeout
 	.section	.text.unlikely.mbedtls_net_recv_timeout
 .LCOLDE12:
@@ -800,7 +800,7 @@ mbedtls_net_recv_timeout:
 	.globl	mbedtls_net_free
 	.type	mbedtls_net_free, @function
 mbedtls_net_free:
-.LFB34:
+.LFB40:
 	.loc 1 386 0
 	.cfi_startproc
 .LVL83:
@@ -842,29 +842,29 @@ mbedtls_net_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	mbedtls_net_free, .-mbedtls_net_free
 	.section	.text.unlikely.mbedtls_net_free
 .LCOLDE13:
 	.section	.text.mbedtls_net_free
 .LHOTE13:
-	.section	.rodata.__FUNCTION__.5956,"a",@progbits
+	.section	.rodata.__FUNCTION__.5967,"a",@progbits
 	.align 4
-	.type	__FUNCTION__.5956, @object
-	.size	__FUNCTION__.5956, 17
-__FUNCTION__.5956:
+	.type	__FUNCTION__.5967, @object
+	.size	__FUNCTION__.5967, 17
+__FUNCTION__.5967:
 	.string	"mbedtls_net_send"
-	.section	.rodata.__FUNCTION__.5948,"a",@progbits
+	.section	.rodata.__FUNCTION__.5959,"a",@progbits
 	.align 4
-	.type	__FUNCTION__.5948, @object
-	.size	__FUNCTION__.5948, 17
-__FUNCTION__.5948:
+	.type	__FUNCTION__.5959, @object
+	.size	__FUNCTION__.5959, 17
+__FUNCTION__.5959:
 	.string	"mbedtls_net_recv"
-	.section	.rodata.__FUNCTION__.5924,"a",@progbits
+	.section	.rodata.__FUNCTION__.5935,"a",@progbits
 	.align 4
-	.type	__FUNCTION__.5924, @object
-	.size	__FUNCTION__.5924, 20
-__FUNCTION__.5924:
+	.type	__FUNCTION__.5935, @object
+	.size	__FUNCTION__.5935, 20
+__FUNCTION__.5935:
 	.string	"mbedtls_net_connect"
 	.text
 .Letext0:
@@ -1254,8 +1254,8 @@ __FUNCTION__.5924:
 	.long	0x2e5
 	.uleb128 0x14
 	.long	0x264
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x340
@@ -1281,8 +1281,8 @@ __FUNCTION__.5924:
 	.long	.LASF60
 	.byte	0x1
 	.byte	0xda
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x364
@@ -1303,8 +1303,8 @@ __FUNCTION__.5924:
 	.byte	0x1
 	.byte	0xdf
 	.long	0x68
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x465
@@ -1371,7 +1371,7 @@ __FUNCTION__.5924:
 	.long	0x475
 	.uleb128 0x5
 	.byte	0x3
-	.long	__FUNCTION__.5924
+	.long	__FUNCTION__.5935
 	.uleb128 0x20
 	.long	.LASF79
 	.byte	0x1
@@ -1419,8 +1419,8 @@ __FUNCTION__.5924:
 	.byte	0x1
 	.value	0x10f
 	.long	0x68
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4c6
@@ -1450,8 +1450,8 @@ __FUNCTION__.5924:
 	.byte	0x1
 	.value	0x119
 	.long	0x68
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x512
@@ -1478,8 +1478,8 @@ __FUNCTION__.5924:
 	.byte	0
 	.uleb128 0x14
 	.long	0x28b
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x604
@@ -1508,7 +1508,7 @@ __FUNCTION__.5924:
 	.long	0x2d7
 	.uleb128 0x5
 	.byte	0x3
-	.long	__FUNCTION__.5948
+	.long	__FUNCTION__.5959
 	.uleb128 0x16
 	.long	.LBB8
 	.long	.LBE8-.LBB8
@@ -1533,7 +1533,7 @@ __FUNCTION__.5924:
 	.long	0x2d7
 	.uleb128 0x5
 	.byte	0x3
-	.long	__FUNCTION__.5948
+	.long	__FUNCTION__.5959
 	.uleb128 0x17
 	.long	.LVL42
 	.long	0x7ff
@@ -1579,8 +1579,8 @@ __FUNCTION__.5924:
 	.byte	0x1
 	.value	0x142
 	.long	0x68
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6d6
@@ -1625,7 +1625,7 @@ __FUNCTION__.5924:
 	.long	0x6d6
 	.uleb128 0x5
 	.byte	0x3
-	.long	__FUNCTION__.5956
+	.long	__FUNCTION__.5967
 	.uleb128 0x17
 	.long	.LVL52
 	.long	0x870
@@ -1669,8 +1669,8 @@ __FUNCTION__.5924:
 	.byte	0x1
 	.value	0x15f
 	.long	0x68
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7bc
@@ -1767,8 +1767,8 @@ __FUNCTION__.5924:
 	.long	.LASF61
 	.byte	0x1
 	.value	0x181
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7f4
@@ -2598,7 +2598,7 @@ __FUNCTION__.5924:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL1-1
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -2882,24 +2882,24 @@ __FUNCTION__.5924:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB26
-	.long	.LFE26-.LFB26
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB28
-	.long	.LFE28-.LFB28
-	.long	.LFB29
-	.long	.LFE29-.LFB29
-	.long	.LFB30
-	.long	.LFE30-.LFB30
-	.long	.LFB31
-	.long	.LFE31-.LFB31
 	.long	.LFB32
 	.long	.LFE32-.LFB32
 	.long	.LFB33
 	.long	.LFE33-.LFB33
 	.long	.LFB34
 	.long	.LFE34-.LFB34
+	.long	.LFB35
+	.long	.LFE35-.LFB35
+	.long	.LFB36
+	.long	.LFE36-.LFB36
+	.long	.LFB37
+	.long	.LFE37-.LFB37
+	.long	.LFB38
+	.long	.LFE38-.LFB38
+	.long	.LFB39
+	.long	.LFE39-.LFB39
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2912,24 +2912,24 @@ __FUNCTION__.5924:
 	.long	.LBE12
 	.long	0
 	.long	0
-	.long	.LFB26
-	.long	.LFE26
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB28
-	.long	.LFE28
-	.long	.LFB29
-	.long	.LFE29
-	.long	.LFB30
-	.long	.LFE30
-	.long	.LFB31
-	.long	.LFE31
 	.long	.LFB32
 	.long	.LFE32
 	.long	.LFB33
 	.long	.LFE33
 	.long	.LFB34
 	.long	.LFE34
+	.long	.LFB35
+	.long	.LFE35
+	.long	.LFB36
+	.long	.LFE36
+	.long	.LFB37
+	.long	.LFE37
+	.long	.LFB38
+	.long	.LFE38
+	.long	.LFB39
+	.long	.LFE39
+	.long	.LFB40
+	.long	.LFE40
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

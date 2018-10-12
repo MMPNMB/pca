@@ -11,7 +11,7 @@
 	.globl	hal_ota_get_default_module
 	.type	hal_ota_get_default_module, @function
 hal_ota_get_default_module:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/hal/ota.c"
 	.loc 1 11 0
 	.cfi_startproc
@@ -29,7 +29,7 @@ hal_ota_get_default_module:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	hal_ota_get_default_module, .-hal_ota_get_default_module
 	.section	.text.unlikely.hal_ota_get_default_module
 .LCOLDE0:
@@ -42,7 +42,7 @@ hal_ota_get_default_module:
 	.globl	hal_ota_register_module
 	.type	hal_ota_register_module, @function
 hal_ota_register_module:
-.LFB18:
+.LFB24:
 	.loc 1 16 0
 	.cfi_startproc
 .LVL0:
@@ -62,7 +62,7 @@ hal_ota_register_module:
 	.loc 1 18 0
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	hal_ota_register_module, .-hal_ota_register_module
 	.section	.text.unlikely.hal_ota_register_module
 .LCOLDE1:
@@ -75,7 +75,7 @@ hal_ota_register_module:
 	.globl	hal_ota_init
 	.type	hal_ota_init, @function
 hal_ota_init:
-.LFB19:
+.LFB25:
 	.loc 1 21 0
 	.cfi_startproc
 .LVL1:
@@ -97,7 +97,7 @@ hal_ota_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	hal_ota_init, .-hal_ota_init
 	.section	.text.unlikely.hal_ota_init
 .LCOLDE2:
@@ -110,7 +110,7 @@ hal_ota_init:
 	.globl	hal_ota_write
 	.type	hal_ota_write, @function
 hal_ota_write:
-.LFB20:
+.LFB26:
 	.loc 1 26 0
 	.cfi_startproc
 .LVL3:
@@ -184,7 +184,7 @@ hal_ota_write:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	hal_ota_write, .-hal_ota_write
 	.section	.text.unlikely.hal_ota_write
 .LCOLDE3:
@@ -197,7 +197,7 @@ hal_ota_write:
 	.globl	hal_ota_read
 	.type	hal_ota_read, @function
 hal_ota_read:
-.LFB21:
+.LFB27:
 	.loc 1 39 0
 	.cfi_startproc
 .LVL14:
@@ -271,7 +271,7 @@ hal_ota_read:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	hal_ota_read, .-hal_ota_read
 	.section	.text.unlikely.hal_ota_read
 .LCOLDE4:
@@ -284,7 +284,7 @@ hal_ota_read:
 	.globl	hal_ota_set_boot
 	.type	hal_ota_set_boot, @function
 hal_ota_set_boot:
-.LFB22:
+.LFB28:
 	.loc 1 52 0
 	.cfi_startproc
 .LVL25:
@@ -336,7 +336,7 @@ hal_ota_set_boot:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	hal_ota_set_boot, .-hal_ota_set_boot
 	.section	.text.unlikely.hal_ota_set_boot
 .LCOLDE5:
@@ -675,16 +675,16 @@ ota_module:
 	.byte	0x1
 	.uleb128 0x11
 	.long	0x271
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x12
 	.long	.LASF51
 	.byte	0x1
 	.byte	0xf
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2b0
@@ -702,8 +702,8 @@ ota_module:
 	.byte	0x1
 	.byte	0x14
 	.long	0x19a
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2d8
@@ -721,8 +721,8 @@ ota_module:
 	.byte	0x1
 	.byte	0x19
 	.long	0x19a
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x33b
@@ -762,8 +762,8 @@ ota_module:
 	.byte	0x1
 	.byte	0x26
 	.long	0x19a
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x39e
@@ -803,8 +803,8 @@ ota_module:
 	.byte	0x1
 	.byte	0x33
 	.long	0x19a
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3e3
@@ -1245,7 +1245,7 @@ ota_module:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL10
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -1270,7 +1270,7 @@ ota_module:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL11
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
@@ -1296,7 +1296,7 @@ ota_module:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL13
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 12
@@ -1329,7 +1329,7 @@ ota_module:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL21
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -1354,7 +1354,7 @@ ota_module:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL22
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
@@ -1380,7 +1380,7 @@ ota_module:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL24
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x2
 	.byte	0x91
 	.sleb128 12
@@ -1413,7 +1413,7 @@ ota_module:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL28
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -1426,34 +1426,34 @@ ota_module:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB28
+	.long	.LFE28
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

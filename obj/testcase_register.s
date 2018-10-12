@@ -11,8 +11,8 @@
 	.globl	add_test
 	.type	add_test, @function
 add_test:
-.LFB16:
-	.file 1 "out/mqttapp@mk3060/auto_component/testcase_register.c"
+.LFB22:
+	.file 1 "out/tls@mk3060/auto_component/testcase_register.c"
 	.loc 1 8 0
 	.cfi_startproc
 	pushl	%ebp
@@ -26,7 +26,7 @@ add_test:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	add_test, .-add_test
 	.section	.text.unlikely.add_test
 .LCOLDE0:
@@ -111,8 +111,8 @@ add_test:
 	.long	.LASF16
 	.byte	0x1
 	.byte	0x8
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x5
@@ -213,14 +213,14 @@ add_test:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB16
-	.long	.LFE16
+	.long	.LFB22
+	.long	.LFE22
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

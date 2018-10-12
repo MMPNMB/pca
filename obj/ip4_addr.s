@@ -11,7 +11,7 @@
 	.globl	ip4_addr_isbroadcast_u32
 	.type	ip4_addr_isbroadcast_u32, @function
 ip4_addr_isbroadcast_u32:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/ipv4/ip4_addr.c"
 	.loc 1 59 0
 	.cfi_startproc
@@ -67,7 +67,7 @@ ip4_addr_isbroadcast_u32:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	ip4_addr_isbroadcast_u32, .-ip4_addr_isbroadcast_u32
 	.section	.text.unlikely.ip4_addr_isbroadcast_u32
 .LCOLDE0:
@@ -80,7 +80,7 @@ ip4_addr_isbroadcast_u32:
 	.globl	ip4_addr_netmask_valid
 	.type	ip4_addr_netmask_valid, @function
 ip4_addr_netmask_valid:
-.LFB18:
+.LFB24:
 	.loc 1 94 0
 	.cfi_startproc
 .LVL3:
@@ -137,7 +137,7 @@ ip4_addr_netmask_valid:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	ip4_addr_netmask_valid, .-ip4_addr_netmask_valid
 	.section	.text.unlikely.ip4_addr_netmask_valid
 .LCOLDE1:
@@ -150,7 +150,7 @@ ip4_addr_netmask_valid:
 	.globl	ip4addr_aton
 	.type	ip4addr_aton, @function
 ip4addr_aton:
-.LFB20:
+.LFB26:
 	.loc 1 156 0
 	.cfi_startproc
 .LVL11:
@@ -431,7 +431,7 @@ ip4addr_aton:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	ip4addr_aton, .-ip4addr_aton
 	.section	.text.unlikely.ip4addr_aton
 .LCOLDE2:
@@ -444,7 +444,7 @@ ip4addr_aton:
 	.globl	ipaddr_addr
 	.type	ipaddr_addr, @function
 ipaddr_addr:
-.LFB19:
+.LFB25:
 	.loc 1 134 0
 	.cfi_startproc
 .LVL47:
@@ -484,7 +484,7 @@ ipaddr_addr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	ipaddr_addr, .-ipaddr_addr
 	.section	.text.unlikely.ipaddr_addr
 .LCOLDE3:
@@ -497,7 +497,7 @@ ipaddr_addr:
 	.globl	ip4addr_ntoa_r
 	.type	ip4addr_ntoa_r, @function
 ip4addr_ntoa_r:
-.LFB22:
+.LFB28:
 	.loc 1 294 0
 	.cfi_startproc
 .LVL50:
@@ -645,7 +645,7 @@ ip4addr_ntoa_r:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	ip4addr_ntoa_r, .-ip4addr_ntoa_r
 	.section	.text.unlikely.ip4addr_ntoa_r
 .LCOLDE4:
@@ -658,7 +658,7 @@ ip4addr_ntoa_r:
 	.globl	ip4addr_ntoa
 	.type	ip4addr_ntoa, @function
 ip4addr_ntoa:
-.LFB21:
+.LFB27:
 	.loc 1 278 0
 	.cfi_startproc
 .LVL74:
@@ -670,7 +670,7 @@ ip4addr_ntoa:
 	subl	$12, %esp
 	.loc 1 280 0
 	pushl	$16
-	pushl	$str.3932
+	pushl	$str.3943
 	pushl	8(%ebp)
 	call	ip4addr_ntoa_r
 .LVL75:
@@ -680,17 +680,17 @@ ip4addr_ntoa:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	ip4addr_ntoa, .-ip4addr_ntoa
 	.section	.text.unlikely.ip4addr_ntoa
 .LCOLDE5:
 	.section	.text.ip4addr_ntoa
 .LHOTE5:
-	.section	.bss.str.3932,"aw",@nobits
+	.section	.bss.str.3943,"aw",@nobits
 	.align 4
-	.type	str.3932, @object
-	.size	str.3932, 16
-str.3932:
+	.type	str.3943, @object
+	.size	str.3943, 16
+str.3943:
 	.zero	16
 	.globl	ip_addr_broadcast
 	.section	.rodata.ip_addr_broadcast,"a",@progbits
@@ -1244,8 +1244,8 @@ ip_addr_any:
 	.byte	0x1
 	.byte	0x3a
 	.long	0xa1
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x480
@@ -1282,8 +1282,8 @@ ip_addr_any:
 	.byte	0x1
 	.byte	0x5d
 	.long	0xa1
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4da
@@ -1316,8 +1316,8 @@ ip_addr_any:
 	.byte	0x1
 	.byte	0x9b
 	.long	0x25
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x569
@@ -1392,8 +1392,8 @@ ip_addr_any:
 	.byte	0x1
 	.byte	0x85
 	.long	0xc2
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x5cc
@@ -1425,8 +1425,8 @@ ip_addr_any:
 	.byte	0x1
 	.value	0x125
 	.long	0x7b
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x695
@@ -1525,8 +1525,8 @@ ip_addr_any:
 	.byte	0x1
 	.value	0x115
 	.long	0x7b
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6f0
@@ -1545,7 +1545,7 @@ ip_addr_any:
 	.long	0x6f0
 	.uleb128 0x5
 	.byte	0x3
-	.long	str.3932
+	.long	str.3943
 	.uleb128 0x18
 	.long	.LVL75
 	.long	0x5cc
@@ -2159,7 +2159,7 @@ ip_addr_any:
 	.byte	0x1f
 	.byte	0x9f
 	.long	.LVL5
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -2462,34 +2462,34 @@ ip_addr_any:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB21
-	.long	.LFE21
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB27
+	.long	.LFE27
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

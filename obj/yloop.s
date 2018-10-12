@@ -10,7 +10,7 @@
 	.section	.text.get_context
 	.type	get_context, @function
 get_context:
-.LFB35:
+.LFB41:
 	.file 1 "kernel/yloop/yloop.c"
 	.loc 1 41 0
 	.cfi_startproc
@@ -56,7 +56,7 @@ get_context:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	get_context, .-get_context
 	.section	.text.unlikely.get_context
 .LCOLDE0:
@@ -69,7 +69,7 @@ get_context:
 	.globl	aos_loop_set_eventfd
 	.type	aos_loop_set_eventfd, @function
 aos_loop_set_eventfd:
-.LFB36:
+.LFB42:
 	.loc 1 51 0
 	.cfi_startproc
 .LVL3:
@@ -91,7 +91,7 @@ aos_loop_set_eventfd:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	aos_loop_set_eventfd, .-aos_loop_set_eventfd
 	.section	.text.unlikely.aos_loop_set_eventfd
 .LCOLDE1:
@@ -104,7 +104,7 @@ aos_loop_set_eventfd:
 	.globl	aos_loop_get_eventfd
 	.type	aos_loop_get_eventfd, @function
 aos_loop_get_eventfd:
-.LFB37:
+.LFB43:
 	.loc 1 57 0
 	.cfi_startproc
 .LVL5:
@@ -132,7 +132,7 @@ aos_loop_get_eventfd:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	aos_loop_get_eventfd, .-aos_loop_get_eventfd
 	.section	.text.unlikely.aos_loop_get_eventfd
 .LCOLDE2:
@@ -145,7 +145,7 @@ aos_loop_get_eventfd:
 	.globl	aos_current_loop
 	.type	aos_current_loop, @function
 aos_current_loop:
-.LFB38:
+.LFB44:
 	.loc 1 63 0
 	.cfi_startproc
 	pushl	%ebp
@@ -161,7 +161,7 @@ aos_current_loop:
 	jmp	get_context
 .LVL8:
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	aos_current_loop, .-aos_current_loop
 	.section	.text.unlikely.aos_current_loop
 .LCOLDE3:
@@ -181,7 +181,7 @@ aos_current_loop:
 	.globl	aos_loop_init
 	.type	aos_loop_init, @function
 aos_loop_init:
-.LFB39:
+.LFB45:
 	.loc 1 68 0
 	.cfi_startproc
 	pushl	%ebp
@@ -293,7 +293,7 @@ aos_loop_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	aos_loop_init, .-aos_loop_init
 	.section	.text.unlikely.aos_loop_init
 .LCOLDE7:
@@ -309,7 +309,7 @@ aos_loop_init:
 	.globl	aos_poll_read_fd
 	.type	aos_poll_read_fd, @function
 aos_poll_read_fd:
-.LFB40:
+.LFB46:
 	.loc 1 93 0
 	.cfi_startproc
 .LVL23:
@@ -507,7 +507,7 @@ aos_poll_read_fd:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE40:
+.LFE46:
 	.size	aos_poll_read_fd, .-aos_poll_read_fd
 	.section	.text.unlikely.aos_poll_read_fd
 .LCOLDE9:
@@ -520,7 +520,7 @@ aos_poll_read_fd:
 	.globl	aos_cancel_poll_read_fd
 	.type	aos_cancel_poll_read_fd, @function
 aos_cancel_poll_read_fd:
-.LFB41:
+.LFB47:
 	.loc 1 139 0
 	.cfi_startproc
 .LVL52:
@@ -608,7 +608,7 @@ aos_cancel_poll_read_fd:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE41:
+.LFE47:
 	.size	aos_cancel_poll_read_fd, .-aos_cancel_poll_read_fd
 	.section	.text.unlikely.aos_cancel_poll_read_fd
 .LCOLDE10:
@@ -621,7 +621,7 @@ aos_cancel_poll_read_fd:
 	.globl	aos_post_delayed_action
 	.type	aos_post_delayed_action, @function
 aos_post_delayed_action:
-.LFB42:
+.LFB48:
 	.loc 1 166 0
 	.cfi_startproc
 .LVL59:
@@ -759,7 +759,7 @@ aos_post_delayed_action:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	aos_post_delayed_action, .-aos_post_delayed_action
 	.section	.text.unlikely.aos_post_delayed_action
 .LCOLDE11:
@@ -772,7 +772,7 @@ aos_post_delayed_action:
 	.globl	aos_cancel_delayed_action
 	.type	aos_cancel_delayed_action, @function
 aos_cancel_delayed_action:
-.LFB43:
+.LFB49:
 	.loc 1 196 0
 	.cfi_startproc
 .LVL74:
@@ -868,7 +868,7 @@ aos_cancel_delayed_action:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	aos_cancel_delayed_action, .-aos_cancel_delayed_action
 	.section	.text.unlikely.aos_cancel_delayed_action
 .LCOLDE12:
@@ -884,7 +884,7 @@ aos_cancel_delayed_action:
 	.globl	aos_loop_run
 	.type	aos_loop_run, @function
 aos_loop_run:
-.LFB44:
+.LFB50:
 	.loc 1 220 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1131,7 +1131,7 @@ aos_loop_run:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	aos_loop_run, .-aos_loop_run
 	.section	.text.unlikely.aos_loop_run
 .LCOLDE14:
@@ -1144,7 +1144,7 @@ aos_loop_run:
 	.globl	aos_loop_exit
 	.type	aos_loop_exit, @function
 aos_loop_exit:
-.LFB45:
+.LFB51:
 	.loc 1 281 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1164,7 +1164,7 @@ aos_loop_exit:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	aos_loop_exit, .-aos_loop_exit
 	.section	.text.unlikely.aos_loop_exit
 .LCOLDE15:
@@ -1177,7 +1177,7 @@ aos_loop_exit:
 	.globl	aos_loop_destroy
 	.type	aos_loop_destroy, @function
 aos_loop_destroy:
-.LFB46:
+.LFB52:
 	.loc 1 287 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1294,7 +1294,7 @@ aos_loop_destroy:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE46:
+.LFE52:
 	.size	aos_loop_destroy, .-aos_loop_destroy
 	.section	.text.unlikely.aos_loop_destroy
 .LCOLDE16:
@@ -1793,8 +1793,8 @@ g_main_ctx:
 	.byte	0
 	.uleb128 0x17
 	.long	0x2e9
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x404
@@ -1835,8 +1835,8 @@ g_main_ctx:
 	.long	.LASF70
 	.byte	0x1
 	.byte	0x32
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x43d
@@ -1864,8 +1864,8 @@ g_main_ctx:
 	.byte	0x1
 	.byte	0x38
 	.long	0x68
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x47d
@@ -1892,8 +1892,8 @@ g_main_ctx:
 	.byte	0x1
 	.byte	0x3e
 	.long	0x18c
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4a0
@@ -1906,8 +1906,8 @@ g_main_ctx:
 	.byte	0x1
 	.byte	0x43
 	.long	0x18c
-	.long	.LFB39
-	.long	.LFE39-.LFB39
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x568
@@ -1980,8 +1980,8 @@ g_main_ctx:
 	.byte	0x1
 	.byte	0x5c
 	.long	0x68
-	.long	.LFB40
-	.long	.LFE40-.LFB40
+	.long	.LFB46
+	.long	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x66b
@@ -2083,8 +2083,8 @@ g_main_ctx:
 	.long	.LASF71
 	.byte	0x1
 	.byte	0x8a
-	.long	.LFB41
-	.long	.LFE41-.LFB41
+	.long	.LFB47
+	.long	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6d9
@@ -2136,8 +2136,8 @@ g_main_ctx:
 	.byte	0x1
 	.byte	0xa5
 	.long	0x68
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7b5
@@ -2252,8 +2252,8 @@ g_main_ctx:
 	.long	.LASF77
 	.byte	0x1
 	.byte	0xc3
-	.long	.LFB43
-	.long	.LFE43-.LFB43
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x890
@@ -2325,8 +2325,8 @@ g_main_ctx:
 	.long	.LASF78
 	.byte	0x1
 	.byte	0xdb
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB50
+	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa1f
@@ -2476,8 +2476,8 @@ g_main_ctx:
 	.long	.LASF80
 	.byte	0x1
 	.value	0x118
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa4d
@@ -2496,8 +2496,8 @@ g_main_ctx:
 	.long	.LASF81
 	.byte	0x1
 	.value	0x11e
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb4c
@@ -3735,7 +3735,7 @@ g_main_ctx:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL81
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -3746,7 +3746,7 @@ g_main_ctx:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL81
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -3967,18 +3967,6 @@ g_main_ctx:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB35
-	.long	.LFE35-.LFB35
-	.long	.LFB36
-	.long	.LFE36-.LFB36
-	.long	.LFB37
-	.long	.LFE37-.LFB37
-	.long	.LFB38
-	.long	.LFE38-.LFB38
-	.long	.LFB39
-	.long	.LFE39-.LFB39
-	.long	.LFB40
-	.long	.LFE40-.LFB40
 	.long	.LFB41
 	.long	.LFE41-.LFB41
 	.long	.LFB42
@@ -3991,6 +3979,18 @@ g_main_ctx:
 	.long	.LFE45-.LFB45
 	.long	.LFB46
 	.long	.LFE46-.LFB46
+	.long	.LFB47
+	.long	.LFE47-.LFB47
+	.long	.LFB48
+	.long	.LFE48-.LFB48
+	.long	.LFB49
+	.long	.LFE49-.LFB49
+	.long	.LFB50
+	.long	.LFE50-.LFB50
+	.long	.LFB51
+	.long	.LFE51-.LFB51
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -4025,18 +4025,6 @@ g_main_ctx:
 	.long	.LBE104
 	.long	0
 	.long	0
-	.long	.LFB35
-	.long	.LFE35
-	.long	.LFB36
-	.long	.LFE36
-	.long	.LFB37
-	.long	.LFE37
-	.long	.LFB38
-	.long	.LFE38
-	.long	.LFB39
-	.long	.LFE39
-	.long	.LFB40
-	.long	.LFE40
 	.long	.LFB41
 	.long	.LFE41
 	.long	.LFB42
@@ -4049,6 +4037,18 @@ g_main_ctx:
 	.long	.LFE45
 	.long	.LFB46
 	.long	.LFE46
+	.long	.LFB47
+	.long	.LFE47
+	.long	.LFB48
+	.long	.LFE48
+	.long	.LFB49
+	.long	.LFE49
+	.long	.LFB50
+	.long	.LFE50
+	.long	.LFB51
+	.long	.LFE51
+	.long	.LFB52
+	.long	.LFE52
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

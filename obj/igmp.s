@@ -10,7 +10,7 @@
 	.section	.text.igmp_send
 	.type	igmp_send, @function
 igmp_send:
-.LFB34:
+.LFB40:
 	.file 1 "kernel/protocols/net/core/ipv4/igmp.c"
 	.loc 1 750 0
 	.cfi_startproc
@@ -170,7 +170,7 @@ igmp_send:
 .LVL20:
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	igmp_send, .-igmp_send
 	.section	.text.unlikely.igmp_send
 .LCOLDE0:
@@ -182,7 +182,7 @@ igmp_send:
 .LHOTB1:
 	.type	igmp_lookup_group.part.1, @function
 igmp_lookup_group.part.1:
-.LFB36:
+.LFB42:
 	.loc 1 244 0
 	.cfi_startproc
 .LVL21:
@@ -243,7 +243,7 @@ igmp_lookup_group.part.1:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	igmp_lookup_group.part.1, .-igmp_lookup_group.part.1
 	.section	.text.unlikely.igmp_lookup_group.part.1
 .LCOLDE1:
@@ -255,7 +255,7 @@ igmp_lookup_group.part.1:
 .LHOTB2:
 	.type	igmp_delaying_member, @function
 igmp_delaying_member:
-.LFB32:
+.LFB38:
 	.loc 1 705 0
 	.cfi_startproc
 .LVL25:
@@ -331,7 +331,7 @@ igmp_delaying_member:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	igmp_delaying_member, .-igmp_delaying_member
 	.section	.text.unlikely.igmp_delaying_member
 .LCOLDE2:
@@ -344,7 +344,7 @@ igmp_delaying_member:
 	.globl	igmp_init
 	.type	igmp_init, @function
 igmp_init:
-.LFB17:
+.LFB23:
 	.loc 1 115 0
 	.cfi_startproc
 	pushl	%ebp
@@ -363,7 +363,7 @@ igmp_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	igmp_init, .-igmp_init
 	.section	.text.unlikely.igmp_init
 .LCOLDE3:
@@ -376,7 +376,7 @@ igmp_init:
 	.globl	igmp_stop
 	.type	igmp_stop, @function
 igmp_stop:
-.LFB19:
+.LFB25:
 	.loc 1 161 0
 	.cfi_startproc
 .LVL31:
@@ -453,7 +453,7 @@ igmp_stop:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	igmp_stop, .-igmp_stop
 	.section	.text.unlikely.igmp_stop
 .LCOLDE4:
@@ -466,7 +466,7 @@ igmp_stop:
 	.globl	igmp_report_groups
 	.type	igmp_report_groups, @function
 igmp_report_groups:
-.LFB20:
+.LFB26:
 	.loc 1 193 0
 	.cfi_startproc
 .LVL39:
@@ -512,7 +512,7 @@ igmp_report_groups:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	igmp_report_groups, .-igmp_report_groups
 	.section	.text.unlikely.igmp_report_groups
 .LCOLDE5:
@@ -525,7 +525,7 @@ igmp_report_groups:
 	.globl	igmp_lookfor_group
 	.type	igmp_lookfor_group, @function
 igmp_lookfor_group:
-.LFB21:
+.LFB27:
 	.loc 1 219 0
 	.cfi_startproc
 .LVL45:
@@ -561,7 +561,7 @@ igmp_lookfor_group:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	igmp_lookfor_group, .-igmp_lookfor_group
 	.section	.text.unlikely.igmp_lookfor_group
 .LCOLDE6:
@@ -574,7 +574,7 @@ igmp_lookfor_group:
 	.globl	igmp_start
 	.type	igmp_start, @function
 igmp_start:
-.LFB18:
+.LFB24:
 	.loc 1 129 0
 	.cfi_startproc
 .LVL49:
@@ -649,7 +649,7 @@ igmp_start:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	igmp_start, .-igmp_start
 	.section	.text.unlikely.igmp_start
 .LCOLDE7:
@@ -662,7 +662,7 @@ igmp_start:
 	.globl	igmp_input
 	.type	igmp_input, @function
 igmp_input:
-.LFB24:
+.LFB30:
 	.loc 1 316 0
 	.cfi_startproc
 .LVL57:
@@ -835,7 +835,7 @@ igmp_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	igmp_input, .-igmp_input
 	.section	.text.unlikely.igmp_input
 .LCOLDE8:
@@ -855,7 +855,7 @@ igmp_input:
 	.globl	igmp_joingroup_netif
 	.type	igmp_joingroup_netif, @function
 igmp_joingroup_netif:
-.LFB26:
+.LFB32:
 	.loc 1 479 0
 	.cfi_startproc
 .LVL76:
@@ -1003,7 +1003,7 @@ igmp_joingroup_netif:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	igmp_joingroup_netif, .-igmp_joingroup_netif
 	.section	.text.unlikely.igmp_joingroup_netif
 .LCOLDE12:
@@ -1021,7 +1021,7 @@ igmp_joingroup_netif:
 	.globl	igmp_joingroup
 	.type	igmp_joingroup, @function
 igmp_joingroup:
-.LFB25:
+.LFB31:
 	.loc 1 442 0
 	.cfi_startproc
 .LVL88:
@@ -1123,7 +1123,7 @@ igmp_joingroup:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	igmp_joingroup, .-igmp_joingroup
 	.section	.text.unlikely.igmp_joingroup
 .LCOLDE15:
@@ -1143,7 +1143,7 @@ igmp_joingroup:
 	.globl	igmp_leavegroup_netif
 	.type	igmp_leavegroup_netif, @function
 igmp_leavegroup_netif:
-.LFB28:
+.LFB34:
 	.loc 1 574 0
 	.cfi_startproc
 .LVL97:
@@ -1302,7 +1302,7 @@ igmp_leavegroup_netif:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	igmp_leavegroup_netif, .-igmp_leavegroup_netif
 	.section	.text.unlikely.igmp_leavegroup_netif
 .LCOLDE19:
@@ -1320,7 +1320,7 @@ igmp_leavegroup_netif:
 	.globl	igmp_leavegroup
 	.type	igmp_leavegroup, @function
 igmp_leavegroup:
-.LFB27:
+.LFB33:
 	.loc 1 538 0
 	.cfi_startproc
 .LVL111:
@@ -1430,7 +1430,7 @@ igmp_leavegroup:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	igmp_leavegroup, .-igmp_leavegroup
 	.section	.text.unlikely.igmp_leavegroup
 .LCOLDE22:
@@ -1443,7 +1443,7 @@ igmp_leavegroup:
 	.globl	igmp_tmr
 	.type	igmp_tmr, @function
 igmp_tmr:
-.LFB29:
+.LFB35:
 	.loc 1 632 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1526,7 +1526,7 @@ igmp_tmr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	igmp_tmr, .-igmp_tmr
 	.section	.text.unlikely.igmp_tmr
 .LCOLDE23:
@@ -2489,8 +2489,8 @@ allsystems:
 	.long	.LASF137
 	.byte	0x1
 	.value	0x2ed
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x86c
@@ -2591,8 +2591,8 @@ allsystems:
 	.long	0x10b
 	.uleb128 0x2a
 	.long	0x6f3
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8ae
@@ -2640,8 +2640,8 @@ allsystems:
 	.long	.LASF138
 	.byte	0x1
 	.value	0x2c0
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x951
@@ -2682,8 +2682,8 @@ allsystems:
 	.long	.LASF172
 	.byte	0x1
 	.byte	0x72
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x30
@@ -2691,8 +2691,8 @@ allsystems:
 	.byte	0x1
 	.byte	0xa0
 	.long	0x13c
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9bb
@@ -2728,8 +2728,8 @@ allsystems:
 	.long	.LASF143
 	.byte	0x1
 	.byte	0xc0
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa03
@@ -2768,8 +2768,8 @@ allsystems:
 	.byte	0x1
 	.byte	0xda
 	.long	0x58c
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa47
@@ -2800,8 +2800,8 @@ allsystems:
 	.byte	0x1
 	.byte	0x80
 	.long	0x13c
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xad1
@@ -2862,8 +2862,8 @@ allsystems:
 	.long	.LASF144
 	.byte	0x1
 	.value	0x13b
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbaa
@@ -2957,8 +2957,8 @@ allsystems:
 	.byte	0x1
 	.value	0x1de
 	.long	0x13c
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xca2
@@ -3073,8 +3073,8 @@ allsystems:
 	.byte	0x1
 	.value	0x1b9
 	.long	0x13c
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd0d
@@ -3118,8 +3118,8 @@ allsystems:
 	.byte	0x1
 	.value	0x23d
 	.long	0x13c
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xddd
@@ -3210,8 +3210,8 @@ allsystems:
 	.byte	0x1
 	.value	0x219
 	.long	0x13c
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe66
@@ -3282,8 +3282,8 @@ allsystems:
 	.long	.LASF154
 	.byte	0x1
 	.value	0x277
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf0b
@@ -4493,7 +4493,7 @@ allsystems:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL19
-	.long	.LFE34
+	.long	.LFE40
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4512,7 +4512,7 @@ allsystems:
 	.byte	0x75
 	.sleb128 -48
 	.long	.LVL20
-	.long	.LFE34
+	.long	.LFE40
 	.value	0x2
 	.byte	0x91
 	.sleb128 -56
@@ -4524,7 +4524,7 @@ allsystems:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL3-1
-	.long	.LFE34
+	.long	.LFE40
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4644,7 +4644,7 @@ allsystems:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL23
-	.long	.LFE36
+	.long	.LFE42
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4662,7 +4662,7 @@ allsystems:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL24
-	.long	.LFE36
+	.long	.LFE42
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4680,7 +4680,7 @@ allsystems:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL30
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4694,7 +4694,7 @@ allsystems:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL28-1
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4764,7 +4764,7 @@ allsystems:
 	.byte	0x91
 	.sleb128 4
 	.long	.LVL48
-	.long	.LFE21
+	.long	.LFE27
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -5008,34 +5008,34 @@ allsystems:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB34
-	.long	.LFE34-.LFB34
-	.long	.LFB36
-	.long	.LFE36-.LFB36
-	.long	.LFB32
-	.long	.LFE32-.LFB32
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB24
-	.long	.LFE24-.LFB24
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB40
+	.long	.LFE40-.LFB40
+	.long	.LFB42
+	.long	.LFE42-.LFB42
+	.long	.LFB38
+	.long	.LFE38-.LFB38
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.long	.LFB25
 	.long	.LFE25-.LFB25
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.long	.LFB27
 	.long	.LFE27-.LFB27
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB31
+	.long	.LFE31-.LFB31
+	.long	.LFB34
+	.long	.LFE34-.LFB34
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -5046,34 +5046,34 @@ allsystems:
 	.long	.LBE26
 	.long	0
 	.long	0
-	.long	.LFB34
-	.long	.LFE34
-	.long	.LFB36
-	.long	.LFE36
-	.long	.LFB32
-	.long	.LFE32
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB24
-	.long	.LFE24
-	.long	.LFB26
-	.long	.LFE26
+	.long	.LFB40
+	.long	.LFE40
+	.long	.LFB42
+	.long	.LFE42
+	.long	.LFB38
+	.long	.LFE38
+	.long	.LFB23
+	.long	.LFE23
 	.long	.LFB25
 	.long	.LFE25
-	.long	.LFB28
-	.long	.LFE28
+	.long	.LFB26
+	.long	.LFE26
 	.long	.LFB27
 	.long	.LFE27
-	.long	.LFB29
-	.long	.LFE29
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB31
+	.long	.LFE31
+	.long	.LFB34
+	.long	.LFE34
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB35
+	.long	.LFE35
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

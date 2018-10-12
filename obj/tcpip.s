@@ -10,7 +10,7 @@
 	.section	.text.tcpip_thread
 	.type	tcpip_thread, @function
 tcpip_thread:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/api/tcpip.c"
 	.loc 1 88 0
 	.cfi_startproc
@@ -116,7 +116,7 @@ tcpip_thread:
 	addl	$16, %esp
 	jmp	.L3
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	tcpip_thread, .-tcpip_thread
 	.section	.text.unlikely.tcpip_thread
 .LCOLDE0:
@@ -128,7 +128,7 @@ tcpip_thread:
 .LHOTB1:
 	.type	pbuf_free_int, @function
 pbuf_free_int:
-.LFB27:
+.LFB33:
 	.loc 1 527 0
 	.cfi_startproc
 .LVL10:
@@ -146,7 +146,7 @@ pbuf_free_int:
 	jmp	pbuf_free
 .LVL12:
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	pbuf_free_int, .-pbuf_free_int
 	.section	.text.unlikely.pbuf_free_int
 .LCOLDE1:
@@ -159,7 +159,7 @@ pbuf_free_int:
 	.globl	tcpip_inpkt
 	.type	tcpip_inpkt, @function
 tcpip_inpkt:
-.LFB18:
+.LFB24:
 	.loc 1 209 0
 	.cfi_startproc
 .LVL13:
@@ -227,7 +227,7 @@ tcpip_inpkt:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	tcpip_inpkt, .-tcpip_inpkt
 	.section	.text.unlikely.tcpip_inpkt
 .LCOLDE2:
@@ -240,7 +240,7 @@ tcpip_inpkt:
 	.globl	tcpip_input
 	.type	tcpip_input, @function
 tcpip_input:
-.LFB19:
+.LFB25:
 	.loc 1 252 0
 	.cfi_startproc
 .LVL20:
@@ -276,7 +276,7 @@ tcpip_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	tcpip_input, .-tcpip_input
 	.section	.text.unlikely.tcpip_input
 .LCOLDE3:
@@ -289,7 +289,7 @@ tcpip_input:
 	.globl	tcpip_callback_with_block
 	.type	tcpip_callback_with_block, @function
 tcpip_callback_with_block:
-.LFB20:
+.LFB26:
 	.loc 1 274 0
 	.cfi_startproc
 .LVL22:
@@ -377,7 +377,7 @@ tcpip_callback_with_block:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	tcpip_callback_with_block, .-tcpip_callback_with_block
 	.section	.text.unlikely.tcpip_callback_with_block
 .LCOLDE4:
@@ -390,7 +390,7 @@ tcpip_callback_with_block:
 	.globl	tcpip_send_msg_wait_sem
 	.type	tcpip_send_msg_wait_sem, @function
 tcpip_send_msg_wait_sem:
-.LFB21:
+.LFB27:
 	.loc 1 369 0
 	.cfi_startproc
 .LVL30:
@@ -420,7 +420,7 @@ tcpip_send_msg_wait_sem:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	tcpip_send_msg_wait_sem, .-tcpip_send_msg_wait_sem
 	.section	.text.unlikely.tcpip_send_msg_wait_sem
 .LCOLDE5:
@@ -433,7 +433,7 @@ tcpip_send_msg_wait_sem:
 	.globl	tcpip_api_call
 	.type	tcpip_api_call, @function
 tcpip_api_call:
-.LFB22:
+.LFB28:
 	.loc 1 405 0
 	.cfi_startproc
 .LVL34:
@@ -465,7 +465,7 @@ tcpip_api_call:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	tcpip_api_call, .-tcpip_api_call
 	.section	.text.unlikely.tcpip_api_call
 .LCOLDE6:
@@ -478,7 +478,7 @@ tcpip_api_call:
 	.globl	tcpip_callbackmsg_new
 	.type	tcpip_callbackmsg_new, @function
 tcpip_callbackmsg_new:
-.LFB23:
+.LFB29:
 	.loc 1 455 0
 	.cfi_startproc
 .LVL39:
@@ -512,7 +512,7 @@ tcpip_callbackmsg_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	tcpip_callbackmsg_new, .-tcpip_callbackmsg_new
 	.section	.text.unlikely.tcpip_callbackmsg_new
 .LCOLDE7:
@@ -525,7 +525,7 @@ tcpip_callbackmsg_new:
 	.globl	tcpip_callbackmsg_delete
 	.type	tcpip_callbackmsg_delete, @function
 tcpip_callbackmsg_delete:
-.LFB24:
+.LFB30:
 	.loc 1 473 0
 	.cfi_startproc
 .LVL41:
@@ -547,7 +547,7 @@ tcpip_callbackmsg_delete:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	tcpip_callbackmsg_delete, .-tcpip_callbackmsg_delete
 	.section	.text.unlikely.tcpip_callbackmsg_delete
 .LCOLDE8:
@@ -560,7 +560,7 @@ tcpip_callbackmsg_delete:
 	.globl	tcpip_trycallback
 	.type	tcpip_trycallback, @function
 tcpip_trycallback:
-.LFB25:
+.LFB31:
 	.loc 1 486 0
 	.cfi_startproc
 .LVL43:
@@ -581,7 +581,7 @@ tcpip_trycallback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	tcpip_trycallback, .-tcpip_trycallback
 	.section	.text.unlikely.tcpip_trycallback
 .LCOLDE9:
@@ -597,7 +597,7 @@ tcpip_trycallback:
 	.globl	tcpip_init
 	.type	tcpip_init, @function
 tcpip_init:
-.LFB26:
+.LFB32:
 	.loc 1 502 0
 	.cfi_startproc
 .LVL45:
@@ -644,7 +644,7 @@ tcpip_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	tcpip_init, .-tcpip_init
 	.section	.text.unlikely.tcpip_init
 .LCOLDE11:
@@ -657,7 +657,7 @@ tcpip_init:
 	.globl	pbuf_free_callback
 	.type	pbuf_free_callback, @function
 pbuf_free_callback:
-.LFB28:
+.LFB34:
 	.loc 1 540 0
 	.cfi_startproc
 .LVL50:
@@ -679,7 +679,7 @@ pbuf_free_callback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	pbuf_free_callback, .-pbuf_free_callback
 	.section	.text.unlikely.pbuf_free_callback
 .LCOLDE12:
@@ -692,7 +692,7 @@ pbuf_free_callback:
 	.globl	mem_free_callback
 	.type	mem_free_callback, @function
 mem_free_callback:
-.LFB29:
+.LFB35:
 	.loc 1 553 0
 	.cfi_startproc
 .LVL52:
@@ -714,7 +714,7 @@ mem_free_callback:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	mem_free_callback, .-mem_free_callback
 	.section	.text.unlikely.mem_free_callback
 .LCOLDE13:
@@ -1598,8 +1598,8 @@ tcpip_init_done:
 	.long	.LASF151
 	.byte	0x1
 	.byte	0x57
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x702
@@ -1642,8 +1642,8 @@ tcpip_init_done:
 	.long	.LASF152
 	.byte	0x1
 	.value	0x20e
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x74b
@@ -1681,8 +1681,8 @@ tcpip_init_done:
 	.byte	0x1
 	.byte	0xd0
 	.long	0xd2
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7b7
@@ -1731,8 +1731,8 @@ tcpip_init_done:
 	.byte	0x1
 	.byte	0xfb
 	.long	0xd2
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7f4
@@ -1761,8 +1761,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x111
 	.long	0xd2
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x870
@@ -1814,8 +1814,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x170
 	.long	0xd2
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8c9
@@ -1855,8 +1855,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x194
 	.long	0xd2
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x923
@@ -1896,8 +1896,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x1c6
 	.long	0x978
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x978
@@ -1935,8 +1935,8 @@ tcpip_init_done:
 	.long	.LASF126
 	.byte	0x1
 	.value	0x1d8
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9ad
@@ -1957,8 +1957,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x1e5
 	.long	0xd2
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9e0
@@ -1978,8 +1978,8 @@ tcpip_init_done:
 	.long	.LASF127
 	.byte	0x1
 	.value	0x1f5
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa39
@@ -2017,8 +2017,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x21b
 	.long	0xd2
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa6a
@@ -2039,8 +2039,8 @@ tcpip_init_done:
 	.byte	0x1
 	.value	0x228
 	.long	0xd2
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa9b
@@ -2881,7 +2881,7 @@ tcpip_init_done:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL38-1
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 -17
@@ -2895,62 +2895,62 @@ tcpip_init_done:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.long	.LFB24
 	.long	.LFE24-.LFB24
 	.long	.LFB25
 	.long	.LFE25-.LFB25
 	.long	.LFB26
 	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	.LFB28
 	.long	.LFE28-.LFB28
 	.long	.LFB29
 	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB31
+	.long	.LFE31-.LFB31
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB34
+	.long	.LFE34-.LFB34
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
+	.long	.LFB33
+	.long	.LFE33
 	.long	.LFB24
 	.long	.LFE24
 	.long	.LFB25
 	.long	.LFE25
 	.long	.LFB26
 	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
 	.long	.LFB28
 	.long	.LFE28
 	.long	.LFB29
 	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB31
+	.long	.LFE31
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB34
+	.long	.LFE34
+	.long	.LFB35
+	.long	.LFE35
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

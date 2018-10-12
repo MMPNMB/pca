@@ -11,7 +11,7 @@
 	.globl	mem_init
 	.type	mem_init, @function
 mem_init:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/mem.c"
 	.loc 1 72 0
 	.cfi_startproc
@@ -26,7 +26,7 @@ mem_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	mem_init, .-mem_init
 	.section	.text.unlikely.mem_init
 .LCOLDE0:
@@ -39,7 +39,7 @@ mem_init:
 	.globl	mem_trim
 	.type	mem_trim, @function
 mem_trim:
-.LFB18:
+.LFB24:
 	.loc 1 81 0
 	.cfi_startproc
 .LVL0:
@@ -55,7 +55,7 @@ mem_trim:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	mem_trim, .-mem_trim
 	.section	.text.unlikely.mem_trim
 .LCOLDE1:
@@ -68,7 +68,7 @@ mem_trim:
 	.globl	mem_malloc
 	.type	mem_malloc, @function
 mem_malloc:
-.LFB19:
+.LFB25:
 	.loc 1 119 0
 	.cfi_startproc
 .LVL1:
@@ -85,7 +85,7 @@ mem_malloc:
 	jmp	malloc
 .LVL2:
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	mem_malloc, .-mem_malloc
 	.section	.text.unlikely.mem_malloc
 .LCOLDE2:
@@ -98,7 +98,7 @@ mem_malloc:
 	.globl	mem_free
 	.type	mem_free, @function
 mem_free:
-.LFB20:
+.LFB26:
 	.loc 1 140 0
 	.cfi_startproc
 .LVL3:
@@ -115,7 +115,7 @@ mem_free:
 	jmp	free
 .LVL4:
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	mem_free, .-mem_free
 	.section	.text.unlikely.mem_free
 .LCOLDE3:
@@ -128,7 +128,7 @@ mem_free:
 	.globl	mem_calloc
 	.type	mem_calloc, @function
 mem_calloc:
-.LFB21:
+.LFB27:
 	.loc 1 745 0
 	.cfi_startproc
 .LVL5:
@@ -145,7 +145,7 @@ mem_calloc:
 	jmp	calloc
 .LVL6:
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	mem_calloc, .-mem_calloc
 	.section	.text.unlikely.mem_calloc
 .LCOLDE4:
@@ -253,8 +253,8 @@ mem_calloc:
 	.long	.LASF29
 	.byte	0x1
 	.byte	0x47
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.uleb128 0x7
@@ -262,8 +262,8 @@ mem_calloc:
 	.byte	0x1
 	.byte	0x50
 	.long	0x84
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf4
@@ -289,8 +289,8 @@ mem_calloc:
 	.byte	0x1
 	.byte	0x76
 	.long	0x84
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x139
@@ -324,8 +324,8 @@ mem_calloc:
 	.long	.LASF30
 	.byte	0x1
 	.byte	0x8b
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x16f
@@ -355,8 +355,8 @@ mem_calloc:
 	.byte	0x1
 	.value	0x2e8
 	.long	0x84
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1c2
@@ -704,30 +704,30 @@ mem_calloc:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

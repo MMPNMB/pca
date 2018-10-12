@@ -11,7 +11,7 @@
 	.globl	ethernet_input
 	.type	ethernet_input, @function
 ethernet_input:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/netif/ethernet.c"
 	.loc 1 78 0
 	.cfi_startproc
@@ -147,7 +147,7 @@ ethernet_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	ethernet_input, .-ethernet_input
 	.section	.text.unlikely.ethernet_input
 .LCOLDE0:
@@ -160,7 +160,7 @@ ethernet_input:
 	.globl	ethernet_output
 	.type	ethernet_output, @function
 ethernet_output:
-.LFB18:
+.LFB24:
 	.loc 1 263 0
 	.cfi_startproc
 .LVL12:
@@ -258,7 +258,7 @@ ethernet_output:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	ethernet_output, .-ethernet_output
 	.section	.text.unlikely.ethernet_output
 .LCOLDE1:
@@ -982,8 +982,8 @@ ethbroadcast:
 	.byte	0x1
 	.byte	0x4d
 	.long	0xd2
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x624
@@ -1053,8 +1053,8 @@ ethbroadcast:
 	.byte	0x1
 	.value	0x104
 	.long	0xd2
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x6cb
@@ -1750,18 +1750,18 @@ ethbroadcast:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

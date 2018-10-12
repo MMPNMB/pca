@@ -11,7 +11,7 @@
 	.globl	vfs_wdg_open
 	.type	vfs_wdg_open, @function
 vfs_wdg_open:
-.LFB16:
+.LFB22:
 	.file 1 "kernel/vfs/device/vfs_wdg.c"
 	.loc 1 18 0
 	.cfi_startproc
@@ -60,7 +60,7 @@ vfs_wdg_open:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE16:
+.LFE22:
 	.size	vfs_wdg_open, .-vfs_wdg_open
 	.section	.text.unlikely.vfs_wdg_open
 .LCOLDE0:
@@ -73,7 +73,7 @@ vfs_wdg_open:
 	.globl	vfs_wdg_close
 	.type	vfs_wdg_close, @function
 vfs_wdg_close:
-.LFB17:
+.LFB23:
 	.loc 1 44 0
 	.cfi_startproc
 .LVL5:
@@ -160,7 +160,7 @@ vfs_wdg_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	vfs_wdg_close, .-vfs_wdg_close
 	.section	.text.unlikely.vfs_wdg_close
 .LCOLDE1:
@@ -173,7 +173,7 @@ vfs_wdg_close:
 	.globl	vfs_wdg_ioctl
 	.type	vfs_wdg_ioctl, @function
 vfs_wdg_ioctl:
-.LFB18:
+.LFB24:
 	.loc 1 78 0
 	.cfi_startproc
 .LVL15:
@@ -262,7 +262,7 @@ vfs_wdg_ioctl:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	vfs_wdg_ioctl, .-vfs_wdg_ioctl
 	.section	.text.unlikely.vfs_wdg_ioctl
 .LCOLDE2:
@@ -1207,8 +1207,8 @@ wdg_ops:
 	.byte	0x1
 	.byte	0x11
 	.long	0x73
-	.long	.LFB16
-	.long	.LFE16-.LFB16
+	.long	.LFB22
+	.long	.LFE22-.LFB22
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7c7
@@ -1248,8 +1248,8 @@ wdg_ops:
 	.byte	0x1
 	.byte	0x2b
 	.long	0x73
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x82d
@@ -1288,8 +1288,8 @@ wdg_ops:
 	.byte	0x1
 	.byte	0x4d
 	.long	0x73
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8a9
@@ -1774,7 +1774,7 @@ wdg_ops:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL3
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -1791,7 +1791,7 @@ wdg_ops:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL4
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -1805,7 +1805,7 @@ wdg_ops:
 	.byte	0xff
 	.byte	0x9f
 	.long	.LVL4
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -1826,7 +1826,7 @@ wdg_ops:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL3
-	.long	.LFE16
+	.long	.LFE22
 	.value	0x2
 	.byte	0x30
 	.byte	0x9f
@@ -1856,7 +1856,7 @@ wdg_ops:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL14
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -1923,22 +1923,22 @@ wdg_ops:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB16
-	.long	.LFE16-.LFB16
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB22
+	.long	.LFE22-.LFB22
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB16
-	.long	.LFE16
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
+	.long	.LFB22
+	.long	.LFE22
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

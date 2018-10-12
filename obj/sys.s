@@ -11,7 +11,7 @@
 	.globl	sys_msleep
 	.type	sys_msleep, @function
 sys_msleep:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/sys.c"
 	.loc 1 56 0
 	.cfi_startproc
@@ -79,7 +79,7 @@ sys_msleep:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	sys_msleep, .-sys_msleep
 	.section	.text.unlikely.sys_msleep
 .LCOLDE0:
@@ -279,8 +279,8 @@ sys_msleep:
 	.long	.LASF45
 	.byte	0x1
 	.byte	0x37
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1d3
@@ -627,14 +627,14 @@ sys_msleep:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
+	.long	.LFB23
+	.long	.LFE23
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

@@ -11,7 +11,7 @@
 	.globl	sys_timeout
 	.type	sys_timeout, @function
 sys_timeout:
-.LFB21:
+.LFB27:
 	.file 1 "kernel/protocols/net/core/timeouts.c"
 	.loc 1 206 0
 	.cfi_startproc
@@ -146,7 +146,7 @@ sys_timeout:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	sys_timeout, .-sys_timeout
 	.section	.text.unlikely.sys_timeout
 .LCOLDE0:
@@ -159,7 +159,7 @@ sys_timeout:
 	.globl	tcp_timer_needed
 	.type	tcp_timer_needed, @function
 tcp_timer_needed:
-.LFB18:
+.LFB24:
 	.loc 1 148 0
 	.cfi_startproc
 	pushl	%ebp
@@ -196,7 +196,7 @@ tcp_timer_needed:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	tcp_timer_needed, .-tcp_timer_needed
 	.section	.text.unlikely.tcp_timer_needed
 .LCOLDE1:
@@ -208,7 +208,7 @@ tcp_timer_needed:
 .LHOTB2:
 	.type	tcpip_tcp_timer, @function
 tcpip_tcp_timer:
-.LFB17:
+.LFB23:
 	.loc 1 126 0
 	.cfi_startproc
 .LVL11:
@@ -247,7 +247,7 @@ tcpip_tcp_timer:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	tcpip_tcp_timer, .-tcpip_tcp_timer
 	.section	.text.unlikely.tcpip_tcp_timer
 .LCOLDE2:
@@ -260,7 +260,7 @@ tcpip_tcp_timer:
 	.globl	sys_timeouts_init
 	.type	sys_timeouts_init, @function
 sys_timeouts_init:
-.LFB20:
+.LFB26:
 	.loc 1 176 0
 	.cfi_startproc
 .LVL14:
@@ -301,7 +301,7 @@ sys_timeouts_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	sys_timeouts_init, .-sys_timeouts_init
 	.section	.text.unlikely.sys_timeouts_init
 .LCOLDE3:
@@ -313,7 +313,7 @@ sys_timeouts_init:
 .LHOTB4:
 	.type	cyclic_timer, @function
 cyclic_timer:
-.LFB19:
+.LFB25:
 	.loc 1 165 0
 	.cfi_startproc
 .LVL18:
@@ -348,7 +348,7 @@ cyclic_timer:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	cyclic_timer, .-cyclic_timer
 	.section	.text.unlikely.cyclic_timer
 .LCOLDE4:
@@ -361,7 +361,7 @@ cyclic_timer:
 	.globl	sys_untimeout
 	.type	sys_untimeout, @function
 sys_untimeout:
-.LFB22:
+.LFB28:
 	.loc 1 274 0
 	.cfi_startproc
 .LVL23:
@@ -455,7 +455,7 @@ sys_untimeout:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	sys_untimeout, .-sys_untimeout
 	.section	.text.unlikely.sys_untimeout
 .LCOLDE5:
@@ -468,7 +468,7 @@ sys_untimeout:
 	.globl	sys_restart_timeouts
 	.type	sys_restart_timeouts, @function
 sys_restart_timeouts:
-.LFB24:
+.LFB30:
 	.loc 1 370 0
 	.cfi_startproc
 	pushl	%ebp
@@ -487,7 +487,7 @@ sys_restart_timeouts:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	sys_restart_timeouts, .-sys_restart_timeouts
 	.section	.text.unlikely.sys_restart_timeouts
 .LCOLDE6:
@@ -500,7 +500,7 @@ sys_restart_timeouts:
 	.globl	sys_timeouts_mbox_fetch
 	.type	sys_timeouts_mbox_fetch, @function
 sys_timeouts_mbox_fetch:
-.LFB26:
+.LFB32:
 	.loc 1 406 0
 	.cfi_startproc
 .L54:
@@ -661,7 +661,7 @@ sys_timeouts_mbox_fetch:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	sys_timeouts_mbox_fetch, .-sys_timeouts_mbox_fetch
 	.section	.text.unlikely.sys_timeouts_mbox_fetch
 .LCOLDE7:
@@ -1786,8 +1786,8 @@ lwip_cyclic_timers:
 	.long	.LASF149
 	.byte	0x1
 	.byte	0xcc
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x902
@@ -1850,8 +1850,8 @@ lwip_cyclic_timers:
 	.long	.LASF150
 	.byte	0x1
 	.byte	0x93
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x921
@@ -1863,8 +1863,8 @@ lwip_cyclic_timers:
 	.long	.LASF152
 	.byte	0x1
 	.byte	0x7d
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x957
@@ -1887,8 +1887,8 @@ lwip_cyclic_timers:
 	.long	.LASF151
 	.byte	0x1
 	.byte	0xaf
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x98c
@@ -1909,8 +1909,8 @@ lwip_cyclic_timers:
 	.long	.LASF153
 	.byte	0x1
 	.byte	0xa4
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9c8
@@ -1941,8 +1941,8 @@ lwip_cyclic_timers:
 	.long	.LASF155
 	.byte	0x1
 	.value	0x111
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa38
@@ -1985,8 +1985,8 @@ lwip_cyclic_timers:
 	.long	.LASF157
 	.byte	0x1
 	.value	0x171
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa58
@@ -2050,8 +2050,8 @@ lwip_cyclic_timers:
 	.long	.LASF160
 	.byte	0x1
 	.value	0x195
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbdb
@@ -3082,7 +3082,7 @@ lwip_cyclic_timers:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL22
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3099,7 +3099,7 @@ lwip_cyclic_timers:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL32
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3120,7 +3120,7 @@ lwip_cyclic_timers:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL33
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -3228,22 +3228,22 @@ lwip_cyclic_timers:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	.LFB24
 	.long	.LFE24-.LFB24
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.long	.LFB26
 	.long	.LFE26-.LFB26
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -3260,22 +3260,22 @@ lwip_cyclic_timers:
 	.long	.LBE12
 	.long	0
 	.long	0
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB22
-	.long	.LFE22
+	.long	.LFB27
+	.long	.LFE27
 	.long	.LFB24
 	.long	.LFE24
+	.long	.LFB23
+	.long	.LFE23
 	.long	.LFB26
 	.long	.LFE26
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB32
+	.long	.LFE32
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

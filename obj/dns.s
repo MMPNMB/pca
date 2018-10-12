@@ -10,7 +10,7 @@
 	.section	.text.dns_call_found
 	.type	dns_call_found, @function
 dns_call_found:
-.LFB27:
+.LFB33:
 	.file 1 "kernel/protocols/net/core/dns.c"
 	.loc 1 827 0
 	.cfi_startproc
@@ -133,7 +133,7 @@ dns_call_found:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	dns_call_found, .-dns_call_found
 	.section	.text.unlikely.dns_call_found
 .LCOLDE0:
@@ -145,7 +145,7 @@ dns_call_found:
 .LHOTB1:
 	.type	dns_send, @function
 dns_send:
-.LFB24:
+.LFB30:
 	.loc 1 668 0
 	.cfi_startproc
 .LVL8:
@@ -397,7 +397,7 @@ dns_send:
 .LVL37:
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	dns_send, .-dns_send
 	.section	.text.unlikely.dns_send
 .LCOLDE1:
@@ -409,7 +409,7 @@ dns_send:
 .LHOTB2:
 	.type	dns_check_entry, @function
 dns_check_entry:
-.LFB29:
+.LFB35:
 	.loc 1 915 0
 	.cfi_startproc
 .LVL38:
@@ -576,7 +576,7 @@ dns_check_entry:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	dns_check_entry, .-dns_check_entry
 	.section	.text.unlikely.dns_check_entry
 .LCOLDE2:
@@ -588,7 +588,7 @@ dns_check_entry:
 .LHOTB3:
 	.type	dns_recv, @function
 dns_recv:
-.LFB32:
+.LFB38:
 	.loc 1 1032 0
 	.cfi_startproc
 .LVL55:
@@ -1052,7 +1052,7 @@ dns_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	dns_recv, .-dns_recv
 	.section	.text.unlikely.dns_recv
 .LCOLDE3:
@@ -1065,7 +1065,7 @@ dns_recv:
 	.globl	dns_setserver
 	.type	dns_setserver, @function
 dns_setserver:
-.LFB18:
+.LFB24:
 	.loc 1 339 0
 	.cfi_startproc
 .LVL118:
@@ -1112,7 +1112,7 @@ dns_setserver:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	dns_setserver, .-dns_setserver
 	.section	.text.unlikely.dns_setserver
 .LCOLDE4:
@@ -1128,7 +1128,7 @@ dns_setserver:
 	.globl	dns_init
 	.type	dns_init, @function
 dns_init:
-.LFB17:
+.LFB23:
 	.loc 1 293 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1168,7 +1168,7 @@ dns_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	dns_init, .-dns_init
 	.section	.text.unlikely.dns_init
 .LCOLDE6:
@@ -1181,7 +1181,7 @@ dns_init:
 	.globl	dns_getserver
 	.type	dns_getserver, @function
 dns_getserver:
-.LFB19:
+.LFB25:
 	.loc 1 361 0
 	.cfi_startproc
 .LVL126:
@@ -1206,7 +1206,7 @@ dns_getserver:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	dns_getserver, .-dns_getserver
 	.section	.text.unlikely.dns_getserver
 .LCOLDE7:
@@ -1219,7 +1219,7 @@ dns_getserver:
 	.globl	dns_tmr
 	.type	dns_tmr, @function
 dns_tmr:
-.LFB20:
+.LFB26:
 	.loc 1 375 0
 	.cfi_startproc
 .LVL127:
@@ -1256,7 +1256,7 @@ dns_tmr:
 .LBE38:
 .LBE40:
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	dns_tmr, .-dns_tmr
 	.section	.text.unlikely.dns_tmr
 .LCOLDE8:
@@ -1272,7 +1272,7 @@ dns_tmr:
 	.globl	dns_gethostbyname_addrtype
 	.type	dns_gethostbyname_addrtype, @function
 dns_gethostbyname_addrtype:
-.LFB35:
+.LFB41:
 	.loc 1 1379 0
 	.cfi_startproc
 .LVL130:
@@ -1776,7 +1776,7 @@ dns_gethostbyname_addrtype:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	dns_gethostbyname_addrtype, .-dns_gethostbyname_addrtype
 	.section	.text.unlikely.dns_gethostbyname_addrtype
 .LCOLDE10:
@@ -1789,7 +1789,7 @@ dns_gethostbyname_addrtype:
 	.globl	dns_gethostbyname
 	.type	dns_gethostbyname, @function
 dns_gethostbyname:
-.LFB34:
+.LFB40:
 	.loc 1 1358 0
 	.cfi_startproc
 .LVL186:
@@ -1813,7 +1813,7 @@ dns_gethostbyname:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	dns_gethostbyname, .-dns_gethostbyname
 	.section	.text.unlikely.dns_gethostbyname
 .LCOLDE11:
@@ -2677,8 +2677,8 @@ dns_pcbs:
 	.long	.LASF132
 	.byte	0x1
 	.value	0x33a
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x69c
@@ -2718,8 +2718,8 @@ dns_pcbs:
 	.byte	0x1
 	.value	0x29b
 	.long	0xf3
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7ec
@@ -2886,8 +2886,8 @@ dns_pcbs:
 	.long	.LASF133
 	.byte	0x1
 	.value	0x392
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8eb
@@ -3021,8 +3021,8 @@ dns_pcbs:
 	.long	.LASF137
 	.byte	0x1
 	.value	0x407
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc36
@@ -3328,8 +3328,8 @@ dns_pcbs:
 	.long	0x512
 	.uleb128 0x39
 	.long	0x5c9
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc82
@@ -3356,8 +3356,8 @@ dns_pcbs:
 	.long	.LASF145
 	.byte	0x1
 	.value	0x124
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcc3
@@ -3384,8 +3384,8 @@ dns_pcbs:
 	.byte	0x1
 	.value	0x168
 	.long	0x3fa
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xced
@@ -3414,8 +3414,8 @@ dns_pcbs:
 	.long	.LASF146
 	.byte	0x1
 	.value	0x176
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd5e
@@ -3598,8 +3598,8 @@ dns_pcbs:
 	.byte	0x1
 	.value	0x561
 	.long	0xf3
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1091
@@ -3799,8 +3799,8 @@ dns_pcbs:
 	.byte	0x1
 	.value	0x54c
 	.long	0xf3
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10f1
@@ -4928,7 +4928,7 @@ dns_pcbs:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL1
-	.long	.LFE27
+	.long	.LFE33
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4965,7 +4965,7 @@ dns_pcbs:
 	.byte	0x75
 	.sleb128 -60
 	.long	.LVL37
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x3
 	.byte	0x91
 	.sleb128 -68
@@ -5126,7 +5126,7 @@ dns_pcbs:
 	.byte	0x22
 	.byte	0x9f
 	.long	.LVL37
-	.long	.LFE24
+	.long	.LFE30
 	.value	0xf
 	.byte	0x91
 	.sleb128 -68
@@ -5154,7 +5154,7 @@ dns_pcbs:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL53-1
-	.long	.LFE29
+	.long	.LFE35
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5224,7 +5224,7 @@ dns_pcbs:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL54
-	.long	.LFE29
+	.long	.LFE35
 	.value	0x11
 	.byte	0xf3
 	.uleb128 0x1
@@ -5529,7 +5529,7 @@ dns_pcbs:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL121
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -5566,7 +5566,7 @@ dns_pcbs:
 	.byte	0x30
 	.byte	0x9f
 	.long	.LVL128
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x31
 	.byte	0x9f
@@ -5885,26 +5885,26 @@ dns_pcbs:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB24
-	.long	.LFE24-.LFB24
-	.long	.LFB29
-	.long	.LFE29-.LFB29
-	.long	.LFB32
-	.long	.LFE32-.LFB32
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.long	.LFB35
 	.long	.LFE35-.LFB35
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB38
+	.long	.LFE38-.LFB38
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB41
+	.long	.LFE41-.LFB41
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -5945,26 +5945,26 @@ dns_pcbs:
 	.long	.LBE62
 	.long	0
 	.long	0
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB24
-	.long	.LFE24
-	.long	.LFB29
-	.long	.LFE29
-	.long	.LFB32
-	.long	.LFE32
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB30
+	.long	.LFE30
 	.long	.LFB35
 	.long	.LFE35
-	.long	.LFB34
-	.long	.LFE34
+	.long	.LFB38
+	.long	.LFE38
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB41
+	.long	.LFE41
+	.long	.LFB40
+	.long	.LFE40
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

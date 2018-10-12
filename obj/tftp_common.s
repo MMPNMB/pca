@@ -11,7 +11,7 @@
 	.globl	tftp_send_error
 	.type	tftp_send_error, @function
 tftp_send_error:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/apps/tftp/tftp_common.c"
 	.loc 1 61 0
 	.cfi_startproc
@@ -132,7 +132,7 @@ tftp_send_error:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	tftp_send_error, .-tftp_send_error
 	.section	.text.unlikely.tftp_send_error
 .LCOLDE0:
@@ -145,7 +145,7 @@ tftp_send_error:
 	.globl	tftp_send_ack
 	.type	tftp_send_ack, @function
 tftp_send_ack:
-.LFB18:
+.LFB24:
 	.loc 1 82 0
 	.cfi_startproc
 .LVL11:
@@ -240,7 +240,7 @@ tftp_send_ack:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	tftp_send_ack, .-tftp_send_ack
 	.section	.text.unlikely.tftp_send_ack
 .LCOLDE1:
@@ -626,8 +626,8 @@ tftp_send_ack:
 	.long	.LASF59
 	.byte	0x1
 	.byte	0x3b
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x385
@@ -707,8 +707,8 @@ tftp_send_ack:
 	.long	.LASF60
 	.byte	0x1
 	.byte	0x51
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x419
@@ -1185,7 +1185,7 @@ tftp_send_ack:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL10
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -1218,7 +1218,7 @@ tftp_send_ack:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL17
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -1243,18 +1243,18 @@ tftp_send_ack:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

@@ -11,7 +11,7 @@
 	.globl	new_file
 	.type	new_file, @function
 new_file:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/vfs/vfs_file.c"
 	.loc 1 15 0
 	.cfi_startproc
@@ -73,7 +73,7 @@ new_file:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	new_file, .-new_file
 	.section	.text.unlikely.new_file
 .LCOLDE0:
@@ -86,7 +86,7 @@ new_file:
 	.globl	del_file
 	.type	del_file, @function
 del_file:
-.LFB18:
+.LFB24:
 	.loc 1 38 0
 	.cfi_startproc
 .LVL6:
@@ -115,7 +115,7 @@ del_file:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	del_file, .-del_file
 	.section	.text.unlikely.del_file
 .LCOLDE1:
@@ -128,7 +128,7 @@ del_file:
 	.globl	get_fd
 	.type	get_fd, @function
 get_fd:
-.LFB19:
+.LFB25:
 	.loc 1 44 0
 	.cfi_startproc
 .LVL8:
@@ -151,7 +151,7 @@ get_fd:
 	.loc 1 46 0
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	get_fd, .-get_fd
 	.section	.text.unlikely.get_fd
 .LCOLDE2:
@@ -164,7 +164,7 @@ get_fd:
 	.globl	get_file
 	.type	get_file, @function
 get_file:
-.LFB20:
+.LFB26:
 	.loc 1 49 0
 	.cfi_startproc
 .LVL9:
@@ -200,7 +200,7 @@ get_file:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	get_file, .-get_file
 	.section	.text.unlikely.get_file
 .LCOLDE3:
@@ -1152,8 +1152,8 @@ files:
 	.byte	0x1
 	.byte	0xe
 	.long	0x5a9
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7e3
@@ -1190,8 +1190,8 @@ files:
 	.long	.LASF113
 	.byte	0x1
 	.byte	0x25
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x810
@@ -1212,8 +1212,8 @@ files:
 	.byte	0x1
 	.byte	0x2b
 	.long	0x73
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x838
@@ -1231,8 +1231,8 @@ files:
 	.byte	0x1
 	.byte	0x30
 	.long	0x5a9
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x86d
@@ -1736,7 +1736,7 @@ files:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL11
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x7
 	.byte	0x91
 	.sleb128 0
@@ -1762,26 +1762,26 @@ files:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

@@ -10,7 +10,7 @@
 	.section	.text.tftp_fwrite
 	.type	tftp_fwrite, @function
 tftp_fwrite:
-.LFB25:
+.LFB31:
 	.file 1 "kernel/protocols/net/apps/tftp/tftp_server.c"
 	.loc 1 366 0
 	.cfi_startproc
@@ -72,7 +72,7 @@ tftp_fwrite:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	tftp_fwrite, .-tftp_fwrite
 	.section	.text.unlikely.tftp_fwrite
 .LCOLDE0:
@@ -84,7 +84,7 @@ tftp_fwrite:
 .LHOTB1:
 	.type	tftp_fread, @function
 tftp_fread:
-.LFB24:
+.LFB30:
 	.loc 1 359 0
 	.cfi_startproc
 .LVL5:
@@ -107,7 +107,7 @@ tftp_fread:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	tftp_fread, .-tftp_fread
 	.section	.text.unlikely.tftp_fread
 .LCOLDE1:
@@ -119,7 +119,7 @@ tftp_fread:
 .LHOTB2:
 	.type	tftp_fclose, @function
 tftp_fclose:
-.LFB23:
+.LFB29:
 	.loc 1 354 0
 	.cfi_startproc
 .LVL7:
@@ -136,7 +136,7 @@ tftp_fclose:
 	jmp	fclose
 .LVL8:
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	tftp_fclose, .-tftp_fclose
 	.section	.text.unlikely.tftp_fclose
 .LCOLDE2:
@@ -148,7 +148,7 @@ tftp_fclose:
 .LHOTB3:
 	.type	resend_data, @function
 resend_data:
-.LFB18:
+.LFB24:
 	.loc 1 101 0
 	.cfi_startproc
 	pushl	%ebp
@@ -212,7 +212,7 @@ resend_data:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	resend_data, .-resend_data
 	.section	.text.unlikely.resend_data
 .LCOLDE3:
@@ -227,7 +227,7 @@ resend_data:
 .LHOTB5:
 	.type	close_handle, @function
 close_handle:
-.LFB17:
+.LFB23:
 	.loc 1 81 0
 	.cfi_startproc
 	pushl	%ebp
@@ -287,7 +287,7 @@ close_handle:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	close_handle, .-close_handle
 	.section	.text.unlikely.close_handle
 .LCOLDE5:
@@ -302,7 +302,7 @@ close_handle:
 .LHOTB7:
 	.type	send_data, @function
 send_data:
-.LFB19:
+.LFB25:
 	.loc 1 118 0
 	.cfi_startproc
 	pushl	%ebp
@@ -430,7 +430,7 @@ send_data:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	send_data, .-send_data
 	.section	.text.unlikely.send_data
 .LCOLDE7:
@@ -473,7 +473,7 @@ send_data:
 .LHOTB23:
 	.type	recv, @function
 recv:
-.LFB20:
+.LFB26:
 	.loc 1 148 0
 	.cfi_startproc
 .LVL35:
@@ -936,7 +936,7 @@ recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	recv, .-recv
 	.section	.text.unlikely.recv
 .LCOLDE23:
@@ -961,7 +961,7 @@ recv:
 .LHOTB30:
 	.type	tftp_fopen, @function
 tftp_fopen:
-.LFB22:
+.LFB28:
 	.loc 1 342 0
 	.cfi_startproc
 .LVL85:
@@ -1062,7 +1062,7 @@ tftp_fopen:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	tftp_fopen, .-tftp_fopen
 	.section	.text.unlikely.tftp_fopen
 .LCOLDE30:
@@ -1079,7 +1079,7 @@ tftp_fopen:
 .LHOTB33:
 	.type	tftp_tmr, @function
 tftp_tmr:
-.LFB21:
+.LFB27:
 	.loc 1 318 0
 	.cfi_startproc
 .LVL92:
@@ -1156,7 +1156,7 @@ tftp_tmr:
 .L103:
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	tftp_tmr, .-tftp_tmr
 	.section	.text.unlikely.tftp_tmr
 .LCOLDE33:
@@ -1169,7 +1169,7 @@ tftp_tmr:
 	.globl	tftp_server_start
 	.type	tftp_server_start, @function
 tftp_server_start:
-.LFB26:
+.LFB32:
 	.loc 1 387 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1267,7 +1267,7 @@ tftp_server_start:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	tftp_server_start, .-tftp_server_start
 	.section	.text.unlikely.tftp_server_start
 .LCOLDE34:
@@ -1280,7 +1280,7 @@ tftp_server_start:
 	.globl	tftp_server_stop
 	.type	tftp_server_stop, @function
 tftp_server_stop:
-.LFB27:
+.LFB33:
 	.loc 1 417 0
 	.cfi_startproc
 	.loc 1 418 0
@@ -1331,7 +1331,7 @@ tftp_server_stop:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	tftp_server_stop, .-tftp_server_stop
 	.section	.text.unlikely.tftp_server_stop
 .LCOLDE35:
@@ -3070,8 +3070,8 @@ tftp_state:
 	.byte	0x1
 	.value	0x16d
 	.long	0x25
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe2b
@@ -3127,8 +3127,8 @@ tftp_state:
 	.byte	0x1
 	.value	0x166
 	.long	0x25
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe9b
@@ -3171,8 +3171,8 @@ tftp_state:
 	.long	.LASF231
 	.byte	0x1
 	.value	0x161
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xed3
@@ -3201,8 +3201,8 @@ tftp_state:
 	.long	.LASF232
 	.byte	0x1
 	.byte	0x64
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf1a
@@ -3229,8 +3229,8 @@ tftp_state:
 	.long	.LASF233
 	.byte	0x1
 	.byte	0x50
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf4b
@@ -3248,8 +3248,8 @@ tftp_state:
 	.long	.LASF234
 	.byte	0x1
 	.byte	0x75
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfbe
@@ -3294,8 +3294,8 @@ tftp_state:
 	.long	.LASF197
 	.byte	0x1
 	.byte	0x93
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x11ab
@@ -3506,8 +3506,8 @@ tftp_state:
 	.byte	0
 	.uleb128 0x3b
 	.long	0xd58
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1248
@@ -3559,8 +3559,8 @@ tftp_state:
 	.byte	0
 	.uleb128 0x3b
 	.long	0xd9f
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x12a8
@@ -3598,8 +3598,8 @@ tftp_state:
 	.byte	0x1
 	.value	0x182
 	.long	0x8ce
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1307
@@ -3632,8 +3632,8 @@ tftp_state:
 	.long	.LASF275
 	.byte	0x1
 	.value	0x1a0
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1330
@@ -4816,7 +4816,7 @@ tftp_state:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL4
-	.long	.LFE25
+	.long	.LFE31
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -5125,28 +5125,28 @@ tftp_state:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.long	.LFB24
 	.long	.LFE24-.LFB24
 	.long	.LFB23
 	.long	.LFE23-.LFB23
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.long	.LFB26
 	.long	.LFE26-.LFB26
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.long	.LFB27
 	.long	.LFE27-.LFB27
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -5157,28 +5157,28 @@ tftp_state:
 	.long	.LBE10
 	.long	0
 	.long	0
-	.long	.LFB25
-	.long	.LFE25
+	.long	.LFB31
+	.long	.LFE31
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB29
+	.long	.LFE29
 	.long	.LFB24
 	.long	.LFE24
 	.long	.LFB23
 	.long	.LFE23
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB21
-	.long	.LFE21
+	.long	.LFB25
+	.long	.LFE25
 	.long	.LFB26
 	.long	.LFE26
+	.long	.LFB28
+	.long	.LFE28
 	.long	.LFB27
 	.long	.LFE27
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

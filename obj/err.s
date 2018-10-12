@@ -14,7 +14,7 @@
 	.globl	lwip_strerr
 	.type	lwip_strerr, @function
 lwip_strerr:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/api/err.c"
 	.loc 1 99 0
 	.cfi_startproc
@@ -42,7 +42,7 @@ lwip_strerr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	lwip_strerr, .-lwip_strerr
 	.section	.text.unlikely.lwip_strerr
 .LCOLDE1:
@@ -55,7 +55,7 @@ lwip_strerr:
 	.globl	err_to_errno
 	.type	err_to_errno, @function
 err_to_errno:
-.LFB18:
+.LFB24:
 	.loc 1 111 0
 	.cfi_startproc
 .LVL1:
@@ -82,7 +82,7 @@ err_to_errno:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	err_to_errno, .-err_to_errno
 	.section	.text.unlikely.err_to_errno
 .LCOLDE2:
@@ -272,8 +272,8 @@ err_to_errno_table:
 	.byte	0x1
 	.byte	0x62
 	.long	0x80
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xde
@@ -291,8 +291,8 @@ err_to_errno_table:
 	.byte	0x1
 	.byte	0x6e
 	.long	0x25
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x106
@@ -520,18 +520,18 @@ err_to_errno_table:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

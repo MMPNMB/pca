@@ -11,7 +11,7 @@
 	.globl	hal_wifi_get_default_module
 	.type	hal_wifi_get_default_module, @function
 hal_wifi_get_default_module:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/hal/wifi.c"
 	.loc 1 11 0
 	.cfi_startproc
@@ -42,7 +42,7 @@ hal_wifi_get_default_module:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	hal_wifi_get_default_module, .-hal_wifi_get_default_module
 	.section	.text.unlikely.hal_wifi_get_default_module
 .LCOLDE0:
@@ -55,7 +55,7 @@ hal_wifi_get_default_module:
 	.globl	hal_wifi_register_module
 	.type	hal_wifi_register_module, @function
 hal_wifi_register_module:
-.LFB18:
+.LFB24:
 	.loc 1 24 0
 	.cfi_startproc
 .LVL2:
@@ -97,7 +97,7 @@ hal_wifi_register_module:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	hal_wifi_register_module, .-hal_wifi_register_module
 	.section	.text.unlikely.hal_wifi_register_module
 .LCOLDE1:
@@ -110,7 +110,7 @@ hal_wifi_register_module:
 	.globl	hal_wifi_init
 	.type	hal_wifi_init, @function
 hal_wifi_init:
-.LFB19:
+.LFB25:
 	.loc 1 30 0
 	.cfi_startproc
 .LVL5:
@@ -153,7 +153,7 @@ hal_wifi_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	hal_wifi_init, .-hal_wifi_init
 	.section	.text.unlikely.hal_wifi_init
 .LCOLDE2:
@@ -166,7 +166,7 @@ hal_wifi_init:
 	.globl	hal_wifi_get_mac_addr
 	.type	hal_wifi_get_mac_addr, @function
 hal_wifi_get_mac_addr:
-.LFB20:
+.LFB26:
 	.loc 1 44 0
 	.cfi_startproc
 .LVL11:
@@ -218,7 +218,7 @@ hal_wifi_get_mac_addr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	hal_wifi_get_mac_addr, .-hal_wifi_get_mac_addr
 	.section	.text.unlikely.hal_wifi_get_mac_addr
 .LCOLDE3:
@@ -231,7 +231,7 @@ hal_wifi_get_mac_addr:
 	.globl	hal_wifi_set_mac_addr
 	.type	hal_wifi_set_mac_addr, @function
 hal_wifi_set_mac_addr:
-.LFB21:
+.LFB27:
 	.loc 1 58 0
 	.cfi_startproc
 .LVL17:
@@ -283,7 +283,7 @@ hal_wifi_set_mac_addr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	hal_wifi_set_mac_addr, .-hal_wifi_set_mac_addr
 	.section	.text.unlikely.hal_wifi_set_mac_addr
 .LCOLDE4:
@@ -296,7 +296,7 @@ hal_wifi_set_mac_addr:
 	.globl	hal_wifi_start
 	.type	hal_wifi_start, @function
 hal_wifi_start:
-.LFB22:
+.LFB28:
 	.loc 1 72 0
 	.cfi_startproc
 .LVL23:
@@ -343,7 +343,7 @@ hal_wifi_start:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	hal_wifi_start, .-hal_wifi_start
 	.section	.text.unlikely.hal_wifi_start
 .LCOLDE5:
@@ -356,7 +356,7 @@ hal_wifi_start:
 	.globl	hal_wifi_start_adv
 	.type	hal_wifi_start_adv, @function
 hal_wifi_start_adv:
-.LFB23:
+.LFB29:
 	.loc 1 84 0
 	.cfi_startproc
 .LVL29:
@@ -389,7 +389,7 @@ hal_wifi_start_adv:
 	jmp	*%eax
 .LVL32:
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	hal_wifi_start_adv, .-hal_wifi_start_adv
 	.section	.text.unlikely.hal_wifi_start_adv
 .LCOLDE6:
@@ -402,7 +402,7 @@ hal_wifi_start_adv:
 	.globl	hal_wifi_get_ip_stat
 	.type	hal_wifi_get_ip_stat, @function
 hal_wifi_get_ip_stat:
-.LFB24:
+.LFB30:
 	.loc 1 93 0
 	.cfi_startproc
 .LVL33:
@@ -442,7 +442,7 @@ hal_wifi_get_ip_stat:
 	jmp	*%eax
 .LVL36:
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	hal_wifi_get_ip_stat, .-hal_wifi_get_ip_stat
 	.section	.text.unlikely.hal_wifi_get_ip_stat
 .LCOLDE7:
@@ -455,7 +455,7 @@ hal_wifi_get_ip_stat:
 	.globl	hal_wifi_get_link_stat
 	.type	hal_wifi_get_link_stat, @function
 hal_wifi_get_link_stat:
-.LFB25:
+.LFB31:
 	.loc 1 102 0
 	.cfi_startproc
 .LVL37:
@@ -488,7 +488,7 @@ hal_wifi_get_link_stat:
 	jmp	*%eax
 .LVL40:
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	hal_wifi_get_link_stat, .-hal_wifi_get_link_stat
 	.section	.text.unlikely.hal_wifi_get_link_stat
 .LCOLDE8:
@@ -501,7 +501,7 @@ hal_wifi_get_link_stat:
 	.globl	hal_wifi_start_scan
 	.type	hal_wifi_start_scan, @function
 hal_wifi_start_scan:
-.LFB26:
+.LFB32:
 	.loc 1 111 0
 	.cfi_startproc
 .LVL41:
@@ -532,7 +532,7 @@ hal_wifi_start_scan:
 	jmp	*%eax
 .LVL44:
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	hal_wifi_start_scan, .-hal_wifi_start_scan
 	.section	.text.unlikely.hal_wifi_start_scan
 .LCOLDE9:
@@ -545,7 +545,7 @@ hal_wifi_start_scan:
 	.globl	hal_wifi_start_scan_adv
 	.type	hal_wifi_start_scan_adv, @function
 hal_wifi_start_scan_adv:
-.LFB27:
+.LFB33:
 	.loc 1 120 0
 	.cfi_startproc
 .LVL45:
@@ -576,7 +576,7 @@ hal_wifi_start_scan_adv:
 	jmp	*%eax
 .LVL48:
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	hal_wifi_start_scan_adv, .-hal_wifi_start_scan_adv
 	.section	.text.unlikely.hal_wifi_start_scan_adv
 .LCOLDE10:
@@ -589,7 +589,7 @@ hal_wifi_start_scan_adv:
 	.globl	hal_wifi_power_off
 	.type	hal_wifi_power_off, @function
 hal_wifi_power_off:
-.LFB28:
+.LFB34:
 	.loc 1 129 0
 	.cfi_startproc
 .LVL49:
@@ -620,7 +620,7 @@ hal_wifi_power_off:
 	jmp	*%eax
 .LVL52:
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	hal_wifi_power_off, .-hal_wifi_power_off
 	.section	.text.unlikely.hal_wifi_power_off
 .LCOLDE11:
@@ -633,7 +633,7 @@ hal_wifi_power_off:
 	.globl	hal_wifi_power_on
 	.type	hal_wifi_power_on, @function
 hal_wifi_power_on:
-.LFB29:
+.LFB35:
 	.loc 1 138 0
 	.cfi_startproc
 .LVL53:
@@ -664,7 +664,7 @@ hal_wifi_power_on:
 	jmp	*%eax
 .LVL56:
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	hal_wifi_power_on, .-hal_wifi_power_on
 	.section	.text.unlikely.hal_wifi_power_on
 .LCOLDE12:
@@ -677,7 +677,7 @@ hal_wifi_power_on:
 	.globl	hal_wifi_suspend
 	.type	hal_wifi_suspend, @function
 hal_wifi_suspend:
-.LFB30:
+.LFB36:
 	.loc 1 147 0
 	.cfi_startproc
 .LVL57:
@@ -708,7 +708,7 @@ hal_wifi_suspend:
 	jmp	*%eax
 .LVL60:
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	hal_wifi_suspend, .-hal_wifi_suspend
 	.section	.text.unlikely.hal_wifi_suspend
 .LCOLDE13:
@@ -721,7 +721,7 @@ hal_wifi_suspend:
 	.globl	hal_wifi_suspend_station
 	.type	hal_wifi_suspend_station, @function
 hal_wifi_suspend_station:
-.LFB31:
+.LFB37:
 	.loc 1 156 0
 	.cfi_startproc
 .LVL61:
@@ -752,7 +752,7 @@ hal_wifi_suspend_station:
 	jmp	*%eax
 .LVL64:
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	hal_wifi_suspend_station, .-hal_wifi_suspend_station
 	.section	.text.unlikely.hal_wifi_suspend_station
 .LCOLDE14:
@@ -765,7 +765,7 @@ hal_wifi_suspend_station:
 	.globl	hal_wifi_suspend_soft_ap
 	.type	hal_wifi_suspend_soft_ap, @function
 hal_wifi_suspend_soft_ap:
-.LFB32:
+.LFB38:
 	.loc 1 165 0
 	.cfi_startproc
 .LVL65:
@@ -796,7 +796,7 @@ hal_wifi_suspend_soft_ap:
 	jmp	*%eax
 .LVL68:
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	hal_wifi_suspend_soft_ap, .-hal_wifi_suspend_soft_ap
 	.section	.text.unlikely.hal_wifi_suspend_soft_ap
 .LCOLDE15:
@@ -809,7 +809,7 @@ hal_wifi_suspend_soft_ap:
 	.globl	hal_wifi_set_channel
 	.type	hal_wifi_set_channel, @function
 hal_wifi_set_channel:
-.LFB33:
+.LFB39:
 	.loc 1 174 0
 	.cfi_startproc
 .LVL69:
@@ -842,7 +842,7 @@ hal_wifi_set_channel:
 	jmp	*%eax
 .LVL72:
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	hal_wifi_set_channel, .-hal_wifi_set_channel
 	.section	.text.unlikely.hal_wifi_set_channel
 .LCOLDE16:
@@ -855,7 +855,7 @@ hal_wifi_set_channel:
 	.globl	hal_wifi_get_channel
 	.type	hal_wifi_get_channel, @function
 hal_wifi_get_channel:
-.LFB34:
+.LFB40:
 	.loc 1 183 0
 	.cfi_startproc
 .LVL73:
@@ -886,7 +886,7 @@ hal_wifi_get_channel:
 	jmp	*%eax
 .LVL76:
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	hal_wifi_get_channel, .-hal_wifi_get_channel
 	.section	.text.unlikely.hal_wifi_get_channel
 .LCOLDE17:
@@ -899,7 +899,7 @@ hal_wifi_get_channel:
 	.globl	hal_wifi_get_channel_list
 	.type	hal_wifi_get_channel_list, @function
 hal_wifi_get_channel_list:
-.LFB35:
+.LFB41:
 	.loc 1 192 0
 	.cfi_startproc
 .LVL77:
@@ -932,7 +932,7 @@ hal_wifi_get_channel_list:
 	jmp	*%eax
 .LVL80:
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	hal_wifi_get_channel_list, .-hal_wifi_get_channel_list
 	.section	.text.unlikely.hal_wifi_get_channel_list
 .LCOLDE18:
@@ -945,7 +945,7 @@ hal_wifi_get_channel_list:
 	.globl	hal_wifi_start_wifi_monitor
 	.type	hal_wifi_start_wifi_monitor, @function
 hal_wifi_start_wifi_monitor:
-.LFB36:
+.LFB42:
 	.loc 1 201 0
 	.cfi_startproc
 .LVL81:
@@ -976,7 +976,7 @@ hal_wifi_start_wifi_monitor:
 	jmp	*%eax
 .LVL84:
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	hal_wifi_start_wifi_monitor, .-hal_wifi_start_wifi_monitor
 	.section	.text.unlikely.hal_wifi_start_wifi_monitor
 .LCOLDE19:
@@ -989,7 +989,7 @@ hal_wifi_start_wifi_monitor:
 	.globl	hal_wifi_stop_wifi_monitor
 	.type	hal_wifi_stop_wifi_monitor, @function
 hal_wifi_stop_wifi_monitor:
-.LFB37:
+.LFB43:
 	.loc 1 210 0
 	.cfi_startproc
 .LVL85:
@@ -1020,7 +1020,7 @@ hal_wifi_stop_wifi_monitor:
 	jmp	*%eax
 .LVL88:
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	hal_wifi_stop_wifi_monitor, .-hal_wifi_stop_wifi_monitor
 	.section	.text.unlikely.hal_wifi_stop_wifi_monitor
 .LCOLDE20:
@@ -1033,7 +1033,7 @@ hal_wifi_stop_wifi_monitor:
 	.globl	hal_wifi_register_monitor_cb
 	.type	hal_wifi_register_monitor_cb, @function
 hal_wifi_register_monitor_cb:
-.LFB38:
+.LFB44:
 	.loc 1 219 0
 	.cfi_startproc
 .LVL89:
@@ -1066,7 +1066,7 @@ hal_wifi_register_monitor_cb:
 	jmp	*%eax
 .LVL92:
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	hal_wifi_register_monitor_cb, .-hal_wifi_register_monitor_cb
 	.section	.text.unlikely.hal_wifi_register_monitor_cb
 .LCOLDE21:
@@ -1079,7 +1079,7 @@ hal_wifi_register_monitor_cb:
 	.globl	hal_wifi_install_event
 	.type	hal_wifi_install_event, @function
 hal_wifi_install_event:
-.LFB39:
+.LFB45:
 	.loc 1 228 0
 	.cfi_startproc
 .LVL93:
@@ -1103,7 +1103,7 @@ hal_wifi_install_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	hal_wifi_install_event, .-hal_wifi_install_event
 	.section	.text.unlikely.hal_wifi_install_event
 .LCOLDE22:
@@ -1116,7 +1116,7 @@ hal_wifi_install_event:
 	.globl	hal_wlan_register_mgnt_monitor_cb
 	.type	hal_wlan_register_mgnt_monitor_cb, @function
 hal_wlan_register_mgnt_monitor_cb:
-.LFB40:
+.LFB46:
 	.loc 1 235 0
 	.cfi_startproc
 .LVL94:
@@ -1149,7 +1149,7 @@ hal_wlan_register_mgnt_monitor_cb:
 	jmp	*%eax
 .LVL97:
 	.cfi_endproc
-.LFE40:
+.LFE46:
 	.size	hal_wlan_register_mgnt_monitor_cb, .-hal_wlan_register_mgnt_monitor_cb
 	.section	.text.unlikely.hal_wlan_register_mgnt_monitor_cb
 .LCOLDE23:
@@ -1162,7 +1162,7 @@ hal_wlan_register_mgnt_monitor_cb:
 	.globl	hal_wlan_send_80211_raw_frame
 	.type	hal_wlan_send_80211_raw_frame, @function
 hal_wlan_send_80211_raw_frame:
-.LFB41:
+.LFB47:
 	.loc 1 244 0
 	.cfi_startproc
 .LVL98:
@@ -1202,7 +1202,7 @@ hal_wlan_send_80211_raw_frame:
 	jmp	*%eax
 .LVL101:
 	.cfi_endproc
-.LFE41:
+.LFE47:
 	.size	hal_wlan_send_80211_raw_frame, .-hal_wlan_send_80211_raw_frame
 	.section	.text.unlikely.hal_wlan_send_80211_raw_frame
 .LCOLDE24:
@@ -1215,7 +1215,7 @@ hal_wlan_send_80211_raw_frame:
 	.globl	hal_wifi_start_debug_mode
 	.type	hal_wifi_start_debug_mode, @function
 hal_wifi_start_debug_mode:
-.LFB42:
+.LFB48:
 	.loc 1 253 0
 	.cfi_startproc
 .LVL102:
@@ -1256,7 +1256,7 @@ hal_wifi_start_debug_mode:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	hal_wifi_start_debug_mode, .-hal_wifi_start_debug_mode
 	.section	.text.unlikely.hal_wifi_start_debug_mode
 .LCOLDE25:
@@ -1269,7 +1269,7 @@ hal_wifi_start_debug_mode:
 	.globl	hal_wifi_stop_debug_mode
 	.type	hal_wifi_stop_debug_mode, @function
 hal_wifi_stop_debug_mode:
-.LFB43:
+.LFB49:
 	.loc 1 266 0
 	.cfi_startproc
 .LVL105:
@@ -1310,7 +1310,7 @@ hal_wifi_stop_debug_mode:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	hal_wifi_stop_debug_mode, .-hal_wifi_stop_debug_mode
 	.section	.text.unlikely.hal_wifi_stop_debug_mode
 .LCOLDE26:
@@ -2650,8 +2650,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0xa
 	.long	0x7a8
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xabb
@@ -2676,8 +2676,8 @@ g_wifi_module:
 	.long	.LASF139
 	.byte	0x1
 	.byte	0x17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb2c
@@ -2724,8 +2724,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x1d
 	.long	0x73
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xb76
@@ -2757,8 +2757,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x2b
 	.long	0x73
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbb4
@@ -2785,8 +2785,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x39
 	.long	0x73
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbf2
@@ -2813,8 +2813,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x47
 	.long	0x73
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc30
@@ -2841,8 +2841,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x53
 	.long	0x73
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc6e
@@ -2869,8 +2869,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x5c
 	.long	0x73
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcba
@@ -2905,8 +2905,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x65
 	.long	0x73
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcf8
@@ -2932,8 +2932,8 @@ g_wifi_module:
 	.long	.LASF149
 	.byte	0x1
 	.byte	0x6e
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd24
@@ -2951,8 +2951,8 @@ g_wifi_module:
 	.long	.LASF150
 	.byte	0x1
 	.byte	0x77
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd50
@@ -2971,8 +2971,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x80
 	.long	0x73
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd80
@@ -2991,8 +2991,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x89
 	.long	0x73
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdb0
@@ -3011,8 +3011,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x92
 	.long	0x73
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xde0
@@ -3031,8 +3031,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0x9b
 	.long	0x73
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe10
@@ -3051,8 +3051,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0xa4
 	.long	0x73
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe40
@@ -3071,8 +3071,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0xad
 	.long	0x73
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe7d
@@ -3099,8 +3099,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0xb6
 	.long	0x73
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xead
@@ -3119,8 +3119,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0xbf
 	.long	0x73
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xeeb
@@ -3146,8 +3146,8 @@ g_wifi_module:
 	.long	.LASF160
 	.byte	0x1
 	.byte	0xc8
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf17
@@ -3165,8 +3165,8 @@ g_wifi_module:
 	.long	.LASF161
 	.byte	0x1
 	.byte	0xd1
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf43
@@ -3184,8 +3184,8 @@ g_wifi_module:
 	.long	.LASF162
 	.byte	0x1
 	.byte	0xda
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf7c
@@ -3211,8 +3211,8 @@ g_wifi_module:
 	.long	.LASF163
 	.byte	0x1
 	.byte	0xe3
-	.long	.LFB39
-	.long	.LFE39-.LFB39
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfab
@@ -3237,8 +3237,8 @@ g_wifi_module:
 	.long	.LASF164
 	.byte	0x1
 	.byte	0xea
-	.long	.LFB40
-	.long	.LFE40-.LFB40
+	.long	.LFB46
+	.long	.LFE46-.LFB46
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfe4
@@ -3265,8 +3265,8 @@ g_wifi_module:
 	.byte	0x1
 	.byte	0xf3
 	.long	0x73
-	.long	.LFB41
-	.long	.LFE41-.LFB41
+	.long	.LFB47
+	.long	.LFE47-.LFB47
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1030
@@ -3300,8 +3300,8 @@ g_wifi_module:
 	.long	.LASF166
 	.byte	0x1
 	.byte	0xfc
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x105c
@@ -3319,8 +3319,8 @@ g_wifi_module:
 	.long	.LASF167
 	.byte	0x1
 	.value	0x109
-	.long	.LFB43
-	.long	.LFE43-.LFB43
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x108a
@@ -4352,7 +4352,7 @@ g_wifi_module:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL104
-	.long	.LFE42
+	.long	.LFE48
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -4368,7 +4368,7 @@ g_wifi_module:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL107
-	.long	.LFE43
+	.long	.LFE49
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -4381,18 +4381,6 @@ g_wifi_module:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
 	.long	.LFB24
@@ -4435,6 +4423,18 @@ g_wifi_module:
 	.long	.LFE42-.LFB42
 	.long	.LFB43
 	.long	.LFE43-.LFB43
+	.long	.LFB44
+	.long	.LFE44-.LFB44
+	.long	.LFB45
+	.long	.LFE45-.LFB45
+	.long	.LFB46
+	.long	.LFE46-.LFB46
+	.long	.LFB47
+	.long	.LFE47-.LFB47
+	.long	.LFB48
+	.long	.LFE48-.LFB48
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -4445,18 +4445,6 @@ g_wifi_module:
 	.long	.LBE17
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
 	.long	.LFB24
@@ -4499,6 +4487,18 @@ g_wifi_module:
 	.long	.LFE42
 	.long	.LFB43
 	.long	.LFE43
+	.long	.LFB44
+	.long	.LFE44
+	.long	.LFB45
+	.long	.LFE45
+	.long	.LFB46
+	.long	.LFE46
+	.long	.LFB47
+	.long	.LFE47
+	.long	.LFB48
+	.long	.LFE48
+	.long	.LFB49
+	.long	.LFE49
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

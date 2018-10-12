@@ -11,7 +11,7 @@
 	.globl	sys_sem_new
 	.type	sys_sem_new, @function
 sys_sem_new:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/port/sys_arch.c"
 	.loc 1 57 0
 	.cfi_startproc
@@ -42,7 +42,7 @@ sys_sem_new:
 	.loc 1 65 0
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	sys_sem_new, .-sys_sem_new
 	.section	.text.unlikely.sys_sem_new
 .LCOLDE0:
@@ -55,7 +55,7 @@ sys_sem_new:
 	.globl	sys_sem_free
 	.type	sys_sem_free, @function
 sys_sem_free:
-.LFB18:
+.LFB24:
 	.loc 1 74 0
 	.cfi_startproc
 .LVL3:
@@ -85,7 +85,7 @@ sys_sem_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	sys_sem_free, .-sys_sem_free
 	.section	.text.unlikely.sys_sem_free
 .LCOLDE1:
@@ -98,7 +98,7 @@ sys_sem_free:
 	.globl	sys_sem_signal
 	.type	sys_sem_signal, @function
 sys_sem_signal:
-.LFB19:
+.LFB25:
 	.loc 1 88 0
 	.cfi_startproc
 .LVL5:
@@ -115,7 +115,7 @@ sys_sem_signal:
 	jmp	aos_sem_signal
 .LVL6:
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	sys_sem_signal, .-sys_sem_signal
 	.section	.text.unlikely.sys_sem_signal
 .LCOLDE2:
@@ -128,7 +128,7 @@ sys_sem_signal:
 	.globl	sys_mbox_new
 	.type	sys_mbox_new, @function
 sys_mbox_new:
-.LFB21:
+.LFB27:
 	.loc 1 386 0
 	.cfi_startproc
 .LVL7:
@@ -174,7 +174,7 @@ sys_mbox_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	sys_mbox_new, .-sys_mbox_new
 	.section	.text.unlikely.sys_mbox_new
 .LCOLDE3:
@@ -187,7 +187,7 @@ sys_mbox_new:
 	.globl	sys_mbox_free
 	.type	sys_mbox_free, @function
 sys_mbox_free:
-.LFB22:
+.LFB28:
 	.loc 1 410 0
 	.cfi_startproc
 .LVL11:
@@ -244,7 +244,7 @@ sys_mbox_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	sys_mbox_free, .-sys_mbox_free
 	.section	.text.unlikely.sys_mbox_free
 .LCOLDE4:
@@ -257,7 +257,7 @@ sys_mbox_free:
 	.globl	sys_mbox_post
 	.type	sys_mbox_post, @function
 sys_mbox_post:
-.LFB23:
+.LFB29:
 	.loc 1 428 0
 	.cfi_startproc
 .LVL15:
@@ -282,7 +282,7 @@ sys_mbox_post:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	sys_mbox_post, .-sys_mbox_post
 	.section	.text.unlikely.sys_mbox_post
 .LCOLDE5:
@@ -295,7 +295,7 @@ sys_mbox_post:
 	.globl	sys_mbox_trypost
 	.type	sys_mbox_trypost, @function
 sys_mbox_trypost:
-.LFB24:
+.LFB30:
 	.loc 1 438 0
 	.cfi_startproc
 .LVL18:
@@ -323,7 +323,7 @@ sys_mbox_trypost:
 	negl	%eax
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	sys_mbox_trypost, .-sys_mbox_trypost
 	.section	.text.unlikely.sys_mbox_trypost
 .LCOLDE6:
@@ -336,7 +336,7 @@ sys_mbox_trypost:
 	.globl	sys_arch_mbox_tryfetch
 	.type	sys_arch_mbox_tryfetch, @function
 sys_arch_mbox_tryfetch:
-.LFB26:
+.LFB32:
 	.loc 1 503 0
 	.cfi_startproc
 .LVL21:
@@ -375,7 +375,7 @@ sys_arch_mbox_tryfetch:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	sys_arch_mbox_tryfetch, .-sys_arch_mbox_tryfetch
 	.section	.text.unlikely.sys_arch_mbox_tryfetch
 .LCOLDE7:
@@ -388,7 +388,7 @@ sys_arch_mbox_tryfetch:
 	.globl	sys_mutex_new
 	.type	sys_mutex_new, @function
 sys_mutex_new:
-.LFB27:
+.LFB33:
 	.loc 1 520 0
 	.cfi_startproc
 .LVL24:
@@ -416,7 +416,7 @@ sys_mutex_new:
 	.loc 1 528 0
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	sys_mutex_new, .-sys_mutex_new
 	.section	.text.unlikely.sys_mutex_new
 .LCOLDE8:
@@ -429,7 +429,7 @@ sys_mutex_new:
 	.globl	sys_mutex_lock
 	.type	sys_mutex_lock, @function
 sys_mutex_lock:
-.LFB28:
+.LFB34:
 	.loc 1 534 0
 	.cfi_startproc
 .LVL27:
@@ -451,7 +451,7 @@ sys_mutex_lock:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	sys_mutex_lock, .-sys_mutex_lock
 	.section	.text.unlikely.sys_mutex_lock
 .LCOLDE9:
@@ -464,7 +464,7 @@ sys_mutex_lock:
 	.globl	sys_mutex_unlock
 	.type	sys_mutex_unlock, @function
 sys_mutex_unlock:
-.LFB29:
+.LFB35:
 	.loc 1 541 0
 	.cfi_startproc
 .LVL29:
@@ -481,7 +481,7 @@ sys_mutex_unlock:
 	jmp	aos_mutex_unlock
 .LVL30:
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	sys_mutex_unlock, .-sys_mutex_unlock
 	.section	.text.unlikely.sys_mutex_unlock
 .LCOLDE10:
@@ -494,7 +494,7 @@ sys_mutex_unlock:
 	.globl	sys_mutex_free
 	.type	sys_mutex_free, @function
 sys_mutex_free:
-.LFB30:
+.LFB36:
 	.loc 1 550 0
 	.cfi_startproc
 .LVL31:
@@ -511,7 +511,7 @@ sys_mutex_free:
 	jmp	aos_mutex_free
 .LVL32:
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	sys_mutex_free, .-sys_mutex_free
 	.section	.text.unlikely.sys_mutex_free
 .LCOLDE11:
@@ -524,7 +524,7 @@ sys_mutex_free:
 	.globl	sys_now
 	.type	sys_now, @function
 sys_now:
-.LFB31:
+.LFB37:
 	.loc 1 561 0
 	.cfi_startproc
 	pushl	%ebp
@@ -542,7 +542,7 @@ sys_now:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	sys_now, .-sys_now
 	.section	.text.unlikely.sys_now
 .LCOLDE12:
@@ -555,7 +555,7 @@ sys_now:
 	.globl	sys_arch_sem_wait
 	.type	sys_arch_sem_wait, @function
 sys_arch_sem_wait:
-.LFB20:
+.LFB26:
 	.loc 1 110 0
 	.cfi_startproc
 .LVL34:
@@ -645,7 +645,7 @@ sys_arch_sem_wait:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	sys_arch_sem_wait, .-sys_arch_sem_wait
 	.section	.text.unlikely.sys_arch_sem_wait
 .LCOLDE13:
@@ -658,7 +658,7 @@ sys_arch_sem_wait:
 	.globl	sys_arch_mbox_fetch
 	.type	sys_arch_mbox_fetch, @function
 sys_arch_mbox_fetch:
-.LFB25:
+.LFB31:
 	.loc 1 462 0
 	.cfi_startproc
 .LVL45:
@@ -759,7 +759,7 @@ sys_arch_mbox_fetch:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	sys_arch_mbox_fetch, .-sys_arch_mbox_fetch
 	.section	.text.unlikely.sys_arch_mbox_fetch
 .LCOLDE14:
@@ -772,7 +772,7 @@ sys_arch_mbox_fetch:
 	.globl	sys_jiffies
 	.type	sys_jiffies, @function
 sys_jiffies:
-.LFB32:
+.LFB38:
 	.loc 1 572 0
 	.cfi_startproc
 	pushl	%ebp
@@ -790,7 +790,7 @@ sys_jiffies:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	sys_jiffies, .-sys_jiffies
 	.section	.text.unlikely.sys_jiffies
 .LCOLDE15:
@@ -803,7 +803,7 @@ sys_jiffies:
 	.globl	sys_thread_new
 	.type	sys_thread_new, @function
 sys_thread_new:
-.LFB33:
+.LFB39:
 	.loc 1 577 0
 	.cfi_startproc
 .LVL58:
@@ -840,7 +840,7 @@ sys_thread_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE33:
+.LFE39:
 	.size	sys_thread_new, .-sys_thread_new
 	.section	.text.unlikely.sys_thread_new
 .LCOLDE16:
@@ -853,7 +853,7 @@ sys_thread_new:
 	.globl	sys_arch_protect
 	.type	sys_arch_protect, @function
 sys_arch_protect:
-.LFB34:
+.LFB40:
 	.loc 1 600 0
 	.cfi_startproc
 	pushl	%ebp
@@ -874,7 +874,7 @@ sys_arch_protect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE34:
+.LFE40:
 	.size	sys_arch_protect, .-sys_arch_protect
 	.section	.text.unlikely.sys_arch_protect
 .LCOLDE17:
@@ -887,7 +887,7 @@ sys_arch_protect:
 	.globl	sys_arch_unprotect
 	.type	sys_arch_unprotect, @function
 sys_arch_unprotect:
-.LFB35:
+.LFB41:
 	.loc 1 612 0
 	.cfi_startproc
 .LVL62:
@@ -907,7 +907,7 @@ sys_arch_unprotect:
 	jmp	aos_mutex_unlock
 .LVL64:
 	.cfi_endproc
-.LFE35:
+.LFE41:
 	.size	sys_arch_unprotect, .-sys_arch_unprotect
 	.section	.text.unlikely.sys_arch_unprotect
 .LCOLDE18:
@@ -920,7 +920,7 @@ sys_arch_unprotect:
 	.globl	sys_arch_assert
 	.type	sys_arch_assert, @function
 sys_arch_assert:
-.LFB36:
+.LFB42:
 	.loc 1 621 0
 	.cfi_startproc
 .LVL65:
@@ -935,7 +935,7 @@ sys_arch_assert:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	sys_arch_assert, .-sys_arch_assert
 	.section	.text.unlikely.sys_arch_assert
 .LCOLDE19:
@@ -948,7 +948,7 @@ sys_arch_assert:
 	.globl	net_close
 	.type	net_close, @function
 net_close:
-.LFB37:
+.LFB43:
 	.loc 1 627 0
 	.cfi_startproc
 .LVL66:
@@ -966,7 +966,7 @@ net_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	net_close, .-net_close
 	.section	.text.unlikely.net_close
 .LCOLDE20:
@@ -979,7 +979,7 @@ net_close:
 	.globl	sys_init
 	.type	sys_init, @function
 sys_init:
-.LFB38:
+.LFB44:
 	.loc 1 637 0
 	.cfi_startproc
 	pushl	%ebp
@@ -999,7 +999,7 @@ sys_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	sys_init, .-sys_init
 	.section	.text.unlikely.sys_init
 .LCOLDE21:
@@ -1265,8 +1265,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.byte	0x38
 	.long	0x120
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x23d
@@ -1309,8 +1309,8 @@ sys_arch_mutex:
 	.long	.LASF49
 	.byte	0x1
 	.byte	0x49
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x27a
@@ -1337,8 +1337,8 @@ sys_arch_mutex:
 	.long	.LASF50
 	.byte	0x1
 	.byte	0x57
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x2b0
@@ -1368,8 +1368,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x181
 	.long	0x120
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x33c
@@ -1430,8 +1430,8 @@ sys_arch_mutex:
 	.long	.LASF55
 	.byte	0x1
 	.value	0x199
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3b1
@@ -1476,8 +1476,8 @@ sys_arch_mutex:
 	.long	.LASF57
 	.byte	0x1
 	.value	0x1ab
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3ef
@@ -1504,8 +1504,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x1b5
 	.long	0x120
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x431
@@ -1532,8 +1532,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x1f6
 	.long	0x115
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x48a
@@ -1576,8 +1576,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x207
 	.long	0x120
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4e3
@@ -1612,8 +1612,8 @@ sys_arch_mutex:
 	.long	.LASF62
 	.byte	0x1
 	.value	0x215
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x518
@@ -1633,8 +1633,8 @@ sys_arch_mutex:
 	.long	.LASF63
 	.byte	0x1
 	.value	0x21c
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x550
@@ -1663,8 +1663,8 @@ sys_arch_mutex:
 	.long	.LASF64
 	.byte	0x1
 	.value	0x225
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x588
@@ -1694,8 +1694,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x230
 	.long	0x115
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x5ac
@@ -1708,8 +1708,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.byte	0x6d
 	.long	0x115
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x64b
@@ -1774,8 +1774,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x1cd
 	.long	0x115
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x717
@@ -1859,8 +1859,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x23b
 	.long	0x115
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x73b
@@ -1873,8 +1873,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x240
 	.long	0x1ca
-	.long	.LFB33
-	.long	.LFE33-.LFB33
+	.long	.LFB39
+	.long	.LFE39-.LFB39
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7c2
@@ -1938,8 +1938,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x257
 	.long	0x1a9
-	.long	.LFB34
-	.long	.LFE34-.LFB34
+	.long	.LFB40
+	.long	.LFE40-.LFB40
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7e6
@@ -1951,8 +1951,8 @@ sys_arch_mutex:
 	.long	.LASF80
 	.byte	0x1
 	.value	0x263
-	.long	.LFB35
-	.long	.LFE35-.LFB35
+	.long	.LFB41
+	.long	.LFE41-.LFB41
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x821
@@ -1978,8 +1978,8 @@ sys_arch_mutex:
 	.long	.LASF82
 	.byte	0x1
 	.value	0x26c
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x856
@@ -2005,8 +2005,8 @@ sys_arch_mutex:
 	.byte	0x1
 	.value	0x272
 	.long	0x5d
-	.long	.LFB37
-	.long	.LFE37-.LFB37
+	.long	.LFB43
+	.long	.LFE43-.LFB43
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x880
@@ -2023,8 +2023,8 @@ sys_arch_mutex:
 	.long	.LASF87
 	.byte	0x1
 	.value	0x27c
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8a0
@@ -2814,7 +2814,7 @@ sys_arch_mutex:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL4
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2852,7 +2852,7 @@ sys_arch_mutex:
 	.byte	0x70
 	.sleb128 0
 	.long	.LVL17-1
-	.long	.LFE23
+	.long	.LFE29
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -2870,7 +2870,7 @@ sys_arch_mutex:
 	.byte	0x70
 	.sleb128 0
 	.long	.LVL20-1
-	.long	.LFE24
+	.long	.LFE30
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -3055,22 +3055,12 @@ sys_arch_mutex:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
 	.long	.LFB24
 	.long	.LFE24-.LFB24
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.long	.LFB27
 	.long	.LFE27-.LFB27
 	.long	.LFB28
@@ -3079,12 +3069,6 @@ sys_arch_mutex:
 	.long	.LFE29-.LFB29
 	.long	.LFB30
 	.long	.LFE30-.LFB30
-	.long	.LFB31
-	.long	.LFE31-.LFB31
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB25
-	.long	.LFE25-.LFB25
 	.long	.LFB32
 	.long	.LFE32-.LFB32
 	.long	.LFB33
@@ -3097,28 +3081,34 @@ sys_arch_mutex:
 	.long	.LFE36-.LFB36
 	.long	.LFB37
 	.long	.LFE37-.LFB37
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.long	.LFB38
 	.long	.LFE38-.LFB38
+	.long	.LFB39
+	.long	.LFE39-.LFB39
+	.long	.LFB40
+	.long	.LFE40-.LFB40
+	.long	.LFB41
+	.long	.LFE41-.LFB41
+	.long	.LFB42
+	.long	.LFE42-.LFB42
+	.long	.LFB43
+	.long	.LFE43-.LFB43
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
 	.long	.LFB24
 	.long	.LFE24
-	.long	.LFB26
-	.long	.LFE26
+	.long	.LFB25
+	.long	.LFE25
 	.long	.LFB27
 	.long	.LFE27
 	.long	.LFB28
@@ -3127,12 +3117,6 @@ sys_arch_mutex:
 	.long	.LFE29
 	.long	.LFB30
 	.long	.LFE30
-	.long	.LFB31
-	.long	.LFE31
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB25
-	.long	.LFE25
 	.long	.LFB32
 	.long	.LFE32
 	.long	.LFB33
@@ -3145,8 +3129,24 @@ sys_arch_mutex:
 	.long	.LFE36
 	.long	.LFB37
 	.long	.LFE37
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB31
+	.long	.LFE31
 	.long	.LFB38
 	.long	.LFE38
+	.long	.LFB39
+	.long	.LFE39
+	.long	.LFB40
+	.long	.LFE40
+	.long	.LFB41
+	.long	.LFE41
+	.long	.LFB42
+	.long	.LFE42
+	.long	.LFB43
+	.long	.LFE43
+	.long	.LFB44
+	.long	.LFE44
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

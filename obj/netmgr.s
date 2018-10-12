@@ -10,7 +10,7 @@
 	.section	.text.netmgr_connect_fail_event
 	.type	netmgr_connect_fail_event, @function
 netmgr_connect_fail_event:
-.LFB18:
+.LFB24:
 	.file 1 "framework/netmgr/netmgr.c"
 	.loc 1 90 0
 	.cfi_startproc
@@ -26,7 +26,7 @@ netmgr_connect_fail_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	netmgr_connect_fail_event, .-netmgr_connect_fail_event
 	.section	.text.unlikely.netmgr_connect_fail_event
 .LCOLDE0:
@@ -38,7 +38,7 @@ netmgr_connect_fail_event:
 .LHOTB1:
 	.type	netmgr_scan_adv_completed_event, @function
 netmgr_scan_adv_completed_event:
-.LFB27:
+.LFB33:
 	.loc 1 309 0
 	.cfi_startproc
 .LVL1:
@@ -122,7 +122,7 @@ netmgr_scan_adv_completed_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	netmgr_scan_adv_completed_event, .-netmgr_scan_adv_completed_event
 	.section	.text.unlikely.netmgr_scan_adv_completed_event
 .LCOLDE1:
@@ -134,7 +134,7 @@ netmgr_scan_adv_completed_event:
 .LHOTB2:
 	.type	netmgr_para_chg_event, @function
 netmgr_para_chg_event:
-.LFB28:
+.LFB34:
 	.loc 1 330 0
 	.cfi_startproc
 .LVL9:
@@ -149,7 +149,7 @@ netmgr_para_chg_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	netmgr_para_chg_event, .-netmgr_para_chg_event
 	.section	.text.unlikely.netmgr_para_chg_event
 .LCOLDE2:
@@ -161,7 +161,7 @@ netmgr_para_chg_event:
 .LHOTB3:
 	.type	netmgr_fatal_err_event, @function
 netmgr_fatal_err_event:
-.LFB29:
+.LFB35:
 	.loc 1 334 0
 	.cfi_startproc
 .LVL10:
@@ -176,7 +176,7 @@ netmgr_fatal_err_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	netmgr_fatal_err_event, .-netmgr_fatal_err_event
 	.section	.text.unlikely.netmgr_fatal_err_event
 .LCOLDE3:
@@ -188,7 +188,7 @@ netmgr_fatal_err_event:
 .LHOTB4:
 	.type	def_smart_config_result_cb, @function
 def_smart_config_result_cb:
-.LFB56:
+.LFB62:
 	.loc 1 722 0
 	.cfi_startproc
 .LVL11:
@@ -203,7 +203,7 @@ def_smart_config_result_cb:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE56:
+.LFE62:
 	.size	def_smart_config_result_cb, .-def_smart_config_result_cb
 	.section	.text.unlikely.def_smart_config_result_cb
 .LCOLDE4:
@@ -218,7 +218,7 @@ def_smart_config_result_cb:
 .LHOTB6:
 	.type	format_ip, @function
 format_ip:
-.LFB17:
+.LFB23:
 	.loc 1 77 0
 	.cfi_startproc
 .LVL12:
@@ -254,98 +254,19 @@ format_ip:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	format_ip, .-format_ip
 	.section	.text.unlikely.format_ip
 .LCOLDE6:
 	.section	.text.format_ip
 .LHOTE6:
-	.section	.rodata.str1.1
-.LC7:
-	.string	"wifi"
-	.section	.text.unlikely.clear_wifi_ssid,"ax",@progbits
-.LCOLDB8:
-	.section	.text.clear_wifi_ssid,"ax",@progbits
-.LHOTB8:
-	.type	clear_wifi_ssid, @function
-clear_wifi_ssid:
-.LFB33:
-	.loc 1 385 0
-	.cfi_startproc
-.LVL15:
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	.loc 1 388 0
-	movl	$33, %edx
-	xorl	%eax, %eax
-	movl	%edx, %ecx
-	.loc 1 385 0
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%edi
-	pushl	%esi
-	pushl	%ebx
-	.cfi_offset 7, -12
-	.cfi_offset 6, -16
-	.cfi_offset 3, -20
-	.loc 1 388 0
-	movl	$g_netmgr_cxt+104, %ebx
-	movl	%ebx, %edi
-	.loc 1 389 0
-	movl	$g_netmgr_cxt+143, %ebx
-	.loc 1 385 0
-	subl	$24, %esp
-	.loc 1 388 0
-	rep stosb
-	movl	%ecx, %edx
-	movl	%edi, %esi
-	.loc 1 389 0
-	movl	$65, %ecx
-	movl	%ebx, %edi
-	.loc 1 392 0
-	movl	$g_netmgr_cxt, %ebx
-	.loc 1 389 0
-	rep stosb
-	.loc 1 390 0
-	movl	%esi, %edi
-	movl	$6, %ecx
-	rep stosb
-	.loc 1 392 0
-	movl	%ebx, %edi
-	movl	%edx, %eax
-	movl	$26, %ecx
-	rep stosl
-	.loc 1 393 0
-	pushl	$.LC7
-	call	aos_kv_del
-.LVL16:
-	.loc 1 396 0
-	leal	-12(%ebp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%esi
-	.cfi_restore 6
-	popl	%edi
-	.cfi_restore 7
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
-	.cfi_endproc
-.LFE33:
-	.size	clear_wifi_ssid, .-clear_wifi_ssid
-	.section	.text.unlikely.clear_wifi_ssid
-.LCOLDE8:
-	.section	.text.clear_wifi_ssid
-.LHOTE8:
 	.section	.text.unlikely.def_smart_config_stop,"ax",@progbits
-.LCOLDB9:
+.LCOLDB7:
 	.section	.text.def_smart_config_stop,"ax",@progbits
-.LHOTB9:
+.LHOTB7:
 	.type	def_smart_config_stop, @function
 def_smart_config_stop:
-.LFB55:
+.LFB61:
 	.loc 1 716 0
 	.cfi_startproc
 	pushl	%ebp
@@ -359,7 +280,7 @@ def_smart_config_stop:
 	pushl	$5
 	pushl	$2
 	call	aos_post_event
-.LVL17:
+.LVL15:
 	.loc 1 719 0
 	addl	$16, %esp
 	leave
@@ -367,29 +288,29 @@ def_smart_config_stop:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE55:
+.LFE61:
 	.size	def_smart_config_stop, .-def_smart_config_stop
 	.section	.text.unlikely.def_smart_config_stop
-.LCOLDE9:
+.LCOLDE7:
 	.section	.text.def_smart_config_stop
-.LHOTE9:
+.LHOTE7:
 	.section	.rodata.str1.1
-.LC10:
+.LC8:
 	.string	"Got ip : %s, gw : %s, mask : %s"
-.LC11:
+.LC9:
 	.string	"[%06d]<I> "
-.LC12:
+.LC10:
 	.string	"\r\n"
 	.section	.text.unlikely.netmgr_ip_got_event,"ax",@progbits
-.LCOLDB13:
+.LCOLDB11:
 	.section	.text.netmgr_ip_got_event,"ax",@progbits
-.LHOTB13:
+.LHOTB11:
 	.type	netmgr_ip_got_event, @function
 netmgr_ip_got_event:
-.LFB22:
+.LFB28:
 	.loc 1 139 0
 	.cfi_startproc
-.LVL18:
+.LVL16:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -410,62 +331,62 @@ netmgr_ip_got_event:
 	.loc 1 140 0
 	testb	$8, aos_log_level
 	leal	1(%eax), %ebx
-	je	.L27
+	je	.L25
 	.loc 1 140 0 is_stmt 0 discriminator 1
 	leal	33(%eax), %esi
 	leal	17(%eax), %edi
 	call	aos_now_ms
-.LVL19:
+.LVL17:
 	pushl	%edx
 	pushl	%edx
 	pushl	%esi
 	pushl	%edi
 	pushl	%ebx
-	pushl	$.LC10
+	pushl	$.LC8
 	pushl	%eax
-	pushl	$.LC11
+	pushl	$.LC9
 	call	csp_printf
-.LVL20:
+.LVL18:
 	addl	$32, %esp
 	pushl	%esi
 	pushl	%edi
 	pushl	%ebx
-	pushl	$.LC10
+	pushl	$.LC8
 	call	csp_printf
-.LVL21:
-	movl	$.LC12, (%esp)
+.LVL19:
+	movl	$.LC10, (%esp)
 	call	csp_printf
-.LVL22:
+.LVL20:
 	addl	$16, %esp
-.L27:
-.LBB40:
-.LBB41:
+.L25:
+.LBB42:
+.LBB43:
 	.loc 1 222 0 is_stmt 1
 	call	aos_now
-.LVL23:
+.LVL21:
 	.loc 1 229 0
-	cmpb	$0, rand_flag.6389
-	jne	.L28
+	cmpb	$0, rand_flag.6400
+	jne	.L26
 	.loc 1 242 0
 	subl	$12, %esp
 	pushl	%eax
 	call	srand
-.LVL24:
+.LVL22:
 	.loc 1 243 0
 	call	tcp_init
-.LVL25:
+.LVL23:
 	.loc 1 244 0
 	call	udp_init
-.LVL26:
+.LVL24:
 	.loc 1 252 0
-	movb	$1, rand_flag.6389
+	movb	$1, rand_flag.6400
 	addl	$16, %esp
-.L28:
-.LVL27:
-.LBE41:
-.LBE40:
-.LBB42:
-.LBB43:
+.L26:
+.LVL25:
+.LBE43:
+.LBE42:
+.LBB44:
+.LBB45:
 	.loc 1 128 0
 	pushl	%eax
 	pushl	%eax
@@ -480,15 +401,15 @@ netmgr_ip_got_event:
 	pushl	$.LC5
 	pushl	%ebx
 	call	sscanf
-.LVL28:
+.LVL26:
 	movl	-32(%ebp), %edx
 	movl	-36(%ebp), %eax
-.LBE43:
-.LBE42:
+.LBE45:
+.LBE44:
 	.loc 1 148 0
 	addl	$28, %esp
 	pushl	$0
-.LVL29:
+.LVL27:
 	pushl	$4
 	pushl	$2
 	.loc 1 147 0
@@ -496,29 +417,29 @@ netmgr_ip_got_event:
 	sall	$24, %edx
 	sall	$16, %eax
 	orl	%edx, %eax
-.LBB45:
-.LBB44:
+.LBB47:
+.LBB46:
 	.loc 1 132 0
 	movl	-40(%ebp), %edx
 	orl	-44(%ebp), %eax
 	sall	$8, %edx
 	orl	%edx, %eax
-.LVL30:
-.LBE44:
-.LBE45:
+.LVL28:
+.LBE46:
+.LBE47:
 	.loc 1 146 0
 	movl	%eax, g_netmgr_cxt+216
 	.loc 1 148 0
 	call	aos_post_event
-.LVL31:
+.LVL29:
 	.loc 1 150 0
 	addl	$16, %esp
 	movl	-28(%ebp), %eax
 	xorl	%gs:20, %eax
-	je	.L29
+	je	.L27
 	call	__stack_chk_fail
-.LVL32:
-.L29:
+.LVL30:
+.L27:
 	leal	-12(%ebp), %esp
 	popl	%ebx
 	.cfi_restore 3
@@ -531,19 +452,19 @@ netmgr_ip_got_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	netmgr_ip_got_event, .-netmgr_ip_got_event
 	.section	.text.unlikely.netmgr_ip_got_event
-.LCOLDE13:
+.LCOLDE11:
 	.section	.text.netmgr_ip_got_event
-.LHOTE13:
-	.section	.text.unlikely.reconnect_wifi.isra.0,"ax",@progbits
-.LCOLDB14:
-	.section	.text.reconnect_wifi.isra.0,"ax",@progbits
-.LHOTB14:
-	.type	reconnect_wifi.isra.0, @function
-reconnect_wifi.isra.0:
-.LFB57:
+.LHOTE11:
+	.section	.text.unlikely.reconnect_wifi.isra.1,"ax",@progbits
+.LCOLDB12:
+	.section	.text.reconnect_wifi.isra.1,"ax",@progbits
+.LHOTB12:
+	.type	reconnect_wifi.isra.1, @function
+reconnect_wifi.isra.1:
+.LFB64:
 	.loc 1 347 0
 	.cfi_startproc
 	pushl	%ebp
@@ -567,35 +488,35 @@ reconnect_wifi.isra.0:
 	movl	%gs:20, %eax
 	movl	%eax, -28(%ebp)
 	xorl	%eax, %eax
-.LVL33:
+.LVL31:
 	.loc 1 353 0
 	call	hal_wifi_get_default_module
-.LVL34:
+.LVL32:
 	.loc 1 355 0
 	movl	$50, %ecx
 	.loc 1 353 0
 	movl	%eax, %esi
-.LVL35:
+.LVL33:
 	.loc 1 355 0
 	xorl	%eax, %eax
-.LVL36:
+.LVL34:
 	rep stosl
 	.loc 1 358 0
 	pushl	%eax
 	leal	-227(%ebp), %eax
 	pushl	$32
 	pushl	$g_netmgr_cxt+104
-.LVL37:
+.LVL35:
 	.loc 1 356 0
 	movb	$1, -228(%ebp)
 	.loc 1 358 0
 	pushl	%eax
-.LVL38:
+.LVL36:
 	.loc 1 357 0
 	movb	$1, -65(%ebp)
 	.loc 1 358 0
 	call	strncpy
-.LVL39:
+.LVL37:
 	.loc 1 359 0
 	leal	-194(%ebp), %eax
 	addl	$12, %esp
@@ -603,28 +524,28 @@ reconnect_wifi.isra.0:
 	pushl	$g_netmgr_cxt+143
 	pushl	%eax
 	call	strncpy
-.LVL40:
+.LVL38:
 	.loc 1 360 0
 	popl	%edx
 	popl	%ecx
 	pushl	%ebx
 	pushl	%esi
 	call	hal_wifi_start
-.LVL41:
+.LVL39:
 	addl	$16, %esp
 	.loc 1 361 0
 	movl	-28(%ebp), %eax
 	xorl	%gs:20, %eax
-	je	.L35
+	je	.L33
 	call	__stack_chk_fail
-.LVL42:
-.L35:
+.LVL40:
+.L33:
 	leal	-12(%ebp), %esp
 	popl	%ebx
 	.cfi_restore 3
 	popl	%esi
 	.cfi_restore 6
-.LVL43:
+.LVL41:
 	popl	%edi
 	.cfi_restore 7
 	popl	%ebp
@@ -632,41 +553,41 @@ reconnect_wifi.isra.0:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE57:
-	.size	reconnect_wifi.isra.0, .-reconnect_wifi.isra.0
-	.section	.text.unlikely.reconnect_wifi.isra.0
-.LCOLDE14:
-	.section	.text.reconnect_wifi.isra.0
-.LHOTE14:
+.LFE64:
+	.size	reconnect_wifi.isra.1, .-reconnect_wifi.isra.1
+	.section	.text.unlikely.reconnect_wifi.isra.1
+.LCOLDE12:
+	.section	.text.reconnect_wifi.isra.1
+.LHOTE12:
 	.section	.rodata.str1.1
-.LC15:
+.LC13:
 	.string	"net mgr none config policy"
-.LC16:
+.LC14:
 	.string	"[%06d]<W> "
 	.section	.text.unlikely.netmgr_wifi_config_start,"ax",@progbits
-.LCOLDB17:
+.LCOLDB15:
 	.section	.text.netmgr_wifi_config_start,"ax",@progbits
-.LHOTB17:
+.LHOTB15:
 	.type	netmgr_wifi_config_start, @function
 netmgr_wifi_config_start:
-.LFB39:
+.LFB45:
 	.loc 1 515 0
 	.cfi_startproc
 	.loc 1 516 0
 	movl	g_netmgr_cxt+212, %eax
-.LVL44:
+.LVL42:
 	.loc 1 518 0
 	testl	%eax, %eax
-	je	.L38
+	je	.L36
 	.loc 1 519 0
 	movb	$1, g_netmgr_cxt+221
 	.loc 1 520 0
 	jmp	*8(%eax)
-.LVL45:
-.L38:
+.LVL43:
+.L36:
 	.loc 1 522 0
 	testb	$4, aos_log_level
-	je	.L45
+	je	.L43
 	.loc 1 515 0
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -674,49 +595,49 @@ netmgr_wifi_config_start:
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	subl	$8, %esp
-.LBB52:
-.LBB53:
+.LBB54:
+.LBB55:
 	.loc 1 522 0
 	call	aos_now_ms
-.LVL46:
+.LVL44:
 	pushl	%edx
-	pushl	$.LC15
+	pushl	$.LC13
 	pushl	%eax
-	pushl	$.LC16
+	pushl	$.LC14
+	call	csp_printf
+.LVL45:
+	movl	$.LC13, (%esp)
+	call	csp_printf
+.LVL46:
+	movl	$.LC10, (%esp)
 	call	csp_printf
 .LVL47:
-	movl	$.LC15, (%esp)
-	call	csp_printf
-.LVL48:
-	movl	$.LC12, (%esp)
-	call	csp_printf
-.LVL49:
 	addl	$16, %esp
-.LBE53:
-.LBE52:
+.LBE55:
+.LBE54:
 	.loc 1 525 0
 	leave
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
-.L45:
+.L43:
 	ret
 	.cfi_endproc
-.LFE39:
+.LFE45:
 	.size	netmgr_wifi_config_start, .-netmgr_wifi_config_start
 	.section	.text.unlikely.netmgr_wifi_config_start
-.LCOLDE17:
+.LCOLDE15:
 	.section	.text.netmgr_wifi_config_start
-.LHOTE17:
+.LHOTE15:
 	.section	.text.unlikely.netmgr_stat_chg_event,"ax",@progbits
-.LCOLDB18:
+.LCOLDB16:
 	.section	.text.netmgr_stat_chg_event,"ax",@progbits
-.LHOTB18:
+.LHOTB16:
 	.type	netmgr_stat_chg_event, @function
 netmgr_stat_chg_event:
-.LFB24:
+.LFB30:
 	.loc 1 259 0
 	.cfi_startproc
-.LVL50:
+.LVL48:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -726,34 +647,34 @@ netmgr_stat_chg_event:
 	movl	12(%ebp), %eax
 	.loc 1 260 0
 	cmpl	$1, %eax
-	je	.L48
+	je	.L46
 	cmpl	$2, %eax
-	jne	.L53
+	jne	.L51
 	.loc 1 267 0
 	movb	$0, g_station_is_up
 	.loc 1 268 0
 	movl	$0, 16(%ebp)
-.LVL51:
+.LVL49:
 	movl	$3, 12(%ebp)
-.LVL52:
-	jmp	.L52
-.LVL53:
-.L48:
-.LBB56:
-.LBB57:
+.LVL50:
+	jmp	.L50
+.LVL51:
+.L46:
+.LBB58:
+.LBB59:
 	.loc 1 262 0
 	movb	$1, g_station_is_up
 	.loc 1 263 0
 	movl	$g_netmgr_cxt+104, 16(%ebp)
-.LVL54:
+.LVL52:
 	movl	$2, 12(%ebp)
-.LVL55:
-.L52:
-.LBE57:
-.LBE56:
+.LVL53:
+.L50:
+.LBE59:
+.LBE58:
 	.loc 1 268 0
 	movl	$2, 8(%ebp)
-.LVL56:
+.LVL54:
 	.loc 1 277 0
 	popl	%ebp
 	.cfi_remember_state
@@ -761,8 +682,8 @@ netmgr_stat_chg_event:
 	.cfi_def_cfa 4, 4
 	.loc 1 268 0
 	jmp	aos_post_event
-.LVL57:
-.L53:
+.LVL55:
+.L51:
 	.cfi_restore_state
 	.loc 1 277 0
 	popl	%ebp
@@ -770,31 +691,33 @@ netmgr_stat_chg_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	netmgr_stat_chg_event, .-netmgr_stat_chg_event
 	.section	.text.unlikely.netmgr_stat_chg_event
-.LCOLDE18:
+.LCOLDE16:
 	.section	.text.netmgr_stat_chg_event
-.LHOTE18:
+.LHOTE16:
 	.section	.rodata.str1.1
-.LC19:
+.LC17:
 	.string	"aha"
-.LC20:
+.LC18:
 	.string	"adha"
-.LC21:
+.LC19:
 	.string	"Let's post GOT_IP event."
-.LC22:
+.LC20:
 	.string	"In hotspot/router mode, do not post GOT_IP event here."
+.LC21:
+	.string	"wifi"
 	.section	.text.unlikely.netmgr_events_executor,"ax",@progbits
-.LCOLDB23:
+.LCOLDB22:
 	.section	.text.netmgr_events_executor,"ax",@progbits
-.LHOTB23:
+.LHOTB22:
 	.type	netmgr_events_executor, @function
 netmgr_events_executor:
-.LFB36:
+.LFB42:
 	.loc 1 452 0
 	.cfi_startproc
-.LVL58:
+.LVL56:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -812,92 +735,92 @@ netmgr_events_executor:
 	xorl	%edx, %edx
 	.loc 1 453 0
 	cmpw	$2, 4(%eax)
-	jne	.L54
+	jne	.L52
 	.loc 1 457 0
 	movw	6(%eax), %ax
 	decl	%eax
 	cmpw	$4, %ax
-	ja	.L54
+	ja	.L52
 	movzwl	%ax, %eax
-	jmp	*.L57(,%eax,4)
+	jmp	*.L55(,%eax,4)
 	.section	.rodata.netmgr_events_executor,"a",@progbits
 	.align 4
 	.align 4
-.L57:
+.L55:
+	.long	.L54
 	.long	.L56
+	.long	.L57
 	.long	.L58
 	.long	.L59
-	.long	.L60
-	.long	.L61
 	.section	.text.netmgr_events_executor
-.L58:
+.L56:
 	.loc 1 459 0
 	cmpb	$0, g_station_is_up
-	je	.L54
+	je	.L52
 	.loc 1 460 0
 	movb	$0, g_netmgr_cxt+220
-	jmp	.L54
-.L59:
+	jmp	.L52
+.L57:
 	.loc 1 464 0
 	cmpb	$0, g_station_is_up
-	jne	.L54
-.LBB68:
-.LBB69:
-	.loc 1 437 0
-	incb	g_netmgr_cxt+220
-.LBE69:
-.LBE68:
-	.loc 1 466 0
-	movb	$0, g_netmgr_cxt+222
-	jmp	.L54
-.L60:
-.LVL59:
+	jne	.L52
 .LBB70:
 .LBB71:
+	.loc 1 437 0
+	incb	g_netmgr_cxt+220
+.LBE71:
+.LBE70:
+	.loc 1 466 0
+	movb	$0, g_netmgr_cxt+222
+	jmp	.L52
+.L58:
+.LVL57:
+.LBB72:
+.LBB73:
 	.loc 1 470 0
 	cmpb	$0, g_netmgr_cxt+221
-	je	.L62
+	je	.L60
 	.loc 1 471 0
 	pushl	%eax
 	pushl	%eax
-	pushl	$.LC19
+	pushl	$.LC17
 	pushl	$g_netmgr_cxt+104
 	call	strcmp
-.LVL60:
+.LVL58:
 	addl	$16, %esp
 	testl	%eax, %eax
 	movl	aos_log_level, %ebx
-	je	.L63
+	je	.L61
 	.loc 1 472 0
 	pushl	%edi
 	pushl	%edi
-	pushl	$.LC20
+	pushl	$.LC18
 	pushl	$g_netmgr_cxt+104
 	call	strcmp
-.LVL61:
+.LVL59:
 	addl	$16, %esp
 	.loc 1 471 0
 	testl	%eax, %eax
-	je	.L63
+	je	.L61
 	.loc 1 473 0
 	andb	$8, %bl
-	je	.L64
+	je	.L62
 	call	aos_now_ms
-.LVL62:
+.LVL60:
 	pushl	%ebx
-	pushl	$.LC21
+	pushl	$.LC19
 	pushl	%eax
-	pushl	$.LC11
+	pushl	$.LC9
+	call	csp_printf
+.LVL61:
+	movl	$.LC19, (%esp)
+	call	csp_printf
+.LVL62:
+	movl	$.LC10, (%esp)
 	call	csp_printf
 .LVL63:
-	movl	$.LC21, (%esp)
-	call	csp_printf
-.LVL64:
-	movl	$.LC12, (%esp)
-	call	csp_printf
-.LVL65:
 	addl	$16, %esp
-.L64:
+.L62:
 	.loc 1 474 0
 	movl	g_netmgr_cxt+212, %eax
 	pushl	%ecx
@@ -905,76 +828,76 @@ netmgr_events_executor:
 	pushl	g_netmgr_cxt+216
 	pushl	$0
 	call	*16(%eax)
-.LVL66:
+.LVL64:
 	.loc 1 476 0
 	movl	g_netmgr_cxt+212, %eax
 	call	*12(%eax)
-.LVL67:
-	jmp	.L90
-.L63:
+.LVL65:
+	jmp	.L88
+.L61:
 	.loc 1 478 0
 	andb	$8, %bl
-	je	.L54
+	je	.L52
 	call	aos_now_ms
-.LVL68:
+.LVL66:
 	pushl	%edx
-	pushl	$.LC22
+	pushl	$.LC20
 	pushl	%eax
-	pushl	$.LC11
+	pushl	$.LC9
+	call	csp_printf
+.LVL67:
+	movl	$.LC20, (%esp)
+	call	csp_printf
+.LVL68:
+	movl	$.LC10, (%esp)
 	call	csp_printf
 .LVL69:
-	movl	$.LC22, (%esp)
-	call	csp_printf
-.LVL70:
-	movl	$.LC12, (%esp)
-	call	csp_printf
-.LVL71:
-	jmp	.L90
-.L62:
+	jmp	.L88
+.L60:
 	.loc 1 481 0
 	pushl	%eax
 	pushl	$g_netmgr_cxt+216
 	pushl	$5
 	pushl	$2
 	call	aos_post_event
-.LVL72:
-.L90:
+.LVL70:
+.L88:
 	addl	$16, %esp
-	jmp	.L54
-.LVL73:
-.L61:
-.LBE71:
-.LBE70:
+	jmp	.L52
+.LVL71:
+.L59:
+.LBE73:
+.LBE72:
 	.loc 1 486 0
 	cmpb	$0, g_netmgr_cxt+221
-	je	.L65
+	je	.L63
 	.loc 1 487 0
 	movb	$0, g_netmgr_cxt+221
-.L65:
-.LVL74:
-.LBB72:
-.LBB73:
+.L63:
+.LVL72:
+.LBB74:
+.LBB75:
 	.loc 1 404 0
 	pushl	%edi
 	pushl	%edi
-	pushl	$.LC19
+	pushl	$.LC17
 	pushl	$g_netmgr_cxt+104
 	call	strcmp
-.LVL75:
+.LVL73:
 	addl	$16, %esp
 	testl	%eax, %eax
-	je	.L54
+	je	.L52
 	.loc 1 405 0
 	pushl	%ebx
 	pushl	%ebx
-	pushl	$.LC20
+	pushl	$.LC18
 	pushl	$g_netmgr_cxt+104
 	call	strcmp
-.LVL76:
+.LVL74:
 	addl	$16, %esp
 	.loc 1 404 0
 	testl	%eax, %eax
-	je	.L54
+	je	.L52
 	.loc 1 410 0
 	leal	-120(%ebp), %eax
 	leal	-116(%ebp), %ebx
@@ -984,23 +907,23 @@ netmgr_events_executor:
 	.loc 1 410 0
 	pushl	%eax
 	pushl	%ebx
-	pushl	$.LC7
+	pushl	$.LC21
 	call	aos_kv_get
-.LVL77:
+.LVL75:
 	.loc 1 413 0
 	addl	$16, %esp
 	testl	%eax, %eax
-	jne	.L69
+	jne	.L67
 	pushl	%edx
 	pushl	$104
 	pushl	$g_netmgr_cxt+104
 	pushl	%ebx
 	call	memcmp
-.LVL78:
+.LVL76:
 	addl	$16, %esp
 	testl	%eax, %eax
-	je	.L54
-.L69:
+	je	.L52
+.L67:
 	.loc 1 417 0
 	movl	$g_netmgr_cxt, %edx
 	xorl	%eax, %eax
@@ -1013,48 +936,48 @@ netmgr_events_executor:
 	pushl	$g_netmgr_cxt+104
 	pushl	%edx
 	call	strncpy
-.LVL79:
+.LVL77:
 	.loc 1 422 0
 	addl	$12, %esp
 	pushl	$64
 	pushl	$g_netmgr_cxt+143
 	pushl	$g_netmgr_cxt+39
 	call	strncpy
-.LVL80:
+.LVL78:
 	.loc 1 425 0
 	movl	g_netmgr_cxt+137, %eax
 	.loc 1 429 0
 	pushl	$1
 	pushl	$104
 	pushl	$g_netmgr_cxt
-	pushl	$.LC7
+	pushl	$.LC21
 	.loc 1 425 0
 	movl	%eax, g_netmgr_cxt+33
 	movw	g_netmgr_cxt+141, %ax
 	movw	%ax, g_netmgr_cxt+37
 	.loc 1 429 0
 	call	aos_kv_set
-.LVL81:
+.LVL79:
 	addl	$32, %esp
-	jmp	.L54
-.L56:
-.LBE73:
-.LBE72:
+	jmp	.L52
+.L54:
+.LBE75:
+.LBE74:
 	.loc 1 492 0
 	movb	$0, g_netmgr_cxt+220
 	.loc 1 493 0
 	movb	$0, g_netmgr_cxt+222
 	.loc 1 496 0
-	call	reconnect_wifi.isra.0
-.LVL82:
-.L54:
+	call	reconnect_wifi.isra.1
+.LVL80:
+.L52:
 	.loc 1 501 0
 	movl	-12(%ebp), %eax
 	xorl	%gs:20, %eax
-	je	.L70
+	je	.L68
 	call	__stack_chk_fail
-.LVL83:
-.L70:
+.LVL81:
+.L68:
 	leal	-8(%ebp), %esp
 	popl	%ebx
 	.cfi_restore 3
@@ -1065,22 +988,22 @@ netmgr_events_executor:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE36:
+.LFE42:
 	.size	netmgr_events_executor, .-netmgr_events_executor
 	.section	.text.unlikely.netmgr_events_executor
-.LCOLDE23:
+.LCOLDE22:
 	.section	.text.netmgr_events_executor
-.LHOTE23:
+.LHOTE22:
 	.section	.text.unlikely.netmgr_scan_completed_event,"ax",@progbits
-.LCOLDB24:
+.LCOLDB23:
 	.section	.text.netmgr_scan_completed_event,"ax",@progbits
-.LHOTB24:
+.LHOTB23:
 	.type	netmgr_scan_completed_event, @function
 netmgr_scan_completed_event:
-.LFB26:
+.LFB32:
 	.loc 1 287 0
 	.cfi_startproc
-.LVL84:
+.LVL82:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -1097,7 +1020,7 @@ netmgr_scan_completed_event:
 	movl	12(%ebp), %eax
 	.loc 1 288 0
 	movl	g_netmgr_cxt+224, %edx
-.LVL85:
+.LVL83:
 	.loc 1 287 0
 	movl	%eax, -44(%ebp)
 	movl	%gs:20, %eax
@@ -1105,25 +1028,25 @@ netmgr_scan_completed_event:
 	xorl	%eax, %eax
 	.loc 1 292 0
 	testl	%edx, %edx
-	je	.L91
+	je	.L89
 	xorl	%esi, %esi
 	xorl	%ebx, %ebx
-.LVL86:
-.L93:
+.LVL84:
+.L91:
 	.loc 1 293 0 discriminator 1
 	movl	-44(%ebp), %eax
 	movsbl	(%eax), %eax
 	cmpl	%eax, %ebx
-	jge	.L101
+	jge	.L99
 	.loc 1 295 0
 	decl	%eax
-.LBB76:
-.LBB77:
+.LBB78:
+.LBB79:
 	.loc 1 281 0
 	leal	-34(%ebp), %edi
 	movl	$6, %ecx
-.LBE77:
-.LBE76:
+.LBE79:
+.LBE78:
 	.loc 1 296 0
 	cmpl	%eax, %ebx
 	movl	$1, %eax
@@ -1131,15 +1054,15 @@ netmgr_scan_completed_event:
 	movl	%edx, -48(%ebp)
 	.loc 1 296 0
 	cmove	%eax, %esi
-.LVL87:
-.LBB79:
-.LBB78:
+.LVL85:
+.LBB81:
+.LBB80:
 	.loc 1 281 0
 	xorl	%eax, %eax
 	rep stosb
-.LVL88:
-.LBE78:
-.LBE79:
+.LVL86:
+.LBE80:
+.LBE81:
 	.loc 1 299 0
 	movl	-44(%ebp), %ecx
 	pushl	%eax
@@ -1154,27 +1077,27 @@ netmgr_scan_completed_event:
 	addl	4(%ecx), %eax
 	.loc 1 293 0
 	incl	%ebx
-.LVL89:
+.LVL87:
 	.loc 1 299 0
 	pushl	%eax
 	call	*%edx
-.LVL90:
+.LVL88:
 	.loc 1 293 0
 	addl	$32, %esp
 	movl	-48(%ebp), %edx
-	jmp	.L93
-.L101:
+	jmp	.L91
+.L99:
 	.loc 1 302 0
 	movb	$1, g_netmgr_cxt+228
-.LVL91:
-.L91:
+.LVL89:
+.L89:
 	.loc 1 304 0
 	movl	-28(%ebp), %eax
 	xorl	%gs:20, %eax
-	je	.L96
+	je	.L94
 	call	__stack_chk_fail
-.LVL92:
-.L96:
+.LVL90:
+.L94:
 	leal	-12(%ebp), %esp
 	popl	%ebx
 	.cfi_restore 3
@@ -1187,20 +1110,20 @@ netmgr_scan_completed_event:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	netmgr_scan_completed_event, .-netmgr_scan_completed_event
 	.section	.text.unlikely.netmgr_scan_completed_event
-.LCOLDE24:
+.LCOLDE23:
 	.section	.text.netmgr_scan_completed_event
-.LHOTE24:
+.LHOTE23:
 	.section	.text.unlikely.netmgr_reconnect_wifi,"ax",@progbits
-.LCOLDB25:
+.LCOLDB24:
 	.section	.text.netmgr_reconnect_wifi,"ax",@progbits
-.LHOTB25:
+.LHOTB24:
 	.globl	netmgr_reconnect_wifi
 	.type	netmgr_reconnect_wifi, @function
 netmgr_reconnect_wifi:
-.LFB31:
+.LFB37:
 	.loc 1 364 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1216,26 +1139,26 @@ netmgr_reconnect_wifi:
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	.loc 1 366 0
-	jmp	reconnect_wifi.isra.0
-.LVL93:
+	jmp	reconnect_wifi.isra.1
+.LVL91:
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	netmgr_reconnect_wifi, .-netmgr_reconnect_wifi
 	.section	.text.unlikely.netmgr_reconnect_wifi
-.LCOLDE25:
+.LCOLDE24:
 	.section	.text.netmgr_reconnect_wifi
-.LHOTE25:
+.LHOTE24:
 	.section	.text.unlikely.wifi_get_ip,"ax",@progbits
-.LCOLDB26:
+.LCOLDB25:
 	.section	.text.wifi_get_ip,"ax",@progbits
-.LHOTB26:
+.LHOTB25:
 	.globl	wifi_get_ip
 	.type	wifi_get_ip, @function
 wifi_get_ip:
-.LFB37:
+.LFB43:
 	.loc 1 504 0
 	.cfi_startproc
-.LVL94:
+.LVL92:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -1252,25 +1175,25 @@ wifi_get_ip:
 	.cfi_def_cfa 4, 4
 	.loc 1 505 0
 	jmp	format_ip
-.LVL95:
+.LVL93:
 	.cfi_endproc
-.LFE37:
+.LFE43:
 	.size	wifi_get_ip, .-wifi_get_ip
 	.section	.text.unlikely.wifi_get_ip
-.LCOLDE26:
+.LCOLDE25:
 	.section	.text.wifi_get_ip
-.LHOTE26:
+.LHOTE25:
 	.section	.text.unlikely.netmgr_register_wifi_scan_result_callback,"ax",@progbits
-.LCOLDB27:
+.LCOLDB26:
 	.section	.text.netmgr_register_wifi_scan_result_callback,"ax",@progbits
-.LHOTB27:
+.LHOTB26:
 	.globl	netmgr_register_wifi_scan_result_callback
 	.type	netmgr_register_wifi_scan_result_callback, @function
 netmgr_register_wifi_scan_result_callback:
-.LFB38:
+.LFB44:
 	.loc 1 509 0
 	.cfi_startproc
-.LVL96:
+.LVL94:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -1290,33 +1213,33 @@ netmgr_register_wifi_scan_result_callback:
 	.loc 1 512 0
 	ret
 	.cfi_endproc
-.LFE38:
+.LFE44:
 	.size	netmgr_register_wifi_scan_result_callback, .-netmgr_register_wifi_scan_result_callback
 	.section	.text.unlikely.netmgr_register_wifi_scan_result_callback
-.LCOLDE27:
+.LCOLDE26:
 	.section	.text.netmgr_register_wifi_scan_result_callback
-.LHOTE27:
+.LHOTE26:
 	.section	.text.unlikely.netmgr_get_ap_config,"ax",@progbits
-.LCOLDB28:
+.LCOLDB27:
 	.section	.text.netmgr_get_ap_config,"ax",@progbits
-.LHOTB28:
+.LHOTB27:
 	.globl	netmgr_get_ap_config
 	.type	netmgr_get_ap_config, @function
 netmgr_get_ap_config:
-.LFB42:
+.LFB48:
 	.loc 1 545 0
 	.cfi_startproc
-.LVL97:
+.LVL95:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
-.LBB82:
-.LBB83:
+.LBB84:
+.LBB85:
 	.loc 1 529 0
 	xorl	%eax, %eax
 	orl	$-1, %ecx
-.LBE83:
-.LBE82:
+.LBE85:
+.LBE84:
 	.loc 1 545 0
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
@@ -1324,41 +1247,41 @@ netmgr_get_ap_config:
 	pushl	%ebx
 	.cfi_offset 7, -12
 	.cfi_offset 3, -16
-.LBB87:
-.LBB84:
-	.loc 1 529 0
-	movl	$g_netmgr_cxt+104, %edi
-.LBE84:
-.LBE87:
-	.loc 1 545 0
-	movl	8(%ebp), %ebx
-.LBB88:
-.LBB85:
-	.loc 1 529 0
-	repnz scasb
-.LBE85:
-.LBE88:
-	.loc 1 547 0
-	orl	$-1, %eax
 .LBB89:
 .LBB86:
 	.loc 1 529 0
-	notl	%ecx
-	decl	%ecx
-.LVL98:
-	.loc 1 531 0
-	testl	%ecx, %ecx
-	jle	.L111
-.LVL99:
+	movl	$g_netmgr_cxt+104, %edi
 .LBE86:
 .LBE89:
+	.loc 1 545 0
+	movl	8(%ebp), %ebx
+.LBB90:
+.LBB87:
+	.loc 1 529 0
+	repnz scasb
+.LBE87:
+.LBE90:
+	.loc 1 547 0
+	orl	$-1, %eax
+.LBB91:
+.LBB88:
+	.loc 1 529 0
+	notl	%ecx
+	decl	%ecx
+.LVL96:
+	.loc 1 531 0
+	testl	%ecx, %ecx
+	jle	.L109
+.LVL97:
+.LBE88:
+.LBE91:
 	.loc 1 550 0
 	pushl	%eax
 	pushl	$32
 	pushl	$g_netmgr_cxt+104
 	pushl	%ebx
 	call	strncpy
-.LVL100:
+.LVL98:
 	.loc 1 551 0
 	leal	39(%ebx), %eax
 	addl	$12, %esp
@@ -1366,7 +1289,7 @@ netmgr_get_ap_config:
 	pushl	$g_netmgr_cxt+143
 	pushl	%eax
 	call	strncpy
-.LVL101:
+.LVL99:
 	.loc 1 552 0
 	movl	g_netmgr_cxt+137, %eax
 	.loc 1 554 0
@@ -1377,7 +1300,7 @@ netmgr_get_ap_config:
 	movw	%ax, 37(%ebx)
 	.loc 1 554 0
 	xorl	%eax, %eax
-.L111:
+.L109:
 	.loc 1 555 0
 	leal	-8(%ebp), %esp
 	popl	%ebx
@@ -1389,52 +1312,113 @@ netmgr_get_ap_config:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	netmgr_get_ap_config, .-netmgr_get_ap_config
 	.section	.text.unlikely.netmgr_get_ap_config
-.LCOLDE28:
+.LCOLDE27:
 	.section	.text.netmgr_get_ap_config
-.LHOTE28:
+.LHOTE27:
 	.section	.text.unlikely.netmgr_clear_ap_config,"ax",@progbits
-.LCOLDB29:
+.LCOLDB28:
 	.section	.text.netmgr_clear_ap_config,"ax",@progbits
-.LHOTB29:
+.LHOTB28:
 	.globl	netmgr_clear_ap_config
 	.type	netmgr_clear_ap_config, @function
 netmgr_clear_ap_config:
-.LFB43:
+.LFB49:
 	.loc 1 558 0
 	.cfi_startproc
+.LVL100:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
+.LBB94:
+.LBB95:
+	.loc 1 388 0
+	movl	$33, %edx
+	xorl	%eax, %eax
+	movl	%edx, %ecx
+.LBE95:
+.LBE94:
+	.loc 1 558 0
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
+	pushl	%edi
+	pushl	%esi
+	pushl	%ebx
+	.cfi_offset 7, -12
+	.cfi_offset 6, -16
+	.cfi_offset 3, -20
+.LBB98:
+.LBB96:
+	.loc 1 388 0
+	movl	$g_netmgr_cxt+104, %ebx
+	movl	%ebx, %edi
+	.loc 1 389 0
+	movl	$g_netmgr_cxt+143, %ebx
+.LBE96:
+.LBE98:
+	.loc 1 558 0
+	subl	$24, %esp
+.LBB99:
+.LBB97:
+	.loc 1 388 0
+	rep stosb
+	movl	%ecx, %edx
+	movl	%edi, %esi
+	.loc 1 389 0
+	movl	$65, %ecx
+	movl	%ebx, %edi
+	.loc 1 392 0
+	movl	$g_netmgr_cxt, %ebx
+	.loc 1 389 0
+	rep stosb
+	.loc 1 390 0
+	movl	%esi, %edi
+	movl	$6, %ecx
+	rep stosb
+	.loc 1 392 0
+	movl	%ebx, %edi
+	movl	%edx, %eax
+	movl	$26, %ecx
+	rep stosl
+	.loc 1 393 0
+	pushl	$.LC21
+	call	aos_kv_del
+.LVL101:
+.LBE97:
+.LBE99:
 	.loc 1 560 0
+	addl	$16, %esp
+	leal	-12(%ebp), %esp
+	popl	%ebx
+	.cfi_restore 3
+	popl	%esi
+	.cfi_restore 6
+	popl	%edi
+	.cfi_restore 7
 	popl	%ebp
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
-	.loc 1 559 0
-	jmp	clear_wifi_ssid
-.LVL102:
+	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	netmgr_clear_ap_config, .-netmgr_clear_ap_config
 	.section	.text.unlikely.netmgr_clear_ap_config
-.LCOLDE29:
+.LCOLDE28:
 	.section	.text.netmgr_clear_ap_config
-.LHOTE29:
+.LHOTE28:
 	.section	.text.unlikely.netmgr_set_ap_config,"ax",@progbits
-.LCOLDB30:
+.LCOLDB29:
 	.section	.text.netmgr_set_ap_config,"ax",@progbits
-.LHOTB30:
+.LHOTB29:
 	.globl	netmgr_set_ap_config
 	.type	netmgr_set_ap_config, @function
 netmgr_set_ap_config:
-.LFB44:
+.LFB50:
 	.loc 1 563 0
 	.cfi_startproc
-.LVL103:
+.LVL102:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -1450,7 +1434,7 @@ netmgr_set_ap_config:
 	pushl	%ebx
 	pushl	$g_netmgr_cxt+104
 	call	strncpy
-.LVL104:
+.LVL103:
 	.loc 1 568 0
 	leal	39(%ebx), %eax
 	addl	$12, %esp
@@ -1458,7 +1442,7 @@ netmgr_set_ap_config:
 	pushl	%eax
 	pushl	$g_netmgr_cxt+143
 	call	strncpy
-.LVL105:
+.LVL104:
 	.loc 1 570 0
 	movl	33(%ebx), %eax
 	movl	%eax, g_netmgr_cxt+137
@@ -1475,24 +1459,24 @@ netmgr_set_ap_config:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	netmgr_set_ap_config, .-netmgr_set_ap_config
 	.section	.text.unlikely.netmgr_set_ap_config
-.LCOLDE30:
+.LCOLDE29:
 	.section	.text.netmgr_set_ap_config
-.LHOTE30:
+.LHOTE29:
 	.section	.rodata.str1.1
-.LC31:
+.LC30:
 	.string	"cisco-15A7"
-.LC32:
+.LC31:
 	.string	"12345678"
 	.section	.text.unlikely.def_smart_config_start,"ax",@progbits
-.LCOLDB33:
+.LCOLDB32:
 	.section	.text.def_smart_config_start,"ax",@progbits
-.LHOTB33:
+.LHOTB32:
 	.type	def_smart_config_start, @function
 def_smart_config_start:
-.LFB54:
+.LFB60:
 	.loc 1 705 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1508,7 +1492,7 @@ def_smart_config_start:
 	subl	$120, %esp
 	.loc 1 708 0
 	pushl	$32
-	pushl	$.LC31
+	pushl	$.LC30
 	pushl	%ebx
 	.loc 1 705 0
 	movl	%gs:20, %eax
@@ -1516,33 +1500,33 @@ def_smart_config_start:
 	xorl	%eax, %eax
 	.loc 1 708 0
 	call	strncpy
-.LVL106:
+.LVL105:
 	.loc 1 709 0
 	leal	-77(%ebp), %eax
 	addl	$12, %esp
 	pushl	$64
-	pushl	$.LC32
+	pushl	$.LC31
 	pushl	%eax
 	call	strncpy
-.LVL107:
+.LVL106:
 	.loc 1 710 0
 	movl	%ebx, (%esp)
 	call	netmgr_set_ap_config
-.LVL108:
+.LVL107:
 	.loc 1 711 0
 	addl	$12, %esp
 	pushl	$0
 	pushl	$1
 	pushl	$2
 	call	aos_post_event
-.LVL109:
+.LVL108:
 	.loc 1 713 0
 	movl	-12(%ebp), %edx
 	xorl	%gs:20, %edx
-	je	.L118
+	je	.L116
 	call	__stack_chk_fail
-.LVL110:
-.L118:
+.LVL109:
+.L116:
 	xorl	%eax, %eax
 	movl	-4(%ebp), %ebx
 	leave
@@ -1551,69 +1535,69 @@ def_smart_config_start:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE54:
+.LFE60:
 	.size	def_smart_config_start, .-def_smart_config_start
 	.section	.text.unlikely.def_smart_config_start
-.LCOLDE33:
+.LCOLDE32:
 	.section	.text.def_smart_config_start
-.LHOTE33:
+.LHOTE32:
 	.section	.text.unlikely.netmgr_set_smart_config,"ax",@progbits
-.LCOLDB34:
+.LCOLDB33:
 	.section	.text.netmgr_set_smart_config,"ax",@progbits
-.LHOTB34:
+.LHOTB33:
 	.globl	netmgr_set_smart_config
 	.type	netmgr_set_smart_config, @function
 netmgr_set_smart_config:
-.LFB45:
+.LFB51:
 	.loc 1 577 0
 	.cfi_startproc
-.LVL111:
+.LVL110:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
-.LBB92:
-.LBB93:
+.LBB102:
+.LBB103:
 	.loc 1 540 0
 	movl	g_netmgr_cxt+212, %edx
-.LBE93:
-.LBE92:
+.LBE103:
+.LBE102:
 	.loc 1 577 0
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	.loc 1 577 0
 	movl	8(%ebp), %eax
-.LVL112:
-.LBB95:
-.LBB94:
+.LVL111:
+.LBB105:
+.LBB104:
 	.loc 1 540 0
 	movl	%edx, (%eax)
 	.loc 1 541 0
 	movl	%eax, g_netmgr_cxt+212
-.LVL113:
-.LBE94:
-.LBE95:
+.LVL112:
+.LBE104:
+.LBE105:
 	.loc 1 580 0
 	popl	%ebp
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	.loc 1 579 0
 	jmp	netmgr_wifi_config_start
-.LVL114:
+.LVL113:
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	netmgr_set_smart_config, .-netmgr_set_smart_config
 	.section	.text.unlikely.netmgr_set_smart_config
-.LCOLDE34:
+.LCOLDE33:
 	.section	.text.netmgr_set_smart_config
-.LHOTE34:
+.LHOTE33:
 	.section	.text.unlikely.netmgr_init,"ax",@progbits
-.LCOLDB35:
+.LCOLDB34:
 	.section	.text.netmgr_init,"ax",@progbits
-.LHOTB35:
+.LHOTB34:
 	.globl	netmgr_init
 	.type	netmgr_init, @function
 netmgr_init:
-.LFB48:
+.LFB54:
 	.loc 1 623 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1642,48 +1626,44 @@ netmgr_init:
 	xorl	%eax, %eax
 	.loc 1 626 0
 	call	aos_register_event_filter
-.LVL115:
-	.loc 1 627 0
-	movl	$ncmd, (%esp)
-	call	aos_cli_register_command
-.LVL116:
+.LVL114:
 	.loc 1 629 0
 	call	hal_wifi_get_default_module
-.LVL117:
+.LVL115:
 	.loc 1 630 0
 	movl	$58, %ecx
 	.loc 1 629 0
 	movl	%eax, %edx
-.LVL118:
+.LVL116:
 	.loc 1 630 0
 	xorl	%eax, %eax
-.LVL119:
+.LVL117:
 	rep stosl
-.LBB102:
-.LBB103:
+.LBB112:
+.LBB113:
 	.loc 1 540 0
 	movl	$0, g_def_smartconfig
-.LBE103:
-.LBE102:
+.LBE113:
+.LBE112:
 	.loc 1 633 0
 	movl	%edx, g_netmgr_cxt+208
-.LVL120:
-.LBB105:
-.LBB104:
+.LVL118:
+.LBB115:
+.LBB114:
 	.loc 1 541 0
 	movl	$g_def_smartconfig, g_netmgr_cxt+212
-.LVL121:
-.LBE104:
-.LBE105:
+.LVL119:
+.LBE114:
+.LBE115:
 	.loc 1 641 0
 	popl	%ecx
 	popl	%esi
 	pushl	$g_wifi_hal_event
 	pushl	%edx
 	call	hal_wifi_install_event
-.LVL122:
-.LBB106:
-.LBB107:
+.LVL120:
+.LBB116:
+.LBB117:
 	.loc 1 588 0
 	leal	-32(%ebp), %eax
 	addl	$12, %esp
@@ -1692,21 +1672,21 @@ netmgr_init:
 	.loc 1 588 0
 	pushl	%eax
 	pushl	%ebx
-	pushl	$.LC7
+	pushl	$.LC21
 	call	aos_kv_get
-.LVL123:
+.LVL121:
 	.loc 1 589 0
 	addl	$16, %esp
 	testl	%eax, %eax
-	js	.L124
-.LBB108:
-.LBB109:
+	js	.L122
+.LBB118:
+.LBB119:
 	.loc 1 371 0
 	movl	$g_netmgr_cxt+104, %edx
 	xorl	%esi, %esi
 	movl	$33, %ecx
 	movl	%esi, %eax
-.LVL124:
+.LVL122:
 	movl	%edx, %edi
 	rep stosb
 	.loc 1 372 0
@@ -1715,7 +1695,7 @@ netmgr_init:
 	pushl	$g_netmgr_cxt
 	pushl	%edx
 	call	strncpy
-.LVL125:
+.LVL123:
 	.loc 1 375 0
 	movl	$g_netmgr_cxt+143, %edx
 	.loc 1 371 0
@@ -1733,30 +1713,30 @@ netmgr_init:
 	pushl	$g_netmgr_cxt+39
 	pushl	%edx
 	call	strncpy
-.LVL126:
+.LVL124:
 	.loc 1 380 0
 	movl	g_netmgr_cxt+33, %eax
-.LBE109:
-.LBE108:
+.LBE119:
+.LBE118:
 	addl	$16, %esp
-.LBB111:
-.LBB110:
+.LBB121:
+.LBB120:
 	movl	%eax, (%ebx)
 	movw	g_netmgr_cxt+37, %ax
 	movw	%ax, 4(%ebx)
-.L124:
-.LBE110:
-.LBE111:
-.LBE107:
-.LBE106:
+.L122:
+.LBE120:
+.LBE121:
+.LBE117:
+.LBE116:
 	.loc 1 649 0
 	xorl	%eax, %eax
 	movl	-28(%ebp), %esi
 	xorl	%gs:20, %esi
-	je	.L125
+	je	.L123
 	call	__stack_chk_fail
-.LVL127:
-.L125:
+.LVL125:
+.L123:
 	leal	-12(%ebp), %esp
 	popl	%ebx
 	.cfi_restore 3
@@ -1769,20 +1749,20 @@ netmgr_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE48:
+.LFE54:
 	.size	netmgr_init, .-netmgr_init
 	.section	.text.unlikely.netmgr_init
-.LCOLDE35:
+.LCOLDE34:
 	.section	.text.netmgr_init
-.LHOTE35:
+.LHOTE34:
 	.section	.text.unlikely.netmgr_deinit,"ax",@progbits
-.LCOLDB36:
+.LCOLDB35:
 	.section	.text.netmgr_deinit,"ax",@progbits
-.LHOTB36:
+.LHOTB35:
 	.globl	netmgr_deinit
 	.type	netmgr_deinit, @function
 netmgr_deinit:
-.LFB49:
+.LFB55:
 	.loc 1 652 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1808,88 +1788,88 @@ netmgr_deinit:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE49:
+.LFE55:
 	.size	netmgr_deinit, .-netmgr_deinit
 	.section	.text.unlikely.netmgr_deinit
-.LCOLDE36:
+.LCOLDE35:
 	.section	.text.netmgr_deinit
-.LHOTE36:
+.LHOTE35:
 	.section	.text.unlikely.netmgr_start,"ax",@progbits
-.LCOLDB37:
+.LCOLDB36:
 	.section	.text.netmgr_start,"ax",@progbits
-.LHOTB37:
+.LHOTB36:
 	.globl	netmgr_start
 	.type	netmgr_start, @function
 netmgr_start:
-.LFB50:
+.LFB56:
 	.loc 1 657 0
 	.cfi_startproc
-.LVL128:
+.LVL126:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
-.LBB116:
-.LBB117:
+.LBB126:
+.LBB127:
 	.loc 1 529 0
 	xorl	%eax, %eax
 	orl	$-1, %ecx
-.LBE117:
-.LBE116:
+.LBE127:
+.LBE126:
 	.loc 1 657 0
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	pushl	%edi
 	pushl	%edx
 	.cfi_offset 7, -12
-.LBB120:
-.LBB118:
+.LBB130:
+.LBB128:
 	.loc 1 529 0
 	movl	$g_netmgr_cxt+104, %edi
-.LBE118:
-.LBE120:
+.LBE128:
+.LBE130:
 	.loc 1 657 0
 	movl	8(%ebp), %edx
-.LBB121:
-.LBB119:
+.LBB131:
+.LBB129:
 	.loc 1 529 0
 	repnz scasb
 	notl	%ecx
 	decl	%ecx
-.LVL129:
+.LVL127:
 	.loc 1 531 0
 	testl	%ecx, %ecx
-	jle	.L138
-.LVL130:
-.LBE119:
-.LBE121:
-.LBB122:
-.LBB123:
+	jle	.L136
+.LVL128:
+.LBE129:
+.LBE131:
+.LBB132:
+.LBB133:
 	.loc 1 661 0
 	pushl	%eax
 	pushl	$0
 	pushl	$1
 	pushl	$2
 	call	aos_post_event
-.LVL131:
+.LVL129:
 	addl	$16, %esp
-.L137:
+.L135:
 	xorl	%eax, %eax
-	jmp	.L135
-.LVL132:
-.L138:
-.LBE123:
-.LBE122:
+	jmp	.L133
+.LVL130:
+.L136:
+.LBE133:
+.LBE132:
 	.loc 1 673 0
 	testb	%dl, %dl
-	je	.L139
+	je	.L137
 	.loc 1 674 0
 	call	netmgr_wifi_config_start
-.LVL133:
-	jmp	.L137
-.L139:
+.LVL131:
+	jmp	.L135
+.L137:
 	.loc 1 679 0
 	orl	$-1, %eax
-.L135:
+.L133:
 	.loc 1 680 0
 	movl	-4(%ebp), %edi
 	leave
@@ -1898,159 +1878,20 @@ netmgr_start:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE50:
+.LFE56:
 	.size	netmgr_start, .-netmgr_start
 	.section	.text.unlikely.netmgr_start
-.LCOLDE37:
+.LCOLDE36:
 	.section	.text.netmgr_start
-.LHOTE37:
-	.section	.rodata.str1.1
-.LC38:
-	.string	""
-.LC39:
-	.string	"clear"
-.LC40:
-	.string	"connect"
-	.section	.text.unlikely.handle_netmgr_cmd,"ax",@progbits
-.LCOLDB41:
-	.section	.text.handle_netmgr_cmd,"ax",@progbits
-.LHOTB41:
-	.type	handle_netmgr_cmd, @function
-handle_netmgr_cmd:
-.LFB47:
-	.loc 1 596 0
-	.cfi_startproc
-.LVL134:
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	pushl	%esi
-	pushl	%ebx
-	.cfi_offset 6, -12
-	.cfi_offset 3, -16
-	movl	$.LC38, %esi
-	subl	$112, %esp
-	.loc 1 596 0
-	movl	20(%ebp), %ebx
-	movl	%gs:20, %eax
-	movl	%eax, -12(%ebp)
-	xorl	%eax, %eax
-	.loc 1 597 0
-	cmpl	$1, 16(%ebp)
-	jle	.L141
-	.loc 1 597 0 is_stmt 0 discriminator 1
-	movl	4(%ebx), %esi
-.L141:
-.LVL135:
-	.loc 1 598 0 is_stmt 1 discriminator 4
-	pushl	%ecx
-	pushl	%ecx
-	pushl	$.LC39
-	pushl	%esi
-	call	strcmp
-.LVL136:
-	addl	$16, %esp
-	testl	%eax, %eax
-	jne	.L142
-.LBB132:
-.LBB133:
-	.loc 1 559 0
-	call	clear_wifi_ssid
-.LVL137:
-	jmp	.L140
-.L142:
-.LBE133:
-.LBE132:
-	.loc 1 600 0
-	pushl	%edx
-	pushl	%edx
-	pushl	$.LC40
-	pushl	%esi
-	call	strcmp
-.LVL138:
-	addl	$16, %esp
-	testl	%eax, %eax
-	jne	.L144
-.LBB134:
-	.loc 1 601 0
-	cmpl	$4, 16(%ebp)
-	jne	.L140
-.LVL139:
-.LBE134:
-.LBB135:
-.LBB136:
-.LBB137:
-	.loc 1 607 0
-	leal	-116(%ebp), %esi
-.LVL140:
-	pushl	%eax
-	pushl	$32
-	pushl	8(%ebx)
-	pushl	%esi
-	call	strncpy
-.LVL141:
-	.loc 1 608 0
-	leal	-77(%ebp), %eax
-	addl	$12, %esp
-	pushl	$64
-	pushl	12(%ebx)
-	pushl	%eax
-	call	strncpy
-.LVL142:
-	.loc 1 609 0
-	movl	%esi, (%esp)
-	call	netmgr_set_ap_config
-.LVL143:
-	.loc 1 610 0
-	movl	$0, (%esp)
-	jmp	.L149
-.LVL144:
-.L144:
-.LBE137:
-.LBE136:
-.LBE135:
-	.loc 1 612 0
-	subl	$12, %esp
-	pushl	$1
-.LVL145:
-.L149:
-	call	netmgr_start
-.LVL146:
-	addl	$16, %esp
-.L140:
-	.loc 1 614 0
-	movl	-12(%ebp), %eax
-	xorl	%gs:20, %eax
-	je	.L145
-	call	__stack_chk_fail
-.LVL147:
-.L145:
-	leal	-8(%ebp), %esp
-	popl	%ebx
-	.cfi_restore 3
-	popl	%esi
-	.cfi_restore 6
-	popl	%ebp
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
-	ret
-	.cfi_endproc
-.LFE47:
-	.size	handle_netmgr_cmd, .-handle_netmgr_cmd
-	.section	.text.unlikely.handle_netmgr_cmd
-.LCOLDE41:
-	.section	.text.handle_netmgr_cmd
-.LHOTE41:
+.LHOTE36:
 	.section	.text.unlikely.netmgr_get_ip_state,"ax",@progbits
-.LCOLDB42:
+.LCOLDB37:
 	.section	.text.netmgr_get_ip_state,"ax",@progbits
-.LHOTB42:
+.LHOTB37:
 	.globl	netmgr_get_ip_state
 	.type	netmgr_get_ip_state, @function
 netmgr_get_ip_state:
-.LFB51:
+.LFB57:
 	.loc 1 683 0
 	.cfi_startproc
 	pushl	%ebp
@@ -2067,20 +1908,20 @@ netmgr_get_ip_state:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE51:
+.LFE57:
 	.size	netmgr_get_ip_state, .-netmgr_get_ip_state
 	.section	.text.unlikely.netmgr_get_ip_state
-.LCOLDE42:
+.LCOLDE37:
 	.section	.text.netmgr_get_ip_state
-.LHOTE42:
+.LHOTE37:
 	.section	.text.unlikely.netmgr_get_scan_cb_finished,"ax",@progbits
-.LCOLDB43:
+.LCOLDB38:
 	.section	.text.netmgr_get_scan_cb_finished,"ax",@progbits
-.LHOTB43:
+.LHOTB38:
 	.globl	netmgr_get_scan_cb_finished
 	.type	netmgr_get_scan_cb_finished, @function
 netmgr_get_scan_cb_finished:
-.LFB52:
+.LFB58:
 	.loc 1 688 0
 	.cfi_startproc
 	pushl	%ebp
@@ -2097,28 +1938,28 @@ netmgr_get_scan_cb_finished:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE52:
+.LFE58:
 	.size	netmgr_get_scan_cb_finished, .-netmgr_get_scan_cb_finished
 	.section	.text.unlikely.netmgr_get_scan_cb_finished
-.LCOLDE43:
+.LCOLDE38:
 	.section	.text.netmgr_get_scan_cb_finished
-.LHOTE43:
+.LHOTE38:
 	.section	.rodata.str1.1
-.LC44:
+.LC39:
 	.string	"Invalid argument in %s"
-.LC45:
+.LC40:
 	.string	"[%06d]<E> "
 	.section	.text.unlikely.netmgr_wifi_get_ip,"ax",@progbits
-.LCOLDB46:
+.LCOLDB41:
 	.section	.text.netmgr_wifi_get_ip,"ax",@progbits
-.LHOTB46:
+.LHOTB41:
 	.globl	netmgr_wifi_get_ip
 	.type	netmgr_wifi_get_ip, @function
 netmgr_wifi_get_ip:
-.LFB53:
+.LFB59:
 	.loc 1 694 0
 	.cfi_startproc
-.LVL148:
+.LVL132:
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -2129,27 +1970,27 @@ netmgr_wifi_get_ip:
 	movl	8(%ebp), %edx
 	.loc 1 695 0
 	testl	%edx, %edx
-	jne	.L155
+	jne	.L143
 	.loc 1 696 0
 	testb	$2, aos_log_level
-	je	.L154
+	je	.L142
 	.loc 1 696 0 is_stmt 0 discriminator 1
 	call	aos_now_ms
-.LVL149:
-	pushl	$__func__.6536
-	pushl	$.LC44
+.LVL133:
+	pushl	$__func__.6547
+	pushl	$.LC39
 	pushl	%eax
-	pushl	$.LC45
+	pushl	$.LC40
 	call	csp_printf
-.LVL150:
+.LVL134:
 	popl	%eax
 	popl	%edx
-	pushl	$__func__.6536
-	pushl	$.LC44
+	pushl	$__func__.6547
+	pushl	$.LC39
 	call	csp_printf
-.LVL151:
+.LVL135:
 	addl	$16, %esp
-	movl	$.LC12, 8(%ebp)
+	movl	$.LC10, 8(%ebp)
 	.loc 1 700 0 is_stmt 1 discriminator 1
 	leave
 	.cfi_remember_state
@@ -2157,8 +1998,8 @@ netmgr_wifi_get_ip:
 	.cfi_def_cfa 4, 4
 	.loc 1 696 0 discriminator 1
 	jmp	csp_printf
-.LVL152:
-.L155:
+.LVL136:
+.L143:
 	.cfi_restore_state
 	.loc 1 698 0
 	movl	g_netmgr_cxt+216, %eax
@@ -2169,8 +2010,8 @@ netmgr_wifi_get_ip:
 	.cfi_def_cfa 4, 4
 	.loc 1 698 0
 	jmp	format_ip
-.LVL153:
-.L154:
+.LVL137:
+.L142:
 	.cfi_restore_state
 	.loc 1 700 0
 	leave
@@ -2178,36 +2019,23 @@ netmgr_wifi_get_ip:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE53:
+.LFE59:
 	.size	netmgr_wifi_get_ip, .-netmgr_wifi_get_ip
 	.section	.text.unlikely.netmgr_wifi_get_ip
-.LCOLDE46:
+.LCOLDE41:
 	.section	.text.netmgr_wifi_get_ip
-.LHOTE46:
-	.section	.rodata.__func__.6536,"a",@progbits
+.LHOTE41:
+	.section	.rodata.__func__.6547,"a",@progbits
 	.align 4
-	.type	__func__.6536, @object
-	.size	__func__.6536, 19
-__func__.6536:
+	.type	__func__.6547, @object
+	.size	__func__.6547, 19
+__func__.6547:
 	.string	"netmgr_wifi_get_ip"
-	.section	.bss.rand_flag.6389,"aw",@nobits
-	.type	rand_flag.6389, @object
-	.size	rand_flag.6389, 1
-rand_flag.6389:
+	.section	.bss.rand_flag.6400,"aw",@nobits
+	.type	rand_flag.6400, @object
+	.size	rand_flag.6400, 1
+rand_flag.6400:
 	.zero	1
-	.section	.rodata.str1.1
-.LC47:
-	.string	"netmgr"
-.LC48:
-	.string	"netmgr [start|clear|connect ssid password]"
-	.section	.data.ncmd,"aw",@progbits
-	.align 4
-	.type	ncmd, @object
-	.size	ncmd, 12
-ncmd:
-	.long	.LC47
-	.long	.LC48
-	.long	handle_netmgr_cmd
 	.section	.rodata.g_wifi_hal_event,"a",@progbits
 	.align 4
 	.type	g_wifi_hal_event, @object
@@ -2226,7 +2054,7 @@ g_wifi_hal_event:
 g_station_is_up:
 	.zero	1
 	.section	.rodata.str1.1
-.LC49:
+.LC42:
 	.string	"def_smartconfig"
 	.section	.data.g_def_smartconfig,"aw",@progbits
 	.align 4
@@ -2234,7 +2062,7 @@ g_station_is_up:
 	.size	g_def_smartconfig, 20
 g_def_smartconfig:
 	.zero	4
-	.long	.LC49
+	.long	.LC42
 	.long	def_smart_config_start
 	.long	def_smart_config_stop
 	.long	def_smart_config_result_cb
@@ -2261,16 +2089,16 @@ g_netmgr_cxt:
 	.file 12 "./kernel/protocols/net/include/lwip/netif.h"
 	.file 13 "./framework/netmgr/include/netmgr.h"
 	.file 14 "/home/stone/Documents/Ali_IOT/build/compiler/gcc-arm-none-eabi/Linux64/arm-none-eabi/include/stdio.h"
-	.file 15 "./include/aos/kv.h"
-	.file 16 "./include/aos/kernel.h"
-	.file 17 "/home/stone/Documents/Ali_IOT/build/compiler/gcc-arm-none-eabi/Linux64/arm-none-eabi/include/stdlib.h"
-	.file 18 "./kernel/protocols/net/include/lwip/priv/tcp_priv.h"
-	.file 19 "./kernel/protocols/net/include/lwip/udp.h"
-	.file 20 "/home/stone/Documents/Ali_IOT/build/compiler/gcc-arm-none-eabi/Linux64/arm-none-eabi/include/string.h"
+	.file 15 "./include/aos/kernel.h"
+	.file 16 "/home/stone/Documents/Ali_IOT/build/compiler/gcc-arm-none-eabi/Linux64/arm-none-eabi/include/stdlib.h"
+	.file 17 "./kernel/protocols/net/include/lwip/priv/tcp_priv.h"
+	.file 18 "./kernel/protocols/net/include/lwip/udp.h"
+	.file 19 "/home/stone/Documents/Ali_IOT/build/compiler/gcc-arm-none-eabi/Linux64/arm-none-eabi/include/string.h"
+	.file 20 "./include/aos/kv.h"
 	.file 21 "./include/aos/log.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x1d0a
+	.long	0x1c20
 	.value	0x4
 	.long	.Ldebug_abbrev0
 	.byte	0x4
@@ -2279,7 +2107,7 @@ g_netmgr_cxt:
 	.byte	0xc
 	.long	.LASF295
 	.long	.LASF296
-	.long	.Ldebug_ranges0+0xc0
+	.long	.Ldebug_ranges0+0xe0
 	.long	0
 	.long	.Ldebug_line0
 	.uleb128 0x2
@@ -2447,40 +2275,45 @@ g_netmgr_cxt:
 	.uleb128 0x8
 	.byte	0x4
 	.long	0x149
+	.uleb128 0x8
+	.byte	0x4
+	.long	0x175
+	.uleb128 0xa
+	.long	0x118
 	.uleb128 0xb
 	.long	.LASF26
 	.byte	0x8
 	.byte	0x5
 	.byte	0x1f
-	.long	0x194
+	.long	0x19f
 	.uleb128 0xc
 	.long	.LASF27
 	.byte	0x5
 	.byte	0x20
-	.long	0x194
+	.long	0x19f
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF28
 	.byte	0x5
 	.byte	0x21
-	.long	0x194
+	.long	0x19f
 	.byte	0x4
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x16f
+	.long	0x17a
 	.uleb128 0x2
 	.long	.LASF29
 	.byte	0x5
 	.byte	0x22
-	.long	0x16f
+	.long	0x17a
 	.uleb128 0xf
 	.long	.LASF169
 	.byte	0x4
 	.long	0x94
 	.byte	0xb
 	.byte	0x12
-	.long	0x1e0
+	.long	0x1eb
 	.uleb128 0x10
 	.long	.LASF30
 	.sleb128 -1
@@ -2507,7 +2340,7 @@ g_netmgr_cxt:
 	.byte	0x10
 	.byte	0x6
 	.byte	0x41
-	.long	0x225
+	.long	0x230
 	.uleb128 0xc
 	.long	.LASF37
 	.byte	0x6
@@ -2543,10 +2376,10 @@ g_netmgr_cxt:
 	.long	.LASF42
 	.byte	0x6
 	.byte	0x4c
-	.long	0x1e0
+	.long	0x1eb
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x225
+	.long	0x230
 	.uleb128 0x3
 	.byte	0x1
 	.byte	0x2
@@ -2563,12 +2396,12 @@ g_netmgr_cxt:
 	.byte	0x14
 	.byte	0x7
 	.byte	0x15
-	.long	0x284
+	.long	0x28f
 	.uleb128 0xc
 	.long	.LASF46
 	.byte	0x7
 	.byte	0x16
-	.long	0x19a
+	.long	0x1a5
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF47
@@ -2593,7 +2426,7 @@ g_netmgr_cxt:
 	.long	.LASF49
 	.byte	0x7
 	.byte	0x1a
-	.long	0x24b
+	.long	0x256
 	.uleb128 0x8
 	.byte	0x4
 	.long	0xec
@@ -2602,7 +2435,7 @@ g_netmgr_cxt:
 	.long	0x9b
 	.byte	0x9
 	.byte	0x48
-	.long	0x2f0
+	.long	0x2fb
 	.uleb128 0x11
 	.long	.LASF50
 	.byte	0
@@ -2647,221 +2480,221 @@ g_netmgr_cxt:
 	.long	0x94
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x2f0
+	.long	0x2fb
 	.uleb128 0x2
 	.long	.LASF63
 	.byte	0x8
 	.byte	0xe
-	.long	0x306
+	.long	0x311
 	.uleb128 0xb
 	.long	.LASF64
 	.byte	0x90
 	.byte	0x8
 	.byte	0x9c
-	.long	0x493
+	.long	0x49e
 	.uleb128 0xc
 	.long	.LASF65
 	.byte	0x8
 	.byte	0x9d
-	.long	0x284
+	.long	0x28f
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF66
 	.byte	0x8
 	.byte	0x9e
-	.long	0xa11
+	.long	0xa1c
 	.byte	0x14
 	.uleb128 0xc
 	.long	.LASF67
 	.byte	0x8
 	.byte	0xa0
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x18
 	.uleb128 0xc
 	.long	.LASF68
 	.byte	0x8
 	.byte	0xa1
-	.long	0xa41
+	.long	0xa4c
 	.byte	0x1c
 	.uleb128 0xc
 	.long	.LASF69
 	.byte	0x8
 	.byte	0xa2
-	.long	0xa62
+	.long	0xa6d
 	.byte	0x20
 	.uleb128 0xc
 	.long	.LASF70
 	.byte	0x8
 	.byte	0xa3
-	.long	0xa82
+	.long	0xa8d
 	.byte	0x24
 	.uleb128 0xc
 	.long	.LASF71
 	.byte	0x8
 	.byte	0xa4
-	.long	0xaa2
+	.long	0xaad
 	.byte	0x28
 	.uleb128 0xc
 	.long	.LASF72
 	.byte	0x8
 	.byte	0xa6
-	.long	0xac1
+	.long	0xacc
 	.byte	0x2c
 	.uleb128 0xc
 	.long	.LASF73
 	.byte	0x8
 	.byte	0xa8
-	.long	0xae1
+	.long	0xaec
 	.byte	0x30
 	.uleb128 0xc
 	.long	.LASF74
 	.byte	0x8
 	.byte	0xa9
-	.long	0xaf2
+	.long	0xafd
 	.byte	0x34
 	.uleb128 0xc
 	.long	.LASF75
 	.byte	0x8
 	.byte	0xaa
-	.long	0xaf2
+	.long	0xafd
 	.byte	0x38
 	.uleb128 0xc
 	.long	.LASF76
 	.byte	0x8
 	.byte	0xab
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x3c
 	.uleb128 0xc
 	.long	.LASF77
 	.byte	0x8
 	.byte	0xac
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x40
 	.uleb128 0xc
 	.long	.LASF78
 	.byte	0x8
 	.byte	0xad
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x44
 	.uleb128 0xc
 	.long	.LASF79
 	.byte	0x8
 	.byte	0xae
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x48
 	.uleb128 0xc
 	.long	.LASF80
 	.byte	0x8
 	.byte	0xaf
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x4c
 	.uleb128 0xc
 	.long	.LASF81
 	.byte	0x8
 	.byte	0xb0
-	.long	0xb0c
+	.long	0xb17
 	.byte	0x50
 	.uleb128 0xc
 	.long	.LASF82
 	.byte	0x8
 	.byte	0xb1
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x54
 	.uleb128 0xc
 	.long	.LASF83
 	.byte	0x8
 	.byte	0xb2
-	.long	0xb2c
+	.long	0xb37
 	.byte	0x58
 	.uleb128 0xc
 	.long	.LASF84
 	.byte	0x8
 	.byte	0xb3
-	.long	0xaf2
+	.long	0xafd
 	.byte	0x5c
 	.uleb128 0xc
 	.long	.LASF85
 	.byte	0x8
 	.byte	0xb4
-	.long	0xaf2
+	.long	0xafd
 	.byte	0x60
 	.uleb128 0xc
 	.long	.LASF86
 	.byte	0x8
 	.byte	0xb5
-	.long	0xb42
+	.long	0xb4d
 	.byte	0x64
 	.uleb128 0xc
 	.long	.LASF87
 	.byte	0x8
 	.byte	0xb6
-	.long	0xb42
+	.long	0xb4d
 	.byte	0x68
 	.uleb128 0xc
 	.long	.LASF88
 	.byte	0x8
 	.byte	0xb7
-	.long	0xb61
+	.long	0xb6c
 	.byte	0x6c
 	.uleb128 0xc
 	.long	.LASF89
 	.byte	0x8
 	.byte	0xba
-	.long	0xaf2
+	.long	0xafd
 	.byte	0x70
 	.uleb128 0xc
 	.long	.LASF90
 	.byte	0x8
 	.byte	0xbb
-	.long	0xaf2
+	.long	0xafd
 	.byte	0x74
 	.uleb128 0xc
 	.long	.LASF91
 	.byte	0x8
 	.byte	0xbe
-	.long	0xb42
+	.long	0xb4d
 	.byte	0x78
 	.uleb128 0xc
 	.long	.LASF92
 	.byte	0x8
 	.byte	0xbf
-	.long	0xa62
+	.long	0xa6d
 	.byte	0x7c
 	.uleb128 0xc
 	.long	.LASF93
 	.byte	0x8
 	.byte	0xc0
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x80
 	.uleb128 0xc
 	.long	.LASF94
 	.byte	0x8
 	.byte	0xc1
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x84
 	.uleb128 0xc
 	.long	.LASF95
 	.byte	0x8
 	.byte	0xc2
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x88
 	.uleb128 0xc
 	.long	.LASF96
 	.byte	0x8
 	.byte	0xc3
-	.long	0xa2b
+	.long	0xa36
 	.byte	0x8c
 	.byte	0
 	.uleb128 0x12
 	.byte	0x21
 	.byte	0x8
 	.byte	0x1b
-	.long	0x4b4
+	.long	0x4bf
 	.uleb128 0xc
 	.long	.LASF97
 	.byte	0x8
 	.byte	0x1c
-	.long	0x4b4
+	.long	0x4bf
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF98
@@ -2872,7 +2705,7 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x5
 	.long	0xa9
-	.long	0x4c4
+	.long	0x4cf
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x1f
@@ -2881,12 +2714,12 @@ g_netmgr_cxt:
 	.long	.LASF99
 	.byte	0x8
 	.byte	0x1e
-	.long	0x493
+	.long	0x49e
 	.uleb128 0x12
 	.byte	0x8
 	.byte	0x8
 	.byte	0x23
-	.long	0x4f0
+	.long	0x4fb
 	.uleb128 0xc
 	.long	.LASF100
 	.byte	0x8
@@ -2897,27 +2730,27 @@ g_netmgr_cxt:
 	.long	.LASF101
 	.byte	0x8
 	.byte	0x25
-	.long	0x4f0
+	.long	0x4fb
 	.byte	0x4
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x4c4
+	.long	0x4cf
 	.uleb128 0x2
 	.long	.LASF102
 	.byte	0x8
 	.byte	0x26
-	.long	0x4cf
+	.long	0x4da
 	.uleb128 0x12
 	.byte	0x29
 	.byte	0x8
 	.byte	0x28
-	.long	0x546
+	.long	0x551
 	.uleb128 0xc
 	.long	.LASF97
 	.byte	0x8
 	.byte	0x29
-	.long	0x4b4
+	.long	0x4bf
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF98
@@ -2929,7 +2762,7 @@ g_netmgr_cxt:
 	.long	.LASF103
 	.byte	0x8
 	.byte	0x2b
-	.long	0x546
+	.long	0x551
 	.byte	0x21
 	.uleb128 0xc
 	.long	.LASF104
@@ -2946,7 +2779,7 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x5
 	.long	0xa9
-	.long	0x556
+	.long	0x561
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x5
@@ -2955,12 +2788,12 @@ g_netmgr_cxt:
 	.long	.LASF106
 	.byte	0x8
 	.byte	0x2e
-	.long	0x501
+	.long	0x50c
 	.uleb128 0x12
 	.byte	0x8
 	.byte	0x8
 	.byte	0x30
-	.long	0x582
+	.long	0x58d
 	.uleb128 0xc
 	.long	.LASF100
 	.byte	0x8
@@ -2971,23 +2804,23 @@ g_netmgr_cxt:
 	.long	.LASF101
 	.byte	0x8
 	.byte	0x32
-	.long	0x582
+	.long	0x58d
 	.byte	0x4
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x556
+	.long	0x561
 	.uleb128 0x2
 	.long	.LASF107
 	.byte	0x8
 	.byte	0x33
-	.long	0x561
+	.long	0x56c
 	.uleb128 0x13
 	.byte	0x4
 	.long	0x9b
 	.byte	0x8
 	.byte	0x35
-	.long	0x5b8
+	.long	0x5c3
 	.uleb128 0x11
 	.long	.LASF108
 	.byte	0x1
@@ -3005,23 +2838,23 @@ g_netmgr_cxt:
 	.long	.LASF112
 	.byte	0x8
 	.byte	0x3b
-	.long	0x593
+	.long	0x59e
 	.uleb128 0x12
 	.byte	0x28
 	.byte	0x8
 	.byte	0x3e
-	.long	0x5fc
+	.long	0x607
 	.uleb128 0xc
 	.long	.LASF97
 	.byte	0x8
 	.byte	0x3f
-	.long	0x4b4
+	.long	0x4bf
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF103
 	.byte	0x8
 	.byte	0x40
-	.long	0x546
+	.long	0x551
 	.byte	0x20
 	.uleb128 0xc
 	.long	.LASF104
@@ -3040,12 +2873,12 @@ g_netmgr_cxt:
 	.long	.LASF113
 	.byte	0x8
 	.byte	0x44
-	.long	0x5c3
+	.long	0x5ce
 	.uleb128 0x12
 	.byte	0xc8
 	.byte	0x8
 	.byte	0x46
-	.long	0x688
+	.long	0x693
 	.uleb128 0xc
 	.long	.LASF114
 	.byte	0x8
@@ -3056,37 +2889,37 @@ g_netmgr_cxt:
 	.long	.LASF115
 	.byte	0x8
 	.byte	0x48
-	.long	0x688
+	.long	0x693
 	.byte	0x1
 	.uleb128 0xc
 	.long	.LASF116
 	.byte	0x8
 	.byte	0x49
-	.long	0x698
+	.long	0x6a3
 	.byte	0x22
 	.uleb128 0xc
 	.long	.LASF117
 	.byte	0x8
 	.byte	0x4a
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x63
 	.uleb128 0xc
 	.long	.LASF118
 	.byte	0x8
 	.byte	0x4b
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x73
 	.uleb128 0xc
 	.long	.LASF119
 	.byte	0x8
 	.byte	0x4c
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x83
 	.uleb128 0xc
 	.long	.LASF120
 	.byte	0x8
 	.byte	0x4d
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x93
 	.uleb128 0xc
 	.long	.LASF121
@@ -3098,7 +2931,7 @@ g_netmgr_cxt:
 	.long	.LASF122
 	.byte	0x8
 	.byte	0x4f
-	.long	0x4b4
+	.long	0x4bf
 	.byte	0xa4
 	.uleb128 0xc
 	.long	.LASF123
@@ -3109,21 +2942,21 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x5
 	.long	0xa9
-	.long	0x698
+	.long	0x6a3
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x20
 	.byte	0
 	.uleb128 0x5
 	.long	0xa9
-	.long	0x6a8
+	.long	0x6b3
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x40
 	.byte	0
 	.uleb128 0x5
 	.long	0xa9
-	.long	0x6b8
+	.long	0x6c3
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0xf
@@ -3132,23 +2965,23 @@ g_netmgr_cxt:
 	.long	.LASF124
 	.byte	0x8
 	.byte	0x55
-	.long	0x607
+	.long	0x612
 	.uleb128 0x12
 	.byte	0xd4
 	.byte	0x8
 	.byte	0x58
-	.long	0x744
+	.long	0x74f
 	.uleb128 0xc
 	.long	.LASF125
 	.byte	0x8
 	.byte	0x59
-	.long	0x5fc
+	.long	0x607
 	.byte	0
 	.uleb128 0x15
 	.string	"key"
 	.byte	0x8
 	.byte	0x5a
-	.long	0x744
+	.long	0x74f
 	.byte	0x28
 	.uleb128 0xc
 	.long	.LASF126
@@ -3160,25 +2993,25 @@ g_netmgr_cxt:
 	.long	.LASF117
 	.byte	0x8
 	.byte	0x5c
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x6c
 	.uleb128 0xc
 	.long	.LASF118
 	.byte	0x8
 	.byte	0x5d
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x7c
 	.uleb128 0xc
 	.long	.LASF119
 	.byte	0x8
 	.byte	0x5e
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x8c
 	.uleb128 0xc
 	.long	.LASF120
 	.byte	0x8
 	.byte	0x5f
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x9c
 	.uleb128 0xc
 	.long	.LASF121
@@ -3190,7 +3023,7 @@ g_netmgr_cxt:
 	.long	.LASF122
 	.byte	0x8
 	.byte	0x61
-	.long	0x4b4
+	.long	0x4bf
 	.byte	0xad
 	.uleb128 0xc
 	.long	.LASF123
@@ -3201,7 +3034,7 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x5
 	.long	0xa9
-	.long	0x754
+	.long	0x75f
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x3f
@@ -3210,12 +3043,12 @@ g_netmgr_cxt:
 	.long	.LASF127
 	.byte	0x8
 	.byte	0x63
-	.long	0x6c3
+	.long	0x6ce
 	.uleb128 0x12
 	.byte	0x61
 	.byte	0x8
 	.byte	0x66
-	.long	0x7bb
+	.long	0x7c6
 	.uleb128 0xc
 	.long	.LASF128
 	.byte	0x8
@@ -3226,50 +3059,50 @@ g_netmgr_cxt:
 	.string	"ip"
 	.byte	0x8
 	.byte	0x68
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x1
 	.uleb128 0xc
 	.long	.LASF129
 	.byte	0x8
 	.byte	0x69
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x11
 	.uleb128 0xc
 	.long	.LASF130
 	.byte	0x8
 	.byte	0x6a
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x21
 	.uleb128 0x15
 	.string	"dns"
 	.byte	0x8
 	.byte	0x6b
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x31
 	.uleb128 0x15
 	.string	"mac"
 	.byte	0x8
 	.byte	0x6c
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x41
 	.uleb128 0xc
 	.long	.LASF131
 	.byte	0x8
 	.byte	0x6d
-	.long	0x6a8
+	.long	0x6b3
 	.byte	0x51
 	.byte	0
 	.uleb128 0x2
 	.long	.LASF132
 	.byte	0x8
 	.byte	0x6e
-	.long	0x75f
+	.long	0x76a
 	.uleb128 0x13
 	.byte	0x4
 	.long	0x9b
 	.byte	0x8
 	.byte	0x70
-	.long	0x7df
+	.long	0x7ea
 	.uleb128 0x11
 	.long	.LASF133
 	.byte	0
@@ -3281,13 +3114,13 @@ g_netmgr_cxt:
 	.long	.LASF135
 	.byte	0x8
 	.byte	0x73
-	.long	0x7c6
+	.long	0x7d1
 	.uleb128 0x13
 	.byte	0x4
 	.long	0x9b
 	.byte	0x8
 	.byte	0x75
-	.long	0x809
+	.long	0x814
 	.uleb128 0x11
 	.long	.LASF136
 	.byte	0
@@ -3302,7 +3135,7 @@ g_netmgr_cxt:
 	.byte	0x34
 	.byte	0x8
 	.byte	0x7b
-	.long	0x84e
+	.long	0x859
 	.uleb128 0xc
 	.long	.LASF139
 	.byte	0x8
@@ -3319,13 +3152,13 @@ g_netmgr_cxt:
 	.long	.LASF97
 	.byte	0x8
 	.byte	0x7e
-	.long	0x84e
+	.long	0x859
 	.byte	0x8
 	.uleb128 0xc
 	.long	.LASF103
 	.byte	0x8
 	.byte	0x7f
-	.long	0x85e
+	.long	0x869
 	.byte	0x28
 	.uleb128 0xc
 	.long	.LASF104
@@ -3336,14 +3169,14 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x5
 	.long	0xec
-	.long	0x85e
+	.long	0x869
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x1f
 	.byte	0
 	.uleb128 0x5
 	.long	0xec
-	.long	0x86e
+	.long	0x879
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x5
@@ -3352,13 +3185,13 @@ g_netmgr_cxt:
 	.long	.LASF141
 	.byte	0x8
 	.byte	0x81
-	.long	0x809
+	.long	0x814
 	.uleb128 0xb
 	.long	.LASF142
 	.byte	0x1
 	.byte	0x8
 	.byte	0x83
-	.long	0x892
+	.long	0x89d
 	.uleb128 0xc
 	.long	.LASF143
 	.byte	0x8
@@ -3370,59 +3203,59 @@ g_netmgr_cxt:
 	.long	.LASF144
 	.byte	0x8
 	.byte	0x85
-	.long	0x879
+	.long	0x884
 	.uleb128 0x12
 	.byte	0x1c
 	.byte	0x8
 	.byte	0x8d
-	.long	0x8fa
+	.long	0x905
 	.uleb128 0xc
 	.long	.LASF145
 	.byte	0x8
 	.byte	0x8e
-	.long	0x915
+	.long	0x920
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF146
 	.byte	0x8
 	.byte	0x8f
-	.long	0x936
+	.long	0x941
 	.byte	0x4
 	.uleb128 0xc
 	.long	.LASF147
 	.byte	0x8
 	.byte	0x90
-	.long	0x951
+	.long	0x95c
 	.byte	0x8
 	.uleb128 0xc
 	.long	.LASF148
 	.byte	0x8
 	.byte	0x91
-	.long	0x972
+	.long	0x97d
 	.byte	0xc
 	.uleb128 0xc
 	.long	.LASF149
 	.byte	0x8
 	.byte	0x93
-	.long	0x993
+	.long	0x99e
 	.byte	0x10
 	.uleb128 0xc
 	.long	.LASF150
 	.byte	0x8
 	.byte	0x95
-	.long	0x9be
+	.long	0x9c9
 	.byte	0x14
 	.uleb128 0xc
 	.long	.LASF151
 	.byte	0x8
 	.byte	0x97
-	.long	0x9d4
+	.long	0x9df
 	.byte	0x18
 	.byte	0
 	.uleb128 0xd
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
 	.long	0x94
 	.uleb128 0xe
@@ -3430,73 +3263,73 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x2fb
+	.long	0x306
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x8fa
+	.long	0x905
 	.uleb128 0xd
-	.long	0x930
+	.long	0x93b
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x930
+	.long	0x93b
 	.uleb128 0xe
 	.long	0xc7
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x7bb
+	.long	0x7c6
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x91b
+	.long	0x926
 	.uleb128 0xd
-	.long	0x951
+	.long	0x95c
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x5b8
+	.long	0x5c3
 	.uleb128 0xe
 	.long	0xc7
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x93c
+	.long	0x947
 	.uleb128 0xd
-	.long	0x96c
+	.long	0x977
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x96c
+	.long	0x977
 	.uleb128 0xe
 	.long	0xc7
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x4f6
+	.long	0x501
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x957
+	.long	0x962
 	.uleb128 0xd
-	.long	0x98d
+	.long	0x998
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x98d
+	.long	0x998
 	.uleb128 0xe
 	.long	0xc7
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x588
+	.long	0x593
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x978
+	.long	0x983
 	.uleb128 0xd
-	.long	0x9b8
+	.long	0x9c3
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x9b8
+	.long	0x9c3
 	.uleb128 0xe
 	.long	0xd0
 	.uleb128 0xe
@@ -3506,201 +3339,201 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x5fc
+	.long	0x607
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x999
+	.long	0x9a4
 	.uleb128 0xd
-	.long	0x9d4
+	.long	0x9df
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
 	.long	0xc7
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x9c4
+	.long	0x9cf
 	.uleb128 0x2
 	.long	.LASF152
 	.byte	0x8
 	.byte	0x98
-	.long	0x89d
+	.long	0x8a8
 	.uleb128 0x2
 	.long	.LASF153
 	.byte	0x8
 	.byte	0x9a
-	.long	0x9f0
+	.long	0x9fb
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x9f6
+	.long	0xa01
 	.uleb128 0xd
-	.long	0xa0b
+	.long	0xa16
 	.uleb128 0xe
-	.long	0x28f
+	.long	0x29a
 	.uleb128 0xe
 	.long	0x94
 	.uleb128 0xe
-	.long	0xa0b
+	.long	0xa16
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x892
+	.long	0x89d
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa17
+	.long	0xa22
 	.uleb128 0xa
-	.long	0x9da
+	.long	0x9e5
 	.uleb128 0x16
 	.long	0x94
-	.long	0xa2b
+	.long	0xa36
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa1c
+	.long	0xa27
 	.uleb128 0xd
-	.long	0xa41
+	.long	0xa4c
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x28f
+	.long	0x29a
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa31
+	.long	0xa3c
 	.uleb128 0xd
-	.long	0xa57
+	.long	0xa62
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0xa57
+	.long	0xa62
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa5d
+	.long	0xa68
 	.uleb128 0xa
 	.long	0xec
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa47
+	.long	0xa52
 	.uleb128 0x16
 	.long	0x94
-	.long	0xa7c
+	.long	0xa87
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0xa7c
+	.long	0xa87
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x6b8
+	.long	0x6c3
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa68
+	.long	0xa73
 	.uleb128 0x16
 	.long	0x94
-	.long	0xa9c
+	.long	0xaa7
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0xa9c
+	.long	0xaa7
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x754
+	.long	0x75f
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa88
+	.long	0xa93
 	.uleb128 0x16
 	.long	0x94
-	.long	0xac1
+	.long	0xacc
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x930
+	.long	0x93b
 	.uleb128 0xe
-	.long	0x7df
+	.long	0x7ea
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xaa8
+	.long	0xab3
 	.uleb128 0x16
 	.long	0x94
-	.long	0xadb
+	.long	0xae6
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0xadb
+	.long	0xae6
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0x86e
+	.long	0x879
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xac7
+	.long	0xad2
 	.uleb128 0xd
+	.long	0xafd
+	.uleb128 0xe
+	.long	0x91a
+	.byte	0
+	.uleb128 0x8
+	.byte	0x4
 	.long	0xaf2
-	.uleb128 0xe
-	.long	0x90f
-	.byte	0
-	.uleb128 0x8
-	.byte	0x4
-	.long	0xae7
 	.uleb128 0x16
 	.long	0x94
-	.long	0xb0c
+	.long	0xb17
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
 	.long	0x94
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xaf8
+	.long	0xb03
 	.uleb128 0x16
 	.long	0x94
-	.long	0xb26
+	.long	0xb31
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0xb26
+	.long	0xb31
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xa57
+	.long	0xa62
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xb12
+	.long	0xb1d
 	.uleb128 0xd
-	.long	0xb42
+	.long	0xb4d
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x9e5
+	.long	0x9f0
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xb32
+	.long	0xb3d
 	.uleb128 0x16
 	.long	0x94
-	.long	0xb61
+	.long	0xb6c
 	.uleb128 0xe
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0xe
-	.long	0x28f
+	.long	0x29a
 	.uleb128 0xe
 	.long	0x94
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xb48
+	.long	0xb53
 	.uleb128 0x13
 	.byte	0x4
 	.long	0x9b
 	.byte	0xa
 	.byte	0x32
-	.long	0xbce
+	.long	0xbd9
 	.uleb128 0x11
 	.long	.LASF154
 	.byte	0
@@ -3753,7 +3586,7 @@ g_netmgr_cxt:
 	.long	0x9b
 	.byte	0xc
 	.byte	0x6b
-	.long	0xbf1
+	.long	0xbfc
 	.uleb128 0x11
 	.long	.LASF171
 	.byte	0
@@ -3768,42 +3601,42 @@ g_netmgr_cxt:
 	.byte	0x68
 	.byte	0xd
 	.byte	0x1d
-	.long	0xc1e
+	.long	0xc29
 	.uleb128 0xc
 	.long	.LASF97
 	.byte	0xd
 	.byte	0x1e
-	.long	0x688
+	.long	0x693
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF103
 	.byte	0xd
 	.byte	0x1f
-	.long	0x85e
+	.long	0x869
 	.byte	0x21
 	.uleb128 0x15
 	.string	"pwd"
 	.byte	0xd
 	.byte	0x20
-	.long	0x698
+	.long	0x6a3
 	.byte	0x27
 	.byte	0
 	.uleb128 0x2
 	.long	.LASF174
 	.byte	0xd
 	.byte	0x21
-	.long	0xbf1
+	.long	0xbfc
 	.uleb128 0xb
 	.long	.LASF175
 	.byte	0x14
 	.byte	0xd
 	.byte	0x23
-	.long	0xc72
+	.long	0xc7d
 	.uleb128 0xc
 	.long	.LASF28
 	.byte	0xd
 	.byte	0x24
-	.long	0xc72
+	.long	0xc7d
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF176
@@ -3815,7 +3648,7 @@ g_netmgr_cxt:
 	.long	.LASF177
 	.byte	0xd
 	.byte	0x27
-	.long	0x2f5
+	.long	0x300
 	.byte	0x8
 	.uleb128 0xc
 	.long	.LASF178
@@ -3827,14 +3660,14 @@ g_netmgr_cxt:
 	.long	.LASF179
 	.byte	0xd
 	.byte	0x29
-	.long	0xc88
+	.long	0xc93
 	.byte	0x10
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xc29
+	.long	0xc34
 	.uleb128 0xd
-	.long	0xc88
+	.long	0xc93
 	.uleb128 0xe
 	.long	0x94
 	.uleb128 0xe
@@ -3842,19 +3675,19 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xc78
+	.long	0xc83
 	.uleb128 0x2
 	.long	.LASF180
 	.byte	0xd
 	.byte	0x2a
-	.long	0xc29
+	.long	0xc34
 	.uleb128 0xf
 	.long	.LASF181
 	.byte	0x4
 	.long	0x9b
 	.byte	0xd
 	.byte	0x2d
-	.long	0xce0
+	.long	0xceb
 	.uleb128 0x11
 	.long	.LASF182
 	.byte	0
@@ -3889,7 +3722,7 @@ g_netmgr_cxt:
 	.long	0x9b
 	.byte	0xd
 	.byte	0x3a
-	.long	0xd1b
+	.long	0xd26
 	.uleb128 0x11
 	.long	.LASF192
 	.byte	0
@@ -3916,21 +3749,21 @@ g_netmgr_cxt:
 	.long	.LASF199
 	.byte	0xd
 	.byte	0x45
-	.long	0xd26
+	.long	0xd31
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xd2c
+	.long	0xd37
 	.uleb128 0x16
 	.long	0x94
-	.long	0xd59
+	.long	0xd64
 	.uleb128 0xe
 	.long	0xd6
 	.uleb128 0xe
-	.long	0xa57
+	.long	0xa62
 	.uleb128 0xe
-	.long	0xc99
+	.long	0xca4
 	.uleb128 0xe
-	.long	0xce0
+	.long	0xceb
 	.uleb128 0xe
 	.long	0xec
 	.uleb128 0xe
@@ -3942,30 +3775,30 @@ g_netmgr_cxt:
 	.byte	0xe8
 	.byte	0x1
 	.byte	0x2c
-	.long	0xdd9
+	.long	0xde4
 	.uleb128 0xc
 	.long	.LASF200
 	.byte	0x1
 	.byte	0x2d
-	.long	0xc1e
+	.long	0xc29
 	.byte	0
 	.uleb128 0xc
 	.long	.LASF201
 	.byte	0x1
 	.byte	0x2e
-	.long	0xc1e
+	.long	0xc29
 	.byte	0x68
 	.uleb128 0xc
 	.long	.LASF202
 	.byte	0x1
 	.byte	0x2f
-	.long	0x90f
+	.long	0x91a
 	.byte	0xd0
 	.uleb128 0xc
 	.long	.LASF203
 	.byte	0x1
 	.byte	0x30
-	.long	0xdd9
+	.long	0xde4
 	.byte	0xd4
 	.uleb128 0xc
 	.long	.LASF204
@@ -3983,231 +3816,244 @@ g_netmgr_cxt:
 	.long	.LASF206
 	.byte	0x1
 	.byte	0x33
-	.long	0x236
+	.long	0x241
 	.byte	0xdd
 	.uleb128 0xc
 	.long	.LASF207
 	.byte	0x1
 	.byte	0x34
-	.long	0x236
+	.long	0x241
 	.byte	0xde
 	.uleb128 0x15
 	.string	"cb"
 	.byte	0x1
 	.byte	0x35
-	.long	0xd1b
+	.long	0xd26
 	.byte	0xe0
 	.uleb128 0xc
 	.long	.LASF208
 	.byte	0x1
 	.byte	0x36
-	.long	0x236
+	.long	0x241
 	.byte	0xe4
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xc8e
+	.long	0xc99
 	.uleb128 0x2
 	.long	.LASF209
 	.byte	0x1
 	.byte	0x37
-	.long	0xd59
+	.long	0xd64
 	.uleb128 0x17
-	.long	.LASF246
+	.long	.LASF243
+	.byte	0x4
+	.byte	0x8d
+	.long	0x94
+	.byte	0x3
+	.long	0xe11
+	.uleb128 0x18
+	.long	.LASF210
+	.byte	0x4
+	.byte	0x8d
+	.long	0x16f
+	.byte	0
+	.uleb128 0x19
+	.long	.LASF249
 	.byte	0x1
 	.byte	0x75
 	.byte	0x1
-	.uleb128 0x18
-	.long	.LASF211
+	.uleb128 0x1a
+	.long	.LASF212
 	.byte	0x1
 	.value	0x15b
 	.byte	0x1
-	.long	0xe30
-	.uleb128 0x19
+	.long	0xe57
+	.uleb128 0x1b
 	.string	"arg"
 	.byte	0x1
 	.value	0x15b
 	.long	0xc7
-	.uleb128 0x1a
-	.long	.LASF210
+	.uleb128 0x1c
+	.long	.LASF211
 	.byte	0x1
 	.value	0x15d
-	.long	0x90f
-	.uleb128 0x1a
+	.long	0x91a
+	.uleb128 0x1c
 	.long	.LASF38
 	.byte	0x1
 	.value	0x15e
-	.long	0x6b8
-	.uleb128 0x1a
+	.long	0x6c3
+	.uleb128 0x1c
 	.long	.LASF201
 	.byte	0x1
 	.value	0x15f
-	.long	0xe30
+	.long	0xe57
 	.byte	0
 	.uleb128 0x8
 	.byte	0x4
-	.long	0xc1e
-	.uleb128 0x1b
+	.long	0xc29
+	.uleb128 0x1d
 	.long	.LASF297
 	.byte	0xb
 	.byte	0xd
 	.long	0x9b
 	.byte	0x3
-	.uleb128 0x1c
-	.long	.LASF212
-	.byte	0x1
-	.byte	0x67
-	.byte	0x1
-	.long	0xe5a
-	.uleb128 0x1d
+	.uleb128 0x1e
 	.long	.LASF213
 	.byte	0x1
 	.byte	0x67
-	.long	0x236
-	.byte	0
+	.byte	0x1
+	.long	0xe81
 	.uleb128 0x18
 	.long	.LASF214
 	.byte	0x1
-	.value	0x202
-	.byte	0x1
-	.long	0xe74
+	.byte	0x67
+	.long	0x241
+	.byte	0
 	.uleb128 0x1a
 	.long	.LASF215
 	.byte	0x1
-	.value	0x204
-	.long	0xdd9
-	.byte	0
-	.uleb128 0x18
+	.value	0x202
+	.byte	0x1
+	.long	0xe9b
+	.uleb128 0x1c
 	.long	.LASF216
 	.byte	0x1
-	.value	0x101
-	.byte	0x1
-	.long	0xea4
-	.uleb128 0x19
-	.string	"m"
-	.byte	0x1
-	.value	0x101
-	.long	0x90f
-	.uleb128 0x1e
+	.value	0x204
+	.long	0xde4
+	.byte	0
+	.uleb128 0x1a
 	.long	.LASF217
 	.byte	0x1
 	.value	0x101
-	.long	0x5b8
-	.uleb128 0x19
+	.byte	0x1
+	.long	0xecb
+	.uleb128 0x1b
+	.string	"m"
+	.byte	0x1
+	.value	0x101
+	.long	0x91a
+	.uleb128 0x1f
+	.long	.LASF218
+	.byte	0x1
+	.value	0x101
+	.long	0x5c3
+	.uleb128 0x1b
 	.string	"arg"
 	.byte	0x1
 	.value	0x102
 	.long	0xc7
 	.byte	0
-	.uleb128 0x18
-	.long	.LASF218
-	.byte	0x1
-	.value	0x1c3
-	.byte	0x1
-	.long	0xeca
-	.uleb128 0x1e
+	.uleb128 0x1a
 	.long	.LASF219
 	.byte	0x1
 	.value	0x1c3
-	.long	0x230
-	.uleb128 0x1e
+	.byte	0x1
+	.long	0xef1
+	.uleb128 0x1f
 	.long	.LASF220
+	.byte	0x1
+	.value	0x1c3
+	.long	0x23b
+	.uleb128 0x1f
+	.long	.LASF221
 	.byte	0x1
 	.value	0x1c3
 	.long	0xc7
 	.byte	0
-	.uleb128 0x1f
+	.uleb128 0x20
 	.long	.LASF298
 	.byte	0x1
 	.value	0x290
 	.long	0x94
 	.byte	0x1
-	.long	0xee8
-	.uleb128 0x1e
-	.long	.LASF221
+	.long	0xf0f
+	.uleb128 0x1f
+	.long	.LASF222
 	.byte	0x1
 	.value	0x290
-	.long	0x236
+	.long	0x241
 	.byte	0
-	.uleb128 0x20
+	.uleb128 0x21
 	.long	.LASF299
 	.byte	0x1
 	.value	0x22d
 	.byte	0x1
-	.uleb128 0x18
-	.long	.LASF222
-	.byte	0x1
-	.value	0x253
-	.byte	0x1
-	.long	0xf49
-	.uleb128 0x1e
+	.uleb128 0x1a
 	.long	.LASF223
 	.byte	0x1
 	.value	0x253
-	.long	0xd0
-	.uleb128 0x1e
+	.byte	0x1
+	.long	0xf70
+	.uleb128 0x1f
 	.long	.LASF224
 	.byte	0x1
 	.value	0x253
-	.long	0x94
-	.uleb128 0x1e
+	.long	0xd0
+	.uleb128 0x1f
 	.long	.LASF225
 	.byte	0x1
 	.value	0x253
 	.long	0x94
-	.uleb128 0x1e
+	.uleb128 0x1f
 	.long	.LASF226
 	.byte	0x1
 	.value	0x253
-	.long	0x163
-	.uleb128 0x1a
+	.long	0x94
+	.uleb128 0x1f
 	.long	.LASF227
+	.byte	0x1
+	.value	0x253
+	.long	0x163
+	.uleb128 0x1c
+	.long	.LASF228
 	.byte	0x1
 	.value	0x255
 	.long	0xd6
-	.uleb128 0x21
-	.uleb128 0x1a
-	.long	.LASF228
-	.byte	0x1
-	.value	0x25d
-	.long	0xc1e
-	.byte	0
-	.byte	0
-	.uleb128 0x18
+	.uleb128 0x22
+	.uleb128 0x1c
 	.long	.LASF229
 	.byte	0x1
-	.value	0x117
-	.byte	0x1
-	.long	0xf6f
-	.uleb128 0x1e
+	.value	0x25d
+	.long	0xc29
+	.byte	0
+	.byte	0
+	.uleb128 0x1a
 	.long	.LASF230
 	.byte	0x1
 	.value	0x117
-	.long	0x28f
-	.uleb128 0x1e
+	.byte	0x1
+	.long	0xf96
+	.uleb128 0x1f
 	.long	.LASF231
+	.byte	0x1
+	.value	0x117
+	.long	0x29a
+	.uleb128 0x1f
+	.long	.LASF232
 	.byte	0x1
 	.value	0x117
 	.long	0x94
 	.byte	0
-	.uleb128 0x22
-	.long	.LASF232
+	.uleb128 0x23
+	.long	.LASF233
 	.byte	0x1
 	.byte	0x59
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0xfad
-	.uleb128 0x23
+	.long	0xfd4
+	.uleb128 0x24
 	.string	"m"
 	.byte	0x1
 	.byte	0x59
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x23
+	.uleb128 0x24
 	.string	"err"
 	.byte	0x1
 	.byte	0x59
@@ -4215,7 +4061,7 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 4
-	.uleb128 0x23
+	.uleb128 0x24
 	.string	"arg"
 	.byte	0x1
 	.byte	0x59
@@ -4224,32 +4070,32 @@ g_netmgr_cxt:
 	.byte	0x91
 	.sleb128 8
 	.byte	0
-	.uleb128 0x24
-	.long	.LASF233
+	.uleb128 0x25
+	.long	.LASF234
 	.byte	0x1
 	.value	0x132
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x101c
-	.uleb128 0x25
+	.long	0x1043
+	.uleb128 0x26
 	.string	"m"
 	.byte	0x1
 	.value	0x132
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x26
-	.long	.LASF234
+	.uleb128 0x27
+	.long	.LASF235
 	.byte	0x1
 	.value	0x133
-	.long	0x98d
+	.long	0x998
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 4
-	.uleb128 0x25
+	.uleb128 0x26
 	.string	"arg"
 	.byte	0x1
 	.value	0x134
@@ -4257,51 +4103,51 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 8
-	.uleb128 0x27
+	.uleb128 0x28
 	.string	"cb"
 	.byte	0x1
 	.value	0x136
-	.long	0xd1b
+	.long	0xd26
 	.long	.LLST0
-	.uleb128 0x27
+	.uleb128 0x28
 	.string	"i"
 	.byte	0x1
 	.value	0x137
 	.long	0x94
 	.long	.LLST1
-	.uleb128 0x28
-	.long	.LASF235
+	.uleb128 0x29
+	.long	.LASF236
 	.byte	0x1
 	.value	0x137
 	.long	0x94
 	.long	.LLST2
 	.byte	0
-	.uleb128 0x29
-	.long	.LASF236
+	.uleb128 0x2a
+	.long	.LASF237
 	.byte	0x1
 	.value	0x147
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x107c
-	.uleb128 0x25
+	.long	0x10a3
+	.uleb128 0x26
 	.string	"m"
 	.byte	0x1
 	.value	0x147
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x26
+	.uleb128 0x27
 	.long	.LASF125
 	.byte	0x1
 	.value	0x148
-	.long	0x9b8
+	.long	0x9c3
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 4
-	.uleb128 0x25
+	.uleb128 0x26
 	.string	"key"
 	.byte	0x1
 	.value	0x149
@@ -4309,7 +4155,7 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 8
-	.uleb128 0x26
+	.uleb128 0x27
 	.long	.LASF126
 	.byte	0x1
 	.value	0x149
@@ -4317,7 +4163,7 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 12
-	.uleb128 0x25
+	.uleb128 0x26
 	.string	"arg"
 	.byte	0x1
 	.value	0x149
@@ -4326,24 +4172,24 @@ g_netmgr_cxt:
 	.byte	0x91
 	.sleb128 16
 	.byte	0
-	.uleb128 0x29
-	.long	.LASF237
+	.uleb128 0x2a
+	.long	.LASF238
 	.byte	0x1
 	.value	0x14d
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x10af
-	.uleb128 0x25
+	.long	0x10d6
+	.uleb128 0x26
 	.string	"m"
 	.byte	0x1
 	.value	0x14d
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x25
+	.uleb128 0x26
 	.string	"arg"
 	.byte	0x1
 	.value	0x14d
@@ -4352,24 +4198,24 @@ g_netmgr_cxt:
 	.byte	0x91
 	.sleb128 4
 	.byte	0
-	.uleb128 0x29
-	.long	.LASF238
+	.uleb128 0x2a
+	.long	.LASF239
 	.byte	0x1
 	.value	0x2d1
-	.long	.LFB56
-	.long	.LFE56-.LFB56
+	.long	.LFB62
+	.long	.LFE62-.LFB62
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x10e3
-	.uleb128 0x26
-	.long	.LASF234
+	.long	0x110a
+	.uleb128 0x27
+	.long	.LASF235
 	.byte	0x1
 	.value	0x2d1
 	.long	0x94
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x25
+	.uleb128 0x26
 	.string	"ip"
 	.byte	0x1
 	.value	0x2d1
@@ -4378,156 +4224,136 @@ g_netmgr_cxt:
 	.byte	0x91
 	.sleb128 4
 	.byte	0
-	.uleb128 0x22
-	.long	.LASF239
+	.uleb128 0x23
+	.long	.LASF240
 	.byte	0x1
 	.byte	0x4c
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1134
-	.uleb128 0x2a
+	.long	0x115b
+	.uleb128 0x2b
 	.string	"ip"
 	.byte	0x1
 	.byte	0x4c
 	.long	0x10d
 	.long	.LLST3
-	.uleb128 0x2a
+	.uleb128 0x2b
 	.string	"buf"
 	.byte	0x1
 	.byte	0x4c
 	.long	0xd0
 	.long	.LLST4
-	.uleb128 0x2b
+	.uleb128 0x2c
 	.string	"i"
 	.byte	0x1
 	.byte	0x4e
 	.long	0x94
 	.byte	0x4
-	.uleb128 0x2c
-	.long	.LASF240
+	.uleb128 0x2d
+	.long	.LASF241
 	.byte	0x1
 	.byte	0x50
 	.long	0xb0
-	.uleb128 0x2d
-	.long	.LVL14
-	.long	0x1c25
-	.byte	0
 	.uleb128 0x2e
-	.long	.LASF257
-	.byte	0x1
-	.value	0x180
-	.long	0x94
-	.long	.LFB33
-	.long	.LFE33-.LFB33
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x1168
-	.uleb128 0x27
-	.string	"ret"
-	.byte	0x1
-	.value	0x182
-	.long	0x94
-	.long	.LLST5
-	.uleb128 0x2d
-	.long	.LVL16
-	.long	0x1c30
+	.long	.LVL14
+	.long	0x1b46
 	.byte	0
-	.uleb128 0x29
-	.long	.LASF241
+	.uleb128 0x2a
+	.long	.LASF242
 	.byte	0x1
 	.value	0x2cb
-	.long	.LFB55
-	.long	.LFE55-.LFB55
+	.long	.LFB61
+	.long	.LFE61-.LFB61
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1188
-	.uleb128 0x2d
-	.long	.LVL17
-	.long	0x1c3b
+	.long	0x117b
+	.uleb128 0x2e
+	.long	.LVL15
+	.long	0x1b51
 	.byte	0
-	.uleb128 0x2f
-	.long	.LASF248
+	.uleb128 0x17
+	.long	.LASF244
 	.byte	0x1
 	.byte	0x7c
 	.long	0x102
 	.byte	0x1
-	.long	0x11d3
-	.uleb128 0x30
+	.long	0x11c6
+	.uleb128 0x2f
 	.string	"str"
 	.byte	0x1
 	.byte	0x7c
 	.long	0xd0
-	.uleb128 0x31
+	.uleb128 0x30
 	.string	"a"
 	.byte	0x1
 	.byte	0x7e
 	.long	0x102
-	.uleb128 0x31
+	.uleb128 0x30
 	.string	"b"
 	.byte	0x1
 	.byte	0x7e
 	.long	0x102
-	.uleb128 0x31
+	.uleb128 0x30
 	.string	"c"
 	.byte	0x1
 	.byte	0x7e
 	.long	0x102
-	.uleb128 0x31
+	.uleb128 0x30
 	.string	"d"
 	.byte	0x1
 	.byte	0x7e
 	.long	0x102
-	.uleb128 0x2c
-	.long	.LASF242
+	.uleb128 0x2d
+	.long	.LASF245
 	.byte	0x1
 	.byte	0x7f
 	.long	0x102
 	.byte	0
-	.uleb128 0x32
+	.uleb128 0x31
 	.long	.LASF300
 	.byte	0x1
 	.byte	0xdc
 	.byte	0x1
-	.long	0x11f5
-	.uleb128 0x31
+	.long	0x11e8
+	.uleb128 0x30
 	.string	"ts"
 	.byte	0x1
 	.byte	0xde
 	.long	0x9b
-	.uleb128 0x2c
-	.long	.LASF243
+	.uleb128 0x2d
+	.long	.LASF246
 	.byte	0x1
 	.byte	0xdf
 	.long	0xec
 	.byte	0
-	.uleb128 0x22
-	.long	.LASF244
+	.uleb128 0x23
+	.long	.LASF247
 	.byte	0x1
 	.byte	0x89
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1314
-	.uleb128 0x23
+	.long	0x1307
+	.uleb128 0x24
 	.string	"m"
 	.byte	0x1
 	.byte	0x89
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x33
-	.long	.LASF245
+	.uleb128 0x32
+	.long	.LASF248
 	.byte	0x1
 	.byte	0x8a
-	.long	0x930
+	.long	0x93b
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 4
-	.uleb128 0x23
+	.uleb128 0x24
 	.string	"arg"
 	.byte	0x1
 	.byte	0x8a
@@ -4535,200 +4361,200 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 8
-	.uleb128 0x34
-	.long	0x11d3
-	.long	.LBB40
-	.long	.LBE40-.LBB40
+	.uleb128 0x33
+	.long	0x11c6
+	.long	.LBB42
+	.long	.LBE42-.LBB42
 	.byte	0x1
 	.byte	0x8f
-	.long	0x1288
+	.long	0x127b
+	.uleb128 0x34
+	.long	.LBB43
+	.long	.LBE43-.LBB43
 	.uleb128 0x35
-	.long	.LBB41
-	.long	.LBE41-.LBB41
+	.long	0x11d2
+	.long	.LLST5
 	.uleb128 0x36
-	.long	0x11df
-	.long	.LLST6
-	.uleb128 0x37
-	.long	0x11e9
+	.long	0x11dc
 	.uleb128 0x5
 	.byte	0x3
-	.long	rand_flag.6389
-	.uleb128 0x2d
+	.long	rand_flag.6400
+	.uleb128 0x2e
+	.long	.LVL21
+	.long	0x1b5c
+	.uleb128 0x2e
+	.long	.LVL22
+	.long	0x1b68
+	.uleb128 0x2e
 	.long	.LVL23
-	.long	0x1c46
-	.uleb128 0x2d
+	.long	0x1b73
+	.uleb128 0x2e
 	.long	.LVL24
-	.long	0x1c52
-	.uleb128 0x2d
-	.long	.LVL25
-	.long	0x1c5d
-	.uleb128 0x2d
-	.long	.LVL26
-	.long	0x1c68
+	.long	0x1b7e
 	.byte	0
 	.byte	0
-	.uleb128 0x38
-	.long	0x1188
-	.long	.LBB42
+	.uleb128 0x37
+	.long	0x117b
+	.long	.LBB44
 	.long	.Ldebug_ranges0+0
 	.byte	0x1
 	.byte	0x92
-	.long	0x12dd
+	.long	0x12d0
+	.uleb128 0x38
+	.long	0x118b
+	.long	.LLST6
 	.uleb128 0x39
-	.long	0x1198
-	.long	.LLST7
-	.uleb128 0x3a
 	.long	.Ldebug_ranges0+0
-	.uleb128 0x37
-	.long	0x11a3
+	.uleb128 0x36
+	.long	0x1196
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -52
-	.uleb128 0x37
-	.long	0x11ac
+	.uleb128 0x36
+	.long	0x119f
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -48
-	.uleb128 0x37
-	.long	0x11b5
+	.uleb128 0x36
+	.long	0x11a8
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -44
-	.uleb128 0x37
-	.long	0x11be
+	.uleb128 0x36
+	.long	0x11b1
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -40
-	.uleb128 0x36
-	.long	0x11c7
-	.long	.LLST8
-	.uleb128 0x2d
-	.long	.LVL28
-	.long	0x1c73
+	.uleb128 0x35
+	.long	0x11ba
+	.long	.LLST7
+	.uleb128 0x2e
+	.long	.LVL26
+	.long	0x1b89
 	.byte	0
 	.byte	0
-	.uleb128 0x2d
+	.uleb128 0x2e
+	.long	.LVL17
+	.long	0x1b94
+	.uleb128 0x2e
+	.long	.LVL18
+	.long	0x1ba0
+	.uleb128 0x2e
 	.long	.LVL19
-	.long	0x1c7e
-	.uleb128 0x2d
+	.long	0x1ba0
+	.uleb128 0x2e
 	.long	.LVL20
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL21
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL22
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL31
-	.long	0x1c3b
-	.uleb128 0x2d
-	.long	.LVL32
-	.long	0x1c95
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL29
+	.long	0x1b51
+	.uleb128 0x2e
+	.long	.LVL30
+	.long	0x1bab
 	.byte	0
-	.uleb128 0x3b
-	.long	0xdf2
-	.long	.LFB57
-	.long	.LFE57-.LFB57
+	.uleb128 0x3a
+	.long	0xe19
+	.long	.LFB64
+	.long	.LFE64-.LFB64
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x137c
-	.uleb128 0x3c
-	.long	0xdff
+	.long	0x136f
+	.uleb128 0x3b
+	.long	0xe26
 	.uleb128 0x6
 	.byte	0xfa
-	.long	0xdff
+	.long	0xe26
 	.byte	0x9f
+	.uleb128 0x35
+	.long	0xe32
+	.long	.LLST8
 	.uleb128 0x36
-	.long	0xe0b
-	.long	.LLST9
-	.uleb128 0x37
-	.long	0xe17
+	.long	0xe3e
 	.uleb128 0x3
 	.byte	0x91
 	.sleb128 -236
-	.uleb128 0x36
-	.long	0xe23
-	.long	.LLST10
-	.uleb128 0x2d
-	.long	.LVL34
-	.long	0x1c9e
-	.uleb128 0x2d
-	.long	.LVL39
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL40
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL41
-	.long	0x1cb4
-	.uleb128 0x2d
-	.long	.LVL42
-	.long	0x1c95
-	.byte	0
-	.uleb128 0x3d
-	.long	0xe5a
-	.long	.LFB39
-	.long	.LFE39-.LFB39
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x13cc
-	.uleb128 0x36
-	.long	0xe67
-	.long	.LLST11
 	.uleb128 0x35
-	.long	.LBB53
-	.long	.LBE53-.LBB53
-	.uleb128 0x3e
-	.long	0xe67
-	.uleb128 0x2d
-	.long	.LVL46
-	.long	0x1c7e
-	.uleb128 0x2d
-	.long	.LVL47
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL48
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL49
-	.long	0x1c8a
+	.long	0xe4a
+	.long	.LLST9
+	.uleb128 0x2e
+	.long	.LVL32
+	.long	0x1bb4
+	.uleb128 0x2e
+	.long	.LVL37
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL38
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL39
+	.long	0x1bca
+	.uleb128 0x2e
+	.long	.LVL40
+	.long	0x1bab
 	.byte	0
-	.byte	0
-	.uleb128 0x3b
-	.long	0xe74
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.uleb128 0x3c
+	.long	0xe81
+	.long	.LFB45
+	.long	.LFE45-.LFB45
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1434
-	.uleb128 0x39
-	.long	0xe81
-	.long	.LLST12
-	.uleb128 0x39
-	.long	0xe8b
-	.long	.LLST13
-	.uleb128 0x39
-	.long	0xe97
-	.long	.LLST14
-	.uleb128 0x3f
-	.long	.LBB56
-	.long	.LBE56-.LBB56
-	.long	0x1423
-	.uleb128 0x39
-	.long	0xe81
-	.long	.LLST15
-	.uleb128 0x39
-	.long	0xe8b
-	.long	.LLST16
-	.uleb128 0x39
-	.long	0xe97
-	.long	.LLST17
+	.long	0x13bf
+	.uleb128 0x35
+	.long	0xe8e
+	.long	.LLST10
+	.uleb128 0x34
+	.long	.LBB55
+	.long	.LBE55-.LBB55
+	.uleb128 0x3d
+	.long	0xe8e
+	.uleb128 0x2e
+	.long	.LVL44
+	.long	0x1b94
+	.uleb128 0x2e
+	.long	.LVL45
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL46
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL47
+	.long	0x1ba0
 	.byte	0
+	.byte	0
+	.uleb128 0x3a
+	.long	0xe9b
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x1427
+	.uleb128 0x38
+	.long	0xea8
+	.long	.LLST11
+	.uleb128 0x38
+	.long	0xeb2
+	.long	.LLST12
+	.uleb128 0x38
+	.long	0xebe
+	.long	.LLST13
+	.uleb128 0x3e
+	.long	.LBB58
+	.long	.LBE58-.LBB58
+	.long	0x1416
+	.uleb128 0x38
+	.long	0xea8
+	.long	.LLST14
+	.uleb128 0x38
+	.long	0xeb2
+	.long	.LLST15
+	.uleb128 0x38
+	.long	0xebe
+	.long	.LLST16
+	.byte	0
+	.uleb128 0x3f
+	.long	.LVL55
+	.long	0x1b51
 	.uleb128 0x40
-	.long	.LVL57
-	.long	0x1c3b
-	.uleb128 0x41
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
@@ -4736,186 +4562,186 @@ g_netmgr_cxt:
 	.byte	0x32
 	.byte	0
 	.byte	0
-	.uleb128 0x42
-	.long	.LASF247
+	.uleb128 0x41
+	.long	.LASF250
 	.byte	0x1
 	.value	0x1b3
 	.byte	0x1
-	.uleb128 0x43
-	.long	.LASF249
+	.uleb128 0x42
+	.long	.LASF251
 	.byte	0x1
 	.value	0x18e
 	.long	0x94
 	.byte	0x1
-	.long	0x1473
-	.uleb128 0x44
+	.long	0x1466
+	.uleb128 0x43
 	.string	"ret"
 	.byte	0x1
 	.value	0x190
 	.long	0x94
-	.uleb128 0x44
+	.uleb128 0x43
 	.string	"len"
 	.byte	0x1
 	.value	0x190
 	.long	0x94
-	.uleb128 0x44
+	.uleb128 0x43
 	.string	"tmp"
 	.byte	0x1
 	.value	0x191
-	.long	0xc1e
+	.long	0xc29
 	.byte	0
-	.uleb128 0x45
-	.long	0xea4
-	.long	.LFB36
-	.long	.LFE36-.LFB36
+	.uleb128 0x44
+	.long	0xecb
+	.long	.LFB42
+	.long	.LFE42-.LFB42
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x15c1
-	.uleb128 0x3c
-	.long	0xeb1
+	.long	0x15b4
+	.uleb128 0x3b
+	.long	0xed8
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x3c
-	.long	0xebd
+	.uleb128 0x3b
+	.long	0xee4
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 4
-	.uleb128 0x46
-	.long	0x1434
-	.long	.LBB68
-	.long	.LBE68-.LBB68
-	.byte	0x1
-	.value	0x1d1
-	.uleb128 0x3f
+	.uleb128 0x45
+	.long	0x1427
 	.long	.LBB70
 	.long	.LBE70-.LBB70
-	.long	0x1529
-	.uleb128 0x39
-	.long	0xeb1
-	.long	.LLST18
-	.uleb128 0x39
-	.long	0xebd
-	.long	.LLST19
-	.uleb128 0x2d
-	.long	.LVL60
-	.long	0x1cbf
-	.uleb128 0x2d
-	.long	.LVL61
-	.long	0x1cbf
-	.uleb128 0x2d
-	.long	.LVL62
-	.long	0x1c7e
-	.uleb128 0x2d
-	.long	.LVL63
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL64
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL65
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL68
-	.long	0x1c7e
-	.uleb128 0x2d
-	.long	.LVL69
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL70
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL71
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL72
-	.long	0x1c3b
-	.byte	0
-	.uleb128 0x47
-	.long	0x143d
+	.byte	0x1
+	.value	0x1d1
+	.uleb128 0x3e
 	.long	.LBB72
 	.long	.LBE72-.LBB72
+	.long	0x151c
+	.uleb128 0x38
+	.long	0xed8
+	.long	.LLST17
+	.uleb128 0x38
+	.long	0xee4
+	.long	.LLST18
+	.uleb128 0x2e
+	.long	.LVL58
+	.long	0x1bd5
+	.uleb128 0x2e
+	.long	.LVL59
+	.long	0x1bd5
+	.uleb128 0x2e
+	.long	.LVL60
+	.long	0x1b94
+	.uleb128 0x2e
+	.long	.LVL61
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL62
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL63
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL66
+	.long	0x1b94
+	.uleb128 0x2e
+	.long	.LVL67
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL68
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL69
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL70
+	.long	0x1b51
+	.byte	0
+	.uleb128 0x46
+	.long	0x1430
+	.long	.LBB74
+	.long	.LBE74-.LBB74
 	.byte	0x1
 	.value	0x1e9
-	.long	0x15a2
+	.long	0x1595
+	.uleb128 0x34
+	.long	.LBB75
+	.long	.LBE75-.LBB75
 	.uleb128 0x35
-	.long	.LBB73
-	.long	.LBE73-.LBB73
+	.long	0x1441
+	.long	.LLST19
 	.uleb128 0x36
-	.long	0x144e
-	.long	.LLST20
-	.uleb128 0x37
-	.long	0x145a
+	.long	0x144d
 	.uleb128 0x3
 	.byte	0x91
 	.sleb128 -128
-	.uleb128 0x37
-	.long	0x1466
+	.uleb128 0x36
+	.long	0x1459
 	.uleb128 0x3
 	.byte	0x91
 	.sleb128 -124
-	.uleb128 0x2d
+	.uleb128 0x2e
+	.long	.LVL73
+	.long	0x1bd5
+	.uleb128 0x2e
+	.long	.LVL74
+	.long	0x1bd5
+	.uleb128 0x2e
 	.long	.LVL75
-	.long	0x1cbf
-	.uleb128 0x2d
+	.long	0x1be0
+	.uleb128 0x2e
 	.long	.LVL76
-	.long	0x1cbf
-	.uleb128 0x2d
+	.long	0x1beb
+	.uleb128 0x2e
 	.long	.LVL77
-	.long	0x1cca
-	.uleb128 0x2d
+	.long	0x1bbf
+	.uleb128 0x2e
 	.long	.LVL78
-	.long	0x1cd5
-	.uleb128 0x2d
+	.long	0x1bbf
+	.uleb128 0x2e
 	.long	.LVL79
-	.long	0x1ca9
-	.uleb128 0x2d
+	.long	0x1bf6
+	.byte	0
+	.byte	0
+	.uleb128 0x47
 	.long	.LVL80
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL81
-	.long	0x1ce0
-	.byte	0
-	.byte	0
+	.long	0x1307
+	.long	0x15aa
 	.uleb128 0x48
-	.long	.LVL82
-	.long	0x1314
-	.long	0x15b7
-	.uleb128 0x49
-	.long	0xdff
+	.long	0xe26
 	.uleb128 0x1
 	.byte	0x30
 	.byte	0
-	.uleb128 0x2d
-	.long	.LVL83
-	.long	0x1c95
+	.uleb128 0x2e
+	.long	.LVL81
+	.long	0x1bab
 	.byte	0
-	.uleb128 0x29
-	.long	.LASF250
+	.uleb128 0x2a
+	.long	.LASF252
 	.byte	0x1
 	.value	0x11c
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1678
-	.uleb128 0x25
+	.long	0x166b
+	.uleb128 0x26
 	.string	"m"
 	.byte	0x1
 	.value	0x11c
-	.long	0x90f
+	.long	0x91a
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x26
-	.long	.LASF234
+	.uleb128 0x27
+	.long	.LASF235
 	.byte	0x1
 	.value	0x11d
-	.long	0x96c
+	.long	0x977
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 4
-	.uleb128 0x25
+	.uleb128 0x26
 	.string	"arg"
 	.byte	0x1
 	.value	0x11e
@@ -4923,84 +4749,84 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 8
-	.uleb128 0x27
+	.uleb128 0x28
 	.string	"cb"
 	.byte	0x1
 	.value	0x120
-	.long	0xd1b
-	.long	.LLST21
-	.uleb128 0x27
+	.long	0xd26
+	.long	.LLST20
+	.uleb128 0x28
 	.string	"i"
 	.byte	0x1
 	.value	0x121
 	.long	0x94
-	.long	.LLST22
-	.uleb128 0x28
-	.long	.LASF235
+	.long	.LLST21
+	.uleb128 0x29
+	.long	.LASF236
 	.byte	0x1
 	.value	0x121
 	.long	0x94
-	.long	.LLST23
-	.uleb128 0x4a
+	.long	.LLST22
+	.uleb128 0x49
 	.long	.LASF103
 	.byte	0x1
 	.value	0x122
-	.long	0x85e
+	.long	0x869
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -42
-	.uleb128 0x4b
-	.long	0xf49
-	.long	.LBB76
+	.uleb128 0x4a
+	.long	0xf70
+	.long	.LBB78
 	.long	.Ldebug_ranges0+0x18
 	.byte	0x1
 	.value	0x12a
-	.long	0x1665
-	.uleb128 0x39
-	.long	0xf62
+	.long	0x1658
+	.uleb128 0x38
+	.long	0xf89
+	.long	.LLST23
+	.uleb128 0x38
+	.long	0xf7d
 	.long	.LLST24
-	.uleb128 0x39
-	.long	0xf56
-	.long	.LLST25
 	.byte	0
-	.uleb128 0x4c
-	.long	.LVL90
+	.uleb128 0x4b
+	.long	.LVL88
 	.uleb128 0x3
 	.byte	0x91
 	.sleb128 -56
 	.byte	0x6
-	.uleb128 0x2d
-	.long	.LVL92
-	.long	0x1c95
+	.uleb128 0x2e
+	.long	.LVL90
+	.long	0x1bab
 	.byte	0
-	.uleb128 0x4d
-	.long	.LASF251
+	.uleb128 0x4c
+	.long	.LASF253
 	.byte	0x1
 	.value	0x16b
-	.long	.LFB31
-	.long	.LFE31-.LFB31
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x16a0
-	.uleb128 0x40
-	.long	.LVL93
-	.long	0x1314
-	.uleb128 0x49
-	.long	0xdff
-	.uleb128 0x1
-	.byte	0x30
-	.byte	0
-	.byte	0
-	.uleb128 0x4d
-	.long	.LASF252
-	.byte	0x1
-	.value	0x1f7
 	.long	.LFB37
 	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x16d7
-	.uleb128 0x25
+	.long	0x1693
+	.uleb128 0x3f
+	.long	.LVL91
+	.long	0x1307
+	.uleb128 0x48
+	.long	0xe26
+	.uleb128 0x1
+	.byte	0x30
+	.byte	0
+	.byte	0
+	.uleb128 0x4c
+	.long	.LASF254
+	.byte	0x1
+	.value	0x1f7
+	.long	.LFB43
+	.long	.LFE43-.LFB43
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x16ca
+	.uleb128 0x26
 	.string	"ips"
 	.byte	0x1
 	.value	0x1f7
@@ -5008,10 +4834,10 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
+	.uleb128 0x3f
+	.long	.LVL93
+	.long	0x110a
 	.uleb128 0x40
-	.long	.LVL95
-	.long	0x10e3
-	.uleb128 0x41
 	.uleb128 0x1
 	.byte	0x52
 	.uleb128 0x3
@@ -5020,477 +4846,398 @@ g_netmgr_cxt:
 	.byte	0x6
 	.byte	0
 	.byte	0
-	.uleb128 0x4d
-	.long	.LASF253
+	.uleb128 0x4c
+	.long	.LASF255
 	.byte	0x1
 	.value	0x1fc
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB44
+	.long	.LFE44-.LFB44
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x16fc
-	.uleb128 0x25
+	.long	0x16ef
+	.uleb128 0x26
 	.string	"cb"
 	.byte	0x1
 	.value	0x1fc
-	.long	0xd1b
+	.long	0xd26
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
 	.byte	0
-	.uleb128 0x43
-	.long	.LASF254
+	.uleb128 0x42
+	.long	.LASF256
 	.byte	0x1
 	.value	0x20f
 	.long	0x102
 	.byte	0x1
-	.long	0x171a
-	.uleb128 0x44
+	.long	0x170d
+	.uleb128 0x43
 	.string	"len"
 	.byte	0x1
 	.value	0x211
 	.long	0x102
 	.byte	0
-	.uleb128 0x4e
-	.long	.LASF255
-	.byte	0x1
-	.value	0x220
-	.long	0x94
-	.long	.LFB42
-	.long	.LFE42-.LFB42
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x177a
-	.uleb128 0x26
-	.long	.LASF228
-	.byte	0x1
-	.value	0x220
-	.long	0xe30
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 0
-	.uleb128 0x4b
-	.long	0x16fc
-	.long	.LBB82
-	.long	.Ldebug_ranges0+0x30
-	.byte	0x1
-	.value	0x222
-	.long	0x1767
-	.uleb128 0x3a
-	.long	.Ldebug_ranges0+0x30
-	.uleb128 0x36
-	.long	0x170d
-	.long	.LLST26
-	.byte	0
-	.byte	0
-	.uleb128 0x2d
-	.long	.LVL100
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL101
-	.long	0x1ca9
-	.byte	0
-	.uleb128 0x3b
-	.long	0xee8
-	.long	.LFB43
-	.long	.LFE43-.LFB43
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x1797
-	.uleb128 0x4f
-	.long	.LVL102
-	.long	0x1134
-	.byte	0
-	.uleb128 0x4e
-	.long	.LASF256
-	.byte	0x1
-	.value	0x232
-	.long	0x94
-	.long	.LFB44
-	.long	.LFE44-.LFB44
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x17e0
-	.uleb128 0x26
-	.long	.LASF228
-	.byte	0x1
-	.value	0x232
-	.long	0xe30
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 0
-	.uleb128 0x50
-	.string	"ret"
-	.byte	0x1
-	.value	0x234
-	.long	0x94
-	.byte	0
-	.uleb128 0x2d
-	.long	.LVL104
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL105
-	.long	0x1ca9
-	.byte	0
-	.uleb128 0x2e
+	.uleb128 0x4d
 	.long	.LASF258
 	.byte	0x1
-	.value	0x2c0
-	.long	0x94
-	.long	.LFB54
-	.long	.LFE54-.LFB54
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x1838
-	.uleb128 0x4a
-	.long	.LASF228
-	.byte	0x1
-	.value	0x2c2
-	.long	0xc1e
-	.uleb128 0x3
-	.byte	0x91
-	.sleb128 -124
-	.uleb128 0x2d
-	.long	.LVL106
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL107
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL108
-	.long	0x1797
-	.uleb128 0x2d
-	.long	.LVL109
-	.long	0x1c3b
-	.uleb128 0x2d
-	.long	.LVL110
-	.long	0x1c95
-	.byte	0
-	.uleb128 0x18
-	.long	.LASF259
-	.byte	0x1
-	.value	0x21a
-	.byte	0x1
-	.long	0x1852
-	.uleb128 0x1e
-	.long	.LASF260
-	.byte	0x1
-	.value	0x21a
-	.long	0xdd9
-	.byte	0
-	.uleb128 0x4d
-	.long	.LASF261
-	.byte	0x1
-	.value	0x240
-	.long	.LFB45
-	.long	.LFE45-.LFB45
-	.uleb128 0x1
-	.byte	0x9c
-	.long	0x189f
-	.uleb128 0x26
-	.long	.LASF260
-	.byte	0x1
-	.value	0x240
-	.long	0xdd9
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 0
-	.uleb128 0x4b
-	.long	0x1838
-	.long	.LBB92
-	.long	.Ldebug_ranges0+0x58
-	.byte	0x1
-	.value	0x242
-	.long	0x1895
-	.uleb128 0x39
-	.long	0x1845
-	.long	.LLST27
-	.byte	0
-	.uleb128 0x4f
-	.long	.LVL114
-	.long	0xe5a
-	.byte	0
-	.uleb128 0x18
-	.long	.LASF262
-	.byte	0x1
-	.value	0x246
-	.byte	0x1
-	.long	0x18c5
-	.uleb128 0x44
-	.string	"ret"
-	.byte	0x1
-	.value	0x248
-	.long	0x94
-	.uleb128 0x44
-	.string	"len"
-	.byte	0x1
-	.value	0x249
-	.long	0x94
-	.byte	0
-	.uleb128 0x42
-	.long	.LASF263
-	.byte	0x1
-	.value	0x171
-	.byte	0x1
-	.uleb128 0x4e
-	.long	.LASF264
-	.byte	0x1
-	.value	0x26e
+	.value	0x220
 	.long	0x94
 	.long	.LFB48
 	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x19a4
-	.uleb128 0x28
-	.long	.LASF210
+	.long	0x176d
+	.uleb128 0x27
+	.long	.LASF229
 	.byte	0x1
-	.value	0x270
-	.long	0x90f
-	.long	.LLST28
-	.uleb128 0x4b
-	.long	0x1838
-	.long	.LBB102
-	.long	.Ldebug_ranges0+0x70
-	.byte	0x1
-	.value	0x27e
-	.long	0x1916
-	.uleb128 0x39
-	.long	0x1845
-	.long	.LLST29
-	.byte	0
-	.uleb128 0x47
-	.long	0x189f
-	.long	.LBB106
-	.long	.LBE106-.LBB106
-	.byte	0x1
-	.value	0x282
-	.long	0x1976
-	.uleb128 0x35
-	.long	.LBB107
-	.long	.LBE107-.LBB107
-	.uleb128 0x36
-	.long	0x18ac
-	.long	.LLST30
-	.uleb128 0x37
-	.long	0x18b8
+	.value	0x220
+	.long	0xe57
 	.uleb128 0x2
 	.byte	0x91
-	.sleb128 -40
-	.uleb128 0x4b
-	.long	0x18c5
-	.long	.LBB108
-	.long	.Ldebug_ranges0+0x88
+	.sleb128 0
+	.uleb128 0x4a
+	.long	0x16ef
+	.long	.LBB84
+	.long	.Ldebug_ranges0+0x30
 	.byte	0x1
-	.value	0x250
-	.long	0x196b
-	.uleb128 0x2d
-	.long	.LVL125
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL126
-	.long	0x1ca9
-	.byte	0
-	.uleb128 0x2d
-	.long	.LVL123
-	.long	0x1cca
+	.value	0x222
+	.long	0x175a
+	.uleb128 0x39
+	.long	.Ldebug_ranges0+0x30
+	.uleb128 0x35
+	.long	0x1700
+	.long	.LLST25
 	.byte	0
 	.byte	0
-	.uleb128 0x2d
-	.long	.LVL115
-	.long	0x1ceb
-	.uleb128 0x2d
-	.long	.LVL116
-	.long	0x1cf6
-	.uleb128 0x2d
-	.long	.LVL117
-	.long	0x1c9e
-	.uleb128 0x2d
-	.long	.LVL122
-	.long	0x1d01
-	.uleb128 0x2d
-	.long	.LVL127
-	.long	0x1c95
+	.uleb128 0x2e
+	.long	.LVL98
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL99
+	.long	0x1bbf
 	.byte	0
-	.uleb128 0x51
-	.long	.LASF301
+	.uleb128 0x42
+	.long	.LASF257
 	.byte	0x1
-	.value	0x28b
+	.value	0x180
+	.long	0x94
+	.byte	0x1
+	.long	0x178b
+	.uleb128 0x43
+	.string	"ret"
+	.byte	0x1
+	.value	0x182
+	.long	0x94
+	.byte	0
+	.uleb128 0x3a
+	.long	0xf0f
 	.long	.LFB49
 	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
-	.uleb128 0x3b
-	.long	0xeca
+	.long	0x17c8
+	.uleb128 0x4e
+	.long	0x176d
+	.long	.LBB94
+	.long	.Ldebug_ranges0+0x58
+	.byte	0x1
+	.value	0x22f
+	.uleb128 0x39
+	.long	.Ldebug_ranges0+0x58
+	.uleb128 0x35
+	.long	0x177e
+	.long	.LLST26
+	.uleb128 0x2e
+	.long	.LVL101
+	.long	0x1c01
+	.byte	0
+	.byte	0
+	.byte	0
+	.uleb128 0x4d
+	.long	.LASF259
+	.byte	0x1
+	.value	0x232
+	.long	0x94
 	.long	.LFB50
 	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1a1f
-	.uleb128 0x3c
-	.long	0xedb
+	.long	0x1811
+	.uleb128 0x27
+	.long	.LASF229
+	.byte	0x1
+	.value	0x232
+	.long	0xe57
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x4b
-	.long	0x16fc
-	.long	.LBB116
-	.long	.Ldebug_ranges0+0xa0
+	.uleb128 0x4f
+	.string	"ret"
 	.byte	0x1
-	.value	0x294
-	.long	0x19f5
-	.uleb128 0x3a
-	.long	.Ldebug_ranges0+0xa0
-	.uleb128 0x36
-	.long	0x170d
-	.long	.LLST31
+	.value	0x234
+	.long	0x94
 	.byte	0
+	.uleb128 0x2e
+	.long	.LVL103
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL104
+	.long	0x1bbf
 	.byte	0
-	.uleb128 0x3f
-	.long	.LBB122
-	.long	.LBE122-.LBB122
-	.long	0x1a15
-	.uleb128 0x39
-	.long	0xedb
-	.long	.LLST32
-	.uleb128 0x2d
-	.long	.LVL131
-	.long	0x1c3b
-	.byte	0
-	.uleb128 0x2d
-	.long	.LVL133
-	.long	0xe5a
-	.byte	0
-	.uleb128 0x3b
-	.long	0xef1
-	.long	.LFB47
-	.long	.LFE47-.LFB47
+	.uleb128 0x50
+	.long	.LASF301
+	.byte	0x1
+	.value	0x2c0
+	.long	0x94
+	.long	.LFB60
+	.long	.LFE60-.LFB60
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1b20
-	.uleb128 0x3c
-	.long	0xefe
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 0
-	.uleb128 0x3c
-	.long	0xf0a
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 4
-	.uleb128 0x3c
-	.long	0xf16
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 8
-	.uleb128 0x3c
-	.long	0xf22
-	.uleb128 0x2
-	.byte	0x91
-	.sleb128 12
-	.uleb128 0x36
-	.long	0xf2e
-	.long	.LLST33
-	.uleb128 0x47
-	.long	0xee8
-	.long	.LBB132
-	.long	.LBE132-.LBB132
+	.long	0x1869
+	.uleb128 0x49
+	.long	.LASF229
 	.byte	0x1
-	.value	0x257
-	.long	0x1a79
-	.uleb128 0x2d
-	.long	.LVL137
-	.long	0x1134
-	.byte	0
-	.uleb128 0x3f
-	.long	.LBB134
-	.long	.LBE134-.LBB134
-	.long	0x1a8c
-	.uleb128 0x3e
-	.long	0xf3b
-	.byte	0
-	.uleb128 0x3f
-	.long	.LBB135
-	.long	.LBE135-.LBB135
-	.long	0x1afb
-	.uleb128 0x39
-	.long	0xefe
-	.long	.LLST34
-	.uleb128 0x39
-	.long	0xf0a
-	.long	.LLST35
-	.uleb128 0x39
-	.long	0xf16
-	.long	.LLST36
-	.uleb128 0x39
-	.long	0xf22
-	.long	.LLST37
-	.uleb128 0x35
-	.long	.LBB136
-	.long	.LBE136-.LBB136
-	.uleb128 0x3e
-	.long	0xf2e
-	.uleb128 0x35
-	.long	.LBB137
-	.long	.LBE137-.LBB137
-	.uleb128 0x37
-	.long	0xf3b
+	.value	0x2c2
+	.long	0xc29
 	.uleb128 0x3
 	.byte	0x91
 	.sleb128 -124
-	.uleb128 0x2d
-	.long	.LVL141
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL142
-	.long	0x1ca9
-	.uleb128 0x2d
-	.long	.LVL143
-	.long	0x1797
+	.uleb128 0x2e
+	.long	.LVL105
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL106
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL107
+	.long	0x17c8
+	.uleb128 0x2e
+	.long	.LVL108
+	.long	0x1b51
+	.uleb128 0x2e
+	.long	.LVL109
+	.long	0x1bab
 	.byte	0
-	.byte	0
-	.byte	0
-	.uleb128 0x2d
-	.long	.LVL136
-	.long	0x1cbf
-	.uleb128 0x2d
-	.long	.LVL138
-	.long	0x1cbf
-	.uleb128 0x2d
-	.long	.LVL146
-	.long	0xeca
-	.uleb128 0x2d
-	.long	.LVL147
-	.long	0x1c95
-	.byte	0
-	.uleb128 0x52
-	.long	.LASF265
+	.uleb128 0x1a
+	.long	.LASF260
 	.byte	0x1
-	.value	0x2aa
-	.long	0x236
+	.value	0x21a
+	.byte	0x1
+	.long	0x1883
+	.uleb128 0x1f
+	.long	.LASF261
+	.byte	0x1
+	.value	0x21a
+	.long	0xde4
+	.byte	0
+	.uleb128 0x4c
+	.long	.LASF262
+	.byte	0x1
+	.value	0x240
 	.long	.LFB51
 	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
+	.long	0x18d0
+	.uleb128 0x27
+	.long	.LASF261
+	.byte	0x1
+	.value	0x240
+	.long	0xde4
+	.uleb128 0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x4a
+	.long	0x1869
+	.long	.LBB102
+	.long	.Ldebug_ranges0+0x78
+	.byte	0x1
+	.value	0x242
+	.long	0x18c6
+	.uleb128 0x38
+	.long	0x1876
+	.long	.LLST27
+	.byte	0
+	.uleb128 0x51
+	.long	.LVL113
+	.long	0xe81
+	.byte	0
+	.uleb128 0x1a
+	.long	.LASF263
+	.byte	0x1
+	.value	0x246
+	.byte	0x1
+	.long	0x18f6
+	.uleb128 0x43
+	.string	"ret"
+	.byte	0x1
+	.value	0x248
+	.long	0x94
+	.uleb128 0x43
+	.string	"len"
+	.byte	0x1
+	.value	0x249
+	.long	0x94
+	.byte	0
+	.uleb128 0x41
+	.long	.LASF264
+	.byte	0x1
+	.value	0x171
+	.byte	0x1
+	.uleb128 0x4d
+	.long	.LASF265
+	.byte	0x1
+	.value	0x26e
+	.long	0x94
+	.long	.LFB54
+	.long	.LFE54-.LFB54
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x19cc
+	.uleb128 0x29
+	.long	.LASF211
+	.byte	0x1
+	.value	0x270
+	.long	0x91a
+	.long	.LLST28
+	.uleb128 0x4a
+	.long	0x1869
+	.long	.LBB112
+	.long	.Ldebug_ranges0+0x90
+	.byte	0x1
+	.value	0x27e
+	.long	0x1947
+	.uleb128 0x38
+	.long	0x1876
+	.long	.LLST29
+	.byte	0
+	.uleb128 0x46
+	.long	0x18d0
+	.long	.LBB116
+	.long	.LBE116-.LBB116
+	.byte	0x1
+	.value	0x282
+	.long	0x19a7
+	.uleb128 0x34
+	.long	.LBB117
+	.long	.LBE117-.LBB117
+	.uleb128 0x35
+	.long	0x18dd
+	.long	.LLST30
+	.uleb128 0x36
+	.long	0x18e9
+	.uleb128 0x2
+	.byte	0x91
+	.sleb128 -40
+	.uleb128 0x4a
+	.long	0x18f6
+	.long	.LBB118
+	.long	.Ldebug_ranges0+0xa8
+	.byte	0x1
+	.value	0x250
+	.long	0x199c
+	.uleb128 0x2e
+	.long	.LVL123
+	.long	0x1bbf
+	.uleb128 0x2e
+	.long	.LVL124
+	.long	0x1bbf
+	.byte	0
+	.uleb128 0x2e
+	.long	.LVL121
+	.long	0x1be0
+	.byte	0
+	.byte	0
+	.uleb128 0x2e
+	.long	.LVL114
+	.long	0x1c0c
+	.uleb128 0x2e
+	.long	.LVL115
+	.long	0x1bb4
+	.uleb128 0x2e
+	.long	.LVL120
+	.long	0x1c17
+	.uleb128 0x2e
+	.long	.LVL125
+	.long	0x1bab
+	.byte	0
 	.uleb128 0x52
+	.long	.LASF302
+	.byte	0x1
+	.value	0x28b
+	.long	.LFB55
+	.long	.LFE55-.LFB55
+	.uleb128 0x1
+	.byte	0x9c
+	.uleb128 0x3a
+	.long	0xef1
+	.long	.LFB56
+	.long	.LFE56-.LFB56
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x1a47
+	.uleb128 0x3b
+	.long	0xf02
+	.uleb128 0x2
+	.byte	0x91
+	.sleb128 0
+	.uleb128 0x4a
+	.long	0x16ef
+	.long	.LBB126
+	.long	.Ldebug_ranges0+0xc0
+	.byte	0x1
+	.value	0x294
+	.long	0x1a1d
+	.uleb128 0x39
+	.long	.Ldebug_ranges0+0xc0
+	.uleb128 0x35
+	.long	0x1700
+	.long	.LLST31
+	.byte	0
+	.byte	0
+	.uleb128 0x3e
+	.long	.LBB132
+	.long	.LBE132-.LBB132
+	.long	0x1a3d
+	.uleb128 0x38
+	.long	0xf02
+	.long	.LLST32
+	.uleb128 0x2e
+	.long	.LVL129
+	.long	0x1b51
+	.byte	0
+	.uleb128 0x2e
+	.long	.LVL131
+	.long	0xe81
+	.byte	0
+	.uleb128 0x53
 	.long	.LASF266
 	.byte	0x1
-	.value	0x2af
-	.long	0x236
-	.long	.LFB52
-	.long	.LFE52-.LFB52
+	.value	0x2aa
+	.long	0x241
+	.long	.LFB57
+	.long	.LFE57-.LFB57
 	.uleb128 0x1
 	.byte	0x9c
-	.uleb128 0x4d
+	.uleb128 0x53
 	.long	.LASF267
 	.byte	0x1
-	.value	0x2b5
-	.long	.LFB53
-	.long	.LFE53-.LFB53
+	.value	0x2af
+	.long	0x241
+	.long	.LFB58
+	.long	.LFE58-.LFB58
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0x1bad
-	.uleb128 0x25
+	.uleb128 0x4c
+	.long	.LASF268
+	.byte	0x1
+	.value	0x2b5
+	.long	.LFB59
+	.long	.LFE59-.LFB59
+	.uleb128 0x1
+	.byte	0x9c
+	.long	0x1ad4
+	.uleb128 0x26
 	.string	"ip"
 	.byte	0x1
 	.value	0x2b5
@@ -5498,181 +5245,173 @@ g_netmgr_cxt:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x53
-	.long	.LASF268
-	.long	0x1bbd
+	.uleb128 0x54
+	.long	.LASF269
+	.long	0x1ae4
 	.uleb128 0x5
 	.byte	0x3
-	.long	__func__.6536
-	.uleb128 0x2d
-	.long	.LVL149
-	.long	0x1c7e
-	.uleb128 0x2d
-	.long	.LVL150
-	.long	0x1c8a
-	.uleb128 0x2d
-	.long	.LVL151
-	.long	0x1c8a
-	.uleb128 0x4f
-	.long	.LVL152
-	.long	0x1c8a
-	.uleb128 0x4f
-	.long	.LVL153
-	.long	0x10e3
+	.long	__func__.6547
+	.uleb128 0x2e
+	.long	.LVL133
+	.long	0x1b94
+	.uleb128 0x2e
+	.long	.LVL134
+	.long	0x1ba0
+	.uleb128 0x2e
+	.long	.LVL135
+	.long	0x1ba0
+	.uleb128 0x51
+	.long	.LVL136
+	.long	0x1ba0
+	.uleb128 0x51
+	.long	.LVL137
+	.long	0x110a
 	.byte	0
 	.uleb128 0x5
 	.long	0xdc
-	.long	0x1bbd
+	.long	0x1ae4
 	.uleb128 0x6
 	.long	0xc0
 	.byte	0x12
 	.byte	0
 	.uleb128 0xa
-	.long	0x1bad
-	.uleb128 0x54
-	.long	.LASF269
+	.long	0x1ad4
+	.uleb128 0x55
+	.long	.LASF270
 	.byte	0x1
 	.byte	0x3b
-	.long	0xddf
+	.long	0xdea
 	.uleb128 0x5
 	.byte	0x3
 	.long	g_netmgr_cxt
-	.uleb128 0x4a
-	.long	.LASF270
+	.uleb128 0x49
+	.long	.LASF271
 	.byte	0x1
 	.value	0x2d5
-	.long	0xc8e
+	.long	0xc99
 	.uleb128 0x5
 	.byte	0x3
 	.long	g_def_smartconfig
-	.uleb128 0x54
-	.long	.LASF271
+	.uleb128 0x55
+	.long	.LASF272
 	.byte	0x1
 	.byte	0x42
-	.long	0x236
+	.long	0x241
 	.uleb128 0x5
 	.byte	0x3
 	.long	g_station_is_up
-	.uleb128 0x4a
-	.long	.LASF272
+	.uleb128 0x49
+	.long	.LASF273
 	.byte	0x1
 	.value	0x151
-	.long	0xa17
+	.long	0xa22
 	.uleb128 0x5
 	.byte	0x3
 	.long	g_wifi_hal_event
-	.uleb128 0x4a
-	.long	.LASF273
+	.uleb128 0x1c
+	.long	.LASF274
 	.byte	0x1
 	.value	0x268
 	.long	0x118
-	.uleb128 0x5
-	.byte	0x3
-	.long	ncmd
-	.uleb128 0x55
-	.long	.LASF302
+	.uleb128 0x56
+	.long	.LASF303
 	.byte	0x15
 	.byte	0x17
 	.long	0x9b
-	.uleb128 0x56
-	.long	.LASF274
-	.long	.LASF274
+	.uleb128 0x57
+	.long	.LASF275
+	.long	.LASF275
 	.byte	0xe
 	.byte	0xf4
-	.uleb128 0x56
-	.long	.LASF275
-	.long	.LASF275
-	.byte	0xf
-	.byte	0x31
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF276
 	.long	.LASF276
 	.byte	0x6
 	.byte	0x74
-	.uleb128 0x57
+	.uleb128 0x58
 	.long	.LASF277
 	.long	.LASF277
-	.byte	0x10
+	.byte	0xf
 	.value	0x207
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF278
 	.long	.LASF278
-	.byte	0x11
+	.byte	0x10
 	.byte	0x9a
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF279
 	.long	.LASF279
-	.byte	0x12
+	.byte	0x11
 	.byte	0x3d
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF280
 	.long	.LASF280
-	.byte	0x13
+	.byte	0x12
 	.byte	0x9c
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF281
 	.long	.LASF281
 	.byte	0xe
 	.byte	0xcc
-	.uleb128 0x57
+	.uleb128 0x58
 	.long	.LASF282
 	.long	.LASF282
-	.byte	0x10
+	.byte	0xf
 	.value	0x20e
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF283
 	.long	.LASF283
 	.byte	0xb
 	.byte	0x50
-	.uleb128 0x58
-	.long	.LASF303
-	.long	.LASF303
-	.uleb128 0x56
+	.uleb128 0x59
+	.long	.LASF304
+	.long	.LASF304
+	.uleb128 0x57
 	.long	.LASF284
 	.long	.LASF284
 	.byte	0x8
 	.byte	0xcd
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF285
 	.long	.LASF285
-	.byte	0x14
+	.byte	0x13
 	.byte	0x28
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF286
 	.long	.LASF286
 	.byte	0x8
 	.byte	0xfc
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF287
 	.long	.LASF287
-	.byte	0x14
+	.byte	0x13
 	.byte	0x20
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF288
 	.long	.LASF288
-	.byte	0xf
-	.byte	0x28
-	.uleb128 0x56
-	.long	.LASF289
-	.long	.LASF289
 	.byte	0x14
+	.byte	0x28
+	.uleb128 0x57
+	.long	.LASF289
+	.long	.LASF289
+	.byte	0x13
 	.byte	0x1a
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF290
 	.long	.LASF290
-	.byte	0xf
+	.byte	0x14
 	.byte	0x19
-	.uleb128 0x56
+	.uleb128 0x57
 	.long	.LASF291
 	.long	.LASF291
+	.byte	0x14
+	.byte	0x31
+	.uleb128 0x57
+	.long	.LASF292
+	.long	.LASF292
 	.byte	0x6
 	.byte	0x5e
-	.uleb128 0x56
-	.long	.LASF292
-	.long	.LASF292
-	.byte	0x4
-	.byte	0x43
-	.uleb128 0x57
+	.uleb128 0x58
 	.long	.LASF293
 	.long	.LASF293
 	.byte	0x8
@@ -5928,6 +5667,38 @@ g_netmgr_cxt:
 	.byte	0
 	.uleb128 0x17
 	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0x19
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x20
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x18
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x19
+	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3
 	.uleb128 0xe
@@ -5941,7 +5712,7 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x18
+	.uleb128 0x1a
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -5958,7 +5729,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x19
+	.uleb128 0x1b
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -5971,7 +5742,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x1a
+	.uleb128 0x1c
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -5984,7 +5755,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x1b
+	.uleb128 0x1d
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3
@@ -6001,7 +5772,7 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x1c
+	.uleb128 0x1e
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -6015,36 +5786,23 @@ g_netmgr_cxt:
 	.uleb128 0x20
 	.uleb128 0xb
 	.uleb128 0x1
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x1d
-	.uleb128 0x5
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x1e
-	.uleb128 0x5
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0x5
-	.uleb128 0x49
 	.uleb128 0x13
 	.byte	0
 	.byte	0
 	.uleb128 0x1f
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x20
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
@@ -6065,7 +5823,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x20
+	.uleb128 0x21
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3f
@@ -6082,12 +5840,12 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x21
+	.uleb128 0x22
 	.uleb128 0xb
 	.byte	0x1
 	.byte	0
 	.byte	0
-	.uleb128 0x22
+	.uleb128 0x23
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -6110,7 +5868,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x23
+	.uleb128 0x24
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -6125,7 +5883,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x24
+	.uleb128 0x25
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -6148,26 +5906,11 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x25
-	.uleb128 0x5
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0x8
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0x5
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x2
-	.uleb128 0x18
-	.byte	0
-	.byte	0
 	.uleb128 0x26
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
-	.uleb128 0xe
+	.uleb128 0x8
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
@@ -6179,10 +5922,10 @@ g_netmgr_cxt:
 	.byte	0
 	.byte	0
 	.uleb128 0x27
-	.uleb128 0x34
+	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
-	.uleb128 0x8
+	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
@@ -6190,14 +5933,14 @@ g_netmgr_cxt:
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x2
-	.uleb128 0x17
+	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.uleb128 0x28
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
-	.uleb128 0xe
+	.uleb128 0x8
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
@@ -6209,6 +5952,21 @@ g_netmgr_cxt:
 	.byte	0
 	.byte	0
 	.uleb128 0x29
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x17
+	.byte	0
+	.byte	0
+	.uleb128 0x2a
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -6231,7 +5989,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2a
+	.uleb128 0x2b
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -6246,7 +6004,7 @@ g_netmgr_cxt:
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x2b
+	.uleb128 0x2c
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6261,7 +6019,7 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x2c
+	.uleb128 0x2d
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6274,7 +6032,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2d
+	.uleb128 0x2e
 	.uleb128 0x4109
 	.byte	0
 	.uleb128 0x11
@@ -6283,51 +6041,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2e
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0x5
-	.uleb128 0x27
-	.uleb128 0x19
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x11
-	.uleb128 0x1
-	.uleb128 0x12
-	.uleb128 0x6
-	.uleb128 0x40
-	.uleb128 0x18
-	.uleb128 0x2117
-	.uleb128 0x19
-	.uleb128 0x1
-	.uleb128 0x13
-	.byte	0
-	.byte	0
 	.uleb128 0x2f
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x27
-	.uleb128 0x19
-	.uleb128 0x49
-	.uleb128 0x13
-	.uleb128 0x20
-	.uleb128 0xb
-	.uleb128 0x1
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x30
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -6340,7 +6054,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x31
+	.uleb128 0x30
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6353,7 +6067,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x32
+	.uleb128 0x31
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -6368,7 +6082,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x33
+	.uleb128 0x32
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -6383,7 +6097,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x34
+	.uleb128 0x33
 	.uleb128 0x1d
 	.byte	0x1
 	.uleb128 0x31
@@ -6400,7 +6114,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x35
+	.uleb128 0x34
 	.uleb128 0xb
 	.byte	0x1
 	.uleb128 0x11
@@ -6409,7 +6123,7 @@ g_netmgr_cxt:
 	.uleb128 0x6
 	.byte	0
 	.byte	0
-	.uleb128 0x36
+	.uleb128 0x35
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x31
@@ -6418,7 +6132,7 @@ g_netmgr_cxt:
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x37
+	.uleb128 0x36
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x31
@@ -6427,7 +6141,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x38
+	.uleb128 0x37
 	.uleb128 0x1d
 	.byte	0x1
 	.uleb128 0x31
@@ -6444,7 +6158,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x39
+	.uleb128 0x38
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x31
@@ -6453,14 +6167,14 @@ g_netmgr_cxt:
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x3a
+	.uleb128 0x39
 	.uleb128 0xb
 	.byte	0x1
 	.uleb128 0x55
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x3b
+	.uleb128 0x3a
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x31
@@ -6477,7 +6191,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x3c
+	.uleb128 0x3b
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x31
@@ -6486,7 +6200,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x3d
+	.uleb128 0x3c
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x31
@@ -6501,14 +6215,14 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x3e
+	.uleb128 0x3d
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x31
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x3f
+	.uleb128 0x3e
 	.uleb128 0xb
 	.byte	0x1
 	.uleb128 0x11
@@ -6519,7 +6233,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x40
+	.uleb128 0x3f
 	.uleb128 0x4109
 	.byte	0x1
 	.uleb128 0x11
@@ -6530,7 +6244,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x41
+	.uleb128 0x40
 	.uleb128 0x410a
 	.byte	0
 	.uleb128 0x2
@@ -6539,7 +6253,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x42
+	.uleb128 0x41
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3
@@ -6554,7 +6268,7 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x43
+	.uleb128 0x42
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -6573,7 +6287,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x44
+	.uleb128 0x43
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6586,7 +6300,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x45
+	.uleb128 0x44
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x31
@@ -6603,7 +6317,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x46
+	.uleb128 0x45
 	.uleb128 0x1d
 	.byte	0
 	.uleb128 0x31
@@ -6618,7 +6332,7 @@ g_netmgr_cxt:
 	.uleb128 0x5
 	.byte	0
 	.byte	0
-	.uleb128 0x47
+	.uleb128 0x46
 	.uleb128 0x1d
 	.byte	0x1
 	.uleb128 0x31
@@ -6635,7 +6349,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x48
+	.uleb128 0x47
 	.uleb128 0x4109
 	.byte	0x1
 	.uleb128 0x11
@@ -6646,7 +6360,7 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x49
+	.uleb128 0x48
 	.uleb128 0x410a
 	.byte	0
 	.uleb128 0x31
@@ -6655,7 +6369,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x4a
+	.uleb128 0x49
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6670,7 +6384,7 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x4b
+	.uleb128 0x4a
 	.uleb128 0x1d
 	.byte	0x1
 	.uleb128 0x31
@@ -6687,13 +6401,38 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x4c
+	.uleb128 0x4b
 	.uleb128 0x4109
 	.byte	0
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x2113
 	.uleb128 0x18
+	.byte	0
+	.byte	0
+	.uleb128 0x4c
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0x19
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x6
+	.uleb128 0x40
+	.uleb128 0x18
+	.uleb128 0x2117
+	.uleb128 0x19
+	.uleb128 0x1
+	.uleb128 0x13
 	.byte	0
 	.byte	0
 	.uleb128 0x4d
@@ -6709,31 +6448,6 @@ g_netmgr_cxt:
 	.uleb128 0x5
 	.uleb128 0x27
 	.uleb128 0x19
-	.uleb128 0x11
-	.uleb128 0x1
-	.uleb128 0x12
-	.uleb128 0x6
-	.uleb128 0x40
-	.uleb128 0x18
-	.uleb128 0x2117
-	.uleb128 0x19
-	.uleb128 0x1
-	.uleb128 0x13
-	.byte	0
-	.byte	0
-	.uleb128 0x4e
-	.uleb128 0x2e
-	.byte	0x1
-	.uleb128 0x3f
-	.uleb128 0x19
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0x5
-	.uleb128 0x27
-	.uleb128 0x19
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x11
@@ -6748,18 +6462,22 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x4f
-	.uleb128 0x4109
-	.byte	0
-	.uleb128 0x11
-	.uleb128 0x1
-	.uleb128 0x2115
-	.uleb128 0x19
+	.uleb128 0x4e
+	.uleb128 0x1d
+	.byte	0x1
 	.uleb128 0x31
 	.uleb128 0x13
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x55
+	.uleb128 0x17
+	.uleb128 0x58
+	.uleb128 0xb
+	.uleb128 0x59
+	.uleb128 0x5
 	.byte	0
 	.byte	0
-	.uleb128 0x50
+	.uleb128 0x4f
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6774,11 +6492,9 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x51
+	.uleb128 0x50
 	.uleb128 0x2e
-	.byte	0
-	.uleb128 0x3f
-	.uleb128 0x19
+	.byte	0x1
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
@@ -6787,6 +6503,8 @@ g_netmgr_cxt:
 	.uleb128 0x5
 	.uleb128 0x27
 	.uleb128 0x19
+	.uleb128 0x49
+	.uleb128 0x13
 	.uleb128 0x11
 	.uleb128 0x1
 	.uleb128 0x12
@@ -6795,6 +6513,19 @@ g_netmgr_cxt:
 	.uleb128 0x18
 	.uleb128 0x2117
 	.uleb128 0x19
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x51
+	.uleb128 0x4109
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x2115
+	.uleb128 0x19
+	.uleb128 0x31
+	.uleb128 0x13
 	.byte	0
 	.byte	0
 	.uleb128 0x52
@@ -6810,6 +6541,29 @@ g_netmgr_cxt:
 	.uleb128 0x5
 	.uleb128 0x27
 	.uleb128 0x19
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x6
+	.uleb128 0x40
+	.uleb128 0x18
+	.uleb128 0x2117
+	.uleb128 0x19
+	.byte	0
+	.byte	0
+	.uleb128 0x53
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0x19
 	.uleb128 0x49
 	.uleb128 0x13
 	.uleb128 0x11
@@ -6822,7 +6576,7 @@ g_netmgr_cxt:
 	.uleb128 0x19
 	.byte	0
 	.byte	0
-	.uleb128 0x53
+	.uleb128 0x54
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -6831,21 +6585,6 @@ g_netmgr_cxt:
 	.uleb128 0x13
 	.uleb128 0x34
 	.uleb128 0x19
-	.uleb128 0x2
-	.uleb128 0x18
-	.byte	0
-	.byte	0
-	.uleb128 0x54
-	.uleb128 0x34
-	.byte	0
-	.uleb128 0x3
-	.uleb128 0xe
-	.uleb128 0x3a
-	.uleb128 0xb
-	.uleb128 0x3b
-	.uleb128 0xb
-	.uleb128 0x49
-	.uleb128 0x13
 	.uleb128 0x2
 	.uleb128 0x18
 	.byte	0
@@ -6861,27 +6600,25 @@ g_netmgr_cxt:
 	.uleb128 0xb
 	.uleb128 0x49
 	.uleb128 0x13
-	.uleb128 0x3f
-	.uleb128 0x19
-	.uleb128 0x3c
-	.uleb128 0x19
+	.uleb128 0x2
+	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.uleb128 0x56
-	.uleb128 0x2e
+	.uleb128 0x34
 	.byte	0
-	.uleb128 0x3f
-	.uleb128 0x19
-	.uleb128 0x3c
-	.uleb128 0x19
-	.uleb128 0x6e
-	.uleb128 0xe
 	.uleb128 0x3
 	.uleb128 0xe
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
 	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3c
+	.uleb128 0x19
 	.byte	0
 	.byte	0
 	.uleb128 0x57
@@ -6898,10 +6635,27 @@ g_netmgr_cxt:
 	.uleb128 0x3a
 	.uleb128 0xb
 	.uleb128 0x3b
-	.uleb128 0x5
+	.uleb128 0xb
 	.byte	0
 	.byte	0
 	.uleb128 0x58
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0x19
+	.uleb128 0x3c
+	.uleb128 0x19
+	.uleb128 0x6e
+	.uleb128 0xe
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.byte	0
+	.byte	0
+	.uleb128 0x59
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3f
@@ -6959,7 +6713,7 @@ g_netmgr_cxt:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL13
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6973,7 +6727,7 @@ g_netmgr_cxt:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL14-1
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -6982,27 +6736,15 @@ g_netmgr_cxt:
 	.long	0
 	.long	0
 .LLST5:
-	.long	.LVL15
-	.long	.LVL16
-	.value	0x2
-	.byte	0x30
-	.byte	0x9f
-	.long	.LVL16
-	.long	.LFE33
+	.long	.LVL21
+	.long	.LVL22-1
 	.value	0x1
 	.byte	0x50
 	.long	0
 	.long	0
 .LLST6:
-	.long	.LVL23
-	.long	.LVL24-1
-	.value	0x1
-	.byte	0x50
-	.long	0
-	.long	0
-.LLST7:
-	.long	.LVL27
-	.long	.LVL30
+	.long	.LVL25
+	.long	.LVL28
 	.value	0x6
 	.byte	0x91
 	.sleb128 4
@@ -7012,14 +6754,14 @@ g_netmgr_cxt:
 	.byte	0x9f
 	.long	0
 	.long	0
-.LLST8:
-	.long	.LVL27
-	.long	.LVL28
+.LLST7:
+	.long	.LVL25
+	.long	.LVL26
 	.value	0x2
 	.byte	0x30
 	.byte	0x9f
-	.long	.LVL28
-	.long	.LVL29
+	.long	.LVL26
+	.long	.LVL27
 	.value	0x12
 	.byte	0x91
 	.sleb128 -40
@@ -7041,233 +6783,241 @@ g_netmgr_cxt:
 	.byte	0x9f
 	.long	0
 	.long	0
-.LLST9:
-	.long	.LVL35
-	.long	.LVL36
+.LLST8:
+	.long	.LVL33
+	.long	.LVL34
 	.value	0x1
 	.byte	0x50
-	.long	.LVL36
-	.long	.LVL43
+	.long	.LVL34
+	.long	.LVL41
 	.value	0x1
 	.byte	0x56
 	.long	0
 	.long	0
-.LLST10:
-	.long	.LVL33
-	.long	.LVL37
+.LLST9:
+	.long	.LVL31
+	.long	.LVL35
 	.value	0x6
 	.byte	0x3
 	.long	g_netmgr_cxt+104
 	.byte	0x9f
-	.long	.LVL37
-	.long	.LVL38
+	.long	.LVL35
+	.long	.LVL36
 	.value	0x2
 	.byte	0x74
 	.sleb128 0
-	.long	.LVL38
-	.long	.LVL39-1
+	.long	.LVL36
+	.long	.LVL37-1
 	.value	0x2
 	.byte	0x74
 	.sleb128 4
-	.long	.LVL39-1
-	.long	.LFE57
+	.long	.LVL37-1
+	.long	.LFE64
 	.value	0x6
 	.byte	0x3
 	.long	g_netmgr_cxt+104
 	.byte	0x9f
+	.long	0
+	.long	0
+.LLST10:
+	.long	.LVL42
+	.long	.LVL43-1
+	.value	0x1
+	.byte	0x50
+	.long	.LVL43
+	.long	.LVL44-1
+	.value	0x1
+	.byte	0x50
 	.long	0
 	.long	0
 .LLST11:
-	.long	.LVL44
-	.long	.LVL45-1
-	.value	0x1
-	.byte	0x50
-	.long	.LVL45
-	.long	.LVL46-1
-	.value	0x1
-	.byte	0x50
-	.long	0
-	.long	0
-.LLST12:
-	.long	.LVL50
-	.long	.LVL56
-	.value	0x2
-	.byte	0x91
-	.sleb128 0
-	.long	.LVL57
-	.long	.LFE24
-	.value	0x2
-	.byte	0x91
-	.sleb128 0
-	.long	0
-	.long	0
-.LLST13:
-	.long	.LVL50
-	.long	.LVL52
-	.value	0x2
-	.byte	0x91
-	.sleb128 4
-	.long	.LVL52
-	.long	.LVL57-1
-	.value	0x1
-	.byte	0x50
-	.long	.LVL57
-	.long	.LFE24
-	.value	0x1
-	.byte	0x50
-	.long	0
-	.long	0
-.LLST14:
-	.long	.LVL50
-	.long	.LVL51
-	.value	0x2
-	.byte	0x91
-	.sleb128 8
-	.long	.LVL53
+	.long	.LVL48
 	.long	.LVL54
 	.value	0x2
 	.byte	0x91
-	.sleb128 8
-	.long	.LVL57
-	.long	.LFE24
-	.value	0x2
-	.byte	0x91
-	.sleb128 8
-	.long	0
-	.long	0
-.LLST15:
-	.long	.LVL53
+	.sleb128 0
 	.long	.LVL55
+	.long	.LFE30
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
 	.long	0
 	.long	0
-.LLST16:
-	.long	.LVL53
+.LLST12:
+	.long	.LVL48
+	.long	.LVL50
+	.value	0x2
+	.byte	0x91
+	.sleb128 4
+	.long	.LVL50
+	.long	.LVL55-1
+	.value	0x1
+	.byte	0x50
 	.long	.LVL55
+	.long	.LFE30
+	.value	0x1
+	.byte	0x50
+	.long	0
+	.long	0
+.LLST13:
+	.long	.LVL48
+	.long	.LVL49
+	.value	0x2
+	.byte	0x91
+	.sleb128 8
+	.long	.LVL51
+	.long	.LVL52
+	.value	0x2
+	.byte	0x91
+	.sleb128 8
+	.long	.LVL55
+	.long	.LFE30
+	.value	0x2
+	.byte	0x91
+	.sleb128 8
+	.long	0
+	.long	0
+.LLST14:
+	.long	.LVL51
+	.long	.LVL53
+	.value	0x2
+	.byte	0x91
+	.sleb128 0
+	.long	0
+	.long	0
+.LLST15:
+	.long	.LVL51
+	.long	.LVL53
 	.value	0x2
 	.byte	0x31
 	.byte	0x9f
 	.long	0
 	.long	0
-.LLST17:
-	.long	.LVL53
-	.long	.LVL54
+.LLST16:
+	.long	.LVL51
+	.long	.LVL52
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
 	.long	0
 	.long	0
-.LLST18:
-	.long	.LVL59
-	.long	.LVL73
+.LLST17:
+	.long	.LVL57
+	.long	.LVL71
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
 	.long	0
 	.long	0
-.LLST19:
-	.long	.LVL59
-	.long	.LVL73
+.LLST18:
+	.long	.LVL57
+	.long	.LVL71
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
 	.long	0
 	.long	0
-.LLST20:
-	.long	.LVL74
-	.long	.LVL77
+.LLST19:
+	.long	.LVL72
+	.long	.LVL75
 	.value	0x3
 	.byte	0x9
 	.byte	0xff
 	.byte	0x9f
-	.long	.LVL77
-	.long	.LVL78-1
+	.long	.LVL75
+	.long	.LVL76-1
 	.value	0x1
 	.byte	0x50
 	.long	0
 	.long	0
-.LLST21:
-	.long	.LVL85
-	.long	.LVL86
+.LLST20:
+	.long	.LVL83
+	.long	.LVL84
 	.value	0x1
 	.byte	0x52
 	.long	0
 	.long	0
-.LLST22:
-	.long	.LVL86
-	.long	.LVL89
+.LLST21:
+	.long	.LVL84
+	.long	.LVL87
 	.value	0x1
 	.byte	0x53
-	.long	.LVL89
-	.long	.LVL90
+	.long	.LVL87
+	.long	.LVL88
 	.value	0x3
 	.byte	0x73
 	.sleb128 -1
 	.byte	0x9f
-	.long	.LVL90
-	.long	.LVL91
+	.long	.LVL88
+	.long	.LVL89
 	.value	0x1
 	.byte	0x53
+	.long	0
+	.long	0
+.LLST22:
+	.long	.LVL83
+	.long	.LVL84
+	.value	0x2
+	.byte	0x30
+	.byte	0x9f
+	.long	.LVL84
+	.long	.LVL89
+	.value	0x1
+	.byte	0x56
 	.long	0
 	.long	0
 .LLST23:
 	.long	.LVL85
 	.long	.LVL86
 	.value	0x2
-	.byte	0x30
-	.byte	0x9f
-	.long	.LVL86
-	.long	.LVL91
-	.value	0x1
-	.byte	0x56
-	.long	0
-	.long	0
-.LLST24:
-	.long	.LVL87
-	.long	.LVL88
-	.value	0x2
 	.byte	0x36
 	.byte	0x9f
 	.long	0
 	.long	0
-.LLST25:
-	.long	.LVL87
-	.long	.LVL88
+.LLST24:
+	.long	.LVL85
+	.long	.LVL86
 	.value	0x1
 	.byte	0x57
 	.long	0
 	.long	0
-.LLST26:
-	.long	.LVL98
-	.long	.LVL99
+.LLST25:
+	.long	.LVL96
+	.long	.LVL97
 	.value	0x1
 	.byte	0x51
 	.long	0
 	.long	0
+.LLST26:
+	.long	.LVL100
+	.long	.LVL101
+	.value	0x2
+	.byte	0x30
+	.byte	0x9f
+	.long	0
+	.long	0
 .LLST27:
+	.long	.LVL111
 	.long	.LVL112
-	.long	.LVL113
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
 	.long	0
 	.long	0
 .LLST28:
-	.long	.LVL118
-	.long	.LVL119
+	.long	.LVL116
+	.long	.LVL117
 	.value	0x1
 	.byte	0x50
-	.long	.LVL119
-	.long	.LVL122-1
+	.long	.LVL117
+	.long	.LVL120-1
 	.value	0x1
 	.byte	0x52
 	.long	0
 	.long	0
 .LLST29:
-	.long	.LVL120
-	.long	.LVL121
+	.long	.LVL118
+	.long	.LVL119
 	.value	0x6
 	.byte	0x3
 	.long	g_def_smartconfig
@@ -7275,169 +7025,125 @@ g_netmgr_cxt:
 	.long	0
 	.long	0
 .LLST30:
-	.long	.LVL123
-	.long	.LVL124
+	.long	.LVL121
+	.long	.LVL122
 	.value	0x1
 	.byte	0x50
 	.long	0
 	.long	0
 .LLST31:
-	.long	.LVL129
-	.long	.LVL130
+	.long	.LVL127
+	.long	.LVL128
 	.value	0x1
 	.byte	0x51
 	.long	0
 	.long	0
 .LLST32:
-	.long	.LVL130
-	.long	.LVL131-1
+	.long	.LVL128
+	.long	.LVL129-1
 	.value	0x1
 	.byte	0x52
-	.long	.LVL131-1
-	.long	.LVL131
+	.long	.LVL129-1
+	.long	.LVL129
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
-	.long	0
-	.long	0
-.LLST33:
-	.long	.LVL135
-	.long	.LVL140
-	.value	0x1
-	.byte	0x56
-	.long	.LVL144
-	.long	.LVL145
-	.value	0x1
-	.byte	0x56
-	.long	0
-	.long	0
-.LLST34:
-	.long	.LVL139
-	.long	.LVL144
-	.value	0x2
-	.byte	0x91
-	.sleb128 0
-	.long	0
-	.long	0
-.LLST35:
-	.long	.LVL139
-	.long	.LVL144
-	.value	0x2
-	.byte	0x91
-	.sleb128 4
-	.long	0
-	.long	0
-.LLST36:
-	.long	.LVL139
-	.long	.LVL144
-	.value	0x2
-	.byte	0x34
-	.byte	0x9f
-	.long	0
-	.long	0
-.LLST37:
-	.long	.LVL139
-	.long	.LVL144
-	.value	0x1
-	.byte	0x53
 	.long	0
 	.long	0
 	.section	.debug_aranges,"",@progbits
-	.long	0xfc
+	.long	0xec
 	.value	0x2
 	.long	.Ldebug_info0
 	.byte	0x4
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB28
-	.long	.LFE28-.LFB28
-	.long	.LFB29
-	.long	.LFE29-.LFB29
-	.long	.LFB56
-	.long	.LFE56-.LFB56
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB33
-	.long	.LFE33-.LFB33
-	.long	.LFB55
-	.long	.LFE55-.LFB55
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB57
-	.long	.LFE57-.LFB57
-	.long	.LFB39
-	.long	.LFE39-.LFB39
 	.long	.LFB24
 	.long	.LFE24-.LFB24
-	.long	.LFB36
-	.long	.LFE36-.LFB36
-	.long	.LFB26
-	.long	.LFE26-.LFB26
-	.long	.LFB31
-	.long	.LFE31-.LFB31
-	.long	.LFB37
-	.long	.LFE37-.LFB37
-	.long	.LFB38
-	.long	.LFE38-.LFB38
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB34
+	.long	.LFE34-.LFB34
+	.long	.LFB35
+	.long	.LFE35-.LFB35
+	.long	.LFB62
+	.long	.LFE62-.LFB62
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB61
+	.long	.LFE61-.LFB61
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB64
+	.long	.LFE64-.LFB64
+	.long	.LFB45
+	.long	.LFE45-.LFB45
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.long	.LFB42
 	.long	.LFE42-.LFB42
+	.long	.LFB32
+	.long	.LFE32-.LFB32
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.long	.LFB43
 	.long	.LFE43-.LFB43
 	.long	.LFB44
 	.long	.LFE44-.LFB44
-	.long	.LFB54
-	.long	.LFE54-.LFB54
-	.long	.LFB45
-	.long	.LFE45-.LFB45
 	.long	.LFB48
 	.long	.LFE48-.LFB48
 	.long	.LFB49
 	.long	.LFE49-.LFB49
 	.long	.LFB50
 	.long	.LFE50-.LFB50
-	.long	.LFB47
-	.long	.LFE47-.LFB47
+	.long	.LFB60
+	.long	.LFE60-.LFB60
 	.long	.LFB51
 	.long	.LFE51-.LFB51
-	.long	.LFB52
-	.long	.LFE52-.LFB52
-	.long	.LFB53
-	.long	.LFE53-.LFB53
+	.long	.LFB54
+	.long	.LFE54-.LFB54
+	.long	.LFB55
+	.long	.LFE55-.LFB55
+	.long	.LFB56
+	.long	.LFE56-.LFB56
+	.long	.LFB57
+	.long	.LFE57-.LFB57
+	.long	.LFB58
+	.long	.LFE58-.LFB58
+	.long	.LFB59
+	.long	.LFE59-.LFB59
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LBB42
-	.long	.LBE42
-	.long	.LBB45
-	.long	.LBE45
+	.long	.LBB44
+	.long	.LBE44
+	.long	.LBB47
+	.long	.LBE47
 	.long	0
 	.long	0
-	.long	.LBB76
-	.long	.LBE76
-	.long	.LBB79
-	.long	.LBE79
+	.long	.LBB78
+	.long	.LBE78
+	.long	.LBB81
+	.long	.LBE81
 	.long	0
 	.long	0
-	.long	.LBB82
-	.long	.LBE82
-	.long	.LBB87
-	.long	.LBE87
-	.long	.LBB88
-	.long	.LBE88
+	.long	.LBB84
+	.long	.LBE84
 	.long	.LBB89
 	.long	.LBE89
+	.long	.LBB90
+	.long	.LBE90
+	.long	.LBB91
+	.long	.LBE91
 	.long	0
 	.long	0
-	.long	.LBB92
-	.long	.LBE92
-	.long	.LBB95
-	.long	.LBE95
+	.long	.LBB94
+	.long	.LBE94
+	.long	.LBB98
+	.long	.LBE98
+	.long	.LBB99
+	.long	.LBE99
 	.long	0
 	.long	0
 	.long	.LBB102
@@ -7446,78 +7152,80 @@ g_netmgr_cxt:
 	.long	.LBE105
 	.long	0
 	.long	0
-	.long	.LBB108
-	.long	.LBE108
-	.long	.LBB111
-	.long	.LBE111
+	.long	.LBB112
+	.long	.LBE112
+	.long	.LBB115
+	.long	.LBE115
 	.long	0
 	.long	0
-	.long	.LBB116
-	.long	.LBE116
-	.long	.LBB120
-	.long	.LBE120
+	.long	.LBB118
+	.long	.LBE118
 	.long	.LBB121
 	.long	.LBE121
 	.long	0
 	.long	0
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB28
-	.long	.LFE28
-	.long	.LFB29
-	.long	.LFE29
-	.long	.LFB56
-	.long	.LFE56
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB33
-	.long	.LFE33
-	.long	.LFB55
-	.long	.LFE55
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB57
-	.long	.LFE57
-	.long	.LFB39
-	.long	.LFE39
+	.long	.LBB126
+	.long	.LBE126
+	.long	.LBB130
+	.long	.LBE130
+	.long	.LBB131
+	.long	.LBE131
+	.long	0
+	.long	0
 	.long	.LFB24
 	.long	.LFE24
-	.long	.LFB36
-	.long	.LFE36
-	.long	.LFB26
-	.long	.LFE26
-	.long	.LFB31
-	.long	.LFE31
-	.long	.LFB37
-	.long	.LFE37
-	.long	.LFB38
-	.long	.LFE38
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB34
+	.long	.LFE34
+	.long	.LFB35
+	.long	.LFE35
+	.long	.LFB62
+	.long	.LFE62
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB61
+	.long	.LFE61
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB64
+	.long	.LFE64
+	.long	.LFB45
+	.long	.LFE45
+	.long	.LFB30
+	.long	.LFE30
 	.long	.LFB42
 	.long	.LFE42
+	.long	.LFB32
+	.long	.LFE32
+	.long	.LFB37
+	.long	.LFE37
 	.long	.LFB43
 	.long	.LFE43
 	.long	.LFB44
 	.long	.LFE44
-	.long	.LFB54
-	.long	.LFE54
-	.long	.LFB45
-	.long	.LFE45
 	.long	.LFB48
 	.long	.LFE48
 	.long	.LFB49
 	.long	.LFE49
 	.long	.LFB50
 	.long	.LFE50
-	.long	.LFB47
-	.long	.LFE47
+	.long	.LFB60
+	.long	.LFE60
 	.long	.LFB51
 	.long	.LFE51
-	.long	.LFB52
-	.long	.LFE52
-	.long	.LFB53
-	.long	.LFE53
+	.long	.LFB54
+	.long	.LFE54
+	.long	.LFB55
+	.long	.LFE55
+	.long	.LFB56
+	.long	.LFE56
+	.long	.LFB57
+	.long	.LFE57
+	.long	.LFB58
+	.long	.LFE58
+	.long	.LFB59
+	.long	.LFE59
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits
@@ -7527,17 +7235,17 @@ g_netmgr_cxt:
 	.string	"int8_t"
 .LASF193:
 	.string	"NETMGR_AWSS_ENC_TYPE_WEP"
-.LASF235:
+.LASF236:
 	.string	"last_ap"
 .LASF16:
 	.string	"sizetype"
 .LASF70:
 	.string	"start"
-.LASF264:
+.LASF265:
 	.string	"netmgr_init"
 .LASF139:
 	.string	"is_connected"
-.LASF216:
+.LASF217:
 	.string	"netmgr_stat_chg_event"
 .LASF156:
 	.string	"MEMP_TCP_PCB"
@@ -7557,17 +7265,17 @@ g_netmgr_cxt:
 	.string	"stop_monitor"
 .LASF164:
 	.string	"MEMP_SYS_TIMEOUT"
-.LASF268:
+.LASF269:
 	.string	"__func__"
 .LASF98:
 	.string	"ap_power"
 .LASF190:
 	.string	"NETMGR_AWSS_AUTH_TYPE_INVALID"
-.LASF258:
+.LASF301:
 	.string	"def_smart_config_start"
 .LASF107:
 	.string	"hal_wifi_scan_result_adv_t"
-.LASF228:
+.LASF229:
 	.string	"config"
 .LASF57:
 	.string	"TAG_DEV_UV"
@@ -7583,17 +7291,17 @@ g_netmgr_cxt:
 	.string	"ip_got"
 .LASF38:
 	.string	"type"
-.LASF217:
+.LASF218:
 	.string	"stat"
-.LASF255:
+.LASF258:
 	.string	"netmgr_get_ap_config"
 .LASF42:
 	.string	"input_event_t"
-.LASF233:
+.LASF234:
 	.string	"netmgr_scan_adv_completed_event"
 .LASF82:
 	.string	"get_channel"
-.LASF252:
+.LASF254:
 	.string	"wifi_get_ip"
 .LASF76:
 	.string	"power_off"
@@ -7603,7 +7311,7 @@ g_netmgr_cxt:
 	.string	"__uint8_t"
 .LASF199:
 	.string	"netmgr_wifi_scan_result_cb_t"
-.LASF234:
+.LASF235:
 	.string	"result"
 .LASF75:
 	.string	"start_scan_adv"
@@ -7627,27 +7335,27 @@ g_netmgr_cxt:
 	.string	"autoconfig_chain"
 .LASF284:
 	.string	"hal_wifi_get_default_module"
-.LASF245:
+.LASF248:
 	.string	"pnet"
 .LASF131:
 	.string	"broadcastip"
 .LASF94:
 	.string	"mesh_disable"
-.LASF244:
+.LASF247:
 	.string	"netmgr_ip_got_event"
 .LASF119:
 	.string	"gateway_ip_addr"
-.LASF230:
+.LASF231:
 	.string	"to_fill"
 .LASF288:
 	.string	"aos_kv_get"
 .LASF167:
 	.string	"MEMP_PBUF_POOL"
-.LASF273:
+.LASF274:
 	.string	"ncmd"
 .LASF2:
 	.string	"signed char"
-.LASF292:
+.LASF243:
 	.string	"aos_cli_register_command"
 .LASF18:
 	.string	"uint8_t"
@@ -7659,17 +7367,17 @@ g_netmgr_cxt:
 	.string	"hal_wifi_init_type_adv_t"
 .LASF123:
 	.string	"wifi_retry_interval"
-.LASF218:
+.LASF219:
 	.string	"netmgr_events_executor"
 .LASF3:
 	.string	"unsigned char"
 .LASF95:
 	.string	"mesh_radio_sleep"
-.LASF232:
+.LASF233:
 	.string	"netmgr_connect_fail_event"
-.LASF272:
+.LASF273:
 	.string	"g_wifi_hal_event"
-.LASF265:
+.LASF266:
 	.string	"netmgr_get_ip_state"
 .LASF159:
 	.string	"MEMP_NETBUF"
@@ -7689,7 +7397,7 @@ g_netmgr_cxt:
 	.string	"monitor_data_cb_t"
 .LASF73:
 	.string	"get_link_stat"
-.LASF210:
+.LASF211:
 	.string	"module"
 .LASF87:
 	.string	"register_wlan_mgnt_monitor_cb"
@@ -7699,7 +7407,7 @@ g_netmgr_cxt:
 	.string	"stat_chg"
 .LASF50:
 	.string	"TAG_DEV_ACC"
-.LASF250:
+.LASF252:
 	.string	"netmgr_scan_completed_event"
 .LASF154:
 	.string	"MEMP_RAW_PCB"
@@ -7709,7 +7417,7 @@ g_netmgr_cxt:
 	.string	"netmgr_cxt_t"
 .LASF79:
 	.string	"suspend_station"
-.LASF221:
+.LASF222:
 	.string	"autoconfig"
 .LASF86:
 	.string	"register_monitor_cb"
@@ -7719,23 +7427,23 @@ g_netmgr_cxt:
 	.string	"TAG_DEV_HALL"
 .LASF34:
 	.string	"AOS_LL_V_INFO_BIT"
-.LASF243:
+.LASF246:
 	.string	"rand_flag"
 .LASF287:
 	.string	"strcmp"
-.LASF213:
+.LASF214:
 	.string	"is_leader"
 .LASF80:
 	.string	"suspend_soft_ap"
-.LASF236:
+.LASF237:
 	.string	"netmgr_para_chg_event"
 .LASF92:
 	.string	"mesh_set_bssid"
 .LASF88:
 	.string	"wlan_send_80211_raw_frame"
-.LASF239:
+.LASF240:
 	.string	"format_ip"
-.LASF262:
+.LASF263:
 	.string	"read_persistent_conf"
 .LASF102:
 	.string	"hal_wifi_scan_result_t"
@@ -7749,27 +7457,27 @@ g_netmgr_cxt:
 	.string	"STATION"
 .LASF160:
 	.string	"MEMP_NETCONN"
-.LASF224:
+.LASF225:
 	.string	"blen"
-.LASF248:
+.LASF244:
 	.string	"translate_addr"
-.LASF241:
+.LASF242:
 	.string	"def_smart_config_stop"
 .LASF300:
 	.string	"ramdonize_tcp_local_port"
-.LASF267:
+.LASF268:
 	.string	"netmgr_wifi_get_ip"
 .LASF58:
 	.string	"TAG_DEV_HUMI"
 .LASF137:
 	.string	"DHCP_CLIENT"
-.LASF269:
+.LASF270:
 	.string	"g_netmgr_cxt"
 .LASF24:
 	.string	"function"
-.LASF259:
+.LASF260:
 	.string	"add_autoconfig_plugin"
-.LASF256:
+.LASF259:
 	.string	"netmgr_set_ap_config"
 .LASF185:
 	.string	"NETMGR_AWSS_AUTH_TYPE_WPA8021X"
@@ -7779,35 +7487,35 @@ g_netmgr_cxt:
 	.string	"long unsigned int"
 .LASF169:
 	.string	"log_level_bit"
-.LASF229:
+.LASF230:
 	.string	"get_bssid"
-.LASF242:
+.LASF245:
 	.string	"address"
 .LASF104:
 	.string	"channel"
 .LASF84:
 	.string	"start_monitor"
-.LASF215:
+.LASF216:
 	.string	"valid_plugin"
 .LASF184:
 	.string	"NETMGR_AWSS_AUTH_TYPE_WPAPSK"
 .LASF81:
 	.string	"set_channel"
-.LASF253:
+.LASF255:
 	.string	"netmgr_register_wifi_scan_result_callback"
 .LASF145:
 	.string	"connect_fail"
-.LASF274:
+.LASF275:
 	.string	"sprintf"
 .LASF202:
 	.string	"wifi_hal_mod"
 .LASF186:
 	.string	"NETMGR_AWSS_AUTH_TYPE_WPA2PSK"
-.LASF225:
-	.string	"argc"
 .LASF226:
+	.string	"argc"
+.LASF227:
 	.string	"argv"
-.LASF261:
+.LASF262:
 	.string	"netmgr_set_smart_config"
 .LASF55:
 	.string	"TAG_DEV_BARO"
@@ -7815,7 +7523,7 @@ g_netmgr_cxt:
 	.string	"description"
 .LASF9:
 	.string	"__uint32_t"
-.LASF303:
+.LASF304:
 	.string	"__stack_chk_fail"
 .LASF129:
 	.string	"gate"
@@ -7827,7 +7535,7 @@ g_netmgr_cxt:
 	.string	"get_ip_stat"
 .LASF62:
 	.string	"TAG_DEV_SENSOR_NUM_MAX"
-.LASF220:
+.LASF221:
 	.string	"priv_data"
 .LASF68:
 	.string	"get_mac_addr"
@@ -7845,13 +7553,13 @@ g_netmgr_cxt:
 	.string	"wifi_strength"
 .LASF130:
 	.string	"mask"
-.LASF270:
+.LASF271:
 	.string	"g_def_smartconfig"
 .LASF44:
 	.string	"float"
-.LASF247:
+.LASF250:
 	.string	"handle_wifi_disconnect"
-.LASF263:
+.LASF264:
 	.string	"get_wifi_ssid"
 .LASF78:
 	.string	"suspend"
@@ -7871,7 +7579,7 @@ g_netmgr_cxt:
 	.string	"clear_wifi_ssid"
 .LASF195:
 	.string	"NETMGR_AWSS_ENC_TYPE_AES"
-.LASF260:
+.LASF261:
 	.string	"plugin"
 .LASF179:
 	.string	"config_result_cb"
@@ -7879,7 +7587,7 @@ g_netmgr_cxt:
 	.string	"netmgr_start"
 .LASF53:
 	.string	"TAG_DEV_ALS"
-.LASF275:
+.LASF291:
 	.string	"aos_kv_del"
 .LASF96:
 	.string	"mesh_radio_wakeup"
@@ -7909,7 +7617,7 @@ g_netmgr_cxt:
 	.string	"NETMGR_AWSS_AUTH_TYPE_WPAPSKWPA2PSK"
 .LASF206:
 	.string	"doing_smartconfig"
-.LASF214:
+.LASF215:
 	.string	"netmgr_wifi_config_start"
 .LASF101:
 	.string	"ap_list"
@@ -7923,14 +7631,16 @@ g_netmgr_cxt:
 	.string	"netmgr_clear_ap_config"
 .LASF0:
 	.string	"__int8_t"
-.LASF231:
+.LASF232:
 	.string	"size"
-.LASF211:
+.LASF212:
 	.string	"reconnect_wifi"
 .LASF12:
 	.string	"long long unsigned int"
 .LASF155:
 	.string	"MEMP_UDP_PCB"
+.LASF210:
+	.string	"command"
 .LASF124:
 	.string	"hal_wifi_init_type_t"
 .LASF158:
@@ -7945,7 +7655,7 @@ g_netmgr_cxt:
 	.string	"extra"
 .LASF162:
 	.string	"MEMP_TCPIP_MSG_INPKT"
-.LASF238:
+.LASF239:
 	.string	"def_smart_config_result_cb"
 .LASF117:
 	.string	"local_ip_addr"
@@ -7957,15 +7667,15 @@ g_netmgr_cxt:
 	.string	"hal_wifi_type_t"
 .LASF125:
 	.string	"ap_info"
-.LASF271:
+.LASF272:
 	.string	"g_station_is_up"
 .LASF69:
 	.string	"set_mac_addr"
-.LASF246:
+.LASF249:
 	.string	"stop_mesh"
-.LASF301:
+.LASF302:
 	.string	"netmgr_deinit"
-.LASF266:
+.LASF267:
 	.string	"netmgr_get_scan_cb_finished"
 .LASF173:
 	.string	"LWIP_NETIF_CLIENT_DATA_INDEX_MAX"
@@ -7989,9 +7699,9 @@ g_netmgr_cxt:
 	.string	"init"
 .LASF289:
 	.string	"memcmp"
-.LASF302:
+.LASF303:
 	.string	"aos_log_level"
-.LASF212:
+.LASF213:
 	.string	"start_mesh"
 .LASF283:
 	.string	"csp_printf"
@@ -8007,7 +7717,7 @@ g_netmgr_cxt:
 	.string	"aos_log_get_level"
 .LASF4:
 	.string	"short int"
-.LASF251:
+.LASF253:
 	.string	"netmgr_reconnect_wifi"
 .LASF74:
 	.string	"start_scan"
@@ -8037,11 +7747,11 @@ g_netmgr_cxt:
 	.string	"hal_wifi_module_t"
 .LASF171:
 	.string	"LWIP_NETIF_CLIENT_DATA_INDEX_DHCP"
-.LASF249:
+.LASF251:
 	.string	"set_wifi_ssid"
-.LASF291:
+.LASF292:
 	.string	"aos_register_event_filter"
-.LASF222:
+.LASF223:
 	.string	"handle_netmgr_cmd"
 .LASF197:
 	.string	"NETMGR_AWSS_ENC_TYPE_MAX"
@@ -8075,7 +7785,7 @@ g_netmgr_cxt:
 	.string	"TAG_DEV_GPS"
 .LASF136:
 	.string	"DHCP_DISABLE"
-.LASF237:
+.LASF238:
 	.string	"netmgr_fatal_err_event"
 .LASF6:
 	.string	"short unsigned int"
@@ -8083,7 +7793,7 @@ g_netmgr_cxt:
 	.string	"magic"
 .LASF192:
 	.string	"NETMGR_AWSS_ENC_TYPE_NONE"
-.LASF227:
+.LASF228:
 	.string	"rtype"
 .LASF65:
 	.string	"base"
@@ -8101,11 +7811,11 @@ g_netmgr_cxt:
 	.string	"NETMGR_AWSS_AUTH_TYPE"
 .LASF126:
 	.string	"key_len"
-.LASF219:
+.LASF220:
 	.string	"eventinfo"
 .LASF83:
 	.string	"get_channel_list"
-.LASF223:
+.LASF224:
 	.string	"pwbuf"
 .LASF66:
 	.string	"ev_cb"
@@ -8113,9 +7823,9 @@ g_netmgr_cxt:
 	.string	"rssi"
 .LASF28:
 	.string	"next"
-.LASF240:
+.LASF241:
 	.string	"octet"
-.LASF254:
+.LASF256:
 	.string	"has_valid_ap"
 .LASF157:
 	.string	"MEMP_TCP_PCB_LISTEN"

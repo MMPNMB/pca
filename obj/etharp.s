@@ -10,7 +10,7 @@
 	.section	.text.etharp_free_entry
 	.type	etharp_free_entry, @function
 etharp_free_entry:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/ipv4/etharp.c"
 	.loc 1 163 0
 	.cfi_startproc
@@ -70,7 +70,7 @@ etharp_free_entry:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	etharp_free_entry, .-etharp_free_entry
 	.section	.text.unlikely.etharp_free_entry
 .LCOLDE0:
@@ -82,7 +82,7 @@ etharp_free_entry:
 .LHOTB1:
 	.type	etharp_find_entry, @function
 etharp_find_entry:
-.LFB19:
+.LFB25:
 	.loc 1 251 0
 	.cfi_startproc
 .LVL4:
@@ -283,7 +283,7 @@ etharp_find_entry:
 .LVL32:
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	etharp_find_entry, .-etharp_find_entry
 	.section	.text.unlikely.etharp_find_entry
 .LCOLDE1:
@@ -295,7 +295,7 @@ etharp_find_entry:
 .LHOTB2:
 	.type	etharp_raw.constprop.0, @function
 etharp_raw.constprop.0:
-.LFB31:
+.LFB37:
 	.loc 1 1120 0
 	.cfi_startproc
 .LVL33:
@@ -407,7 +407,7 @@ etharp_raw.constprop.0:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	etharp_raw.constprop.0, .-etharp_raw.constprop.0
 	.section	.text.unlikely.etharp_raw.constprop.0
 .LCOLDE2:
@@ -420,7 +420,7 @@ etharp_raw.constprop.0:
 	.globl	etharp_cleanup_netif
 	.type	etharp_cleanup_netif, @function
 etharp_cleanup_netif:
-.LFB21:
+.LFB27:
 	.loc 1 552 0
 	.cfi_startproc
 .LVL42:
@@ -468,7 +468,7 @@ etharp_cleanup_netif:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	etharp_cleanup_netif, .-etharp_cleanup_netif
 	.section	.text.unlikely.etharp_cleanup_netif
 .LCOLDE3:
@@ -481,7 +481,7 @@ etharp_cleanup_netif:
 	.globl	etharp_find_addr
 	.type	etharp_find_addr, @function
 etharp_find_addr:
-.LFB22:
+.LFB28:
 	.loc 1 577 0
 	.cfi_startproc
 .LVL46:
@@ -537,7 +537,7 @@ etharp_find_addr:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	etharp_find_addr, .-etharp_find_addr
 	.section	.text.unlikely.etharp_find_addr
 .LCOLDE4:
@@ -550,7 +550,7 @@ etharp_find_addr:
 	.globl	etharp_get_entry
 	.type	etharp_get_entry, @function
 etharp_get_entry:
-.LFB23:
+.LFB29:
 	.loc 1 605 0
 	.cfi_startproc
 .LVL49:
@@ -596,7 +596,7 @@ etharp_get_entry:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	etharp_get_entry, .-etharp_get_entry
 	.section	.text.unlikely.etharp_get_entry
 .LCOLDE5:
@@ -612,7 +612,7 @@ etharp_get_entry:
 	.globl	etharp_input
 	.type	etharp_input, @function
 etharp_input:
-.LFB24:
+.LFB30:
 	.loc 1 634 0
 	.cfi_startproc
 .LVL50:
@@ -862,7 +862,7 @@ etharp_input:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	etharp_input, .-etharp_input
 	.section	.text.unlikely.etharp_input
 .LCOLDE7:
@@ -875,7 +875,7 @@ etharp_input:
 	.globl	etharp_request
 	.type	etharp_request, @function
 etharp_request:
-.LFB30:
+.LFB36:
 	.loc 1 1218 0 is_stmt 1
 	.cfi_startproc
 .LVL74:
@@ -909,7 +909,7 @@ etharp_request:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	etharp_request, .-etharp_request
 	.section	.text.unlikely.etharp_request
 .LCOLDE8:
@@ -922,7 +922,7 @@ etharp_request:
 	.globl	etharp_tmr
 	.type	etharp_tmr, @function
 etharp_tmr:
-.LFB18:
+.LFB24:
 	.loc 1 192 0
 	.cfi_startproc
 .LVL77:
@@ -1016,7 +1016,7 @@ etharp_tmr:
 	jmp	.L95
 .LBE18:
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	etharp_tmr, .-etharp_tmr
 	.section	.text.unlikely.etharp_tmr
 .LCOLDE9:
@@ -1028,7 +1028,7 @@ etharp_tmr:
 .LHOTB10:
 	.type	etharp_output_to_arp_index, @function
 etharp_output_to_arp_index:
-.LFB25:
+.LFB31:
 	.loc 1 765 0
 	.cfi_startproc
 .LVL86:
@@ -1146,7 +1146,7 @@ etharp_output_to_arp_index:
 .LVL98:
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	etharp_output_to_arp_index, .-etharp_output_to_arp_index
 	.section	.text.unlikely.etharp_output_to_arp_index
 .LCOLDE10:
@@ -1159,7 +1159,7 @@ etharp_output_to_arp_index:
 	.globl	etharp_query
 	.type	etharp_query, @function
 etharp_query:
-.LFB27:
+.LFB33:
 	.loc 1 949 0
 	.cfi_startproc
 .LVL99:
@@ -1407,7 +1407,7 @@ etharp_query:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	etharp_query, .-etharp_query
 	.section	.text.unlikely.etharp_query
 .LCOLDE11:
@@ -1420,7 +1420,7 @@ etharp_query:
 	.globl	etharp_output
 	.type	etharp_output, @function
 etharp_output:
-.LFB26:
+.LFB32:
 	.loc 1 808 0
 	.cfi_startproc
 .LVL130:
@@ -1598,7 +1598,7 @@ etharp_output:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	etharp_output, .-etharp_output
 	.section	.text.unlikely.etharp_output
 .LCOLDE12:
@@ -2574,8 +2574,8 @@ arp_table:
 	.long	.LASF202
 	.byte	0x1
 	.byte	0xa2
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7d2
@@ -2594,8 +2594,8 @@ arp_table:
 	.byte	0x1
 	.byte	0xfa
 	.long	0xa6
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x8c0
@@ -2691,8 +2691,8 @@ arp_table:
 	.byte	0
 	.uleb128 0x26
 	.long	0x6fc
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x94e
@@ -2751,8 +2751,8 @@ arp_table:
 	.long	.LASF168
 	.byte	0x1
 	.value	0x227
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9ac
@@ -2796,8 +2796,8 @@ arp_table:
 	.byte	0x1
 	.value	0x23f
 	.long	0xa6
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa2e
@@ -2877,8 +2877,8 @@ arp_table:
 	.byte	0x1
 	.value	0x25c
 	.long	0x9b
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa95
@@ -2968,8 +2968,8 @@ arp_table:
 	.long	.LASF169
 	.byte	0x1
 	.value	0x279
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc35
@@ -3125,8 +3125,8 @@ arp_table:
 	.byte	0x1
 	.value	0x4c1
 	.long	0xd2
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xce6
@@ -3186,8 +3186,8 @@ arp_table:
 	.long	.LASF174
 	.byte	0x1
 	.byte	0xbf
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd3b
@@ -3226,8 +3226,8 @@ arp_table:
 	.byte	0x1
 	.value	0x2fc
 	.long	0xd2
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xde2
@@ -3300,8 +3300,8 @@ arp_table:
 	.byte	0x1
 	.value	0x3b4
 	.long	0xd2
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xef6
@@ -3422,8 +3422,8 @@ arp_table:
 	.byte	0x1
 	.value	0x327
 	.long	0xd2
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xfbb
@@ -4490,7 +4490,7 @@ arp_table:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL3
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4508,7 +4508,7 @@ arp_table:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL30
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4522,7 +4522,7 @@ arp_table:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL6
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4536,7 +4536,7 @@ arp_table:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL5
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4661,7 +4661,7 @@ arp_table:
 	.byte	0x75
 	.sleb128 -30
 	.long	.LVL32
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 -38
@@ -4688,7 +4688,7 @@ arp_table:
 	.byte	0x75
 	.sleb128 -32
 	.long	.LVL32
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 -40
@@ -4716,7 +4716,7 @@ arp_table:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL34-1
-	.long	.LFE31
+	.long	.LFE37
 	.value	0x2
 	.byte	0x91
 	.sleb128 -36
@@ -4728,7 +4728,7 @@ arp_table:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL34-1
-	.long	.LFE31
+	.long	.LFE37
 	.value	0x2
 	.byte	0x91
 	.sleb128 -40
@@ -4744,7 +4744,7 @@ arp_table:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL41
-	.long	.LFE31
+	.long	.LFE37
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4958,7 +4958,7 @@ arp_table:
 	.sleb128 1
 	.byte	0x9f
 	.long	.LVL85
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x56
 	.long	0
@@ -4973,7 +4973,7 @@ arp_table:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL85
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -4988,7 +4988,7 @@ arp_table:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL97
-	.long	.LFE25
+	.long	.LFE31
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5016,7 +5016,7 @@ arp_table:
 	.byte	0x75
 	.sleb128 -28
 	.long	.LVL98
-	.long	.LFE25
+	.long	.LFE31
 	.value	0x2
 	.byte	0x91
 	.sleb128 -36
@@ -5040,7 +5040,7 @@ arp_table:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL95
-	.long	.LFE25
+	.long	.LFE31
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -5106,7 +5106,7 @@ arp_table:
 	.sleb128 55
 	.byte	0x9f
 	.long	.LVL125
-	.long	.LFE27
+	.long	.LFE33
 	.value	0x6
 	.byte	0x91
 	.sleb128 0
@@ -5308,30 +5308,30 @@ arp_table:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB31
-	.long	.LFE31-.LFB31
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
-	.long	.LFB24
-	.long	.LFE24-.LFB24
-	.long	.LFB30
-	.long	.LFE30-.LFB30
-	.long	.LFB18
-	.long	.LFE18-.LFB18
 	.long	.LFB25
 	.long	.LFE25-.LFB25
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.long	.LFB27
 	.long	.LFE27-.LFB27
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB31
+	.long	.LFE31-.LFB31
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -5376,30 +5376,30 @@ arp_table:
 	.long	.LBE31
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB31
-	.long	.LFE31
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
-	.long	.LFB24
-	.long	.LFE24
-	.long	.LFB30
-	.long	.LFE30
-	.long	.LFB18
-	.long	.LFE18
 	.long	.LFB25
 	.long	.LFE25
+	.long	.LFB37
+	.long	.LFE37
 	.long	.LFB27
 	.long	.LFE27
-	.long	.LFB26
-	.long	.LFE26
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB36
+	.long	.LFE36
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB31
+	.long	.LFE31
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB32
+	.long	.LFE32
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

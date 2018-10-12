@@ -10,7 +10,7 @@
 	.section	.text.ssl_random
 	.type	ssl_random, @function
 ssl_random:
-.LFB42:
+.LFB48:
 	.file 1 "security/mbedtls/src/mbedtls_ssl.c"
 	.loc 1 32 0
 	.cfi_startproc
@@ -64,7 +64,7 @@ ssl_random:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE42:
+.LFE48:
 	.size	ssl_random, .-ssl_random
 	.section	.text.unlikely.ssl_random
 .LCOLDE0:
@@ -98,7 +98,7 @@ ssl_random:
 	.globl	mbedtls_ssl_connect
 	.type	mbedtls_ssl_connect, @function
 mbedtls_ssl_connect:
-.LFB43:
+.LFB49:
 	.loc 1 59 0
 	.cfi_startproc
 .LVL5:
@@ -424,7 +424,7 @@ mbedtls_ssl_connect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE43:
+.LFE49:
 	.size	mbedtls_ssl_connect, .-mbedtls_ssl_connect
 	.section	.text.unlikely.mbedtls_ssl_connect
 .LCOLDE11:
@@ -444,7 +444,7 @@ mbedtls_ssl_connect:
 	.globl	mbedtls_ssl_send
 	.type	mbedtls_ssl_send, @function
 mbedtls_ssl_send:
-.LFB44:
+.LFB50:
 	.loc 1 227 0
 	.cfi_startproc
 .LVL46:
@@ -588,7 +588,7 @@ mbedtls_ssl_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE44:
+.LFE50:
 	.size	mbedtls_ssl_send, .-mbedtls_ssl_send
 	.section	.text.unlikely.mbedtls_ssl_send
 .LCOLDE15:
@@ -608,7 +608,7 @@ mbedtls_ssl_send:
 	.globl	mbedtls_ssl_recv
 	.type	mbedtls_ssl_recv, @function
 mbedtls_ssl_recv:
-.LFB45:
+.LFB51:
 	.loc 1 297 0
 	.cfi_startproc
 .LVL62:
@@ -714,7 +714,7 @@ mbedtls_ssl_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE45:
+.LFE51:
 	.size	mbedtls_ssl_recv, .-mbedtls_ssl_recv
 	.section	.text.unlikely.mbedtls_ssl_recv
 .LCOLDE19:
@@ -730,7 +730,7 @@ mbedtls_ssl_recv:
 	.globl	mbedtls_ssl_close
 	.type	mbedtls_ssl_close, @function
 mbedtls_ssl_close:
-.LFB46:
+.LFB52:
 	.loc 1 364 0
 	.cfi_startproc
 .LVL73:
@@ -816,7 +816,7 @@ mbedtls_ssl_close:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE46:
+.LFE52:
 	.size	mbedtls_ssl_close, .-mbedtls_ssl_close
 	.section	.text.unlikely.mbedtls_ssl_close
 .LCOLDE21:
@@ -2513,8 +2513,8 @@ mbedtls_ssl_close:
 	.byte	0x1
 	.byte	0x1f
 	.long	0x89
-	.long	.LFB42
-	.long	.LFE42-.LFB42
+	.long	.LFB48
+	.long	.LFE48-.LFB48
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe0a
@@ -2568,8 +2568,8 @@ mbedtls_ssl_close:
 	.byte	0x1
 	.byte	0x3a
 	.long	0xb7
-	.long	.LFB43
-	.long	.LFE43-.LFB43
+	.long	.LFB49
+	.long	.LFE49-.LFB49
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xf67
@@ -2704,8 +2704,8 @@ mbedtls_ssl_close:
 	.byte	0x1
 	.byte	0xe2
 	.long	0x89
-	.long	.LFB44
-	.long	.LFE44-.LFB44
+	.long	.LFB50
+	.long	.LFE50-.LFB50
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1011
@@ -2775,8 +2775,8 @@ mbedtls_ssl_close:
 	.byte	0x1
 	.value	0x128
 	.long	0x89
-	.long	.LFB45
-	.long	.LFE45-.LFB45
+	.long	.LFB51
+	.long	.LFE51-.LFB51
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x10a3
@@ -2833,8 +2833,8 @@ mbedtls_ssl_close:
 	.byte	0x1
 	.value	0x16b
 	.long	0x89
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x1125
@@ -3945,7 +3945,7 @@ mbedtls_ssl_close:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL68
-	.long	.LFE45
+	.long	.LFE51
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -3971,7 +3971,7 @@ mbedtls_ssl_close:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL69-1
-	.long	.LFE45
+	.long	.LFE51
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -4032,30 +4032,30 @@ mbedtls_ssl_close:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB42
-	.long	.LFE42-.LFB42
-	.long	.LFB43
-	.long	.LFE43-.LFB43
-	.long	.LFB44
-	.long	.LFE44-.LFB44
-	.long	.LFB45
-	.long	.LFE45-.LFB45
-	.long	.LFB46
-	.long	.LFE46-.LFB46
+	.long	.LFB48
+	.long	.LFE48-.LFB48
+	.long	.LFB49
+	.long	.LFE49-.LFB49
+	.long	.LFB50
+	.long	.LFE50-.LFB50
+	.long	.LFB51
+	.long	.LFE51-.LFB51
+	.long	.LFB52
+	.long	.LFE52-.LFB52
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB42
-	.long	.LFE42
-	.long	.LFB43
-	.long	.LFE43
-	.long	.LFB44
-	.long	.LFE44
-	.long	.LFB45
-	.long	.LFE45
-	.long	.LFB46
-	.long	.LFE46
+	.long	.LFB48
+	.long	.LFE48
+	.long	.LFB49
+	.long	.LFE49
+	.long	.LFB50
+	.long	.LFE50
+	.long	.LFB51
+	.long	.LFE51
+	.long	.LFB52
+	.long	.LFE52
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

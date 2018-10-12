@@ -11,7 +11,7 @@
 	.globl	icmp_input
 	.type	icmp_input, @function
 icmp_input:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/core/ipv4/icmp.c"
 	.loc 1 77 0
 	.cfi_startproc
@@ -289,7 +289,7 @@ icmp_input:
 	jmp	pbuf_free
 .LVL31:
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	icmp_input, .-icmp_input
 	.section	.text.unlikely.icmp_input
 .LCOLDE0:
@@ -302,7 +302,7 @@ icmp_input:
 	.globl	icmp_dest_unreach
 	.type	icmp_dest_unreach, @function
 icmp_dest_unreach:
-.LFB18:
+.LFB24:
 	.loc 1 298 0
 	.cfi_startproc
 .LVL32:
@@ -451,7 +451,7 @@ icmp_dest_unreach:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	icmp_dest_unreach, .-icmp_dest_unreach
 	.section	.text.unlikely.icmp_dest_unreach
 .LCOLDE1:
@@ -1274,8 +1274,8 @@ icmp_dest_unreach:
 	.long	.LASF118
 	.byte	0x1
 	.byte	0x4c
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7c1
@@ -1414,8 +1414,8 @@ icmp_dest_unreach:
 	.long	.LASF119
 	.byte	0x1
 	.value	0x129
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x891
@@ -2313,7 +2313,7 @@ icmp_dest_unreach:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL37
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2368,10 +2368,10 @@ icmp_dest_unreach:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -2382,10 +2382,10 @@ icmp_dest_unreach:
 	.long	.LBE9
 	.long	0
 	.long	0
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

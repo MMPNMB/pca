@@ -11,7 +11,7 @@
 	.globl	netbuf_new
 	.type	netbuf_new, @function
 netbuf_new:
-.LFB17:
+.LFB23:
 	.file 1 "kernel/protocols/net/api/netbuf.c"
 	.loc 1 64 0
 	.cfi_startproc
@@ -51,7 +51,7 @@ netbuf_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	netbuf_new, .-netbuf_new
 	.section	.text.unlikely.netbuf_new
 .LCOLDE0:
@@ -64,7 +64,7 @@ netbuf_new:
 	.globl	netbuf_delete
 	.type	netbuf_delete, @function
 netbuf_delete:
-.LFB18:
+.LFB24:
 	.loc 1 82 0
 	.cfi_startproc
 .LVL3:
@@ -112,7 +112,7 @@ netbuf_delete:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	netbuf_delete, .-netbuf_delete
 	.section	.text.unlikely.netbuf_delete
 .LCOLDE1:
@@ -128,7 +128,7 @@ netbuf_delete:
 	.globl	netbuf_alloc
 	.type	netbuf_alloc, @function
 netbuf_alloc:
-.LFB19:
+.LFB25:
 	.loc 1 103 0
 	.cfi_startproc
 .LVL6:
@@ -201,7 +201,7 @@ netbuf_alloc:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	netbuf_alloc, .-netbuf_alloc
 	.section	.text.unlikely.netbuf_alloc
 .LCOLDE3:
@@ -217,7 +217,7 @@ netbuf_alloc:
 	.globl	netbuf_free
 	.type	netbuf_free, @function
 netbuf_free:
-.LFB20:
+.LFB26:
 	.loc 1 128 0
 	.cfi_startproc
 .LVL10:
@@ -271,7 +271,7 @@ netbuf_free:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	netbuf_free, .-netbuf_free
 	.section	.text.unlikely.netbuf_free
 .LCOLDE5:
@@ -287,7 +287,7 @@ netbuf_free:
 	.globl	netbuf_ref
 	.type	netbuf_ref, @function
 netbuf_ref:
-.LFB21:
+.LFB27:
 	.loc 1 148 0
 	.cfi_startproc
 .LVL14:
@@ -369,7 +369,7 @@ netbuf_ref:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	netbuf_ref, .-netbuf_ref
 	.section	.text.unlikely.netbuf_ref
 .LCOLDE7:
@@ -387,7 +387,7 @@ netbuf_ref:
 	.globl	netbuf_chain
 	.type	netbuf_chain, @function
 netbuf_chain:
-.LFB22:
+.LFB28:
 	.loc 1 173 0
 	.cfi_startproc
 .LVL18:
@@ -466,7 +466,7 @@ netbuf_chain:
 	jmp	memp_free
 .LVL27:
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	netbuf_chain, .-netbuf_chain
 	.section	.text.unlikely.netbuf_chain
 .LCOLDE10:
@@ -486,7 +486,7 @@ netbuf_chain:
 	.globl	netbuf_data
 	.type	netbuf_data, @function
 netbuf_data:
-.LFB23:
+.LFB29:
 	.loc 1 193 0
 	.cfi_startproc
 .LVL28:
@@ -563,7 +563,7 @@ netbuf_data:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	netbuf_data, .-netbuf_data
 	.section	.text.unlikely.netbuf_data
 .LCOLDE14:
@@ -579,7 +579,7 @@ netbuf_data:
 	.globl	netbuf_next
 	.type	netbuf_next, @function
 netbuf_next:
-.LFB24:
+.LFB30:
 	.loc 1 219 0
 	.cfi_startproc
 .LVL33:
@@ -624,7 +624,7 @@ netbuf_next:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	netbuf_next, .-netbuf_next
 	.section	.text.unlikely.netbuf_next
 .LCOLDE16:
@@ -640,7 +640,7 @@ netbuf_next:
 	.globl	netbuf_first
 	.type	netbuf_first, @function
 netbuf_first:
-.LFB25:
+.LFB31:
 	.loc 1 241 0
 	.cfi_startproc
 .LVL35:
@@ -676,7 +676,7 @@ netbuf_first:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	netbuf_first, .-netbuf_first
 	.section	.text.unlikely.netbuf_first
 .LCOLDE18:
@@ -1085,8 +1085,8 @@ netbuf_first:
 	.byte	0x1
 	.byte	0x3f
 	.long	0x327
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x327
@@ -1107,8 +1107,8 @@ netbuf_first:
 	.long	.LASF77
 	.byte	0x1
 	.byte	0x51
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x363
@@ -1132,8 +1132,8 @@ netbuf_first:
 	.byte	0x1
 	.byte	0x66
 	.long	0x79
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3b4
@@ -1167,8 +1167,8 @@ netbuf_first:
 	.long	.LASF78
 	.byte	0x1
 	.byte	0x7f
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x3eb
@@ -1190,8 +1190,8 @@ netbuf_first:
 	.byte	0x1
 	.byte	0x93
 	.long	0xbc
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x44a
@@ -1233,8 +1233,8 @@ netbuf_first:
 	.long	.LASF81
 	.byte	0x1
 	.byte	0xac
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x499
@@ -1265,8 +1265,8 @@ netbuf_first:
 	.byte	0x1
 	.byte	0xc0
 	.long	0xbc
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x4e9
@@ -1303,8 +1303,8 @@ netbuf_first:
 	.byte	0x1
 	.byte	0xda
 	.long	0x9b
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x526
@@ -1324,8 +1324,8 @@ netbuf_first:
 	.long	.LASF86
 	.byte	0x1
 	.byte	0xf0
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x55f
@@ -1765,7 +1765,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL2
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -1777,7 +1777,7 @@ netbuf_first:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL12
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -1798,7 +1798,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL25
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -1824,7 +1824,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL26
-	.long	.LFE22
+	.long	.LFE28
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -1841,7 +1841,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL32
-	.long	.LFE23
+	.long	.LFE29
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -1858,7 +1858,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL32
-	.long	.LFE23
+	.long	.LFE29
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -1875,7 +1875,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL32
-	.long	.LFE23
+	.long	.LFE29
 	.value	0x2
 	.byte	0x91
 	.sleb128 8
@@ -1892,7 +1892,7 @@ netbuf_first:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL37
-	.long	.LFE25
+	.long	.LFE31
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -1905,46 +1905,46 @@ netbuf_first:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
-	.long	.LFB22
-	.long	.LFE22-.LFB22
 	.long	.LFB23
 	.long	.LFE23-.LFB23
 	.long	.LFB24
 	.long	.LFE24-.LFB24
 	.long	.LFB25
 	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
-	.long	.LFB22
-	.long	.LFE22
 	.long	.LFB23
 	.long	.LFE23
 	.long	.LFB24
 	.long	.LFE24
 	.long	.LFB25
 	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB31
+	.long	.LFE31
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits

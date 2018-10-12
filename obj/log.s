@@ -11,7 +11,7 @@
 	.weak	csp_printf
 	.type	csp_printf, @function
 csp_printf:
-.LFB17:
+.LFB23:
 	.file 1 "utility/log/log.c"
 	.loc 1 15 0
 	.cfi_startproc
@@ -72,7 +72,7 @@ csp_printf:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	csp_printf, .-csp_printf
 	.section	.text.unlikely.csp_printf
 .LCOLDE0:
@@ -85,7 +85,7 @@ csp_printf:
 	.globl	aos_set_log_level
 	.type	aos_set_log_level, @function
 aos_set_log_level:
-.LFB18:
+.LFB24:
 	.loc 1 35 0
 	.cfi_startproc
 .LVL10:
@@ -162,7 +162,7 @@ aos_set_log_level:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE18:
+.LFE24:
 	.size	aos_set_log_level, .-aos_set_log_level
 	.section	.text.unlikely.aos_set_log_level
 .LCOLDE1:
@@ -191,7 +191,7 @@ aos_set_log_level:
 .LHOTB10:
 	.type	log_cmd, @function
 log_cmd:
-.LFB19:
+.LFB25:
 	.loc 1 61 0
 	.cfi_startproc
 .LVL22:
@@ -252,7 +252,7 @@ log_cmd:
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	.loc 1 71 0
-	jmp	aos_cli_printf
+	jmp	csp_printf
 .LVL25:
 .L27:
 	.cfi_restore_state
@@ -318,10 +318,10 @@ log_cmd:
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	.loc 1 84 0
-	jmp	aos_cli_printf
+	jmp	csp_printf
 .LVL32:
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	log_cmd, .-log_cmd
 	.section	.text.unlikely.log_cmd
 .LCOLDE10:
@@ -334,7 +334,7 @@ log_cmd:
 	.globl	log_cli_init
 	.type	log_cli_init, @function
 log_cli_init:
-.LFB20:
+.LFB26:
 	.loc 1 94 0
 	.cfi_startproc
 	pushl	%ebp
@@ -342,16 +342,12 @@ log_cli_init:
 	.cfi_offset 5, -8
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
-	subl	$16, %esp
+	subl	$20, %esp
 	.loc 1 95 0
 	movl	$31, aos_log_level
-	.loc 1 96 0
-	pushl	$1
-	pushl	$log_cli_cmd
-	call	aos_cli_register_commands
 .LVL33:
 	.loc 1 97 0
-	movl	$log_mutex, (%esp)
+	pushl	$log_mutex
 	call	aos_mutex_new
 .LVL34:
 	.loc 1 98 0
@@ -361,7 +357,7 @@ log_cli_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	log_cli_init, .-log_cli_init
 	.section	.text.unlikely.log_cli_init
 .LCOLDE11:
@@ -374,7 +370,7 @@ log_cli_init:
 	.globl	log_no_cli_init
 	.type	log_no_cli_init, @function
 log_no_cli_init:
-.LFB21:
+.LFB27:
 	.loc 1 102 0
 	.cfi_startproc
 	pushl	%ebp
@@ -394,7 +390,7 @@ log_no_cli_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	log_no_cli_init, .-log_no_cli_init
 	.section	.text.unlikely.log_no_cli_init
 .LCOLDE12:
@@ -445,7 +441,7 @@ aos_log_level:
 	.file 12 "./include/aos/internal/log_impl.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0xbd9
+	.long	0xbec
 	.value	0x4
 	.long	.Ldebug_abbrev0
 	.byte	0x4
@@ -1531,11 +1527,16 @@ aos_log_level:
 	.uleb128 0x10
 	.byte	0x4
 	.long	0x8c4
+	.uleb128 0x10
+	.byte	0x4
+	.long	0x8f0
+	.uleb128 0x19
+	.long	0x893
 	.uleb128 0xb
 	.byte	0x4
 	.byte	0x8
 	.byte	0x13
-	.long	0x8ff
+	.long	0x90a
 	.uleb128 0xf
 	.string	"hdl"
 	.byte	0x8
@@ -1547,19 +1548,19 @@ aos_log_level:
 	.long	.LASF124
 	.byte	0x8
 	.byte	0x15
-	.long	0x8ea
+	.long	0x8f5
 	.uleb128 0x2
 	.long	.LASF125
 	.byte	0x8
 	.byte	0x18
-	.long	0x8ff
+	.long	0x90a
 	.uleb128 0x20
 	.long	.LASF167
 	.byte	0x4
 	.long	0x84
 	.byte	0xc
 	.byte	0x12
-	.long	0x950
+	.long	0x95b
 	.uleb128 0x21
 	.long	.LASF126
 	.sleb128 -1
@@ -1587,7 +1588,7 @@ aos_log_level:
 	.long	0x8b
 	.byte	0x9
 	.byte	0xe
-	.long	0x981
+	.long	0x98c
 	.uleb128 0x22
 	.long	.LASF133
 	.byte	0
@@ -1611,28 +1612,46 @@ aos_log_level:
 	.long	.LASF139
 	.byte	0x9
 	.byte	0x15
-	.long	0x950
+	.long	0x95b
 	.uleb128 0x4
 	.byte	0x1
 	.byte	0x2
 	.long	.LASF140
 	.uleb128 0x24
 	.long	.LASF168
+	.byte	0x7
+	.byte	0x97
+	.long	0x84
+	.byte	0x3
+	.long	0x9c5
+	.uleb128 0x25
+	.long	.LASF141
+	.byte	0x7
+	.byte	0x97
+	.long	0x8ea
+	.uleb128 0x25
+	.long	.LASF142
+	.byte	0x7
+	.byte	0x98
+	.long	0x84
+	.byte	0
+	.uleb128 0x26
+	.long	.LASF169
 	.byte	0x9
 	.byte	0x1b
 	.long	0x84
 	.byte	0x3
-	.uleb128 0x25
-	.long	.LASF169
+	.uleb128 0x27
+	.long	.LASF170
 	.byte	0x1
 	.byte	0xe
 	.long	0x84
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0xa0a
-	.uleb128 0x26
+	.long	0xa3c
+	.uleb128 0x28
 	.string	"fmt"
 	.byte	0x1
 	.byte	0xe
@@ -1640,234 +1659,221 @@ aos_log_level:
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x27
-	.uleb128 0x28
-	.long	.LASF141
+	.uleb128 0x29
+	.uleb128 0x2a
+	.long	.LASF143
 	.byte	0x1
 	.byte	0x10
 	.long	0x41
 	.long	.LLST0
-	.uleb128 0x29
+	.uleb128 0x2b
 	.string	"ret"
 	.byte	0x1
 	.byte	0x11
 	.long	0x84
 	.long	.LLST1
-	.uleb128 0x2a
+	.uleb128 0x2c
 	.long	.LVL1
-	.long	0xb7b
-	.uleb128 0x2a
+	.long	0xba4
+	.uleb128 0x2c
 	.long	.LVL3
-	.long	0xb86
-	.uleb128 0x2a
+	.long	0xbaf
+	.uleb128 0x2c
 	.long	.LVL6
-	.long	0xb91
-	.uleb128 0x2a
+	.long	0xbba
+	.uleb128 0x2c
 	.long	.LVL8
-	.long	0xb9c
+	.long	0xbc5
 	.byte	0
-	.uleb128 0x2b
-	.long	.LASF147
+	.uleb128 0x2d
+	.long	.LASF149
 	.byte	0x1
 	.byte	0x22
-	.long	.LFB18
-	.long	.LFE18-.LFB18
+	.long	.LFB24
+	.long	.LFE24-.LFB24
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0xa3d
-	.uleb128 0x2c
-	.long	.LASF142
+	.long	0xa6f
+	.uleb128 0x2e
+	.long	.LASF144
 	.byte	0x1
 	.byte	0x22
-	.long	0x981
+	.long	0x98c
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 0
-	.uleb128 0x28
-	.long	.LASF143
+	.uleb128 0x2a
+	.long	.LASF145
 	.byte	0x1
 	.byte	0x24
 	.long	0x8b
 	.long	.LLST2
 	.byte	0
-	.uleb128 0x2d
-	.long	.LASF170
+	.uleb128 0x2f
+	.long	.LASF171
 	.byte	0x1
 	.byte	0x3c
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0xad5
-	.uleb128 0x2e
+	.long	0xb07
+	.uleb128 0x30
 	.string	"buf"
 	.byte	0x1
 	.byte	0x3c
 	.long	0x578
 	.long	.LLST3
-	.uleb128 0x2e
+	.uleb128 0x30
 	.string	"len"
 	.byte	0x1
 	.byte	0x3c
 	.long	0x84
 	.long	.LLST4
-	.uleb128 0x2c
-	.long	.LASF144
+	.uleb128 0x2e
+	.long	.LASF146
 	.byte	0x1
 	.byte	0x3c
 	.long	0x84
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 8
-	.uleb128 0x2c
-	.long	.LASF145
+	.uleb128 0x2e
+	.long	.LASF147
 	.byte	0x1
 	.byte	0x3c
 	.long	0x8de
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 12
-	.uleb128 0x2f
-	.long	.LASF146
+	.uleb128 0x31
+	.long	.LASF148
 	.byte	0x1
 	.byte	0x3e
-	.long	0xad5
+	.long	0xb07
 	.uleb128 0x2
 	.byte	0x91
 	.sleb128 -60
-	.uleb128 0x29
+	.uleb128 0x2b
 	.string	"i"
 	.byte	0x1
 	.byte	0x4b
 	.long	0x84
 	.long	.LLST5
-	.uleb128 0x30
+	.uleb128 0x32
 	.long	.LVL25
-	.long	0xba7
-	.uleb128 0x2a
+	.long	0x9d1
+	.uleb128 0x2c
 	.long	.LVL26
-	.long	0xbb2
-	.uleb128 0x2a
+	.long	0xbd0
+	.uleb128 0x2c
 	.long	.LVL28
-	.long	0xa0a
-	.uleb128 0x2a
+	.long	0xa3c
+	.uleb128 0x2c
 	.long	.LVL30
-	.long	0xbbd
-	.uleb128 0x30
+	.long	0xbdb
+	.uleb128 0x32
 	.long	.LVL32
-	.long	0xba7
+	.long	0x9d1
 	.byte	0
 	.uleb128 0x9
 	.long	0x5a2
-	.long	0xae5
+	.long	0xb17
 	.uleb128 0xa
 	.long	0xf5
 	.byte	0x5
 	.byte	0
-	.uleb128 0x2b
-	.long	.LASF148
+	.uleb128 0x2d
+	.long	.LASF150
 	.byte	0x1
 	.byte	0x5d
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0xb0d
-	.uleb128 0x2a
-	.long	.LVL33
-	.long	0xbc6
-	.uleb128 0x2a
+	.long	0xb36
+	.uleb128 0x2c
 	.long	.LVL34
-	.long	0xbd1
+	.long	0xbe4
 	.byte	0
-	.uleb128 0x2b
-	.long	.LASF149
+	.uleb128 0x2d
+	.long	.LASF151
 	.byte	0x1
 	.byte	0x65
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
-	.long	0xb2c
-	.uleb128 0x2a
+	.long	0xb55
+	.uleb128 0x2c
 	.long	.LVL35
-	.long	0xbd1
+	.long	0xbe4
 	.byte	0
-	.uleb128 0x31
-	.long	.LASF150
+	.uleb128 0x33
+	.long	.LASF152
 	.byte	0x6
 	.value	0x2fe
 	.long	0x440
-	.uleb128 0x32
-	.long	.LASF151
+	.uleb128 0x34
+	.long	.LASF153
 	.byte	0x1
 	.byte	0xa
 	.long	0x8b
 	.uleb128 0x5
 	.byte	0x3
 	.long	aos_log_level
-	.uleb128 0x32
-	.long	.LASF152
+	.uleb128 0x34
+	.long	.LASF154
 	.byte	0x1
 	.byte	0xb
-	.long	0x90a
+	.long	0x915
 	.uleb128 0x5
 	.byte	0x3
 	.long	log_mutex
 	.uleb128 0x9
 	.long	0x893
-	.long	0xb6a
+	.long	0xb93
 	.uleb128 0xa
 	.long	0xf5
 	.byte	0
 	.byte	0
-	.uleb128 0x32
-	.long	.LASF153
+	.uleb128 0x34
+	.long	.LASF155
 	.byte	0x1
 	.byte	0x58
-	.long	0xb5a
+	.long	0xb83
 	.uleb128 0x5
 	.byte	0x3
 	.long	log_cli_cmd
-	.uleb128 0x33
-	.long	.LASF154
-	.long	.LASF154
+	.uleb128 0x35
+	.long	.LASF156
+	.long	.LASF156
 	.byte	0x8
 	.byte	0x9e
-	.uleb128 0x33
-	.long	.LASF155
-	.long	.LASF155
+	.uleb128 0x35
+	.long	.LASF157
+	.long	.LASF157
 	.byte	0xa
 	.byte	0xd0
-	.uleb128 0x33
-	.long	.LASF156
-	.long	.LASF156
+	.uleb128 0x35
+	.long	.LASF158
+	.long	.LASF158
 	.byte	0xa
 	.byte	0xc0
-	.uleb128 0x33
-	.long	.LASF157
-	.long	.LASF157
+	.uleb128 0x35
+	.long	.LASF159
+	.long	.LASF159
 	.byte	0x8
 	.byte	0xa7
-	.uleb128 0x33
-	.long	.LASF158
-	.long	.LASF158
-	.byte	0x7
-	.byte	0x6c
-	.uleb128 0x33
-	.long	.LASF159
-	.long	.LASF159
+	.uleb128 0x35
+	.long	.LASF160
+	.long	.LASF160
 	.byte	0xb
 	.byte	0x27
-	.uleb128 0x34
-	.long	.LASF171
-	.long	.LASF171
-	.uleb128 0x33
-	.long	.LASF160
-	.long	.LASF160
-	.byte	0x7
-	.byte	0x57
-	.uleb128 0x33
+	.uleb128 0x36
+	.long	.LASF172
+	.long	.LASF172
+	.uleb128 0x35
 	.long	.LASF161
 	.long	.LASF161
 	.byte	0x8
@@ -2302,6 +2308,38 @@ aos_log_level:
 	.byte	0
 	.uleb128 0x24
 	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0x19
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x20
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x25
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x26
+	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3
 	.uleb128 0xe
@@ -2317,7 +2355,7 @@ aos_log_level:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x25
+	.uleb128 0x27
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
@@ -2344,7 +2382,7 @@ aos_log_level:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x26
+	.uleb128 0x28
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -2359,12 +2397,12 @@ aos_log_level:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x27
+	.uleb128 0x29
 	.uleb128 0x18
 	.byte	0
 	.byte	0
 	.byte	0
-	.uleb128 0x28
+	.uleb128 0x2a
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -2379,7 +2417,7 @@ aos_log_level:
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x29
+	.uleb128 0x2b
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -2394,7 +2432,7 @@ aos_log_level:
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x2a
+	.uleb128 0x2c
 	.uleb128 0x4109
 	.byte	0
 	.uleb128 0x11
@@ -2403,7 +2441,7 @@ aos_log_level:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2b
+	.uleb128 0x2d
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3f
@@ -2428,7 +2466,7 @@ aos_log_level:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2c
+	.uleb128 0x2e
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -2443,7 +2481,7 @@ aos_log_level:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x2d
+	.uleb128 0x2f
 	.uleb128 0x2e
 	.byte	0x1
 	.uleb128 0x3
@@ -2466,7 +2504,7 @@ aos_log_level:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x2e
+	.uleb128 0x30
 	.uleb128 0x5
 	.byte	0
 	.uleb128 0x3
@@ -2481,7 +2519,7 @@ aos_log_level:
 	.uleb128 0x17
 	.byte	0
 	.byte	0
-	.uleb128 0x2f
+	.uleb128 0x31
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -2496,7 +2534,7 @@ aos_log_level:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x30
+	.uleb128 0x32
 	.uleb128 0x4109
 	.byte	0
 	.uleb128 0x11
@@ -2507,7 +2545,7 @@ aos_log_level:
 	.uleb128 0x13
 	.byte	0
 	.byte	0
-	.uleb128 0x31
+	.uleb128 0x33
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -2524,7 +2562,7 @@ aos_log_level:
 	.uleb128 0x19
 	.byte	0
 	.byte	0
-	.uleb128 0x32
+	.uleb128 0x34
 	.uleb128 0x34
 	.byte	0
 	.uleb128 0x3
@@ -2541,7 +2579,7 @@ aos_log_level:
 	.uleb128 0x18
 	.byte	0
 	.byte	0
-	.uleb128 0x33
+	.uleb128 0x35
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3f
@@ -2558,7 +2596,7 @@ aos_log_level:
 	.uleb128 0xb
 	.byte	0
 	.byte	0
-	.uleb128 0x34
+	.uleb128 0x36
 	.uleb128 0x2e
 	.byte	0
 	.uleb128 0x3f
@@ -2605,7 +2643,7 @@ aos_log_level:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL9
-	.long	.LFE17
+	.long	.LFE23
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2644,7 +2682,7 @@ aos_log_level:
 	.byte	0x30
 	.byte	0x9f
 	.long	.LVL20
-	.long	.LFE18
+	.long	.LFE24
 	.value	0x1
 	.byte	0x50
 	.long	0
@@ -2656,7 +2694,7 @@ aos_log_level:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL25
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -2669,7 +2707,7 @@ aos_log_level:
 	.byte	0x91
 	.sleb128 4
 	.long	.LVL25
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -2694,30 +2732,30 @@ aos_log_level:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB18
-	.long	.LFE18-.LFB18
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB20
-	.long	.LFE20-.LFB20
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB23
+	.long	.LFE23-.LFB23
+	.long	.LFB24
+	.long	.LFE24-.LFB24
+	.long	.LFB25
+	.long	.LFE25-.LFB25
+	.long	.LFB26
+	.long	.LFE26-.LFB26
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
 .Ldebug_ranges0:
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB18
-	.long	.LFE18
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB20
-	.long	.LFE20
-	.long	.LFB21
-	.long	.LFE21
+	.long	.LFB23
+	.long	.LFE23
+	.long	.LFB24
+	.long	.LFE24
+	.long	.LFB25
+	.long	.LFE25
+	.long	.LFB26
+	.long	.LFE26
+	.long	.LFB27
+	.long	.LFE27
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits
@@ -2729,11 +2767,11 @@ aos_log_level:
 	.string	"name"
 .LASF40:
 	.string	"_on_exit_args"
-.LASF159:
+.LASF160:
 	.string	"strncmp"
 .LASF107:
 	.string	"_wctomb_state"
-.LASF156:
+.LASF158:
 	.string	"fflush"
 .LASF104:
 	.string	"_r48"
@@ -2751,9 +2789,9 @@ aos_log_level:
 	.string	"_errno"
 .LASF13:
 	.string	"_LOCK_RECURSIVE_T"
-.LASF160:
+.LASF168:
 	.string	"aos_cli_register_commands"
-.LASF147:
+.LASF149:
 	.string	"aos_set_log_level"
 .LASF56:
 	.string	"_read"
@@ -2781,19 +2819,19 @@ aos_log_level:
 	.string	"_result"
 .LASF33:
 	.string	"__tm_hour"
-.LASF168:
+.LASF169:
 	.string	"aos_get_log_level"
 .LASF20:
 	.string	"__count"
 .LASF32:
 	.string	"__tm_min"
-.LASF150:
+.LASF152:
 	.string	"_impure_ptr"
 .LASF117:
 	.string	"_nextf"
 .LASF94:
 	.string	"_rand48"
-.LASF151:
+.LASF153:
 	.string	"aos_log_level"
 .LASF80:
 	.string	"_result_k"
@@ -2809,19 +2847,19 @@ aos_log_level:
 	.string	"__FILE"
 .LASF63:
 	.string	"_offset"
-.LASF170:
+.LASF171:
 	.string	"log_cmd"
 .LASF130:
 	.string	"AOS_LL_V_INFO_BIT"
 .LASF164:
 	.string	"/home/stone/Documents/pca"
-.LASF143:
+.LASF145:
 	.string	"value"
 .LASF74:
 	.string	"_emergency"
 .LASF0:
 	.string	"__gnuc_va_list"
-.LASF155:
+.LASF157:
 	.string	"vprintf"
 .LASF31:
 	.string	"__tm_sec"
@@ -2837,7 +2875,7 @@ aos_log_level:
 	.string	"_next"
 .LASF113:
 	.string	"_mbsrtowcs_state"
-.LASF169:
+.LASF170:
 	.string	"csp_printf"
 .LASF21:
 	.string	"__value"
@@ -2859,7 +2897,7 @@ aos_log_level:
 	.string	"_mbrtowc_state"
 .LASF86:
 	.string	"_atexit0"
-.LASF142:
+.LASF144:
 	.string	"log_level"
 .LASF23:
 	.string	"_flock_t"
@@ -2891,7 +2929,7 @@ aos_log_level:
 	.string	"_mult"
 .LASF24:
 	.string	"__ULong"
-.LASF149:
+.LASF151:
 	.string	"log_no_cli_init"
 .LASF114:
 	.string	"_wcrtomb_state"
@@ -2899,7 +2937,7 @@ aos_log_level:
 	.string	"AOS_LL_V_FATAL_BIT"
 .LASF53:
 	.string	"_file"
-.LASF152:
+.LASF154:
 	.string	"log_mutex"
 .LASF78:
 	.string	"__cleanup"
@@ -2913,13 +2951,15 @@ aos_log_level:
 	.string	"AOS_LL_V_ERROR_BIT"
 .LASF140:
 	.string	"_Bool"
-.LASF144:
+.LASF146:
 	.string	"argc"
+.LASF141:
+	.string	"commands"
 .LASF35:
 	.string	"__tm_mon"
-.LASF141:
+.LASF143:
 	.string	"args"
-.LASF145:
+.LASF147:
 	.string	"argv"
 .LASF12:
 	.string	"long double"
@@ -2929,13 +2969,15 @@ aos_log_level:
 	.string	"_atexit"
 .LASF66:
 	.string	"_mbstate"
+.LASF142:
+	.string	"num_commands"
 .LASF5:
 	.string	"short int"
-.LASF154:
+.LASF156:
 	.string	"aos_mutex_lock"
 .LASF7:
 	.string	"long int"
-.LASF171:
+.LASF172:
 	.string	"__stack_chk_fail"
 .LASF89:
 	.string	"__sf"
@@ -2955,7 +2997,7 @@ aos_log_level:
 	.string	"_localtime_buf"
 .LASF119:
 	.string	"_unused"
-.LASF153:
+.LASF155:
 	.string	"log_cli_cmd"
 .LASF85:
 	.string	"_new"
@@ -3005,12 +3047,10 @@ aos_log_level:
 	.string	"_add"
 .LASF48:
 	.string	"__sbuf"
-.LASF146:
+.LASF148:
 	.string	"lvls"
 .LASF91:
 	.string	"_glue"
-.LASF158:
-	.string	"aos_cli_printf"
 .LASF88:
 	.string	"__sglue"
 .LASF99:
@@ -3033,7 +3073,7 @@ aos_log_level:
 	.string	"_fntypes"
 .LASF50:
 	.string	"_size"
-.LASF148:
+.LASF150:
 	.string	"log_cli_init"
 .LASF14:
 	.string	"_off_t"
@@ -3041,7 +3081,7 @@ aos_log_level:
 	.string	"_nbuf"
 .LASF98:
 	.string	"_unused_rand"
-.LASF157:
+.LASF159:
 	.string	"aos_mutex_unlock"
 .LASF75:
 	.string	"_unspecified_locale_info"

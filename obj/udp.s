@@ -10,7 +10,7 @@
 	.section	.text.udp_input_local_match
 	.type	udp_input_local_match, @function
 udp_input_local_match:
-.LFB19:
+.LFB25:
 	.file 1 "kernel/protocols/net/core/udp.c"
 	.loc 1 149 0
 	.cfi_startproc
@@ -79,7 +79,7 @@ udp_input_local_match:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE19:
+.LFE25:
 	.size	udp_input_local_match, .-udp_input_local_match
 	.section	.text.unlikely.udp_input_local_match
 .LCOLDE0:
@@ -92,7 +92,7 @@ udp_input_local_match:
 	.globl	udp_init
 	.type	udp_init, @function
 udp_init:
-.LFB17:
+.LFB23:
 	.loc 1 88 0
 	.cfi_startproc
 	pushl	%ebp
@@ -112,7 +112,7 @@ udp_init:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE17:
+.LFE23:
 	.size	udp_init, .-udp_init
 	.section	.text.unlikely.udp_init
 .LCOLDE1:
@@ -125,7 +125,7 @@ udp_init:
 	.globl	udp_input
 	.type	udp_input, @function
 udp_input:
-.LFB20:
+.LFB26:
 	.loc 1 211 0
 	.cfi_startproc
 .LVL7:
@@ -560,7 +560,7 @@ udp_input:
 	addl	$16, %esp
 	jmp	.L29
 	.cfi_endproc
-.LFE20:
+.LFE26:
 	.size	udp_input, .-udp_input
 	.section	.text.unlikely.udp_input
 .LCOLDE2:
@@ -573,7 +573,7 @@ udp_input:
 	.globl	udp_bind
 	.type	udp_bind, @function
 udp_bind:
-.LFB25:
+.LFB31:
 	.loc 1 904 0
 	.cfi_startproc
 .LVL62:
@@ -750,7 +750,7 @@ udp_bind:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE25:
+.LFE31:
 	.size	udp_bind, .-udp_bind
 	.section	.text.unlikely.udp_bind
 .LCOLDE3:
@@ -763,7 +763,7 @@ udp_bind:
 	.globl	udp_sendto_if_src
 	.type	udp_sendto_if_src, @function
 udp_sendto_if_src:
-.LFB24:
+.LFB30:
 	.loc 1 684 0
 	.cfi_startproc
 .LVL84:
@@ -984,7 +984,7 @@ udp_sendto_if_src:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE24:
+.LFE30:
 	.size	udp_sendto_if_src, .-udp_sendto_if_src
 	.section	.text.unlikely.udp_sendto_if_src
 .LCOLDE4:
@@ -997,7 +997,7 @@ udp_sendto_if_src:
 	.globl	udp_sendto_if
 	.type	udp_sendto_if, @function
 udp_sendto_if:
-.LFB23:
+.LFB29:
 	.loc 1 615 0
 	.cfi_startproc
 .LVL105:
@@ -1086,7 +1086,7 @@ udp_sendto_if:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE23:
+.LFE29:
 	.size	udp_sendto_if, .-udp_sendto_if
 	.section	.text.unlikely.udp_sendto_if
 .LCOLDE5:
@@ -1099,7 +1099,7 @@ udp_sendto_if:
 	.globl	udp_sendto
 	.type	udp_sendto, @function
 udp_sendto:
-.LFB22:
+.LFB28:
 	.loc 1 529 0
 	.cfi_startproc
 .LVL116:
@@ -1187,7 +1187,7 @@ udp_sendto:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE22:
+.LFE28:
 	.size	udp_sendto, .-udp_sendto
 	.section	.text.unlikely.udp_sendto
 .LCOLDE6:
@@ -1200,7 +1200,7 @@ udp_sendto:
 	.globl	udp_send
 	.type	udp_send, @function
 udp_send:
-.LFB21:
+.LFB27:
 	.loc 1 481 0
 	.cfi_startproc
 .LVL125:
@@ -1233,7 +1233,7 @@ udp_send:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE21:
+.LFE27:
 	.size	udp_send, .-udp_send
 	.section	.text.unlikely.udp_send
 .LCOLDE7:
@@ -1246,7 +1246,7 @@ udp_send:
 	.globl	udp_connect
 	.type	udp_connect, @function
 udp_connect:
-.LFB26:
+.LFB32:
 	.loc 1 1003 0
 	.cfi_startproc
 .LVL127:
@@ -1345,7 +1345,7 @@ udp_connect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE26:
+.LFE32:
 	.size	udp_connect, .-udp_connect
 	.section	.text.unlikely.udp_connect
 .LCOLDE8:
@@ -1358,7 +1358,7 @@ udp_connect:
 	.globl	udp_disconnect
 	.type	udp_disconnect, @function
 udp_disconnect:
-.LFB27:
+.LFB33:
 	.loc 1 1047 0
 	.cfi_startproc
 .LVL136:
@@ -1381,7 +1381,7 @@ udp_disconnect:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE27:
+.LFE33:
 	.size	udp_disconnect, .-udp_disconnect
 	.section	.text.unlikely.udp_disconnect
 .LCOLDE9:
@@ -1394,7 +1394,7 @@ udp_disconnect:
 	.globl	udp_recv
 	.type	udp_recv, @function
 udp_recv:
-.LFB28:
+.LFB34:
 	.loc 1 1075 0
 	.cfi_startproc
 .LVL137:
@@ -1417,7 +1417,7 @@ udp_recv:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE28:
+.LFE34:
 	.size	udp_recv, .-udp_recv
 	.section	.text.unlikely.udp_recv
 .LCOLDE10:
@@ -1430,7 +1430,7 @@ udp_recv:
 	.globl	udp_remove
 	.type	udp_remove, @function
 udp_remove:
-.LFB29:
+.LFB35:
 	.loc 1 1092 0
 	.cfi_startproc
 .LVL138:
@@ -1489,7 +1489,7 @@ udp_remove:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE29:
+.LFE35:
 	.size	udp_remove, .-udp_remove
 	.section	.text.unlikely.udp_remove
 .LCOLDE11:
@@ -1502,7 +1502,7 @@ udp_remove:
 	.globl	udp_new
 	.type	udp_new, @function
 udp_new:
-.LFB30:
+.LFB36:
 	.loc 1 1125 0
 	.cfi_startproc
 	pushl	%ebp
@@ -1545,7 +1545,7 @@ udp_new:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE30:
+.LFE36:
 	.size	udp_new, .-udp_new
 	.section	.text.unlikely.udp_new
 .LCOLDE12:
@@ -1558,7 +1558,7 @@ udp_new:
 	.globl	udp_new_ip_type
 	.type	udp_new_ip_type, @function
 udp_new_ip_type:
-.LFB31:
+.LFB37:
 	.loc 1 1157 0
 	.cfi_startproc
 .LVL146:
@@ -1575,7 +1575,7 @@ udp_new_ip_type:
 	jmp	udp_new
 .LVL147:
 	.cfi_endproc
-.LFE31:
+.LFE37:
 	.size	udp_new_ip_type, .-udp_new_ip_type
 	.section	.text.unlikely.udp_new_ip_type
 .LCOLDE13:
@@ -1588,7 +1588,7 @@ udp_new_ip_type:
 	.globl	udp_netif_ip_addr_changed
 	.type	udp_netif_ip_addr_changed, @function
 udp_netif_ip_addr_changed:
-.LFB32:
+.LFB38:
 	.loc 1 1177 0
 	.cfi_startproc
 .LVL148:
@@ -1644,7 +1644,7 @@ udp_netif_ip_addr_changed:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-.LFE32:
+.LFE38:
 	.size	udp_netif_ip_addr_changed, .-udp_netif_ip_addr_changed
 	.section	.text.unlikely.udp_netif_ip_addr_changed
 .LCOLDE14:
@@ -2611,8 +2611,8 @@ udp_port:
 	.byte	0x1
 	.byte	0x94
 	.long	0x9b
-	.long	.LFB19
-	.long	.LFE19-.LFB19
+	.long	.LFB25
+	.long	.LFE25-.LFB25
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7aa
@@ -2639,8 +2639,8 @@ udp_port:
 	.long	.LASF141
 	.byte	0x1
 	.byte	0x57
-	.long	.LFB17
-	.long	.LFE17-.LFB17
+	.long	.LFB23
+	.long	.LFE23-.LFB23
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x7da
@@ -2660,8 +2660,8 @@ udp_port:
 	.long	.LASF142
 	.byte	0x1
 	.byte	0xd2
-	.long	.LFB20
-	.long	.LFE20-.LFB20
+	.long	.LFB26
+	.long	.LFE26-.LFB26
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0x9c3
@@ -2905,8 +2905,8 @@ udp_port:
 	.byte	0x1
 	.value	0x387
 	.long	0xd2
-	.long	.LFB25
-	.long	.LFE25-.LFB25
+	.long	.LFB31
+	.long	.LFE31-.LFB31
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xa8d
@@ -2966,8 +2966,8 @@ udp_port:
 	.byte	0x1
 	.value	0x2aa
 	.long	0xd2
-	.long	.LFB24
-	.long	.LFE24-.LFB24
+	.long	.LFB30
+	.long	.LFE30-.LFB30
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xbc6
@@ -3096,8 +3096,8 @@ udp_port:
 	.byte	0x1
 	.value	0x265
 	.long	0xd2
-	.long	.LFB23
-	.long	.LFE23-.LFB23
+	.long	.LFB29
+	.long	.LFE29-.LFB29
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xc43
@@ -3156,8 +3156,8 @@ udp_port:
 	.byte	0x1
 	.value	0x20f
 	.long	0xd2
-	.long	.LFB22
-	.long	.LFE22-.LFB22
+	.long	.LFB28
+	.long	.LFE28-.LFB28
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xcca
@@ -3217,8 +3217,8 @@ udp_port:
 	.byte	0x1
 	.value	0x1e0
 	.long	0xd2
-	.long	.LFB21
-	.long	.LFE21-.LFB21
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd0a
@@ -3247,8 +3247,8 @@ udp_port:
 	.byte	0x1
 	.value	0x3ea
 	.long	0xd2
-	.long	.LFB26
-	.long	.LFE26-.LFB26
+	.long	.LFB32
+	.long	.LFE32-.LFB32
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xd87
@@ -3296,8 +3296,8 @@ udp_port:
 	.long	.LASF167
 	.byte	0x1
 	.value	0x416
-	.long	.LFB27
-	.long	.LFE27-.LFB27
+	.long	.LFB33
+	.long	.LFE33-.LFB33
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdad
@@ -3314,8 +3314,8 @@ udp_port:
 	.long	.LASF168
 	.byte	0x1
 	.value	0x432
-	.long	.LFB28
-	.long	.LFE28-.LFB28
+	.long	.LFB34
+	.long	.LFE34-.LFB34
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xdf1
@@ -3348,8 +3348,8 @@ udp_port:
 	.long	.LASF169
 	.byte	0x1
 	.value	0x443
-	.long	.LFB29
-	.long	.LFE29-.LFB29
+	.long	.LFB35
+	.long	.LFE35-.LFB35
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe30
@@ -3376,8 +3376,8 @@ udp_port:
 	.byte	0x1
 	.value	0x464
 	.long	0x674
-	.long	.LFB30
-	.long	.LFE30-.LFB30
+	.long	.LFB36
+	.long	.LFE36-.LFB36
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xe64
@@ -3396,8 +3396,8 @@ udp_port:
 	.byte	0x1
 	.value	0x484
 	.long	0x674
-	.long	.LFB31
-	.long	.LFE31-.LFB31
+	.long	.LFB37
+	.long	.LFE37-.LFB37
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xea3
@@ -3422,8 +3422,8 @@ udp_port:
 	.long	.LASF173
 	.byte	0x1
 	.value	0x498
-	.long	.LFB32
-	.long	.LFE32-.LFB32
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.uleb128 0x1
 	.byte	0x9c
 	.long	0xeea
@@ -4432,7 +4432,7 @@ udp_port:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL5
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4446,7 +4446,7 @@ udp_port:
 	.value	0x1
 	.byte	0x52
 	.long	.LVL4
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4460,7 +4460,7 @@ udp_port:
 	.value	0x1
 	.byte	0x51
 	.long	.LVL1
-	.long	.LFE19
+	.long	.LFE25
 	.value	0x4
 	.byte	0xf3
 	.uleb128 0x1
@@ -4489,7 +4489,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 -44
 	.long	.LVL59
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 -44
@@ -4536,7 +4536,7 @@ udp_port:
 	.value	0x1
 	.byte	0x57
 	.long	.LVL59
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x1
 	.byte	0x57
 	.long	0
@@ -4567,7 +4567,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 -36
 	.long	.LVL59
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 -36
@@ -4600,7 +4600,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 -40
 	.long	.LVL32
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 -40
@@ -4617,7 +4617,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 -50
 	.long	.LVL32
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 -50
@@ -4634,7 +4634,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 -37
 	.long	.LVL32
-	.long	.LFE20
+	.long	.LFE26
 	.value	0x2
 	.byte	0x91
 	.sleb128 -37
@@ -4976,7 +4976,7 @@ udp_port:
 	.value	0x1
 	.byte	0x53
 	.long	.LVL134
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x2
 	.byte	0x91
 	.sleb128 0
@@ -5002,7 +5002,7 @@ udp_port:
 	.value	0x1
 	.byte	0x56
 	.long	.LVL134
-	.long	.LFE26
+	.long	.LFE32
 	.value	0x2
 	.byte	0x91
 	.sleb128 4
@@ -5043,7 +5043,7 @@ udp_port:
 	.value	0x1
 	.byte	0x50
 	.long	.LVL145
-	.long	.LFE30
+	.long	.LFE36
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -5055,7 +5055,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 0
 	.long	.LVL152
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x1
 	.byte	0x52
 	.long	0
@@ -5067,7 +5067,7 @@ udp_port:
 	.byte	0x91
 	.sleb128 4
 	.long	.LVL150
-	.long	.LFE32
+	.long	.LFE38
 	.value	0x1
 	.byte	0x51
 	.long	0
@@ -5087,36 +5087,36 @@ udp_port:
 	.byte	0
 	.value	0
 	.value	0
-	.long	.LFB19
-	.long	.LFE19-.LFB19
-	.long	.LFB17
-	.long	.LFE17-.LFB17
-	.long	.LFB20
-	.long	.LFE20-.LFB20
 	.long	.LFB25
 	.long	.LFE25-.LFB25
-	.long	.LFB24
-	.long	.LFE24-.LFB24
 	.long	.LFB23
 	.long	.LFE23-.LFB23
-	.long	.LFB22
-	.long	.LFE22-.LFB22
-	.long	.LFB21
-	.long	.LFE21-.LFB21
 	.long	.LFB26
 	.long	.LFE26-.LFB26
-	.long	.LFB27
-	.long	.LFE27-.LFB27
-	.long	.LFB28
-	.long	.LFE28-.LFB28
-	.long	.LFB29
-	.long	.LFE29-.LFB29
-	.long	.LFB30
-	.long	.LFE30-.LFB30
 	.long	.LFB31
 	.long	.LFE31-.LFB31
+	.long	.LFB30
+	.long	.LFE30-.LFB30
+	.long	.LFB29
+	.long	.LFE29-.LFB29
+	.long	.LFB28
+	.long	.LFE28-.LFB28
+	.long	.LFB27
+	.long	.LFE27-.LFB27
 	.long	.LFB32
 	.long	.LFE32-.LFB32
+	.long	.LFB33
+	.long	.LFE33-.LFB33
+	.long	.LFB34
+	.long	.LFE34-.LFB34
+	.long	.LFB35
+	.long	.LFE35-.LFB35
+	.long	.LFB36
+	.long	.LFE36-.LFB36
+	.long	.LFB37
+	.long	.LFE37-.LFB37
+	.long	.LFB38
+	.long	.LFE38-.LFB38
 	.long	0
 	.long	0
 	.section	.debug_ranges,"",@progbits
@@ -5145,36 +5145,36 @@ udp_port:
 	.long	.LBE13
 	.long	0
 	.long	0
-	.long	.LFB19
-	.long	.LFE19
-	.long	.LFB17
-	.long	.LFE17
-	.long	.LFB20
-	.long	.LFE20
 	.long	.LFB25
 	.long	.LFE25
-	.long	.LFB24
-	.long	.LFE24
 	.long	.LFB23
 	.long	.LFE23
-	.long	.LFB22
-	.long	.LFE22
-	.long	.LFB21
-	.long	.LFE21
 	.long	.LFB26
 	.long	.LFE26
-	.long	.LFB27
-	.long	.LFE27
-	.long	.LFB28
-	.long	.LFE28
-	.long	.LFB29
-	.long	.LFE29
-	.long	.LFB30
-	.long	.LFE30
 	.long	.LFB31
 	.long	.LFE31
+	.long	.LFB30
+	.long	.LFE30
+	.long	.LFB29
+	.long	.LFE29
+	.long	.LFB28
+	.long	.LFE28
+	.long	.LFB27
+	.long	.LFE27
 	.long	.LFB32
 	.long	.LFE32
+	.long	.LFB33
+	.long	.LFE33
+	.long	.LFB34
+	.long	.LFE34
+	.long	.LFB35
+	.long	.LFE35
+	.long	.LFB36
+	.long	.LFE36
+	.long	.LFB37
+	.long	.LFE37
+	.long	.LFB38
+	.long	.LFE38
 	.long	0
 	.long	0
 	.section	.debug_line,"",@progbits
