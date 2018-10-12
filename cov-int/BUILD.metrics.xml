@@ -5,7 +5,7 @@
 <metrics>
     <metric>
         <name>time</name>
-        <value>34</value>
+        <value>68</value>
     </metric>
     <metric>
         <name>args</name>
@@ -65,7 +65,7 @@
     </metric>
     <metric>
         <name>successes</name>
-        <value>135</value>
+        <value>329</value>
     </metric>
     <metric>
         <name>recoverable-errors</name>

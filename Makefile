@@ -4,18 +4,25 @@ SOURCES = $(wildcard src/*.c)
 ASMS = $(patsubst src/%.c, obj/%.s, $(SOURCES))
 TARGET = libasm.a
 
-.PHONY: clean
+.PHONY: first clean
 
-$(TARGET): $(ASMS)
-	ar rc $@ $^
+$(TARGET): first $(ASMS)
+	ar rc $@ $(ASMS)
 
 obj/%.s: src/%.c
-	$(CC) -S $(CFLAGS) $<
+	$(CC) -S -o $@ $(CFLAGS) $<
+
+first:
+	@if [ ! -d obj ]; then \
+	  mkdir obj; \
+	fi
 
 clean:
 	rm -f $(TARGET) $(ASMS)
 	rm -f *.s
 	rm -f *.d
+	rm -f src/*.v
+	rm -f src/*.O
 destclean:
 	rm -f $(TARGET) $(ASMS) obj/*.d
 
